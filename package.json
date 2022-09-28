@@ -1,0 +1,51 @@
+{
+  "name": "codewars_kata_solutions",
+  "version": "1.0.0",
+  "description": "Codewars Kata Solutions by JDOld07",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "Codewars",
+    "Kata",
+    "Solution",
+    "JavaScript",
+    "TypeScript",
+    "Python",
+    "Swift",
+    "CoffeeScript",
+    "JDOld07"
+  ],
+  "author": "JDOld07",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.19.1",
+    "@types/chai": "^4.3.3",
+    "@types/mocha": "^9.1.1",
+    "@types/node": "^18.7.23",
+    "@typescript-eslint/eslint-plugin": "^5.38.0",
+    "@typescript-eslint/parser": "^5.38.0",
+    "chai": "^4.3.6",
+    "coffeescript": "^2.7.0",
+    "eslint": "^8.24.0",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-plugin-coffee": "^0.1.15",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.3.0",
+    "eslint-plugin-promise": "^6.0.1",
+    "eslint-plugin-react": "^7.31.8",
+    "mocha": "^10.0.0",
+    "prettier": "github:helixbass/prettier#prettier-v2.1.0-dev.100-gitpkg",
+    "prettier-plugin-coffeescript": "^0.1.5",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.1.0",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "core-js": "^3.25.2"
+  }
+}

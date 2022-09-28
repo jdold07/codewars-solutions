@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "module": "node16",
+    "target": "es2022",
+    "jsx": "preserve",
+    "strict": true
+  },
+  "exclude": ["node_modules", "**/node_modules/*"]
+}
