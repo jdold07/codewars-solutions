@@ -23,8 +23,23 @@
       "internalConsoleOptions": "openOnSessionStart",
       "outFiles": ["${workspaceFolder}/**/*.js", "!**/node_modules/**"],
       "skipFiles": ["<node_internals>/**"],
-      "runtimeArgs": ["-r", "ts-node/register", "-r", "tsconfig-paths/register", "-r", "chai"],
-      "args": ["--ui", "bdd", "--timeout", "12000", "--colors", "--extension", "mjs", "js", "mts", "./test"]
+      "args": [
+        "--ui",
+        "bdd",
+        "--timeout",
+        "12000",
+        "--colors",
+        "--extension",
+        "mjs",
+        "js",
+        "-r",
+        "ts-node/register",
+        "-r",
+        "tsconfig-paths/register",
+        "-r",
+        "chai",
+        "./"
+      ]
     },
     {
       "name": "PY File in Console",
