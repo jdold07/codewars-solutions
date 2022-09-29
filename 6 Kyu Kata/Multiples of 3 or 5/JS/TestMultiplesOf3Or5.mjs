@@ -1,6 +1,6 @@
 import { assert } from "chai"
 import { describe, it } from "mocha"
-import solution from "./Multiples of 3 or 5"
+import solution from "./MultiplesOf3Or5"
 
 function test(n, expected) {
   it(`n=${n}`, () => {

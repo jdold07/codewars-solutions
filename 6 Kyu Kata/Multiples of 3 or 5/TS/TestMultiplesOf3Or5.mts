@@ -1,4 +1,4 @@
-import solution from "./Multiples of 3 or 5.js"
+import solution from "./multiplesOf3Or5.js"
 import { assert } from "chai"
 
 function test(num: number, expected: number) {
