@@ -1,8 +1,9 @@
-import solution from "./multiplesOf3Or5.js"
+import solution from "./MultiplesOf3Or5"
 import { assert } from "chai"
+import { describe, it } from "mocha"
 
 function test(num: number, expected: number) {
-  assert.strictEqual(solution.Challenge.solution(num), expected)
+  assert.strictEqual(solution.solution(num), expected)
 }
 
 function _solution(number: number) {
