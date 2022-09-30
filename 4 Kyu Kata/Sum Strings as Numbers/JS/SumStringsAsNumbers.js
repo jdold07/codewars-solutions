@@ -56,27 +56,29 @@ function sumStrings(a, b) {
     .replace(/^0*(?!$)/, "")
 }
 
-//* Solution from test cases for reference
-const BigNumber = require("bignumber")
+export default sumStrings
 
-function sumStringsSol(a, b) {
-  if (!a) a = "0"
-  if (!b) b = "0"
-  return new BigNumber(a)
-    .plus(new BigNumber(b))
-    .toFixed(0)
-}
+//* Solution from test cases for reference
+// const BigNumber = require("bignumber.js")
+
+// function sumStringsSol(a, b) {
+//   if (!a) a = "0"
+//   if (!b) b = "0"
+//   return new BigNumber(a)
+//     .plus(new BigNumber(b))
+//     .toFixed(0)
+// }
 
 //* Log tests prior to submission
-console.log(sumStrings("0", "0") === "0")
-console.log(sumStrings("1", "9") === "10")
-console.log(sumStrings("123", "456") === "579")
-console.log(sumStrings("321", "654") === "975")
-console.log(sumStrings("9999", "000000999") === "10998")
-console.log(sumStrings("9999", "0") === "9999")
-console.log(
-  sumStrings(
-    "99999999999999999999999999999999999999999999999999999999999999999999999999999999",
-    "99999999999999999999999999999999999999999999999999999999999999999999999999999999"
-  )
-)
+// console.log(sumStrings("0", "0") === "0")
+// console.log(sumStrings("1", "9") === "10")
+// console.log(sumStrings("123", "456") === "579")
+// console.log(sumStrings("321", "654") === "975")
+// console.log(sumStrings("9999", "000000999") === "10998")
+// console.log(sumStrings("9999", "0") === "9999")
+// console.log(
+//   sumStrings(
+//     "99999999999999999999999999999999999999999999999999999999999999999999999999999999",
+//     "99999999999999999999999999999999999999999999999999999999999999999999999999999999"
+//   )
+// )
