@@ -22,8 +22,10 @@
       "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
       "console": "internalConsole",
       "internalConsoleOptions": "openOnSessionStart",
-      "outFiles": ["${workspaceFolder}/**/*.js", "!**/node_modules/**"],
+      "cwd": "${fileDirname}",
+      "outFiles": ["${fileDirname}/out/*.js", "!**/node_modules/**"],
       "skipFiles": ["<node_internals>/**"],
+      "sourceMaps": true,
       "args": [
         "--ui",
         "bdd",
