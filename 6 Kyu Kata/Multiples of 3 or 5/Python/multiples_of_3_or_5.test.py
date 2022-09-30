@@ -1,6 +1,6 @@
 import random
 import codewars_test as test
-import Multiples_of_3_or_5 as solution
+from .multiples_of_3_or_5 import solution
 
 
 @test.describe("Fixed tests")
