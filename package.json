@@ -4,7 +4,6 @@
   "description": "Codewars Kata Solutions by JDOld07",
   "author": "JDOld07",
   "license": "MIT",
-  "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
@@ -18,7 +17,9 @@
     "Swift",
     "JDOld07"
   ],
-  "devDependencies": {
+  "dependencies": {
+    "bignumber.js": "^9.1.0",
+    "core-js": "^3.25.2",
     "@babel/core": "^7.19.3",
     "@babel/eslint-parser": "^7.19.1",
     "@babel/preset-env": "^7.19.3",
@@ -45,9 +46,5 @@
     "ts-node": "^10.9.1",
     "tsconfig-paths": "^4.1.0",
     "typescript": "^4.8.4"
-  },
-  "dependencies": {
-    "bignumber.js": "^9.1.0",
-    "core-js": "^3.25.2"
   }
 }
