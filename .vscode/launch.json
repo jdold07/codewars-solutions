@@ -20,6 +20,7 @@
       "type": "node",
       "request": "launch",
       "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+      "console": "internalConsole",
       "internalConsoleOptions": "openOnSessionStart",
       "outFiles": ["${workspaceFolder}/**/*.js", "!**/node_modules/**"],
       "skipFiles": ["<node_internals>/**"],
@@ -32,13 +33,14 @@
         "--extension",
         "mjs",
         "js",
-        "-r",
+        "ts",
+        "mts",
+        "cjs",
+        "--require",
         "ts-node/register",
-        "-r",
+        "--require",
         "tsconfig-paths/register",
-        "-r",
-        "chai",
-        "./"
+        "${file}"
       ]
     },
     {
