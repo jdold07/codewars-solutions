@@ -16,4 +16,4 @@ function _solution(number) {
   return sum
 }
 
-export default solution2
+exports = module.exports = { solution, solution2, _solution }

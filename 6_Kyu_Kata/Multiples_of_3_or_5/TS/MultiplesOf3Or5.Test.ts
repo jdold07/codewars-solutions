@@ -1,6 +1,6 @@
-import solution from "./MultiplesOf3Or5"
+/* eslint @typescript-eslint/no-var-requires: "off" */
+const solution = require("./MultiplesOf3Or5")
 import { assert } from "chai"
-import { describe, it } from "mocha"
 
 function test(num: number, expected: number) {
   assert.strictEqual(solution.solution(num), expected)

@@ -17,4 +17,4 @@ function _solution(n: number) {
   return sum
 }
 
-export = { solution, _solution }
+exports = module.exports = { solution, _solution }

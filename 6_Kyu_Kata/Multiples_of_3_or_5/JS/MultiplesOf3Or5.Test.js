@@ -1,6 +1,6 @@
-import { assert } from "chai"
-import { describe, it } from "mocha"
-import solution from "./MultiplesOf3Or5"
+/* eslint @typescript-eslint/no-var-requires: "off" */
+const assert = require("chai").assert
+const solution = require("./MultiplesOf3Or5").solution
 
 function test(n, expected) {
   it(`n=${n}`, () => {
