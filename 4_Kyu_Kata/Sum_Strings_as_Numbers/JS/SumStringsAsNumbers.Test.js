@@ -1,7 +1,7 @@
-import { BigNumber } from "bignumber.js"
-import { describe, it } from "mocha"
-import { assert } from "chai"
-import { sumStrings } from "sumStringsAsNumbers"
+/* eslint @typescript-eslint/no-var-requires: "off" */
+const BigNumber = require("bignumber.js")
+const assert = require("chai").assert
+const sumStrings = require("./SumStringsAsNumbers")
 
 describe("Tests", () => {
   it("test", () => {
