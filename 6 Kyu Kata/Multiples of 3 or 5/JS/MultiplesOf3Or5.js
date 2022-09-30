@@ -15,3 +15,5 @@ function _solution(number) {
   }
   return sum
 }
+
+export default solution2
