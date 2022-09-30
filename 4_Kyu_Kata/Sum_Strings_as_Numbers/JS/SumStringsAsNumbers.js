@@ -56,7 +56,7 @@ function sumStrings(a, b) {
     .replace(/^0*(?!$)/, "")
 }
 
-export default sumStrings
+exports = module.exports = sumStrings
 
 //* Solution from test cases for reference
 // const BigNumber = require("bignumber.js")

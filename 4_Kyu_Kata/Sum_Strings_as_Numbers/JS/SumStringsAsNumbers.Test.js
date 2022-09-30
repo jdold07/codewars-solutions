@@ -1,6 +1,7 @@
-import { BigNumber } from "bigNumber"
-import { describe, it, Test } from "mocha"
-import { sumStrings } from "./sumStringsAsNumbers"
+import { BigNumber } from "bignumber.js"
+import { describe, it } from "mocha"
+import { assert } from "chai"
+import { sumStrings } from "sumStringsAsNumbers"
 
 describe("Tests", () => {
   it("test", () => {
@@ -13,7 +14,7 @@ describe("Tests", () => {
     }
     function t(a, b, ans) {
       let returned = sumStrings(a, b)
-      Test.assertEquals(returned, ans, msg(a, b, returned))
+      assert.strictEqual(returned, ans, msg(a, b, returned))
     }
     t("123", "456", "579")
     t("8797", "45", "8842")
