@@ -2,4 +2,3 @@
 // URL: https://www.codewars.com/kata/5a55f04be6be383a50000187
 // Category: undefined  |  Tags: FUNDAMENTALS | MATHEMATICS
 // *****************************************************************************
-

@@ -2,9 +2,8 @@
 // URL: https://www.codewars.com/kata/57a37f3cbb99449513000cd8
 // Category: undefined  |  Tags: STRINGS | REGULAR EXPRESSIONS | FUNDAMENTALS
 // *****************************************************************************
-const getNumberFromString = (s) => parseInt([...s].filter(el => Number.isInteger(parseInt(el))).join(""))
+const getNumberFromString = (s) => parseInt([...s].filter((el) => Number.isInteger(parseInt(el))).join(""))
 // *****************************************************************************
 // *****************************************************************************
-const getNumberFromString = (s) => 
-    parseInt([...s.split(" ").join("")].filter(el => Number.isInteger(parseInt(el))).join(""))
-
+const getNumberFromString = (s) =>
+  parseInt([...s.split(" ").join("")].filter((el) => Number.isInteger(parseInt(el))).join(""))

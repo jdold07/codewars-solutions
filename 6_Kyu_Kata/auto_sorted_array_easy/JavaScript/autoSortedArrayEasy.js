@@ -3,13 +3,13 @@
 // Category: undefined  |  Tags: FUNDAMENTALS | SORTING | LANGUAGE FEATURES | OBJECT-ORIENTED PROGRAMMING
 // *****************************************************************************
 function SortedArray(type) {
-    if (!["asc", "desc"].includes(type)) throw new Error("Wrong sort type!")
-    Array.sortType = type
-    return (this.arr = [])
-  }
-  
-  Array.prototype.insert = function (...props) {
-    props.forEach((v) => this.push(v))
-    this.sort((a, b) => (Array.sortType === "asc" ? a - b : b - a))
-    return this.length
-  }
+  if (!["asc", "desc"].includes(type)) throw new Error("Wrong sort type!")
+  Array.sortType = type
+  return (this.arr = [])
+}
+
+Array.prototype.insert = function (...props) {
+  props.forEach((v) => this.push(v))
+  this.sort((a, b) => (Array.sortType === "asc" ? a - b : b - a))
+  return this.length
+}

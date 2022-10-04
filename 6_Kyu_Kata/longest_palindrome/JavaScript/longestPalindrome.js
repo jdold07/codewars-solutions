@@ -3,7 +3,7 @@
 // Category: undefined  |  Tags: FUNDAMENTALS
 // *****************************************************************************
 const longestPalindrome = (s) => {
-    const checkIt = (i, j = s.length + 1) =>
-      s.slice(i, j) === [...s.slice(i, j)].reverse().join("") ? s.slice(i, j).length : checkIt(i, --j) || ""
-    return (s && Math.max(...[...s].map((_, i) => checkIt(i)))) || 0
-  }
+  const checkIt = (i, j = s.length + 1) =>
+    s.slice(i, j) === [...s.slice(i, j)].reverse().join("") ? s.slice(i, j).length : checkIt(i, --j) || ""
+  return (s && Math.max(...[...s].map((_, i) => checkIt(i)))) || 0
+}

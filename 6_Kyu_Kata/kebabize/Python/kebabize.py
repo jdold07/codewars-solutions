@@ -3,8 +3,8 @@
 # Category: NONE  |  Tags: FUNDAMENTALS | STRINGS | REGULAR EXPRESSIONS
 # ******************************************************************************
 def kebabize(s):
-      new_s = ""
-      for x in s:
-          if x.isalpha():
-              new_s += x if x.islower() else f"-{x.lower()}"
-      return new_s.strip("-")
+    new_s = ""
+    for x in s:
+        if x.isalpha():
+            new_s += x if x.islower() else f"-{x.lower()}"
+    return new_s.strip("-")

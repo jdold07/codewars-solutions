@@ -3,10 +3,10 @@
 // Category: undefined  |  Tags: FUNDAMENTALS
 // *****************************************************************************
 function nbDig(n, d) {
-      let ans = Array(n + 1)
-      .fill()
-      .map((_,index) => index ** 2)
-      .join("")
-      .replace(new RegExp(`[^${d}]`,"g"), "")
-      return ans.length
-  }
+  let ans = Array(n + 1)
+    .fill()
+    .map((_, index) => index ** 2)
+    .join("")
+    .replace(new RegExp(`[^${d}]`, "g"), "")
+  return ans.length
+}

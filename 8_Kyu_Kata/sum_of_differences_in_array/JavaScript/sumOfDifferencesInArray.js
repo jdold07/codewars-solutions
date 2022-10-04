@@ -3,4 +3,3 @@
 // Category: undefined  |  Tags: ARRAYS | FUNDAMENTALS
 // *****************************************************************************
 const sumOfDifferences = (arr) => arr.sort((a, c) => c - a).reduce((a, c, i) => a + (c - arr[i + 1] || 0), 0)
-  

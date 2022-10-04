@@ -3,11 +3,11 @@
 // Category: undefined  |  Tags: STRINGS | BINARY | ALGORITHMS
 // *****************************************************************************
 function stringy(size) {
-    let answerString = ""
-    
-    while (answerString.length < size) {
-      if (answerString.length !== size) answerString += "1"
-      if (answerString.length !== size) answerString += "0"
-    }
-    return answerString
+  let answerString = ""
+
+  while (answerString.length < size) {
+    if (answerString.length !== size) answerString += "1"
+    if (answerString.length !== size) answerString += "0"
   }
+  return answerString
+}

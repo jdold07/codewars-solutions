@@ -3,5 +3,7 @@
 // Category: undefined  |  Tags: FUNDAMENTALS | ARRAYS
 // *****************************************************************************
 const minSum = (arr) =>
-    [...Array(arr.length / 2)].reduce(
-      (a, c) => a + arr.splice(arr.indexOf(Math.max(...arr)), 1) * arr.splice(arr.indexOf(Math.min(...arr)), 1), 0)
+  [...Array(arr.length / 2)].reduce(
+    (a, c) => a + arr.splice(arr.indexOf(Math.max(...arr)), 1) * arr.splice(arr.indexOf(Math.min(...arr)), 1),
+    0
+  )

@@ -3,5 +3,5 @@
 // Category: undefined  |  Tags: FUNDAMENTALS
 // *****************************************************************************
 const a = "dev"
-  const b = "Lab"
-  const name = a + b
+const b = "Lab"
+const name = a + b

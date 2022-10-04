@@ -2,4 +2,3 @@
 # URL: https://www.codewars.com/kata/5a53a17bfd56cb9c14000003
 # Category: NONE  |  Tags: FUNDAMENTALS | MATHEMATICS
 # ******************************************************************************
-

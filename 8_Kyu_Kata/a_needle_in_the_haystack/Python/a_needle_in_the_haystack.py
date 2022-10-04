@@ -3,4 +3,4 @@
 # Category: NONE  |  Tags: ARRAYS | FUNDAMENTALS
 # ******************************************************************************
 def find_needle(haystack):
-      return f"found the needle at position {haystack.index('needle')}"
+    return f"found the needle at position {haystack.index('needle')}"

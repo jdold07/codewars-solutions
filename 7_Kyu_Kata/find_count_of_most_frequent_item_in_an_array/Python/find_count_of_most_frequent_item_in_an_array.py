@@ -2,4 +2,3 @@
 # URL: https://www.codewars.com/kata/56582133c932d8239900002e
 # Category: NONE  |  Tags: DATA STRUCTURES | FUNDAMENTALS
 # ******************************************************************************
-

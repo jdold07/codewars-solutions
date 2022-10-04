@@ -2,4 +2,4 @@
 // URL: https://www.codewars.com/kata/57f780909f7e8e3183000078
 // Category: undefined  |  Tags: FUNDAMENTALS | ARRAYS
 // *****************************************************************************
-const grow = x => x.reduce((a,b) => a * b)
+const grow = (x) => x.reduce((a, b) => a * b)

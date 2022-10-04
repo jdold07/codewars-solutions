@@ -3,4 +3,4 @@
 # Category: NONE  |  Tags: MATHEMATICS | PUZZLES | ALGORITHMS
 # ******************************************************************************
 def nth_even(n):
-      return (n-1)*2
+    return (n - 1) * 2

@@ -2,4 +2,3 @@
 // URL: https://www.codewars.com/kata/59441520102eaa25260000bf
 // Category: undefined  |  Tags: RESTRICTED | FUNDAMENTALS | PUZZLES
 // *****************************************************************************
-

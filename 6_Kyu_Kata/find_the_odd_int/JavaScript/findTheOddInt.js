@@ -3,14 +3,14 @@
 // Category: undefined  |  Tags: FUNDAMENTALS
 // *****************************************************************************
 function findOdd(A) {
-    let counts = {}
-  
-    A.forEach(function (x) {
-      counts[x] = (counts[x] || 0) + 1
-    })
-    for (let i = 0; i < Object.entries(counts).length; i++) {
-      if (Object.values(counts)[i] % 2 != 0) {
-          return parseInt(Object.keys(counts)[i])
-      }
+  let counts = {}
+
+  A.forEach(function (x) {
+    counts[x] = (counts[x] || 0) + 1
+  })
+  for (let i = 0; i < Object.entries(counts).length; i++) {
+    if (Object.values(counts)[i] % 2 != 0) {
+      return parseInt(Object.keys(counts)[i])
     }
   }
+}

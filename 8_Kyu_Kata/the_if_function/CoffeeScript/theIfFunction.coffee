@@ -2,4 +2,3 @@
 # URL: https://www.codewars.com/kata/54147087d5c2ebe4f1000805
 # Category: NONE  |  Tags: FUNCTIONAL PROGRAMMING | FUNDAMENTALS
 # ******************************************************************************
-

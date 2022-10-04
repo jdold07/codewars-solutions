@@ -2,5 +2,5 @@
 # URL: https://www.codewars.com/kata/53da6d8d112bd1a0dc00008b
 # Category: NONE  |  Tags: LISTS | FUNDAMENTALS
 # ******************************************************************************
-def reverse_list(l):
-      return l[::-1]
+def reverse_list(lst):
+    return lst[::-1]

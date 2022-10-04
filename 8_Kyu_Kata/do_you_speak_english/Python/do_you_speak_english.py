@@ -3,4 +3,4 @@
 # Category: NONE  |  Tags: FUNDAMENTALS
 # ******************************************************************************
 def sp_eng(sentence):
-      return "english" in sentence.lower()
+    return "english" in sentence.lower()

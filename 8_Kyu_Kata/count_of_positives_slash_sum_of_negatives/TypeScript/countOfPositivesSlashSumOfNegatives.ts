@@ -2,9 +2,7 @@
 // URL: https://www.codewars.com/kata/576bb71bbbcf0951d5000044
 // Category: undefined  |  Tags: FUNDAMENTALS | ARRAYS | LISTS
 // *****************************************************************************
-export function countPositivesSumNegatives(arr: null|number[]) {
-    if (arr == null || !arr.length) return []
-    return [
-      arr.filter((v) => v > 0).length, arr.filter((v) => v < 0).reduce((a, b) => a + b, 0)
-    ]
-  }
+export function countPositivesSumNegatives(arr: null | number[]) {
+  if (arr == null || !arr.length) return []
+  return [arr.filter((v) => v > 0).length, arr.filter((v) => v < 0).reduce((a, b) => a + b, 0)]
+}

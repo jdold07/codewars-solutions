@@ -2,4 +2,4 @@
 // URL: https://www.codewars.com/kata/55afed09237df73343000042
 // Category: undefined  |  Tags: FUNDAMENTALS | MATHEMATICS
 // *****************************************************************************
-const isLucky = (n) => !n || !([...`${n}`].reduce((a,c)=>a + +c, 0) % 9)
+const isLucky = (n) => !n || !([...`${n}`].reduce((a, c) => a + +c, 0) % 9)

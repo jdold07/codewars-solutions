@@ -2,4 +2,3 @@
 # URL: https://www.codewars.com/kata/52f78966747862fc9a0009ae
 # Category: NONE  |  Tags: ALGORITHMS | MATHEMATICS | INTERPRETERS | PARSING | STRINGS
 # ******************************************************************************
-

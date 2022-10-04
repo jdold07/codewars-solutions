@@ -3,10 +3,10 @@
 // Category: undefined  |  Tags: MATHEMATICS | ALGORITHMS
 // *****************************************************************************
 function isPrime(num) {
-      if (num === 2) return true
-      if (num % 2 === 0) return false
-      for (let i = 3, s = Math.sqrt(num); i <= s; i += 2) {
-              if (num % i === 0 || s % 1 === 0) return false
-          }
-      return num > 2
+  if (num === 2) return true
+  if (num % 2 === 0) return false
+  for (let i = 3, s = Math.sqrt(num); i <= s; i += 2) {
+    if (num % i === 0 || s % 1 === 0) return false
   }
+  return num > 2
+}

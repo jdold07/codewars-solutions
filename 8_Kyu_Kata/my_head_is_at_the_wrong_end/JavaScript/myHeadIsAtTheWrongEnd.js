@@ -2,4 +2,4 @@
 // URL: https://www.codewars.com/kata/56f699cd9400f5b7d8000b55
 // Category: undefined  |  Tags: ARRAYS | LISTS | ALGORITHMS
 // *****************************************************************************
-const fixTheMeerkat = arr => (`${arr.pop()},${arr.pop()},${arr.pop()}`).split(",")
+const fixTheMeerkat = (arr) => `${arr.pop()},${arr.pop()},${arr.pop()}`.split(",")

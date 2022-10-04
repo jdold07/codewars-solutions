@@ -3,25 +3,24 @@
 // Category: undefined  |  Tags: FUNDAMENTALS | MATHEMATICS
 // *****************************************************************************
 const cycle = (n) => {
-    if (!(n % 2) || !(n % 5)) return -1
-    let remainder = 10 % n
-    let count = 1
-    while (remainder !== 1) {
-      remainder = (10 * remainder) % n
-      ++count
-    }
-    return count
+  if (!(n % 2) || !(n % 5)) return -1
+  let remainder = 10 % n
+  let count = 1
+  while (remainder !== 1) {
+    remainder = (10 * remainder) % n
+    ++count
   }
+  return count
+}
 // *****************************************************************************
 // *****************************************************************************
 const cycle = (n) => {
-    if (!(n % 2) || !(n % 5)) return -1
-    let remainder = [10 % n]
-    let count = 1
-    while (remainder !== 1) {
-      remainder = (10 * remainder) % n
-      ++count
-    }
-    return count
+  if (!(n % 2) || !(n % 5)) return -1
+  let remainder = [10 % n]
+  let count = 1
+  while (remainder !== 1) {
+    remainder = (10 * remainder) % n
+    ++count
   }
-
+  return count
+}

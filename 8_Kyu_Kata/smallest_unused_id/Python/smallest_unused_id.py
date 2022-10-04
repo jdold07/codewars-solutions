@@ -3,9 +3,9 @@
 # Category: NONE  |  Tags: FUNDAMENTALS | ALGORITHMS
 # ******************************************************************************
 def next_id(arr):
-      if arr:
-          for x in range(max(arr) + 2):
-              if x in arr:
-                  continue
-              return x
-      return 0
+    if arr:
+        for x in range(max(arr) + 2):
+            if x in arr:
+                continue
+            return x
+    return 0

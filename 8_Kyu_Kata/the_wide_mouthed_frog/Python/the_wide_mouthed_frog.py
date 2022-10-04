@@ -3,4 +3,4 @@
 # Category: NONE  |  Tags: STRINGS | LOGIC | FUNDAMENTALS
 # ******************************************************************************
 def mouth_size(animal):
-      return ["wide", "small"][animal.lower() == "alligator"]
+    return ["wide", "small"][animal.lower() == "alligator"]

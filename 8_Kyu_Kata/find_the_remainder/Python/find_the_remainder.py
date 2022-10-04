@@ -2,5 +2,5 @@
 # URL: https://www.codewars.com/kata/524f5125ad9c12894e00003f
 # Category: NONE  |  Tags: MATHEMATICS | FUNDAMENTALS
 # ******************************************************************************
-def remainder(a,b):
-      return None if min(a,b) == 0 else max(a,b) % min(a,b)
+def remainder(a, b):
+    return None if min(a, b) == 0 else max(a, b) % min(a, b)

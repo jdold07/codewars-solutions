@@ -2,6 +2,5 @@
 // URL: https://www.codewars.com/kata/5667e8f4e3f572a8f2000039
 // Category: undefined  |  Tags: FUNDAMENTALS | STRINGS | PUZZLES
 // *****************************************************************************
-const accum = s => 
-      Array.from(s, (letter, index) => 
-      `${letter.toLocaleUpperCase()}${(letter.toLowerCase()).repeat(index)}`).join('-')
+const accum = (s) =>
+  Array.from(s, (letter, index) => `${letter.toLocaleUpperCase()}${letter.toLowerCase().repeat(index)}`).join("-")

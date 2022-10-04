@@ -2,4 +2,3 @@
 # URL: https://www.codewars.com/kata/54df2067ecaa226eca000229
 # Category: NONE  |  Tags: FUNDAMENTALS | MATHEMATICS | PERFORMANCE
 # ******************************************************************************
-

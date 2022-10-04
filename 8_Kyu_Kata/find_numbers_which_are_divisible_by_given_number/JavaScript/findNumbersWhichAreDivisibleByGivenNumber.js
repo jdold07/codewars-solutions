@@ -2,6 +2,6 @@
 // URL: https://www.codewars.com/kata/55edaba99da3a9c84000003b
 // Category: undefined  |  Tags: ARRAYS | ALGORITHMS
 // *****************************************************************************
-function divisibleBy(numbers, divisor){
-    return numbers.filter(el => !(el % divisor))
-  }
+function divisibleBy(numbers, divisor) {
+  return numbers.filter((el) => !(el % divisor))
+}

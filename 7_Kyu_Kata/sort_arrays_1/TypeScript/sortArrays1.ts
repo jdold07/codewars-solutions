@@ -2,6 +2,6 @@
 // URL: https://www.codewars.com/kata/51f41b98e8f176e70d0002a8
 // Category: undefined  |  Tags: SORTING | ARRAYS | FUNDAMENTALS
 // *****************************************************************************
-export function sortMe (names: string[]): string[] {
-    return names.sort()
-  }
+export function sortMe(names: string[]): string[] {
+  return names.sort()
+}

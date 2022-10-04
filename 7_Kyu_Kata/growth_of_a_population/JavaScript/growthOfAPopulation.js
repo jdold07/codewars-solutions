@@ -3,11 +3,11 @@
 // Category: undefined  |  Tags: FUNDAMENTALS
 // *****************************************************************************
 function nbYear(p0, percent, aug, p) {
-    percent = percent / 100
-    let n = 0
-    while (p0 < p) {
-      p0 += Math.floor(p0 * percent + aug)
-      n++
-    }
-    return n
+  percent = percent / 100
+  let n = 0
+  while (p0 < p) {
+    p0 += Math.floor(p0 * percent + aug)
+    n++
   }
+  return n
+}

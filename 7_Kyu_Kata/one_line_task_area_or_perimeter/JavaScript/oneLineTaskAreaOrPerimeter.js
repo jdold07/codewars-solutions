@@ -2,4 +2,4 @@
 // URL: https://www.codewars.com/kata/5ab84aa4206a29ce21000047
 // Category: undefined  |  Tags: PUZZLES | RESTRICTED
 // *****************************************************************************
-areaOrPerimeter=(l,w)=>l^w?2*(l+w):l*w
+areaOrPerimeter = (l, w) => (l ^ w ? 2 * (l + w) : l * w)

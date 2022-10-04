@@ -3,5 +3,5 @@
 // Category: undefined  |  Tags: FUNDAMENTALS | MATHEMATICS | DATE TIME
 // *****************************************************************************
 function century(year) {
-    return Math.floor((year + 99) / 100) 
-  }
+  return Math.floor((year + 99) / 100)
+}

@@ -3,5 +3,5 @@
 // Category: undefined  |  Tags: ARRAYS | FUNDAMENTALS | ALGORITHMS
 // *****************************************************************************
 function arrayDiff(a, b) {
-    return a.filter(aEl => b.every(bEl => aEl - bEl !== 0))
-  }
+  return a.filter((aEl) => b.every((bEl) => aEl - bEl !== 0))
+}

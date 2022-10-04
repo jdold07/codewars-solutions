@@ -4,24 +4,27 @@
 // *****************************************************************************
 const divMod = (int) => [Math.floor(int / 10), int % 10]
 
-  function sumStrings(a, b) {
-    let x = [...a].reverse()
-    let y = [...b].reverse()
-    let carry = 0,
-      res = []
-  
-    if (x.length < y.length) [x, y] = [y, x]
-  
-    for (let i = 0; i < x.length; i++) {
-      let [tens, ones] = divMod(+x[i] + (+y[i] || 0) + carry)
-      carry = tens
-      res.push(ones)
-      if (i === x.length - 1 && tens > 0) {
-        x.push("0")
-        y.push("0")
-      }
+function sumStrings(a, b) {
+  let x = [...a].reverse()
+  let y = [...b].reverse()
+  let carry = 0,
+    res = []
+
+  if (x.length < y.length) [x, y] = [y, x]
+
+  for (let i = 0; i < x.length; i++) {
+    let [tens, ones] = divMod(+x[i] + (+y[i] || 0) + carry)
+    carry = tens
+    res.push(ones)
+    if (i === x.length - 1 && tens > 0) {
+      x.push("0")
+      y.push("0")
     }
-    if (carry) x.push(carry)
-  
-    return res.reverse().join("").replace(/^0*(?!$)/, "")
   }
+  if (carry) x.push(carry)
+
+  return res
+    .reverse()
+    .join("")
+    .replace(/^0*(?!$)/, "")
+}

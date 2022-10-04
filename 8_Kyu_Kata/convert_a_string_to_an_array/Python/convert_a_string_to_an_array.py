@@ -3,4 +3,4 @@
 # Category: NONE  |  Tags: ARRAYS | STRINGS | FUNDAMENTALS
 # ******************************************************************************
 def string_to_array(s):
-      return s.split() if len(s) != 0 else [""]
+    return s.split() if len(s) != 0 else [""]

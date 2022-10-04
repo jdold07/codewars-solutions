@@ -3,7 +3,4 @@
 # Category: NONE  |  Tags: ALGORITHMS
 # ******************************************************************************
 def cakes(recipe, available):
-      return min([available[x] // recipe[x] 
-                  if x in available.keys() 
-                  else 0 
-                  for x in recipe.keys()])
+    return min([available[x] // recipe[x] if x in available.keys() else 0 for x in recipe.keys()])

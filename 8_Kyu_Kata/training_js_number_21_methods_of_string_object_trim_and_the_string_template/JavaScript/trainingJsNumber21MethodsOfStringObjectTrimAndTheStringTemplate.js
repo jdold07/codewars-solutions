@@ -3,14 +3,13 @@
 // Category: undefined  |  Tags: FUNDAMENTALS | TUTORIALS
 // *****************************************************************************
 const arrowFL = (s) => [...Array(5)].map((_, i) => s.trim().repeat(++i)).join("\n")
-  
-  const forFL = (s) => {
-    let res = ""
-    for (i=1;i<6;i++){
-      res +=`${s.trim().repeat(i)}\n`
-    }
-    return res.slice(0,-1)
+
+const forFL = (s) => {
+  let res = ""
+  for (i = 1; i < 6; i++) {
+    res += `${s.trim().repeat(i)}\n`
   }
-  
-  const fiveLine = (s) => Math.floor(Math.random()*2) ? arrowFL(s) : forFL(s)
-  
+  return res.slice(0, -1)
+}
+
+const fiveLine = (s) => (Math.floor(Math.random() * 2) ? arrowFL(s) : forFL(s))

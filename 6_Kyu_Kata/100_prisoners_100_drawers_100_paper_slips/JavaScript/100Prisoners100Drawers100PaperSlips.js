@@ -3,11 +3,11 @@
 // Category: undefined  |  Tags: PUZZLES | MATHEMATICS | PROBABILITY | LOGIC
 // *****************************************************************************
 const solve100Prisoners = (context) => {
-    while (!context.isProcessComplete()) {
-      let res = context.openDrawer(context.getCurrentPrisoner())
-      while (res && !res.success) {
-        res = context.openDrawer(res.slipLabel)
-      }
+  while (!context.isProcessComplete()) {
+    let res = context.openDrawer(context.getCurrentPrisoner())
+    while (res && !res.success) {
+      res = context.openDrawer(res.slipLabel)
     }
-    return context.isSuccess()
   }
+  return context.isSuccess()
+}

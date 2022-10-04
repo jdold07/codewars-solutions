@@ -3,4 +3,4 @@
 # Category: NONE  |  Tags: ALGORITHMS | MATHEMATICS | FUNDAMENTALS
 # ******************************************************************************
 def litres(time):
-      return time * 0.5 // 1
+    return time * 0.5 // 1

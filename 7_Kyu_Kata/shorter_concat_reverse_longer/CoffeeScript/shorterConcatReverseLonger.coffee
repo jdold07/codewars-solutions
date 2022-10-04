@@ -3,7 +3,17 @@
 # Category: NONE  |  Tags: STRINGS | FUNDAMENTALS
 # ******************************************************************************
 shorter_reverse_longer = (a, b) ->
-    if (!a && b) || a.length < b.length
-      (a + (b.split("").reverse().join("")) + a)
-    else if (!b && a) || a.length >= b.length
-      (b + (a.split("").reverse().join("")) + b)
+  if (!a && b) || a.length < b.length
+    a +
+      b
+        .split ""
+        .reverse()
+        .join("") +
+      a
+  else if (!b && a) || a.length >= b.length
+    b +
+      a
+        .split ""
+        .reverse()
+        .join("") +
+      b

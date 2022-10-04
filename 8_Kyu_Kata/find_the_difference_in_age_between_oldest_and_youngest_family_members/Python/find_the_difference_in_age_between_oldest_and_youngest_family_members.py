@@ -3,4 +3,4 @@
 # Category: NONE  |  Tags: ALGORITHMS | ARRAYS
 # ******************************************************************************
 def difference_in_ages(ages):
-      return tuple([min(ages), max(ages), max(ages)-min(ages)])
+    return tuple([min(ages), max(ages), max(ages) - min(ages)])

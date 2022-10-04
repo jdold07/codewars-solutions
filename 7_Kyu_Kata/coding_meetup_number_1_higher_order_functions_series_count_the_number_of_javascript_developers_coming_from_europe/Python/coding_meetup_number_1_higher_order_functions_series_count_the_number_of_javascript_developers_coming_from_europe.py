@@ -3,7 +3,7 @@
 # Category: NONE  |  Tags: DATA STRUCTURES | FUNDAMENTALS | ALGORITHMS | STRINGS | REGULAR EXPRESSIONS | ARRAYS | FUNCTIONAL PROGRAMMING
 # ******************************************************************************
 def count_developers(lst):
-      result = 0
-      for x in lst:
-          result += 1 if x["continent"] == "Europe" and x["language"] == "JavaScript" else 0
-      return result
+    result = 0
+    for x in lst:
+        result += 1 if x["continent"] == "Europe" and x["language"] == "JavaScript" else 0
+    return result

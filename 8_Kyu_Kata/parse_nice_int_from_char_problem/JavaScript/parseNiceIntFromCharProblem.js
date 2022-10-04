@@ -2,4 +2,4 @@
 // URL: https://www.codewars.com/kata/557cd6882bfa3c8a9f0000c1
 // Category: undefined  |  Tags: FUNDAMENTALS
 // *****************************************************************************
-const getAge = str => +str[0]
+const getAge = (str) => +str[0]

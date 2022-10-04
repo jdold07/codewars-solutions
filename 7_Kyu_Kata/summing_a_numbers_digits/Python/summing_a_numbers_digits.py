@@ -3,9 +3,9 @@
 # Category: NONE  |  Tags: FUNDAMENTALS
 # ******************************************************************************
 def sum_digits(number):
-      return sum(map(int, list(str(abs(number)))))
-  
-      # total = 0
-      # for x in list(str(abs(number))):
-      #     total += int(x)
-      # return total
+    return sum(map(int, list(str(abs(number)))))
+
+    # total = 0
+    # for x in list(str(abs(number))):
+    #     total += int(x)
+    # return total

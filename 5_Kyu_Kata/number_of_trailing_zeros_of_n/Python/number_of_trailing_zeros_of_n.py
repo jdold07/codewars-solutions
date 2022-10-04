@@ -3,8 +3,8 @@
 # Category: NONE  |  Tags: ALGORITHMS | LOGIC | MATHEMATICS
 # ******************************************************************************
 def zeros(n):
-      zeroes = 0
-      while n > 5:
-          n /= 5
-          zeroes += int(n)
-      return zeroes
+    zeroes = 0
+    while n > 5:
+        n /= 5
+        zeroes += int(n)
+    return zeroes

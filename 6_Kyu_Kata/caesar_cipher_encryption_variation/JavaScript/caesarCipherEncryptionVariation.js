@@ -3,4 +3,4 @@
 // Category: undefined  |  Tags: ALGORITHMS | CRYPTOGRAPHY
 // *****************************************************************************
 const caesarEncode = (s, n) =>
-    [...s].reduce((a, c) => a + (!/\s/.test(c) ? String.fromCharCode(((c.charCodeAt() - 97 + n) % 26) + 97) : ++n && c), "")
+  [...s].reduce((a, c) => a + (!/\s/.test(c) ? String.fromCharCode(((c.charCodeAt() - 97 + n) % 26) + 97) : ++n && c), "")

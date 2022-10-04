@@ -3,6 +3,6 @@
 // Category: undefined  |  Tags: ARRAYS | FUNDAMENTALS
 // *****************************************************************************
 const min = (arr, toReturn) => {
-    const i = arr.indexOf(Math.min(...arr))
-    return toReturn === "index" ? i : arr[i]
-  }
+  const i = arr.indexOf(Math.min(...arr))
+  return toReturn === "index" ? i : arr[i]
+}

@@ -3,4 +3,4 @@
 // Category: undefined  |  Tags: STRINGS | REGULAR EXPRESSIONS | ARRAYS | FUNDAMENTALS
 // *****************************************************************************
 const autocomplete = (input, dict) =>
-    dict.filter((v) => RegExp("^" + input.replace(/[^a-z]/gi, ""), "i").test(v)).slice(0, 5)
+  dict.filter((v) => RegExp("^" + input.replace(/[^a-z]/gi, ""), "i").test(v)).slice(0, 5)

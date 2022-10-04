@@ -3,5 +3,5 @@
 // Category: undefined  |  Tags: FUNDAMENTALS
 // *****************************************************************************
 const calculateTip = (amount, rating) =>
-    Math.ceil(amount * { excellent: 0.2, great: 0.15, good: 0.1, poor: 0.05 }[rating.toLowerCase()]) ||
-    (rating.toLowerCase() === "terrible" ? 0 : "Rating not recognised")
+  Math.ceil(amount * { excellent: 0.2, great: 0.15, good: 0.1, poor: 0.05 }[rating.toLowerCase()]) ||
+  (rating.toLowerCase() === "terrible" ? 0 : "Rating not recognised")

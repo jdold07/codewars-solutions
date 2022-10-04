@@ -3,6 +3,6 @@
 // Category: undefined  |  Tags: STRINGS | ARRAYS | CIPHERS | FUNDAMENTALS
 // *****************************************************************************
 function decipherThis(str) {
-      word = str.replace(/\b(\d+)/g, (a) => String.fromCharCode(a))
-      return word.replace(/\b(\w?)(\w?)(\w*?)(\w?)\b/g, `$1$4$3$2`)
-  }
+  word = str.replace(/\b(\d+)/g, (a) => String.fromCharCode(a))
+  return word.replace(/\b(\w?)(\w?)(\w*?)(\w?)\b/g, `$1$4$3$2`)
+}

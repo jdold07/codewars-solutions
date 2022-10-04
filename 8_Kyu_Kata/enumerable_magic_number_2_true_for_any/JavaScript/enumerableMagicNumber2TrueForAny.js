@@ -2,6 +2,6 @@
 // URL: https://www.codewars.com/kata/54598e89cbae2ac001001135
 // Category: undefined  |  Tags: FUNDAMENTALS
 // *****************************************************************************
-function any(arr, fun){
-    return arr.some(fun)
-  }
+function any(arr, fun) {
+  return arr.some(fun)
+}

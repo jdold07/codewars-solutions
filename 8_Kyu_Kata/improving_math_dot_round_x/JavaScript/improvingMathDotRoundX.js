@@ -3,5 +3,5 @@
 // Category: undefined  |  Tags: FUNDAMENTALS | OBJECT-ORIENTED PROGRAMMING | MATHEMATICS | LOGIC
 // *****************************************************************************
 Math.roundTo = function (number, precision) {
-    return Math.round(number * (x = 10 ** precision)) / x
-  }
+  return Math.round(number * (x = 10 ** precision)) / x
+}

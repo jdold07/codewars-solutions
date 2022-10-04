@@ -3,14 +3,10 @@
 // Category: undefined  |  Tags: FUNDAMENTALS | STRINGS | ARRAYS | MATHEMATICS
 // *****************************************************************************
 const crap = (x, bags, cap) =>
-    ((x = x
-      .flat()
-      .filter((v) => v === "@" || v === "D"))
-      .includes("D") ? "Dog!!" : x.length > bags * cap ? "Cr@p" : "Clean")
+  (x = x.flat().filter((v) => v === "@" || v === "D")).includes("D") ? "Dog!!" : x.length > bags * cap ? "Cr@p" : "Clean"
 // *****************************************************************************
 // *****************************************************************************
 const crap = (x, bags, cap) => {
-    x = x.flat().reduce((a, c) => ({ ...a, [c]: a[c] + 1 || 1 }), {})
-    return x["D"] ? "Dog!!" : x["@"] > bags * cap ? "Cr@p" : "Clean"
-  }
-
+  x = x.flat().reduce((a, c) => ({ ...a, [c]: a[c] + 1 || 1 }), {})
+  return x["D"] ? "Dog!!" : x["@"] > bags * cap ? "Cr@p" : "Clean"
+}

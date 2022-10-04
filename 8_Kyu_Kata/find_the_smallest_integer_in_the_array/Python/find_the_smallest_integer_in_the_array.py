@@ -3,4 +3,4 @@
 # Category: NONE  |  Tags: FUNDAMENTALS
 # ******************************************************************************
 def find_smallest_int(arr):
-      return min(arr)
+    return min(arr)

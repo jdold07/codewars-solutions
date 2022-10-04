@@ -2,4 +2,4 @@
 // URL: https://www.codewars.com/kata/5866fc43395d9138a7000006
 // Category: undefined  |  Tags: FUNDAMENTALS
 // *****************************************************************************
-const ensureQuestion = (s) => /\?$/.test(s) ? s : `${s}?`
+const ensureQuestion = (s) => (/\?$/.test(s) ? s : `${s}?`)

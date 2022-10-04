@@ -2,4 +2,8 @@
 // URL: https://www.codewars.com/kata/5a63948acadebff56f000018
 // Category: undefined  |  Tags: FUNDAMENTALS | ARRAYS
 // *****************************************************************************
-const maxProduct = (nums, k) => nums.sort((a, b) => b - a).slice(0, k).reduce((a, c) => a * c)
+const maxProduct = (nums, k) =>
+  nums
+    .sort((a, b) => b - a)
+    .slice(0, k)
+    .reduce((a, c) => a * c)

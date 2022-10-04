@@ -3,17 +3,17 @@
 // Category: undefined  |  Tags: OBJECT-ORIENTED PROGRAMMING | ARRAYS | FUNDAMENTALS
 // *****************************************************************************
 class Router {
-    constructor() {
-      this.routes = {}
-    }
-    runRequest(route, method) {
-      try {
-        return this.routes[method][route]()
-      } catch (err) {
-        return "Error 404: Not Found"
-      }
-    }
-    bind(path, method, func) {
-      this.routes = { ...this.routes, [method]: { ...this.routes[method], [path]: func } }
+  constructor() {
+    this.routes = {}
+  }
+  runRequest(route, method) {
+    try {
+      return this.routes[method][route]()
+    } catch (err) {
+      return "Error 404: Not Found"
     }
   }
+  bind(path, method, func) {
+    this.routes = { ...this.routes, [method]: { ...this.routes[method], [path]: func } }
+  }
+}

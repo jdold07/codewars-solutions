@@ -3,4 +3,4 @@
 # Category: NONE  |  Tags: ARRAYS | ALGORITHMS
 # ******************************************************************************
 def two_oldest_ages(ages):
-      return sorted(ages)[-2:]
+    return sorted(ages)[-2:]

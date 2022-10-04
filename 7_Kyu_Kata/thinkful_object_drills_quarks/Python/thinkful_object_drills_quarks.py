@@ -2,4 +2,3 @@
 # URL: https://www.codewars.com/kata/5882b052bdeafec15e0000e6
 # Category: NONE  |  Tags: FUNDAMENTALS | OBJECT-ORIENTED PROGRAMMING
 # ******************************************************************************
-

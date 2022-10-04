@@ -2,4 +2,3 @@
 // URL: https://www.codewars.com/kata/55d5434f269c0c3f1b000058
 // Category: undefined  |  Tags: ALGORITHMS
 // *****************************************************************************
-

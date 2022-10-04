@@ -2,4 +2,3 @@
 # URL: https://www.codewars.com/kata/596925532f709fccf3000077
 # Category: NONE  |  Tags: ALGORITHMS
 # ******************************************************************************
-

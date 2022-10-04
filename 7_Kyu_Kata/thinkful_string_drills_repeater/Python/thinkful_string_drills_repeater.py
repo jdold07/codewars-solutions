@@ -3,4 +3,4 @@
 # Category: NONE  |  Tags: FUNDAMENTALS
 # ******************************************************************************
 def repeater(string, n):
-      return string*n
+    return string * n

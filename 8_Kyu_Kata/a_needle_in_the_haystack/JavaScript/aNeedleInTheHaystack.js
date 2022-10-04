@@ -3,5 +3,5 @@
 // Category: undefined  |  Tags: ARRAYS | FUNDAMENTALS
 // *****************************************************************************
 function findNeedle(haystack) {
-    return `found the needle at position ${haystack.findIndex(el => el === "needle")}`
-  }
+  return `found the needle at position ${haystack.findIndex((el) => el === "needle")}`
+}

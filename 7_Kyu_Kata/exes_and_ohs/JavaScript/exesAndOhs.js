@@ -6,9 +6,8 @@ const XO = (str) => (str.match(/x/gi) || []).length === (str.match(/o/gi) || [])
 // *****************************************************************************
 // *****************************************************************************
 function XO(str) {
-      let lowerXO = str.toLowerCase()
-      let xCount = (lowerXO.match(/x/g) || []).length
-      let oCount = (lowerXO.match(/o/g) || []).length
-      return xCount === oCount
-  }
-
+  let lowerXO = str.toLowerCase()
+  let xCount = (lowerXO.match(/x/g) || []).length
+  let oCount = (lowerXO.match(/o/g) || []).length
+  return xCount === oCount
+}

@@ -3,6 +3,6 @@
 // Category: undefined  |  Tags: STRINGS | FUNDAMENTALS
 // *****************************************************************************
 function solution(str, ending) {
-      ending = ending.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&')
-      return new RegExp(`${ending}$`).test(str)
-  }
+  ending = ending.replace(/[-\/\\^$*+?.()|[\]{}]/g, "\\$&")
+  return new RegExp(`${ending}$`).test(str)
+}

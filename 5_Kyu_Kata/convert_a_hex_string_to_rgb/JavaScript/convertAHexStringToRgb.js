@@ -3,4 +3,4 @@
 // Category: undefined  |  Tags: PARSING | STRINGS | ALGORITHMS
 // *****************************************************************************
 const hexStringToRGB = (hexString) =>
-    ["r", "g", "b"].reduce((a, c, i) => ({ ...a, [c]: parseInt(hexString.match(/.(..)(..)(..)/)[++i], 16) }), {})
+  ["r", "g", "b"].reduce((a, c, i) => ({ ...a, [c]: parseInt(hexString.match(/.(..)(..)(..)/)[++i], 16) }), {})

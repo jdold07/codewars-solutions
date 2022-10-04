@@ -3,4 +3,4 @@
 # Category: NONE  |  Tags: FUNDAMENTALS | ARRAYS | STRINGS | REFACTORING
 # ******************************************************************************
 def well(x):
-      return "Fail!" if "good" not in x else "Publish!" if x.count("good") <= 2 else "I smell a series!"
+    return "Fail!" if "good" not in x else "Publish!" if x.count("good") <= 2 else "I smell a series!"

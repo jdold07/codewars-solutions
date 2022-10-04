@@ -2,4 +2,4 @@
 // URL: https://www.codewars.com/kata/5556282156230d0e5e000089
 // Category: undefined  |  Tags: FUNDAMENTALS | STRINGS
 // *****************************************************************************
-const DNAtoRNA = dna => dna.replace(/T/g, "U")
+const DNAtoRNA = (dna) => dna.replace(/T/g, "U")

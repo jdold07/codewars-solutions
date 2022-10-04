@@ -3,4 +3,3 @@
 // Category: undefined  |  Tags: STRINGS | FUNDAMENTALS
 // *****************************************************************************
 const solution = (value) => `Value is ${(value + "").padStart(5, "0")}`
-  

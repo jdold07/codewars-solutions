@@ -3,4 +3,4 @@
 // Category: undefined  |  Tags: FUNDAMENTALS | MATHEMATICS
 // *****************************************************************************
 const gps = (s, x) =>
-    Math.floor((x.reduce((a, c, i) => (x.length > 1 && a > x[++i] - c ? a : (a = x[i] - c || a)), 0) * 3600) / s)
+  Math.floor((x.reduce((a, c, i) => (x.length > 1 && a > x[++i] - c ? a : (a = x[i] - c || a)), 0) * 3600) / s)

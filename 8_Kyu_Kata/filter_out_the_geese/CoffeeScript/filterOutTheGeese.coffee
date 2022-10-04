@@ -2,4 +2,3 @@
 # URL: https://www.codewars.com/kata/57ee4a67108d3fd9eb0000e7
 # Category: NONE  |  Tags: ARRAYS | FUNDAMENTALS
 # ******************************************************************************
-

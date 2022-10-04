@@ -3,26 +3,26 @@
 // Category: undefined  |  Tags: FUNDAMENTALS | OBJECT-ORIENTED PROGRAMMING
 // *****************************************************************************
 class Shark extends Animal {
-    constructor(name,age,status) {
-      super(name,age,0,"shark",status)
-    }
+  constructor(name, age, status) {
+    super(name, age, 0, "shark", status)
   }
-  
-  class Cat extends Animal {
-    constructor(name,age,status) {
-      super(name,age,4,"cat",status)
-    }
-    introduce(){
-      return `${super.introduce()}  Meow meow!`
-    }
+}
+
+class Cat extends Animal {
+  constructor(name, age, status) {
+    super(name, age, 4, "cat", status)
   }
-  
-  class Dog extends Animal {
-    constructor(name, age, status, master) {
-      super(name,age,4,"dog",status)
-      this.master = master
+  introduce() {
+    return `${super.introduce()}  Meow meow!`
   }
-    greetMaster(){
-      return `Hello ${this.master}`
-    }
+}
+
+class Dog extends Animal {
+  constructor(name, age, status, master) {
+    super(name, age, 4, "dog", status)
+    this.master = master
   }
+  greetMaster() {
+    return `Hello ${this.master}`
+  }
+}

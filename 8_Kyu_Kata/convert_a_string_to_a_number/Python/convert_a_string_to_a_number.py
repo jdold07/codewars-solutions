@@ -3,4 +3,4 @@
 # Category: NONE  |  Tags: PARSING | STRINGS | FUNDAMENTALS
 # ******************************************************************************
 def string_to_number(s):
-      return int(s)
+    return int(s)

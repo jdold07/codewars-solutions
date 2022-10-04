@@ -3,7 +3,7 @@
 # Category: NONE  |  Tags: ARRAYS | FUNDAMENTALS
 # ******************************************************************************
 def prefill(n, v=None):
-      if str(n).isnumeric() and int(n) >= 0:
-          return [v] * int(n)
-      else:
-          raise TypeError(f"{n} is invalid")
+    if str(n).isnumeric() and int(n) >= 0:
+        return [v] * int(n)
+    else:
+        raise TypeError(f"{n} is invalid")

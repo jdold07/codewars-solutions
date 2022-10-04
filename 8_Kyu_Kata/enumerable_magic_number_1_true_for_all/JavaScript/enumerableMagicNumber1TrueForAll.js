@@ -2,10 +2,10 @@
 // URL: https://www.codewars.com/kata/54598d1fcbae2ae05200112c
 // Category: undefined  |  Tags: ARRAYS | FUNDAMENTALS
 // *****************************************************************************
-function all( arr, fun ){
-    if (fun()) return fun()
-    while (arr.length){
-      if (!fun(arr.pop())) return false
-    }
-    return true
+function all(arr, fun) {
+  if (fun()) return fun()
+  while (arr.length) {
+    if (!fun(arr.pop())) return false
   }
+  return true
+}

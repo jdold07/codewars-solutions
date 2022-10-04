@@ -2,10 +2,10 @@
 // URL: https://www.codewars.com/kata/5721c189cdd71194c1000b9b
 // Category: undefined  |  Tags: FUNDAMENTALS | TUTORIALS
 // *****************************************************************************
-function grabDoll(dolls){
-    const bag=[];
-    for (i = 0; i < dolls.length && bag.length < 3 /* break */; i++){
-      if (dolls[i] === "Hello Kitty" || dolls[i] === "Barbie doll") bag.push(dolls[i]) // continue
-    }
-    return bag;
+function grabDoll(dolls) {
+  const bag = []
+  for (let i = 0; i < dolls.length && bag.length < 3 /* break */; i++) {
+    if (dolls[i] === "Hello Kitty" || dolls[i] === "Barbie doll") bag.push(dolls[i]) // continue
   }
+  return bag
+}

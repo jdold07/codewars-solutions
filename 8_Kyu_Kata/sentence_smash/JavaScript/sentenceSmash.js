@@ -2,6 +2,6 @@
 // URL: https://www.codewars.com/kata/53dc23c68a0c93699800041d
 // Category: undefined  |  Tags: STRINGS | ARRAYS | FUNDAMENTALS
 // *****************************************************************************
-function smash (words) {
-    return words.join(" ")
-  }
+function smash(words) {
+  return words.join(" ")
+}

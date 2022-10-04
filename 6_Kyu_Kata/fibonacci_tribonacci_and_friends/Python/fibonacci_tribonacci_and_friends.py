@@ -3,7 +3,7 @@
 # Category: NONE  |  Tags: ARRAYS | LISTS | NUMBER THEORY | FUNDAMENTALS
 # ******************************************************************************
 def Xbonacci(signature, n):
-      seed_len = len(signature)
-      while len(signature) < n:
-          signature += [sum(signature[-seed_len:])]
-      return signature[:n]
+    seed_len = len(signature)
+    while len(signature) < n:
+        signature += [sum(signature[-seed_len:])]
+    return signature[:n]

@@ -3,7 +3,7 @@
 // Category: undefined  |  Tags: MATHEMATICS | ALGORITHMS
 // *****************************************************************************
 export class Challenge {
-    static solution(n: number) {
-      return n > 0 ? [...Array(n).keys()].reduce((a, c, i) => a + (!(i % 3) || !(i % 5) ? c : 0), 0) : 0
-    }
+  static solution(n: number) {
+    return n > 0 ? [...Array(n).keys()].reduce((a, c, i) => a + (!(i % 3) || !(i % 5) ? c : 0), 0) : 0
   }
+}

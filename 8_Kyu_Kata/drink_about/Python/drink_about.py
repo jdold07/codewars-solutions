@@ -3,6 +3,5 @@
 # Category: NONE  |  Tags: FUNDAMENTALS
 # ******************************************************************************
 def people_with_age_drink(age):
-      dict = ["toddy", "coke", "beer", "whisky"]
-      return f"drink {dict[0 if age<14 else 1 if age<18 else 2 if age<21 else 3]}"
-  
+    dict = ["toddy", "coke", "beer", "whisky"]
+    return f"drink {dict[0 if age<14 else 1 if age<18 else 2 if age<21 else 3]}"

@@ -2,4 +2,4 @@
 // URL: https://www.codewars.com/kata/53369039d7ab3ac506000467
 // Category: undefined  |  Tags: FUNDAMENTALS
 // *****************************************************************************
-const boolToWord = bool => bool ? "Yes" : "No"
+const boolToWord = (bool) => (bool ? "Yes" : "No")

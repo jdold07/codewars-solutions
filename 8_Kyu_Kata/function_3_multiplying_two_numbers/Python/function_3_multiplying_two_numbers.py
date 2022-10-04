@@ -3,4 +3,4 @@
 # Category: NONE  |  Tags: FUNDAMENTALS
 # ******************************************************************************
 def multiply(a, b):
-      return a*b
+    return a * b

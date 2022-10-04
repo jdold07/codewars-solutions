@@ -3,6 +3,6 @@
 // Category: undefined  |  Tags: FUNDAMENTALS
 // *****************************************************************************
 const isDigit = (s) => {
-    console.log(s)
-    return parseInt(s.trim()) === 0 ? true : Number(s.trim()) ? true : false
-  }
+  console.log(s)
+  return parseInt(s.trim()) === 0 ? true : Number(s.trim()) ? true : false
+}

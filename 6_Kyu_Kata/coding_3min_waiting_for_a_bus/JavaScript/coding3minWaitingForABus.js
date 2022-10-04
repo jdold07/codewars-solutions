@@ -3,10 +3,10 @@
 // Category: undefined  |  Tags: PUZZLES | GAMES
 // *****************************************************************************
 const sc = (time, km) => {
-    const buses = Array.from({ length: 57 }, (_, i) => 6 * 60 + km / (30 / 60) + i * 15)
-    for (bus of buses) {
-      if (bus >= time.split(":")[0] * 60 + +time.split(":")[1])
-        return `${(Math.floor((bus / 60) % 24) + "").padStart(2, "0")}:${((bus % 60) + "").padStart(2, "0")}`
-    }
-    return `${(Math.floor((buses[0] / 60) % 24) + "").padStart(2, "0")}:${((buses[0] % 60) + "").padStart(2, "0")}`
+  const buses = Array.from({ length: 57 }, (_, i) => 6 * 60 + km / (30 / 60) + i * 15)
+  for (bus of buses) {
+    if (bus >= time.split(":")[0] * 60 + +time.split(":")[1])
+      return `${(Math.floor((bus / 60) % 24) + "").padStart(2, "0")}:${((bus % 60) + "").padStart(2, "0")}`
   }
+  return `${(Math.floor((buses[0] / 60) % 24) + "").padStart(2, "0")}:${((buses[0] % 60) + "").padStart(2, "0")}`
+}

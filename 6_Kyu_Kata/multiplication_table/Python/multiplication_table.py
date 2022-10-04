@@ -3,7 +3,7 @@
 # Category: NONE  |  Tags: ARRAYS | FUNDAMENTALS
 # ******************************************************************************
 def multiplication_table(size):
-      result = []
-      for row in range(1,size+1):
-          result.append([num*row for num in range(1,size+1)])
-      return result
+    result = []
+    for row in range(1, size + 1):
+        result.append([num * row for num in range(1, size + 1)])
+    return result

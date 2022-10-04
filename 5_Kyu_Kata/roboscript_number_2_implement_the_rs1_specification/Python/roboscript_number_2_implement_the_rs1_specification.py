@@ -2,4 +2,3 @@
 # URL: https://www.codewars.com/kata/5870fa11aa0428da750000da
 # Category: NONE  |  Tags: ESOTERIC LANGUAGES | ALGORITHMS
 # ******************************************************************************
-

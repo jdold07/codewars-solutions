@@ -2,4 +2,9 @@
 // URL: https://www.codewars.com/kata/57f36495c0bb25ecf50000e7
 // Category: undefined  |  Tags: FUNDAMENTALS
 // *****************************************************************************
-const findSum = n => new Array(n).fill(0).map((_,i)=>i+1).filter(el=>el%3===0 || el%5===0).reduce((a,b)=>a+b,0)
+const findSum = (n) =>
+  new Array(n)
+    .fill(0)
+    .map((_, i) => i + 1)
+    .filter((el) => el % 3 === 0 || el % 5 === 0)
+    .reduce((a, b) => a + b, 0)

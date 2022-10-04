@@ -3,9 +3,11 @@
 # Category: NONE  |  Tags: ALGORITHMS
 # ******************************************************************************
 def rgb(r, g, b):
-      def toHex(num):
-          if num < 0: num = 0
-          if num > 255: num = 255
-          return hex(num)[2:].upper().rjust(2, "0")
-  
-      return toHex(r) + toHex(g) + toHex(b)
+    def toHex(num):
+        if num < 0:
+            num = 0
+        if num > 255:
+            num = 255
+        return hex(num)[2:].upper().rjust(2, "0")
+
+    return toHex(r) + toHex(g) + toHex(b)

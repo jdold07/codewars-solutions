@@ -3,5 +3,7 @@
 // Category: undefined  |  Tags: FUNDAMENTALS
 // *****************************************************************************
 const Solution = {
-    main(prop) {console.log("Hello World!")}
+  main(prop) {
+    console.log("Hello World!")
   }
+}

@@ -2,4 +2,3 @@
 // URL: https://www.codewars.com/kata/582746fa14b3892727000c4f
 // Category: undefined  |  Tags: DATA STRUCTURES | FUNDAMENTALS | ALGORITHMS | STRINGS | REGULAR EXPRESSIONS | ARRAYS | FUNCTIONAL PROGRAMMING
 // *****************************************************************************
-

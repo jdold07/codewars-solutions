@@ -3,6 +3,6 @@
 // Category: undefined  |  Tags: FUNDAMENTALS | STRINGS
 // *****************************************************************************
 function defineSuit(card) {
-    const DECK = {"♣":"clubs", "♦":"diamonds", "♥":"hearts", "♠":"spades"}
-    return DECK[card.slice(-1)]
-  }
+  const DECK = { "♣": "clubs", "♦": "diamonds", "♥": "hearts", "♠": "spades" }
+  return DECK[card.slice(-1)]
+}

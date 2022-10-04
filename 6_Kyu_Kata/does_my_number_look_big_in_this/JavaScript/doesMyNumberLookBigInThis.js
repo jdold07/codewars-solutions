@@ -2,4 +2,9 @@
 // URL: https://www.codewars.com/kata/5287e858c6b5a9678200083c
 // Category: undefined  |  Tags: ALGORITHMS
 // *****************************************************************************
-const narcissistic = value => value === value.toString().split("").reduce((a,b) => a + b**(value.toString().length),0)
+const narcissistic = (value) =>
+  value ===
+  value
+    .toString()
+    .split("")
+    .reduce((a, b) => a + b ** value.toString().length, 0)

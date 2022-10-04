@@ -2,14 +2,13 @@
 // URL: https://www.codewars.com/kata/57faf7275c991027af000679
 // Category: undefined  |  Tags: FUNDAMENTALS
 // *****************************************************************************
-const remove = (s,n) => s.replace(/!/g, (char) => n-- > 0 ? "" : char)
+const remove = (s, n) => s.replace(/!/g, (char) => (n-- > 0 ? "" : char))
 // *****************************************************************************
 // *****************************************************************************
-function remove(s,n){
-    while (n > 0 && s.includes("!")) {
-      s = s.replace(/!/, "")
-      n--
-    }
-    return s
+function remove(s, n) {
+  while (n > 0 && s.includes("!")) {
+    s = s.replace(/!/, "")
+    n--
   }
-
+  return s
+}

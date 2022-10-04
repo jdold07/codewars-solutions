@@ -2,4 +2,4 @@
 // URL: https://www.codewars.com/kata/596fba44963025c878000039
 // Category: undefined  |  Tags: STRINGS | FUNDAMENTALS
 // *****************************************************************************
-const contamination = (text, char) => !text || !char ? "" : char.repeat(text.length)
+const contamination = (text, char) => (!text || !char ? "" : char.repeat(text.length))

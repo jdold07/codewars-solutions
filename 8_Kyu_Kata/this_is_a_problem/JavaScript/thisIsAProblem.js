@@ -3,7 +3,7 @@
 // Category: undefined  |  Tags: FUNDAMENTALS | LANGUAGE FEATURES | OBJECT-ORIENTED PROGRAMMING
 // *****************************************************************************
 function NameMe(first, last) {
-      this.firstName = first;
-      this.lastName = last;
-      this.name = this.firstName + ' ' + this.lastName
-  }
+  this.firstName = first
+  this.lastName = last
+  this.name = this.firstName + " " + this.lastName
+}

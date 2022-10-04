@@ -3,20 +3,20 @@
 // Category: undefined  |  Tags: FUNDAMENTALS | ARRAYS | NUMBER THEORY
 // *****************************************************************************
 function numPrimorial(n) {
-    const primes = [2, 3, 5, 7, 11, 13, 17, 19]
-    if (primes.length < n) {
-      let cur = 23
-      while (primes.length < n) {
-        let isPrime = true
-        for (i = 3; i <= cur ** 0.5 + 1; i += 2) {
-          if (!(cur % i)) {
-            isPrime = false
-            break
-          }
+  const primes = [2, 3, 5, 7, 11, 13, 17, 19]
+  if (primes.length < n) {
+    let cur = 23
+    while (primes.length < n) {
+      let isPrime = true
+      for (i = 3; i <= cur ** 0.5 + 1; i += 2) {
+        if (!(cur % i)) {
+          isPrime = false
+          break
         }
-        if (isPrime) primes.push(cur)
-        cur += 2
       }
+      if (isPrime) primes.push(cur)
+      cur += 2
     }
-    return primes.slice(0, n).reduce((a, c) => a * c, 1)
   }
+  return primes.slice(0, n).reduce((a, c) => a * c, 1)
+}

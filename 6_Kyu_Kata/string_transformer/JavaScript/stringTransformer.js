@@ -3,10 +3,11 @@
 // Category: undefined  |  Tags: FUNDAMENTALS
 // *****************************************************************************
 const stringTransformer = (s) =>
-    [...s
-  //     .trim()
-  //     .replace(/\s{2,}/g, " ")
+  [
+    ...s
+      //     .trim()
+      //     .replace(/\s{2,}/g, " ")
       .split(" ")
       .reverse()
-      .join(" "),
-    ].reduce((a, c) => a + (c === c.toUpperCase() ? c.toLowerCase() : c.toUpperCase()), "")
+      .join(" ")
+  ].reduce((a, c) => a + (c === c.toUpperCase() ? c.toLowerCase() : c.toUpperCase()), "")

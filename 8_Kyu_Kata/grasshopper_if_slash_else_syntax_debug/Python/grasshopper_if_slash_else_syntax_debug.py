@@ -3,4 +3,4 @@
 # Category: NONE  |  Tags: DEBUGGING
 # ******************************************************************************
 def check_alive(health):
-      return health > 0
+    return health > 0

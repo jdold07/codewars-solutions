@@ -3,5 +3,5 @@
 # Category: NONE  |  Tags: PARSING | STRINGS | ALGORITHMS
 # ******************************************************************************
 def hex_string_to_RGB(hex_string):
-      [r, g, b] = [int(x, base=16) for x in (hex_string[i : i + 2] for i in range(1, 6, 2))]
-      return {"r": r, "g": g, "b": b}
+    [r, g, b] = [int(x, base=16) for x in (hex_string[i : i + 2] for i in range(1, 6, 2))]
+    return {"r": r, "g": g, "b": b}

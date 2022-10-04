@@ -2,6 +2,6 @@
 // URL: https://www.codewars.com/kata/544675c6f971f7399a000e79
 // Category: undefined  |  Tags: PARSING | STRINGS | FUNDAMENTALS
 // *****************************************************************************
-var stringToNumber = function(str){
-    return +str;
-  }
+var stringToNumber = function (str) {
+  return +str
+}

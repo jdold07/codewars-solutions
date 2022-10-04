@@ -3,6 +3,6 @@
 // Category: undefined  |  Tags: STRINGS | FUNDAMENTALS
 // *****************************************************************************
 const aliasGen = (f, l) =>
-    /^[a-z]+/gi.test(f) && /^[a-z]+/gi.test(l)
-      ? `${firstName[f[0].toUpperCase()]} ${surname[l[0].toUpperCase()]}`
-      : "Your name must start with a letter from A - Z."
+  /^[a-z]+/gi.test(f) && /^[a-z]+/gi.test(l)
+    ? `${firstName[f[0].toUpperCase()]} ${surname[l[0].toUpperCase()]}`
+    : "Your name must start with a letter from A - Z."

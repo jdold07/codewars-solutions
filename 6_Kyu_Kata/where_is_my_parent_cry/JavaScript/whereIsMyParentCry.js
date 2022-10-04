@@ -3,4 +3,7 @@
 // Category: undefined  |  Tags: FUNDAMENTALS
 // *****************************************************************************
 const findChildren = (s) =>
-    [...s.toLowerCase()].sort().join("").replace(/(\w)(\1+)/g, (_, $1, $2) => $1.toUpperCase() + $2)
+  [...s.toLowerCase()]
+    .sort()
+    .join("")
+    .replace(/(\w)(\1+)/g, (_, $1, $2) => $1.toUpperCase() + $2)

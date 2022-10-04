@@ -2,5 +2,4 @@
 // URL: https://www.codewars.com/kata/56453a12fcee9a6c4700009c
 // Category: undefined  |  Tags: FUNDAMENTALS | LOGIC
 // *****************************************************************************
-const closeCompare = (a, b, margin = 0) => Math.abs(a - b) <= margin ? 0 : a < b ? -1 : 1
-  
+const closeCompare = (a, b, margin = 0) => (Math.abs(a - b) <= margin ? 0 : a < b ? -1 : 1)

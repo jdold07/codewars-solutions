@@ -3,11 +3,10 @@
 // Category: undefined  |  Tags: OBJECT-ORIENTED PROGRAMMING | DEBUGGING | LANGUAGE FEATURES
 // *****************************************************************************
 class OnceNamedOne {
-    constructor(first, last) {
-      this.firstName = first
-      this.lastName = last
-      this.fullName = `${first} ${last}`
-      Object.freeze(this)
-    }
+  constructor(first, last) {
+    this.firstName = first
+    this.lastName = last
+    this.fullName = `${first} ${last}`
+    Object.freeze(this)
   }
-  
+}

@@ -2,4 +2,4 @@
 // URL: https://www.codewars.com/kata/570597e258b58f6edc00230d
 // Category: undefined  |  Tags: FUNDAMENTALS | ARRAYS | STRINGS
 // *****************************************************************************
-const array = (arr) => arr.split(",").length < 3 ? null : arr.split(",").slice(1,-1).join(" ")
+const array = (arr) => (arr.split(",").length < 3 ? null : arr.split(",").slice(1, -1).join(" "))

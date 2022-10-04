@@ -2,5 +2,5 @@
 # URL: https://www.codewars.com/kata/545afd0761aa4c3055001386
 # Category: NONE  |  Tags: FUNDAMENTALS
 # ******************************************************************************
-def take(arr,n):
-      return arr[0:n]
+def take(arr, n):
+    return arr[0:n]

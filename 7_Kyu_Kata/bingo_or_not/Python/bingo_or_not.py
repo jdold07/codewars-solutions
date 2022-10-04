@@ -3,5 +3,4 @@
 # Category: NONE  |  Tags: GAMES | ARRAYS | FUNDAMENTALS
 # ******************************************************************************
 def bingo(array):
-          return ["WIN", "LOSE"][any(x not in map(lambda x: chr(x + 64), array) for x in ["B", "I", "N", "G", "O"])]
-  
+    return ["WIN", "LOSE"][any(x not in map(lambda x: chr(x + 64), array) for x in ["B", "I", "N", "G", "O"])]

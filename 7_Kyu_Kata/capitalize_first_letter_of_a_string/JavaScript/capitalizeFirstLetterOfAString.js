@@ -3,13 +3,12 @@
 // Category: undefined  |  Tags: FUNDAMENTALS | OBJECT-ORIENTED PROGRAMMING | REGULAR EXPRESSIONS
 // *****************************************************************************
 String.prototype.capitalize = function () {
-    return this.replace(/(^[a-z])/, (c) => String.fromCharCode(c.charCodeAt() - 32))
-  }
+  return this.replace(/(^[a-z])/, (c) => String.fromCharCode(c.charCodeAt() - 32))
+}
 // *****************************************************************************
 // *****************************************************************************
 String.prototype.capitalize = function () {
-    return (x = this.match(/(^.)(.*$)/)[1].charCodeAt()) > 96 && x < 123
-      ? this.replace(/(^.)(.*$)/, String.fromCharCode(x - 32) + "$2")
-      : this.slice(0)
-  }
-
+  return (x = this.match(/(^.)(.*$)/)[1].charCodeAt()) > 96 && x < 123
+    ? this.replace(/(^.)(.*$)/, String.fromCharCode(x - 32) + "$2")
+    : this.slice(0)
+}

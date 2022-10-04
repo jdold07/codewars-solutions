@@ -3,4 +3,4 @@
 # Category: NONE  |  Tags: FUNDAMENTALS | STRINGS
 # ******************************************************************************
 def repeat_str(repeat, string):
-      return string * repeat
+    return string * repeat

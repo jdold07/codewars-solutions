@@ -2,4 +2,10 @@
 // URL: https://www.codewars.com/kata/5467e4d82edf8bbf40000155
 // Category: undefined  |  Tags: FUNDAMENTALS
 // *****************************************************************************
-const descendingOrder = n => Number((((n + "").split("")).sort((a, b) => b - a)).join(""))
+const descendingOrder = (n) =>
+  Number(
+    (n + "")
+      .split("")
+      .sort((a, b) => b - a)
+      .join("")
+  )

@@ -3,7 +3,7 @@
 // Category: undefined  |  Tags: CRYPTOGRAPHY | STRINGS | ALGORITHMS
 // *****************************************************************************
 const keywordCipher = (s, k) => {
-    const abc = "abcdefghijklmnopqrstuvwxyz"
-    const key = [...new Set(k + abc)].reduce((a, c, i) => ({ ...a, [abc[i]]: c }), {})
-    return s.toLowerCase().replace(RegExp("[" + abc + "]", "g"), (c) => key[c])
-  }
+  const abc = "abcdefghijklmnopqrstuvwxyz"
+  const key = [...new Set(k + abc)].reduce((a, c, i) => ({ ...a, [abc[i]]: c }), {})
+  return s.toLowerCase().replace(RegExp("[" + abc + "]", "g"), (c) => key[c])
+}

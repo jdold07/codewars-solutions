@@ -3,9 +3,9 @@
 // Category: undefined  |  Tags: ARRAYS | FUNDAMENTALS
 // *****************************************************************************
 function queueTime(customers, n) {
-      const tills = Array(n).fill(0)
-      for (q of customers) {
-          tills[tills.indexOf(Math.min(...tills))] += q
-      }
-      return Math.max(...tills)
+  const tills = Array(n).fill(0)
+  for (q of customers) {
+    tills[tills.indexOf(Math.min(...tills))] += q
   }
+  return Math.max(...tills)
+}

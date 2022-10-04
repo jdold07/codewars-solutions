@@ -2,6 +2,6 @@
 // URL: https://www.codewars.com/kata/56c5847f27be2c3db20009c3
 // Category: undefined  |  Tags: PUZZLES
 // *****************************************************************************
-function SubtractSum(n){
-    return "apple"
-  }
+function SubtractSum(n) {
+  return "apple"
+}

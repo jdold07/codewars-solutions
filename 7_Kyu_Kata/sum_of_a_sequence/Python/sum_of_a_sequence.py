@@ -3,7 +3,7 @@
 # Category: NONE  |  Tags: FUNDAMENTALS | ALGORITHMS | MATHEMATICS
 # ******************************************************************************
 def sequence_sum(begin_number, end_number, step):
-      try:
-          return sum(range(begin_number, end_number + 1, step))
-      except:
-          return 0
+    try:
+        return sum(range(begin_number, end_number + 1, step))
+    except:
+        return 0

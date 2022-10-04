@@ -3,4 +3,4 @@
 # Category: NONE  |  Tags: FUNDAMENTALS
 # ******************************************************************************
 def is_palindrome(s):
-      return s.lower() == s[::-1].lower()
+    return s.lower() == s[::-1].lower()

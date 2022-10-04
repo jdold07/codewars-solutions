@@ -3,9 +3,9 @@
 # Category: NONE  |  Tags: MATHEMATICS | ALGORITHMS
 # ******************************************************************************
 solution = (n) ->
-    sum = i = 0
-    while i < n - 1
-      i++
-      if (i % 3) == 0 || (i % 5) == 0
-        sum += i
-    sum
+  sum = i = 0
+  while i < n - 1
+    i++
+    if (i % 3) == 0 || (i % 5) == 0
+      sum += i
+  sum

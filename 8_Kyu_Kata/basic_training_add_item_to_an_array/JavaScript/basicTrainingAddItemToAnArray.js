@@ -3,4 +3,3 @@
 // Category: undefined  |  Tags: ARRAYS | FUNDAMENTALS
 // *****************************************************************************
 websites.push("codewars")
-  

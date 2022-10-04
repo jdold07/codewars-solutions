@@ -3,7 +3,7 @@
 # Category: NONE  |  Tags: FUNDAMENTALS | PERFORMANCE | ALGORITHMS
 # ******************************************************************************
 def parts_sums(ls):
-      result = [sum(ls)]
-      for i in range(len(ls)):
-          result.append(result[i] - ls.pop(0))
-      return result
+    result = [sum(ls)]
+    for i in range(len(ls)):
+        result.append(result[i] - ls.pop(0))
+    return result

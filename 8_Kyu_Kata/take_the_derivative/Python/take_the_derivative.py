@@ -3,4 +3,4 @@
 # Category: NONE  |  Tags: FUNDAMENTALS
 # ******************************************************************************
 def derive(co, ex):
-      return f"{co*ex}x^{ex-1}"
+    return f"{co*ex}x^{ex-1}"

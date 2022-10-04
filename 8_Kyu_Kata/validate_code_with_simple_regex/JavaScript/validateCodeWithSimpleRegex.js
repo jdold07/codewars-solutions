@@ -2,6 +2,6 @@
 // URL: https://www.codewars.com/kata/56a25ba95df27b7743000016
 // Category: undefined  |  Tags: REGULAR EXPRESSIONS | FUNDAMENTALS
 // *****************************************************************************
-function validateCode (code) {
-    return /^[123]\d+$/.test(code)
-  }
+function validateCode(code) {
+  return /^[123]\d+$/.test(code)
+}

@@ -3,6 +3,6 @@
 // Category: undefined  |  Tags: FUNDAMENTALS
 // *****************************************************************************
 const rooms = {}
-  rooms.room1 = {name: "room1", description: "1st room", completed: 0}
-  rooms.room2 = {name: "room2", description: "2nd room", completed: 0}
-  rooms.room3 = {name: "room3", description: "3rd room", completed: 0}
+rooms.room1 = { name: "room1", description: "1st room", completed: 0 }
+rooms.room2 = { name: "room2", description: "2nd room", completed: 0 }
+rooms.room3 = { name: "room3", description: "3rd room", completed: 0 }

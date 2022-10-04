@@ -3,10 +3,10 @@
 // Category: undefined  |  Tags: CIPHERS | SECURITY | OBJECT-ORIENTED PROGRAMMING | STRINGS | ALGORITHMS
 // *****************************************************************************
 function SubstitutionCipher(abc1, abc2) {
-    this.encode = function (str) {
-      return [...str].reduce((a, c) => a + ((x = abc2[abc1.indexOf(c)]) ? x : c), "")
-    }
-    this.decode = function (str) {
-      return [...str].reduce((a, c) => a + ((x = abc1[abc2.indexOf(c)]) ? x : c), "")
-    }
+  this.encode = function (str) {
+    return [...str].reduce((a, c) => a + ((x = abc2[abc1.indexOf(c)]) ? x : c), "")
   }
+  this.decode = function (str) {
+    return [...str].reduce((a, c) => a + ((x = abc1[abc2.indexOf(c)]) ? x : c), "")
+  }
+}

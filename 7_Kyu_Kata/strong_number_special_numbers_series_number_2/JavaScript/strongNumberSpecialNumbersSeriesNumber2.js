@@ -3,6 +3,6 @@
 // Category: undefined  |  Tags: FUNDAMENTALS | MATHEMATICS
 // *****************************************************************************
 const strong = (n) => {
-    const x = (m) => m<2 ? 1 : m * x(m - 1)
-    return n === [...("" + n)].reduce((a, c) => a + x(c), 0) ? "STRONG!!!!" : "Not Strong !!"
-  }
+  const x = (m) => (m < 2 ? 1 : m * x(m - 1))
+  return n === [...("" + n)].reduce((a, c) => a + x(c), 0) ? "STRONG!!!!" : "Not Strong !!"
+}

@@ -2,4 +2,5 @@
 // URL: https://www.codewars.com/kata/592edfda5be407b9640000b2
 // Category: undefined  |  Tags: FUNDAMENTALS | CIPHERS | CRYPTOGRAPHY
 // *****************************************************************************
-const decode = (code, n) => code.reduce((a, c, i) => a + "abcdefghijklmnopqrstuvwxyz"[c - 1 - (x = [...`${n}`])[i % x.length]], "")
+const decode = (code, n) =>
+  code.reduce((a, c, i) => a + "abcdefghijklmnopqrstuvwxyz"[c - 1 - (x = [...`${n}`])[i % x.length]], "")

@@ -3,14 +3,14 @@
 // Category: undefined  |  Tags: FUNDAMENTALS
 // *****************************************************************************
 class Person {
-    constructor(name, age) {
-      this.name = name
-      this.age = age  
-    }
-    get info() {
-      return this.sentance()
-    }
-    sentance() {
-      return `${this.name}s age is ${this.age}`
-    }
+  constructor(name, age) {
+    this.name = name
+    this.age = age
   }
+  get info() {
+    return this.sentance()
+  }
+  sentance() {
+    return `${this.name}s age is ${this.age}`
+  }
+}

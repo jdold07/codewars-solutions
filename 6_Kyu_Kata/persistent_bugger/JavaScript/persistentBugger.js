@@ -3,10 +3,13 @@
 // Category: undefined  |  Tags: FUNDAMENTALS
 // *****************************************************************************
 function persistence(num) {
-      let ans = 0
-      while (num > 9) {
-      num = num.toString().split("").reduce((a,b) => +a * +b)
-      ans++
+  let ans = 0
+  while (num > 9) {
+    num = num
+      .toString()
+      .split("")
+      .reduce((a, b) => +a * +b)
+    ans++
   }
   return ans
-  }
+}

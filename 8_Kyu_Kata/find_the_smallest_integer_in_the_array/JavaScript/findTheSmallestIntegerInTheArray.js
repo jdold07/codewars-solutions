@@ -3,15 +3,14 @@
 // Category: undefined  |  Tags: FUNDAMENTALS
 // *****************************************************************************
 class SmallestIntegerFinder {
-    findSmallestInt(args) {
-      return args.reduce((a,b) => b < a ? a = b : a)
-    }
+  findSmallestInt(args) {
+    return args.reduce((a, b) => (b < a ? (a = b) : a))
   }
+}
 // *****************************************************************************
 // *****************************************************************************
 class SmallestIntegerFinder {
-    findSmallestInt(args) {
-      return args.reduce((a,b) => (a > b) ? a = b : a)
-    }
+  findSmallestInt(args) {
+    return args.reduce((a, b) => (a > b ? (a = b) : a))
   }
-
+}

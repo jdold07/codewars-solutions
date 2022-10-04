@@ -3,5 +3,5 @@
 // Category: undefined  |  Tags: FUNDAMENTALS | STRINGS | ARRAYS
 // *****************************************************************************
 export function flyBy(l: string, d: string): string {
-    return l.replace(RegExp("x{" + Math.min(l.length, d.length) + "}"), "o".repeat(Math.min(l.length, d.length)))
-  }
+  return l.replace(RegExp("x{" + Math.min(l.length, d.length) + "}"), "o".repeat(Math.min(l.length, d.length)))
+}

@@ -3,8 +3,8 @@
 // Category: undefined  |  Tags: FUNDAMENTALS
 // *****************************************************************************
 const calculateAge = (birth, calc) =>
-    calc - birth === 0 
-    ? "You were born this very year!" 
+  calc - birth === 0
+    ? "You were born this very year!"
     : calc - birth > 0
     ? `You are ${calc - birth} year${calc - birth === 1 ? "" : "s"} old.`
     : `You will be born in ${Math.abs(calc - birth)} year${calc - birth === -1 ? "" : "s"}.`

@@ -3,5 +3,5 @@
 # Category: NONE  |  Tags: ARRAYS | ALGORITHMS
 # ******************************************************************************
 def reverse(seq):
-      for indx in range(len(seq) // 2):
-          seq[indx], seq[len(seq) - indx - 1] = seq[len(seq) - indx - 1], seq[indx]
+    for indx in range(len(seq) // 2):
+        seq[indx], seq[len(seq) - indx - 1] = seq[len(seq) - indx - 1], seq[indx]

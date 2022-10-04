@@ -3,4 +3,4 @@
 # Category: NONE  |  Tags: LISTS | FUNDAMENTALS
 # ******************************************************************************
 def invert(lst):
-      return list(map(lambda x: x*-1, lst))
+    return list(map(lambda x: x * -1, lst))

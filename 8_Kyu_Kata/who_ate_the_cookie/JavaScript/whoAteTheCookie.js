@@ -3,6 +3,6 @@
 // Category: undefined  |  Tags: FUNDAMENTALS
 // *****************************************************************************
 const cookie = (x) => {
-    typeof x === "string" ? (x = "Zach") : typeof x === "number" ? (x = "Monica") : (x = "the dog")
-    return `Who ate the last cookie? It was ${x}!`
-  }
+  typeof x === "string" ? (x = "Zach") : typeof x === "number" ? (x = "Monica") : (x = "the dog")
+  return `Who ate the last cookie? It was ${x}!`
+}

@@ -3,10 +3,9 @@
 // Category: undefined  |  Tags: ARRAYS | FUNDAMENTALS
 // *****************************************************************************
 function howMuchILoveYou(nbPetals) {
-    const options = ["I love you", "a little", "a lot", "passionately", "madly", "not at all"]
-    while (nbPetals > 6) {
-      nbPetals -= 6
-    }
-    return options[nbPetals - 1]
+  const options = ["I love you", "a little", "a lot", "passionately", "madly", "not at all"]
+  while (nbPetals > 6) {
+    nbPetals -= 6
   }
-  
+  return options[nbPetals - 1]
+}

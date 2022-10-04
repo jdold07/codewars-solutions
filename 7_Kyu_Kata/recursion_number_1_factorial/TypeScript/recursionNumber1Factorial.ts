@@ -2,4 +2,3 @@
 // URL: https://www.codewars.com/kata/5694cb0ec554589633000036
 // Category: undefined  |  Tags: FUNDAMENTALS | RECURSION | MATHEMATICS
 // *****************************************************************************
-

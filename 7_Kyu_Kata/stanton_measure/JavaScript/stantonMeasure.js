@@ -3,4 +3,3 @@
 // Category: undefined  |  Tags: ARRAYS | FUNDAMENTALS
 // *****************************************************************************
 const stantonMeasure = (arr) => arr.filter((v) => v === arr.filter((e) => e === 1).length).length
-  

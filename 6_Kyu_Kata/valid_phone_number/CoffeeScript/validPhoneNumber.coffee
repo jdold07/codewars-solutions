@@ -2,4 +2,3 @@
 # URL: https://www.codewars.com/kata/525f47c79f2f25a4db000025
 # Category: NONE  |  Tags: REGULAR EXPRESSIONS | ALGORITHMS
 # ******************************************************************************
-

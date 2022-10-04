@@ -3,4 +3,4 @@
 // Category: undefined  |  Tags: FUNDAMENTALS
 // *****************************************************************************
 const nextHappyYear = (year) =>
-    (x = `${++year}`.split("")).every((v) => x.indexOf(v) === x.lastIndexOf(v)) ? year : nextHappyYear(year)
+  (x = `${++year}`.split("")).every((v) => x.indexOf(v) === x.lastIndexOf(v)) ? year : nextHappyYear(year)

@@ -3,5 +3,4 @@
 # Category: NONE  |  Tags: FUNDAMENTALS | ARRAYS
 # ******************************************************************************
 def small_enough(array, limit):
-      return not len([x for x in array if x > limit])
-  
+    return not len([x for x in array if x > limit])

@@ -2,4 +2,3 @@
 // URL: https://www.codewars.com/kata/583203e6eb35d7980400002a
 // Category: undefined  |  Tags: REGULAR EXPRESSIONS | FUNDAMENTALS
 // *****************************************************************************
-

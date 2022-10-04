@@ -3,5 +3,5 @@
 // Category: undefined  |  Tags: ARRAYS | FUNDAMENTALS
 // *****************************************************************************
 function countSheeps(arrayOfSheep) {
-    return arrayOfSheep.reduce((a,b) => b ? a + 1 : a, 0)
-  }
+  return arrayOfSheep.reduce((a, b) => (b ? a + 1 : a), 0)
+}

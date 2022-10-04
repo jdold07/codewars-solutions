@@ -3,10 +3,10 @@
 // Category: undefined  |  Tags: FUNDAMENTALS | STRINGS | ARRAYS
 // *****************************************************************************
 const bingo = (ticket, win) =>
-    ticket.reduce((a, [s, n]) => a + [...s].some((v) => v.charCodeAt() === n), 0) >= win ? "Winner!" : "Loser!"
+  ticket.reduce((a, [s, n]) => a + [...s].some((v) => v.charCodeAt() === n), 0) >= win ? "Winner!" : "Loser!"
 // *****************************************************************************
 // *****************************************************************************
-const bingo = (ticket, win) => ticket
-    .map(([s, n]) => !!s.replace(/./g, (v) => v.charCodeAt() === n || "").length)
-    .reduce((a, c) => a + c) >= win ? "Winner!" : "Loser!"
-
+const bingo = (ticket, win) =>
+  ticket.map(([s, n]) => !!s.replace(/./g, (v) => v.charCodeAt() === n || "").length).reduce((a, c) => a + c) >= win
+    ? "Winner!"
+    : "Loser!"

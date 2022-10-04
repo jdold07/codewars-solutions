@@ -2,4 +2,4 @@
 // URL: https://www.codewars.com/kata/572269697297444c570008b9
 // Category: undefined  |  Tags: PUZZLES
 // *****************************************************************************
-const greaterThanLessThan = (a,b,c) => (a < b) < c
+const greaterThanLessThan = (a, b, c) => a < b < c

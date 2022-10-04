@@ -2,4 +2,4 @@
 // URL: https://www.codewars.com/kata/5296455e4fe0cdf2e000059f
 // Category: undefined  |  Tags: FUNDAMENTALS
 // *****************************************************************************
-const calculate = (n, o, m) => !("*+-/".includes(o)) || o === "/" && !m ? null : eval(n + o + m)
+const calculate = (n, o, m) => (!"*+-/".includes(o) || (o === "/" && !m) ? null : eval(n + o + m))

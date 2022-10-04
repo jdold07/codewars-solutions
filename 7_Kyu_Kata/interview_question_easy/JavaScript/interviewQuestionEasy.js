@@ -3,6 +3,6 @@
 // Category: undefined  |  Tags: FUNDAMENTALS | STRINGS
 // *****************************************************************************
 const getStrings = (city) =>
-    Object.entries([...city.toLowerCase().replace(/[^a-z]/g, "")].reduce((a, c) => ({ ...a, [c]: a[c] + 1 || 1 }), {}))
-      .map(([k, v]) => `${k}:${"*".repeat(v)}`)
-      .join(",")
+  Object.entries([...city.toLowerCase().replace(/[^a-z]/g, "")].reduce((a, c) => ({ ...a, [c]: a[c] + 1 || 1 }), {}))
+    .map(([k, v]) => `${k}:${"*".repeat(v)}`)
+    .join(",")

@@ -2,5 +2,6 @@
 // URL: https://www.codewars.com/kata/57613fb1033d766171000d60
 // Category: undefined  |  Tags: STRINGS | ARRAYS | FUNDAMENTALS
 // *****************************************************************************
-const uefaEuro2016 = (teams, scores) => 
-    `At match ${teams[0]} - ${teams[1]}, ` + (!(scores[0]-scores[1]) ? "teams played draw." : `${teams[scores.indexOf(Math.max(...scores))]} won!`)
+const uefaEuro2016 = (teams, scores) =>
+  `At match ${teams[0]} - ${teams[1]}, ` +
+  (!(scores[0] - scores[1]) ? "teams played draw." : `${teams[scores.indexOf(Math.max(...scores))]} won!`)

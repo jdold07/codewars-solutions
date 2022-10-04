@@ -2,4 +2,4 @@
 // URL: https://www.codewars.com/kata/5738f5ea9545204cec000155
 // Category: undefined  |  Tags: STRINGS | FUNDAMENTALS
 // *****************************************************************************
-const countLettersAndDigits = (input) => (x = input.match(/[a-z\d]/gi)) ? x.length : 0
+const countLettersAndDigits = (input) => ((x = input.match(/[a-z\d]/gi)) ? x.length : 0)

@@ -3,4 +3,4 @@
 # Category: NONE  |  Tags: FUNDAMENTALS | STRINGS
 # ******************************************************************************
 def is_uppercase(inp):
-      return inp == inp.upper()
+    return inp == inp.upper()

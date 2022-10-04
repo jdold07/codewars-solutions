@@ -3,12 +3,12 @@
 # Category: NONE  |  Tags: ALGORITHMS | MATHEMATICS | INTERPRETERS | PARSING | STRINGS
 # ******************************************************************************
 def calc(expr):
-      expr = expr.split(" ") if expr else "0"
-      result = []
-      for i in range(len(expr)):
-          if not expr[i] in "+-*/":
-              result.append(expr[i])
-          else:
-              result.append(f"({result.pop(-2)} {expr[i]} {result.pop()})")
-      answer = eval(result.pop()) if result else eval(expr)
-      return int(answer) if not answer % 2 else answer
+    expr = expr.split(" ") if expr else "0"
+    result = []
+    for i in range(len(expr)):
+        if not expr[i] in "+-*/":
+            result.append(expr[i])
+        else:
+            result.append(f"({result.pop(-2)} {expr[i]} {result.pop()})")
+    answer = eval(result.pop()) if result else eval(expr)
+    return int(answer) if not answer % 2 else answer

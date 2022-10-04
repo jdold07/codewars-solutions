@@ -2,4 +2,3 @@
 // URL: https://www.codewars.com/kata/5523b97ac8f5025c45000900
 // Category: undefined  |  Tags: FUNDAMENTALS | ALGORITHMS
 // *****************************************************************************
-

@@ -3,4 +3,4 @@
 # Category: NONE  |  Tags: FUNDAMENTALS | ARRAYS
 # ******************************************************************************
 def maps(a):
-      return list(map(lambda x: x*2, a))
+    return list(map(lambda x: x * 2, a))

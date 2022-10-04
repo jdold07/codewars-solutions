@@ -2,4 +2,4 @@
 // URL: https://www.codewars.com/kata/540c33513b6532cd58000259
 // Category: undefined  |  Tags: FUNDAMENTALS
 // *****************************************************************************
-const sum = (...nums) => nums.reduce((a,c) => a + c, 0)
+const sum = (...nums) => nums.reduce((a, c) => a + c, 0)

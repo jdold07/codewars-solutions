@@ -3,17 +3,17 @@
 # Category: NONE  |  Tags: PARSING | ALGORITHMS
 # ******************************************************************************
 def parse(data):
-      result = []
-      value = 0
-      for instruction in data:
-          if instruction == "i":
-              value += 1
-          elif instruction == "d":
-              value -= 1
-          elif instruction == "s":
-              value **= 2
-          elif instruction == "o":
-              result.append(value)
-          else:
-              continue
-      return result
+    result = []
+    value = 0
+    for instruction in data:
+        if instruction == "i":
+            value += 1
+        elif instruction == "d":
+            value -= 1
+        elif instruction == "s":
+            value **= 2
+        elif instruction == "o":
+            result.append(value)
+        else:
+            continue
+    return result

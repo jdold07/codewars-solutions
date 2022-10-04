@@ -3,10 +3,10 @@
 # Category: NONE  |  Tags: FUNDAMENTALS | MATHEMATICS | DEBUGGING
 # ******************************************************************************
 def approx_equals(a, b):
-      tolerance = 0.001   #set test tolerance as variable
-      if a < 0 and b < 0: #remove possibility of errors when testing 2 negatives
-          a = abs(a)
-          b = abs(b)
-      if a >= b:          #ensure result can compare to positive tolerance
-          return float(a - b) < tolerance
-      return float(b - a) < tolerance
+    tolerance = 0.001  # set test tolerance as variable
+    if a < 0 and b < 0:  # remove possibility of errors when testing 2 negatives
+        a = abs(a)
+        b = abs(b)
+    if a >= b:  # ensure result can compare to positive tolerance
+        return float(a - b) < tolerance
+    return float(b - a) < tolerance

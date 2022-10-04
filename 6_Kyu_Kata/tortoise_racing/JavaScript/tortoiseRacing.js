@@ -3,14 +3,14 @@
 // Category: undefined  |  Tags: FUNDAMENTALS | MATHEMATICS | ALGORITHMS
 // *****************************************************************************
 function race(v1, v2, g) {
-      if (v1 >= v2) {
-          return null
-      }else {
-          let answer = []
-          let timeToCatch = g / (v2 - v1)
-          answer.push(Math.floor(timeToCatch))
-          answer.push(Math.floor(timeToCatch * 60 % 60))
-          answer.push(Math.floor(timeToCatch * 3600 % 60))
-          return answer
-      }
+  if (v1 >= v2) {
+    return null
+  } else {
+    let answer = []
+    let timeToCatch = g / (v2 - v1)
+    answer.push(Math.floor(timeToCatch))
+    answer.push(Math.floor((timeToCatch * 60) % 60))
+    answer.push(Math.floor((timeToCatch * 3600) % 60))
+    return answer
   }
+}

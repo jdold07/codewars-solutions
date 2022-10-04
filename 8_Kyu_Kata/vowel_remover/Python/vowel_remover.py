@@ -3,6 +3,12 @@
 # Category: NONE  |  Tags: STRINGS | FUNDAMENTALS
 # ******************************************************************************
 def shortcut(s):
-      for x in {"a", "e", "i", "o", "u",}:
-          s = s.replace(x, "")
-      return s
+    for x in {
+        "a",
+        "e",
+        "i",
+        "o",
+        "u",
+    }:
+        s = s.replace(x, "")
+    return s

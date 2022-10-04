@@ -3,4 +3,4 @@
 # Category: NONE  |  Tags: FUNDAMENTALS | STRINGS | ARRAYS
 # ******************************************************************************
 def check(seq, elem):
-      return True if elem in seq else False
+    return True if elem in seq else False

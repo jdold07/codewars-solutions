@@ -3,4 +3,4 @@
 # Category: NONE  |  Tags: BINARY | FUNDAMENTALS
 # ******************************************************************************
 def bin_to_decimal(inp):
-      return int(inp, 2)
+    return int(inp, 2)

@@ -3,9 +3,9 @@
 # Category: NONE  |  Tags: FUNDAMENTALS
 # ******************************************************************************
 def evaporator(content, evap_per_day, threshold):
-      days = 0
-      content_limit = content * threshold / 100
-      while content > content_limit:
-          days += 1
-          content -= content * (evap_per_day / 100)
-      return days
+    days = 0
+    content_limit = content * threshold / 100
+    while content > content_limit:
+        days += 1
+        content -= content * (evap_per_day / 100)
+    return days

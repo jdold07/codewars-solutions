@@ -3,4 +3,4 @@
 # Category: NONE  |  Tags: FUNDAMENTALS | STRINGS | ARRAYS
 # ******************************************************************************
 def check(a, x):
-      return x in a
+    return x in a

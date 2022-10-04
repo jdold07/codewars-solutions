@@ -3,25 +3,24 @@
 // Category: undefined  |  Tags: OBJECT-ORIENTED PROGRAMMING | FUNDAMENTALS
 // *****************************************************************************
 class Block {
-    constructor([w, l, h]) {
-      this.width = w
-      this.length = l
-      this.height = h
-    }
-    getWidth() {
-      return this.width
-    }
-    getLength() {
-      return this.length
-    }
-    getHeight() {
-      return this.height
-    }
-    getVolume() {
-      return this.length * this.width * this.height
-    }
-    getSurfaceArea() {
-      return (this.width * this.height + this.length * this.width + this.length * this.height) * 2
-    }
+  constructor([w, l, h]) {
+    this.width = w
+    this.length = l
+    this.height = h
   }
-  
+  getWidth() {
+    return this.width
+  }
+  getLength() {
+    return this.length
+  }
+  getHeight() {
+    return this.height
+  }
+  getVolume() {
+    return this.length * this.width * this.height
+  }
+  getSurfaceArea() {
+    return (this.width * this.height + this.length * this.width + this.length * this.height) * 2
+  }
+}

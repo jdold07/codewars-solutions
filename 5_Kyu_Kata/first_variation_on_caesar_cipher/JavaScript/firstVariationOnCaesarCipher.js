@@ -3,19 +3,21 @@
 // Category: undefined  |  Tags: FUNDAMENTALS | CIPHERS | STRINGS
 // *****************************************************************************
 const abc = "abcdefghijklmnopqrstuvwxyz"
-  const ABC = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-  const aOrA = (v) => (abc.includes(v) ? abc : ABC)
-  
-  const movingShift = (s, shift) => s
-    .replace(/./g, (v) => /[a-z]/gi.test(v) 
-      ? (uL = aOrA(v)).charAt((uL.indexOf(v) + shift++) % 26) 
-      : (shift++ % 26, v))
+const ABC = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+const aOrA = (v) => (abc.includes(v) ? abc : ABC)
+
+const movingShift = (s, shift) =>
+  s
+    .replace(/./g, (v) => (/[a-z]/gi.test(v) ? (uL = aOrA(v)).charAt((uL.indexOf(v) + shift++) % 26) : (shift++ % 26, v)))
     .match(RegExp(".{1," + Math.ceil(s.length / 5) + "}", "g"))
     .concat([""])
     .slice(0, 5)
-  
-  const demovingShift = (arr, shift) => arr
+
+const demovingShift = (arr, shift) =>
+  arr
     .join("")
-    .replace(/./g, (v) =>/[a-z]/gi.test(v)
-      ? (uL = aOrA(v)).charAt((uL.indexOf(v) - shift++ + 26 * Math.ceil(arr.join("").length / 26)) % 26)
-      : (shift++ % 26, v))
+    .replace(/./g, (v) =>
+      /[a-z]/gi.test(v)
+        ? (uL = aOrA(v)).charAt((uL.indexOf(v) - shift++ + 26 * Math.ceil(arr.join("").length / 26)) % 26)
+        : (shift++ % 26, v)
+    )

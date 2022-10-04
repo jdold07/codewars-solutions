@@ -2,4 +2,4 @@
 // URL: https://www.codewars.com/kata/5865918c6b569962950002a1
 // Category: undefined  |  Tags: FUNDAMENTALS
 // *****************************************************************************
-const strCount = (str, letter) => str.split("").filter(el => el === letter).length
+const strCount = (str, letter) => str.split("").filter((el) => el === letter).length

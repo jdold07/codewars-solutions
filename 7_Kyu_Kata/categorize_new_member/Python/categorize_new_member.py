@@ -3,4 +3,4 @@
 # Category: NONE  |  Tags: FUNDAMENTALS
 # ******************************************************************************
 def open_or_senior(data):
-      return ["Senior" if a >= 55 and h > 7 else "Open" for a, h in data]
+    return ["Senior" if a >= 55 and h > 7 else "Open" for a, h in data]

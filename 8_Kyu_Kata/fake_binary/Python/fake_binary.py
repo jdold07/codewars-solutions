@@ -3,4 +3,4 @@
 # Category: NONE  |  Tags: FUNDAMENTALS | STRINGS | ARRAYS
 # ******************************************************************************
 def fake_bin(x):
-      return "".join(list(map(lambda v: "0" if int(v)<5 else "1", list(x))))
+    return "".join(list(map(lambda v: "0" if int(v) < 5 else "1", list(x))))

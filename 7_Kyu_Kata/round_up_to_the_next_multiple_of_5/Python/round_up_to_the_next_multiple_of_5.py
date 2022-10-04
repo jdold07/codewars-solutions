@@ -3,6 +3,6 @@
 # Category: NONE  |  Tags: FUNDAMENTALS
 # ******************************************************************************
 def round_to_next5(n):
-      while n % 5:
-          n += 1
-      return n
+    while n % 5:
+        n += 1
+    return n

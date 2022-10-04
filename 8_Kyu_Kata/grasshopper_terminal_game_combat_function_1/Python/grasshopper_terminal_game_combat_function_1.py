@@ -3,4 +3,4 @@
 # Category: NONE  |  Tags: FUNDAMENTALS
 # ******************************************************************************
 def combat(health, damage):
-      return health - damage if damage <= health else 0
+    return health - damage if damage <= health else 0

@@ -3,9 +3,9 @@
 // Category: undefined  |  Tags: MATHEMATICS | ALGORITHMS
 // *****************************************************************************
 function divisors(integer) {
-      const arr = Array(integer - 2)
-          .fill()
-          .map((_,index) => 2 + index)
-          .filter((value) => integer % value === 0)
-      return arr == 0 ? `${integer} is prime` : arr
-  }
+  const arr = Array(integer - 2)
+    .fill()
+    .map((_, index) => 2 + index)
+    .filter((value) => integer % value === 0)
+  return arr == 0 ? `${integer} is prime` : arr
+}

@@ -3,4 +3,4 @@
 // Category: undefined  |  Tags: STRINGS | FUNDAMENTALS
 // *****************************************************************************
 const initializeNames = (name) =>
-    (x = name.split(" ")).length > 2 ? x.map((v, i) => (i > 0 && i < x.length - 1 ? `${v[0]}.` : v)).join(" ") : name
+  (x = name.split(" ")).length > 2 ? x.map((v, i) => (i > 0 && i < x.length - 1 ? `${v[0]}.` : v)).join(" ") : name

@@ -2,8 +2,8 @@
 // URL: https://www.codewars.com/kata/57216d4bcdd71175d6000560
 // Category: undefined  |  Tags: FUNDAMENTALS | TUTORIALS
 // *****************************************************************************
-const padIt = (str,n) => {
-    while (true) {
-      return`${"*".repeat(Math.ceil(n/2))}${str}${"*".repeat(Math.floor(n/2))}`
-    }
+const padIt = (str, n) => {
+  while (true) {
+    return `${"*".repeat(Math.ceil(n / 2))}${str}${"*".repeat(Math.floor(n / 2))}`
   }
+}

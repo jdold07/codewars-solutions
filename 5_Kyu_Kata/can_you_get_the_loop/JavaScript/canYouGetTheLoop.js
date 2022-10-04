@@ -3,17 +3,17 @@
 // Category: undefined  |  Tags: ALGORITHMS | LINKED LISTS | DATA STRUCTURES
 // *****************************************************************************
 function loop_size(node) {
-    let x = node
-    let position = 0
-    let nodeMap = new Map()
-    while (x !== null) {
-      if (!nodeMap.has(x)) {
-        nodeMap.set(x, position)
-        position++
-      } else {
-        return position - nodeMap.get(x)
-      }
-      x = x.next
+  let x = node
+  let position = 0
+  let nodeMap = new Map()
+  while (x !== null) {
+    if (!nodeMap.has(x)) {
+      nodeMap.set(x, position)
+      position++
+    } else {
+      return position - nodeMap.get(x)
     }
-    return 0
+    x = x.next
   }
+  return 0
+}

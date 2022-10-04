@@ -3,4 +3,4 @@
 # Category: NONE  |  Tags: FUNDAMENTALS
 # ******************************************************************************
 def move(position, roll):
-      return 2 * roll + position
+    return 2 * roll + position

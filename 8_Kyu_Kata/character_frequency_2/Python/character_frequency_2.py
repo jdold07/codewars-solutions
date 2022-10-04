@@ -2,4 +2,3 @@
 # URL: https://www.codewars.com/kata/548ef5b7f33a646ea50000b2
 # Category: NONE  |  Tags: FUNDAMENTALS | STRINGS
 # ******************************************************************************
-

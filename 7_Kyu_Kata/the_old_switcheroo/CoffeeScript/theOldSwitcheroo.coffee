@@ -2,4 +2,3 @@
 # URL: https://www.codewars.com/kata/55d410c492e6ed767000004f
 # Category: NONE  |  Tags: STRINGS | REGULAR EXPRESSIONS | FUNDAMENTALS
 # ******************************************************************************
-

@@ -2,4 +2,3 @@
 // URL: https://www.codewars.com/kata/5268af3872b786f006000228
 // Category: undefined  |  Tags: GAMES | PUZZLES
 // *****************************************************************************
-

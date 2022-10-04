@@ -3,4 +3,4 @@
 // Category: undefined  |  Tags: FUNDAMENTALS
 // *****************************************************************************
 const htmlspecialchars = (formData) =>
-    formData.replace(/[<>&"]/g, (v) => ({ "<": "&lt;", ">": "&gt;", '"': "&quot;", "&": "&amp;" }[v]))
+  formData.replace(/[<>&"]/g, (v) => ({ "<": "&lt;", ">": "&gt;", '"': "&quot;", "&": "&amp;" }[v]))

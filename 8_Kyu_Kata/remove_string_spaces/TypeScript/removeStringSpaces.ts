@@ -2,4 +2,4 @@
 // URL: https://www.codewars.com/kata/57eae20f5500ad98e50002c5
 // Category: undefined  |  Tags: FUNDAMENTALS | STRINGS | ARRAYS
 // *****************************************************************************
-export const noSpace = (x:string):string => x.replace(/\s/g,"")
+export const noSpace = (x: string): string => x.replace(/\s/g, "")

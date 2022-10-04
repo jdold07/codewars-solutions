@@ -2,7 +2,7 @@
 // URL: https://www.codewars.com/kata/56606694ec01347ce800001b
 // Category: undefined  |  Tags: MATHEMATICS | FUNDAMENTALS
 // *****************************************************************************
-function isTriangle(a,b,c){
-    arr = [a, b, c].sort((x,y) => x-y)
-    return (arr[0] + arr[1]) > arr[2]
-  }
+function isTriangle(a, b, c) {
+  arr = [a, b, c].sort((x, y) => x - y)
+  return arr[0] + arr[1] > arr[2]
+}

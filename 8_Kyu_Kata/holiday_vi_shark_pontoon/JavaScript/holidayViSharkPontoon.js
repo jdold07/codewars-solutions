@@ -3,4 +3,4 @@
 // Category: undefined  |  Tags: FUNDAMENTALS | STRINGS | MATHEMATICS
 // *****************************************************************************
 const shark = (pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin) =>
-    pontoonDistance / youSpeed - sharkDistance / (sharkSpeed / (dolphin + 1)) < 0 ? "Alive!" : "Shark Bait!"
+  pontoonDistance / youSpeed - sharkDistance / (sharkSpeed / (dolphin + 1)) < 0 ? "Alive!" : "Shark Bait!"

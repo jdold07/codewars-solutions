@@ -2,4 +2,3 @@
 # URL: https://www.codewars.com/kata/53dbd5315a3c69eed20002dd
 # Category: NONE  |  Tags: LISTS | FILTERING | DATA STRUCTURES | FUNDAMENTALS
 # ******************************************************************************
-

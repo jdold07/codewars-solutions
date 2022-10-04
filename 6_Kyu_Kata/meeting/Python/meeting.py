@@ -3,7 +3,7 @@
 # Category: NONE  |  Tags: FUNDAMENTALS
 # ******************************************************************************
 def meeting(s):
-      names = s.upper().split(";")
-      for index, name in enumerate(names):
-          names[index] = f"({', '.join(name.split(':')[::-1])})"
-      return "".join(sorted(names))
+    names = s.upper().split(";")
+    for index, name in enumerate(names):
+        names[index] = f"({', '.join(name.split(':')[::-1])})"
+    return "".join(sorted(names))

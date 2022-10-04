@@ -2,4 +2,3 @@
 // URL: https://www.codewars.com/kata/580a094553bd9ec5d800007d
 // Category: undefined  |  Tags: FUNDAMENTALS | STRINGS | MATHEMATICS
 // *****************************************************************************
-

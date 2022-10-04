@@ -3,4 +3,4 @@
 # Category: NONE  |  Tags: RESTRICTED | FUNDAMENTALS | PUZZLES
 # ******************************************************************************
 def unusual_five():
-      return len("abcde")
+    return len("abcde")

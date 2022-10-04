@@ -3,4 +3,4 @@
 # Category: NONE  |  Tags: FUNDAMENTALS
 # ******************************************************************************
 def solution(nums):
-      return sorted(nums) if nums is not None else []
+    return sorted(nums) if nums is not None else []

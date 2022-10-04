@@ -3,9 +3,10 @@
 # Category: NONE  |  Tags: FUNDAMENTALS | REGULAR EXPRESSIONS | ALGORITHMS
 # ******************************************************************************
 def lowercase_count(strng):
-      return len("".join(x for x in strng if x.islower()))
+    return len("".join(x for x in strng if x.islower()))
+
+
 # ******************************************************************************
 # ******************************************************************************
 def lowercase_count(strng):
-      return len("".join(x for x in strng if x in map(chr, range(97, 123))))
-
+    return len("".join(x for x in strng if x in map(chr, range(97, 123))))

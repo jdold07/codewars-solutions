@@ -2,8 +2,7 @@
 // URL: https://www.codewars.com/kata/58cb43f4256836ed95000f97
 // Category: undefined  |  Tags: FUNDAMENTALS
 // *****************************************************************************
-const findDifference = (x, y) => Math.abs(x.reduce((a,c) => a*c) - y.reduce((a,c) => a*c))
+const findDifference = (x, y) => Math.abs(x.reduce((a, c) => a * c) - y.reduce((a, c) => a * c))
 // *****************************************************************************
 // *****************************************************************************
 const findDifference = (a, b) => Math.abs(a.reduce((x, y) => x * y) - b.reduce((j, k) => j * k))
-

@@ -3,4 +3,3 @@
 // Category: undefined  |  Tags: FUNDAMENTALS | MATHEMATICS
 // *****************************************************************************
 const discoverOriginalPrice = (price, disc) => Math.round((price / (1 - disc / 100)) * 100) / 100
-  

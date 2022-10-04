@@ -3,4 +3,3 @@
 // Category: undefined  |  Tags: MATHEMATICS | FUNDAMENTALS
 // *****************************************************************************
 const average = (scores) => Math.round(scores.reduce((a, c) => a + c) / scores.length)
-  

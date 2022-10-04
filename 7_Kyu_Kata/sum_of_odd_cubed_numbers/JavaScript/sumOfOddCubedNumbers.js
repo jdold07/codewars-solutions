@@ -3,6 +3,6 @@
 // Category: undefined  |  Tags: FUNDAMENTALS | FUNCTIONAL PROGRAMMING | ARRAYS
 // *****************************************************************************
 const cubeOdd = (arr) =>
-    arr.filter(el => el == 0 ? true : parseInt(el)).length === arr.length 
-      ? arr.filter(el => el % 2).reduce((a,b) => a + b ** 3, 0)
-      : undefined
+  arr.filter((el) => (el == 0 ? true : parseInt(el))).length === arr.length
+    ? arr.filter((el) => el % 2).reduce((a, b) => a + b ** 3, 0)
+    : undefined

@@ -3,4 +3,4 @@
 // Category: undefined  |  Tags: DATA STRUCTURES | FUNDAMENTALS
 // *****************************************************************************
 const mostFrequentItemCount = (arr) =>
-    !arr.length ? 0 : Math.max(...Object.values(arr.reduce((a, c) => ({ ...a, [c]: (a[c] || 0) + 1 }), {})))
+  !arr.length ? 0 : Math.max(...Object.values(arr.reduce((a, c) => ({ ...a, [c]: (a[c] || 0) + 1 }), {})))

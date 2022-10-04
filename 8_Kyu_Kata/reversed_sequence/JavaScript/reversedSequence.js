@@ -2,4 +2,7 @@
 // URL: https://www.codewars.com/kata/5a00e05cc374cb34d100000d
 // Category: undefined  |  Tags: FUNDAMENTALS
 // *****************************************************************************
-const reverseSeq = n => Array(n).fill().map((_, i) => n - i)
+const reverseSeq = (n) =>
+  Array(n)
+    .fill()
+    .map((_, i) => n - i)

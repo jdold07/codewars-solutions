@@ -2,4 +2,3 @@
 # URL: https://www.codewars.com/kata/5842df8ccbd22792a4000245
 # Category: NONE  |  Tags: STRINGS | MATHEMATICS | ALGORITHMS | FUNDAMENTALS
 # ******************************************************************************
-

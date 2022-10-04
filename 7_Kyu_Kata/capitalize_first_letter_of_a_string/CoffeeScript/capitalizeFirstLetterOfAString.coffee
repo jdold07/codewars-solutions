@@ -2,4 +2,3 @@
 # URL: https://www.codewars.com/kata/56c19316e8b139dff60006da
 # Category: NONE  |  Tags: FUNDAMENTALS | OBJECT-ORIENTED PROGRAMMING | REGULAR EXPRESSIONS
 # ******************************************************************************
-

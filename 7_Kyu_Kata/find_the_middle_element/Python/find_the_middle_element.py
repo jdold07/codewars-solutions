@@ -3,4 +3,4 @@
 # Category: NONE  |  Tags: ARRAYS | FUNDAMENTALS
 # ******************************************************************************
 def gimme(input_array):
-      return input_array.index(sorted(input_array)[1])
+    return input_array.index(sorted(input_array)[1])

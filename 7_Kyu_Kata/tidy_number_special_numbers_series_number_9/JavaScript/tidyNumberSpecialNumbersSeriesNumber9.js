@@ -2,4 +2,4 @@
 // URL: https://www.codewars.com/kata/5a87449ab1710171300000fd
 // Category: undefined  |  Tags: FUNDAMENTALS | ARRAYS | STRINGS
 // *****************************************************************************
-const tidyNumber = (n) => n == [...(""+n)].sort((a,b) => a - b).join("")
+const tidyNumber = (n) => n == [...("" + n)].sort((a, b) => a - b).join("")

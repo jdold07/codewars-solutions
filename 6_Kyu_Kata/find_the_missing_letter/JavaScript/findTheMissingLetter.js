@@ -3,8 +3,7 @@
 // Category: undefined  |  Tags: MATHEMATICS | ALGORITHMS
 // *****************************************************************************
 function findMissingLetter(array) {
-      let start = array.join("").charCodeAt(0)
-      for (i=0; i<array.length; i++)
-          if (array.join("").charCodeAt(i) == start) start++
-      return String.fromCharCode(start)
-  }
+  let start = array.join("").charCodeAt(0)
+  for (i = 0; i < array.length; i++) if (array.join("").charCodeAt(i) == start) start++
+  return String.fromCharCode(start)
+}

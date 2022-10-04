@@ -2,5 +2,4 @@
 // URL: https://www.codewars.com/kata/557af4c6169ac832300000ba
 // Category: undefined  |  Tags: ARRAYS | STRINGS | FUNDAMENTALS
 // *****************************************************************************
-const removeRotten = (bagOfFruits) => 
-    bagOfFruits ? bagOfFruits.map(el => el.replace("rotten", "").toLowerCase()) : []
+const removeRotten = (bagOfFruits) => (bagOfFruits ? bagOfFruits.map((el) => el.replace("rotten", "").toLowerCase()) : [])

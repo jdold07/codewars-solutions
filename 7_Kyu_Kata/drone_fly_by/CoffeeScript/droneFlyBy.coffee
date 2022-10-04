@@ -3,4 +3,4 @@
 # Category: NONE  |  Tags: FUNDAMENTALS | STRINGS | ARRAYS
 # ******************************************************************************
 flyBy = (l, d) ->
-    l.replace RegExp("x{" + (x = Math.min l.length, d.length) + "}"), "o".repeat x
+  l.replace RegExp("x{" + (x = Math.min l.length, d.length) + "}"), "o".repeat x

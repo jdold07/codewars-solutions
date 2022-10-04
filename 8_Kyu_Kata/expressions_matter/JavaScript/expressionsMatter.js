@@ -3,11 +3,11 @@
 // Category: undefined  |  Tags: ALGORITHMS | FUNDAMENTALS
 // *****************************************************************************
 function expressionMatter(a, b, c) {
-    let x = a * b * c
-    if (a * (b + c) > x) x = a * (b + c)
-    if ((a + b) * c > x) x = (a + b) * c
-    if (a + b + c > x) x = a + b + c
-    if (a + b * c > x) x = a + b * c
-    if (a * b + c > x) x = a * b + c
-    return x
-  }
+  let x = a * b * c
+  if (a * (b + c) > x) x = a * (b + c)
+  if ((a + b) * c > x) x = (a + b) * c
+  if (a + b + c > x) x = a + b + c
+  if (a + b * c > x) x = a + b * c
+  if (a * b + c > x) x = a * b + c
+  return x
+}

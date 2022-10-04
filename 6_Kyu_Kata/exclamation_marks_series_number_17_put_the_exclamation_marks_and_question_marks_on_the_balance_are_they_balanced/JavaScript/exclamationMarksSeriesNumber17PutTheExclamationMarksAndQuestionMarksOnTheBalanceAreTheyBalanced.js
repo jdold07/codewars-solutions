@@ -3,9 +3,9 @@
 // Category: undefined  |  Tags: FUNDAMENTALS
 // *****************************************************************************
 const balance = (left, right) => {
-    const eMark = (s) => (s.match(/\!/g) || []).length * 2
-    const qMark = (s) => (s.match(/\?/g) || []).length * 3
-    const l = eMark(left) + qMark(left)
-    const r = eMark(right) + qMark(right)
-    return r > l ? "Right" : l > r ? "Left" : "Balance"
-  }
+  const eMark = (s) => (s.match(/\!/g) || []).length * 2
+  const qMark = (s) => (s.match(/\?/g) || []).length * 3
+  const l = eMark(left) + qMark(left)
+  const r = eMark(right) + qMark(right)
+  return r > l ? "Right" : l > r ? "Left" : "Balance"
+}

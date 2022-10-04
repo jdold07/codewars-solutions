@@ -2,4 +2,8 @@
 // URL: https://www.codewars.com/kata/57eadb7ecd143f4c9c0000a3
 // Category: undefined  |  Tags: STRINGS | ARRAYS | FUNDAMENTALS
 // *****************************************************************************
-const abbrevName = name => name.split(" ").map(el => el[0].toUpperCase()).join(".")
+const abbrevName = (name) =>
+  name
+    .split(" ")
+    .map((el) => el[0].toUpperCase())
+    .join(".")

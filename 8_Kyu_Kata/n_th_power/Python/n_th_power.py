@@ -3,4 +3,4 @@
 # Category: NONE  |  Tags: FUNDAMENTALS
 # ******************************************************************************
 def index(array, n):
-      return -1 if len(array) < n+1 else array[n] ** n
+    return -1 if len(array) < n + 1 else array[n] ** n

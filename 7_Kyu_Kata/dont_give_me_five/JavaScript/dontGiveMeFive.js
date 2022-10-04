@@ -3,9 +3,9 @@
 // Category: undefined  |  Tags: MATHEMATICS | ARRAYS | ALGORITHMS
 // *****************************************************************************
 function dontGiveMeFive(start, end) {
-      const arr = Array(end - start + 1)
-          .fill()
-          .map((_,index) => start + index)
-          .filter((value) => /^((?!5).)*$/g.test(value))
-      return arr.length
-  }
+  const arr = Array(end - start + 1)
+    .fill()
+    .map((_, index) => start + index)
+    .filter((value) => /^((?!5).)*$/g.test(value))
+  return arr.length
+}

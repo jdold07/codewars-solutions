@@ -3,5 +3,5 @@
 // Category: undefined  |  Tags: FUNDAMENTALS | ARRAYS
 // *****************************************************************************
 export function extraPerfect(n: number): number[] {
-    return Array.from({ length: n }, (_, i) => i + 1).filter((v) => v % 2)
-  }
+  return Array.from({ length: n }, (_, i) => i + 1).filter((v) => v % 2)
+}

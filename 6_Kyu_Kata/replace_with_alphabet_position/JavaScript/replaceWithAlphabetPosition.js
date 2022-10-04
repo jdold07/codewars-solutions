@@ -3,10 +3,10 @@
 // Category: undefined  |  Tags: STRINGS | FUNDAMENTALS
 // *****************************************************************************
 function alphabetPosition(text) {
-      arr = []
-      text = text.replace(/[\W_\d]/g, "").toLowerCase()
-      for (let i = 0; i < text.length; i++) {
-          arr.push(text.charCodeAt(i) - 96)
-      }
-      return arr.join(" ")
+  arr = []
+  text = text.replace(/[\W_\d]/g, "").toLowerCase()
+  for (let i = 0; i < text.length; i++) {
+    arr.push(text.charCodeAt(i) - 96)
   }
+  return arr.join(" ")
+}

@@ -2,4 +2,3 @@
 // URL: https://www.codewars.com/kata/631082840289bf000e95a334
 // Category: undefined  |  Tags: MATHEMATICS
 // *****************************************************************************
-

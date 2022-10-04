@@ -3,8 +3,8 @@
 # Category: NONE  |  Tags: ALGORITHMS
 # ******************************************************************************
 def order_weight(s):
-      score = []
-      for x in s.split():
-          score.append(sum(int(y) for y in x))
-      score_weight = sorted(zip(score, s.split()))
-      return " ".join(y[1] for y in score_weight)
+    score = []
+    for x in s.split():
+        score.append(sum(int(y) for y in x))
+    score_weight = sorted(zip(score, s.split()))
+    return " ".join(y[1] for y in score_weight)

@@ -2,12 +2,12 @@
 // URL: https://www.codewars.com/kata/524f5125ad9c12894e00003f
 // Category: undefined  |  Tags: MATHEMATICS | FUNDAMENTALS
 // *****************************************************************************
-function remainder(n, m){
-      if (Math.min(n, m) === 0) {
-          return NaN
-      } else if (n > m) {
-          return (n % m)
-      } else {
-          return (m % n)
-      }
+function remainder(n, m) {
+  if (Math.min(n, m) === 0) {
+    return NaN
+  } else if (n > m) {
+    return n % m
+  } else {
+    return m % n
   }
+}

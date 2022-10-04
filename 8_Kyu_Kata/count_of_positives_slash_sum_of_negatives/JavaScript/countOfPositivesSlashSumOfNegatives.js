@@ -3,8 +3,8 @@
 // Category: undefined  |  Tags: FUNDAMENTALS | ARRAYS | LISTS
 // *****************************************************************************
 function countPositivesSumNegatives(input) {
-    if (input && input != [0])
-      if (input.filter(el => el > 0).length == 0 && input.filter(el => el < 0).reduce((a,b) => a+b,0) == 0) return []
-      else return [input.filter(el => el > 0).length, input.filter(el => el < 0).reduce((a,b) => a+b,0)]
-    return []
-  }
+  if (input && input != [0])
+    if (input.filter((el) => el > 0).length == 0 && input.filter((el) => el < 0).reduce((a, b) => a + b, 0) == 0) return []
+    else return [input.filter((el) => el > 0).length, input.filter((el) => el < 0).reduce((a, b) => a + b, 0)]
+  return []
+}

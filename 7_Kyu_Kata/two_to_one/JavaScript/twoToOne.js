@@ -2,7 +2,4 @@
 // URL: https://www.codewars.com/kata/5656b6906de340bd1b0000ac
 // Category: undefined  |  Tags: FUNDAMENTALS
 // *****************************************************************************
-const longest = (s1, s2) => 
-      [...new Set((s1 + s2).split(""))]
-          .sort()
-          .join("")
+const longest = (s1, s2) => [...new Set((s1 + s2).split(""))].sort().join("")

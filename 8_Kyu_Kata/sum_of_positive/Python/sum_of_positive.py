@@ -3,6 +3,7 @@
 # Category: NONE  |  Tags: ARRAYS | FUNDAMENTALS
 # ******************************************************************************
 def positive_sum(arr):
-      def positive_check(value):
-          return value >=0
-      return sum(filter(positive_check, arr))
+    def positive_check(value):
+        return value >= 0
+
+    return sum(filter(positive_check, arr))

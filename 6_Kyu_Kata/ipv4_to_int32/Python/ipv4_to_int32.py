@@ -2,4 +2,3 @@
 # URL: https://www.codewars.com/kata/52ea928a1ef5cfec800003ee
 # Category: NONE  |  Tags: NETWORKS | ALGORITHMS | BITS | BINARY | FUNDAMENTALS
 # ******************************************************************************
-

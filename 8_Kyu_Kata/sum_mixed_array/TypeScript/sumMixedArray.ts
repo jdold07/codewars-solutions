@@ -3,5 +3,5 @@
 // Category: undefined  |  Tags: FUNDAMENTALS | STRINGS | ARRAYS
 // *****************************************************************************
 export function sumMix(x: any[]): number {
-    return x.reduce((a,c) => a + +c, 0)
-  }
+  return x.reduce((a, c) => a + +c, 0)
+}

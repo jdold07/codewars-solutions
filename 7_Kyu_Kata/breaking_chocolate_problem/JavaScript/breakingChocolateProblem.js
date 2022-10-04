@@ -2,6 +2,6 @@
 // URL: https://www.codewars.com/kata/534ea96ebb17181947000ada
 // Category: undefined  |  Tags: ALGORITHMS
 // *****************************************************************************
-function breakChocolate(n,m) {
-    return n==0 || m==0 ? 0 : n*m-1
-  }
+function breakChocolate(n, m) {
+  return n == 0 || m == 0 ? 0 : n * m - 1
+}

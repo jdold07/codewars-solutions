@@ -2,4 +2,4 @@
 // URL: https://www.codewars.com/kata/56f6ad906b88de513f000d96
 // Category: undefined  |  Tags: STRINGS | ALGORITHMS
 // *****************************************************************************
-const bonusTime = (salary, bonus) => bonus ? `£${salary*10}` : `£${salary}`
+const bonusTime = (salary, bonus) => (bonus ? `£${salary * 10}` : `£${salary}`)

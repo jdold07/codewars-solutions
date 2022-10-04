@@ -3,4 +3,4 @@
 # Category: NONE  |  Tags: ARRAYS | SORTING | FUNDAMENTALS
 # ******************************************************************************
 def flatten_and_sort(array):
-      return sorted(num for inner in array for num in inner)
+    return sorted(num for inner in array for num in inner)
