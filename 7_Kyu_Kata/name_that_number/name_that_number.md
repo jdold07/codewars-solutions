@@ -6,7 +6,7 @@
 
 ##### **Languages Available**: java, python, javascript
 
-##### **My Completed Languages**: javascript, python ***as at*** 2022-10-02 | **Originally completed**: 2022-09-27
+##### **My Completed Languages**: javascript, python ***as at*** 2022-10-04 | **Originally completed**: 2022-09-27
 
 ---
 

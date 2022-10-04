@@ -6,7 +6,7 @@
 
 ##### **Languages Available**: python, javascript, csharp, php, cpp, haskell, ruby, lua, coffeescript, julia, crystal, typescript, java, c, rust, go, d, factor
 
-##### **My Completed Languages**: javascript ***as at*** 2022-10-02 | **Originally completed**: 2021-11-27
+##### **My Completed Languages**: javascript ***as at*** 2022-10-04 | **Originally completed**: 2021-11-27
 
 ---
 
@@ -19,7 +19,7 @@ Build Tower
 
 
 
-Build a pyramid-shaped tower given a positive integer `number of floors`. A tower block is represented with `"*"` character.
+Build a pyramid-shaped tower, as an array/list of strings, given a positive integer `number of floors`. A tower block is represented with `"*"` character.
 
 
 

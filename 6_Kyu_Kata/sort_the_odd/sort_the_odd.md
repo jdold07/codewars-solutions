@@ -6,7 +6,7 @@
 
 ##### **Languages Available**: javascript, python, csharp, cpp, haskell, java, ruby, clojure, elixir, rust, php, cobol, c, lambdacalc, factor
 
-##### **My Completed Languages**: javascript ***as at*** 2022-10-02 | **Originally completed**: 2021-11-20
+##### **My Completed Languages**: javascript ***as at*** 2022-10-04 | **Originally completed**: 2021-11-20
 
 ---
 

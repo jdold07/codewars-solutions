@@ -6,7 +6,7 @@
 
 ##### **Languages Available**: javascript, ruby, python, csharp, java, haskell, c, rust, r, fsharp, nasm, crystal, cpp, clojure, julia, scala, elixir, racket, php, dart, typescript, shell, elm, forth, factor, swift, coffeescript, reason, lua, go, vb, solidity, powershell, nim, groovy, erlang, fortran, kotlin, objc, purescript, sql, prolog, cfml, ocaml, haxe, cobol, raku, perl, pascal, commonlisp, d
 
-##### **My Completed Languages**: javascript ***as at*** 2022-10-02 | **Originally completed**: 2021-11-22
+##### **My Completed Languages**: javascript ***as at*** 2022-10-04 | **Originally completed**: 2021-11-22
 
 ---
 
@@ -52,7 +52,7 @@ Calculate the sum of the numbers in the n<sup>th</sup> row of this triangle (sta
 ---
 
 
-🏷 `ARRAYS | LISTS | FUNDAMENTALS`
+🏷 `ARRAYS | LISTS | MATHEMATICS | FUNDAMENTALS`
 
 
 [View this Kata on Codewars.com](https://www.codewars.com/kata/55fd2d567d94ac3bc9000064)

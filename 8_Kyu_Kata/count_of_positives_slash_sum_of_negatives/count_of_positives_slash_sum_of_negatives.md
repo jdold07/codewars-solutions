@@ -6,7 +6,7 @@
 
 ##### **Languages Available**: csharp, cpp, javascript, php, coffeescript, ruby, python, java, c, crystal, haskell, rust, typescript, kotlin, scala, nasm, racket, julia, go, lua, factor
 
-##### **My Completed Languages**: javascript, python, coffeescript, typescript ***as at*** 2022-10-02 | **Originally completed**: 2021-12-01
+##### **My Completed Languages**: javascript, python, coffeescript, typescript ***as at*** 2022-10-04 | **Originally completed**: 2021-12-01
 
 ---
 

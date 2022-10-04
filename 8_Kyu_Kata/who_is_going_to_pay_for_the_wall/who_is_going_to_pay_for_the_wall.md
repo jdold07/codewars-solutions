@@ -6,7 +6,7 @@
 
 ##### **Languages Available**: ruby, javascript, python, crystal, haskell
 
-##### **My Completed Languages**: javascript ***as at*** 2022-10-02 | **Originally completed**: 2022-09-10
+##### **My Completed Languages**: javascript ***as at*** 2022-10-04 | **Originally completed**: 2022-09-10
 
 ---
 

@@ -6,7 +6,7 @@
 
 ##### **Languages Available**: ruby, javascript, python, elixir
 
-##### **My Completed Languages**: javascript ***as at*** 2022-10-02 | **Originally completed**: 2021-11-20
+##### **My Completed Languages**: javascript ***as at*** 2022-10-04 | **Originally completed**: 2021-11-20
 
 ---
 

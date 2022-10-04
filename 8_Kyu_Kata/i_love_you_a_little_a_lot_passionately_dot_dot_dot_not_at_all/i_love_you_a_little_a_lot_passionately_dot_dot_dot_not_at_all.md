@@ -4,9 +4,9 @@
 
 ##### **First Published**: 2016-10-03 ***by*** [nbeck](https://www.codewars.com/users/nbeck) | **Approved**: 2016-10-03 ***by*** [suic](https://www.codewars.com/users/suic)
 
-##### **Languages Available**: ruby, python, javascript, coffeescript, fsharp, crystal, cpp, c, php, haskell, java, csharp, nasm, typescript, julia, r, cobol, go, rust, lua, factor
+##### **Languages Available**: ruby, python, javascript, coffeescript, fsharp, crystal, cpp, c, php, haskell, java, csharp, nasm, typescript, julia, r, cobol, go, rust, lua, factor, scala
 
-##### **My Completed Languages**: javascript ***as at*** 2022-10-02 | **Originally completed**: 2021-12-06
+##### **My Completed Languages**: javascript ***as at*** 2022-10-04 | **Originally completed**: 2021-12-06
 
 ---
 
@@ -31,11 +31,15 @@ Who remembers back to their time in the schoolyard, when girls would take a flow
 
 
 
+If there are more than 6 petals, you start over with `"I love you"` and so on.
+
+
+
 When the last petal was torn there were cries of excitement, dreams, surging thoughts and emotions.
 
 
 
-Your goal in this kata is to determine which phrase the girls would say for a flower of a given number of petals, where `nb_petals > 0`.
+Your goal in this kata is to determine which phrase the girls would say at the last petal for a flower of a given number of petals. The number of petals is always greater than 0.
 
 ---
 

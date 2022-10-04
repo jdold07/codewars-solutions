@@ -6,7 +6,7 @@
 
 ##### **Languages Available**: javascript, csharp, python, ruby, java, scala
 
-##### **My Completed Languages**: python ***as at*** 2022-10-02 | **Originally completed**: 2022-04-29
+##### **My Completed Languages**: python ***as at*** 2022-10-04 | **Originally completed**: 2022-04-29
 
 ---
 

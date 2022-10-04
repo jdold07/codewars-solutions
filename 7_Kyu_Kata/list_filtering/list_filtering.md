@@ -6,7 +6,7 @@
 
 ##### **Languages Available**: python, ruby, coffeescript, javascript, csharp, fsharp, java, factor
 
-##### **My Completed Languages**: javascript ***as at*** 2022-10-02 | **Originally completed**: 2021-11-07
+##### **My Completed Languages**: javascript ***as at*** 2022-10-04 | **Originally completed**: 2021-11-07
 
 ---
 

@@ -6,7 +6,7 @@
 
 ##### **Languages Available**: ruby, javascript, nasm, kotlin, haskell, csharp, racket, python
 
-##### **My Completed Languages**: javascript ***as at*** 2022-10-02 | **Originally completed**: 2022-08-24
+##### **My Completed Languages**: javascript ***as at*** 2022-10-04 | **Originally completed**: 2022-08-24
 
 ---
 

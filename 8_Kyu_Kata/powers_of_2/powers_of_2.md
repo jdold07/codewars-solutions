@@ -6,7 +6,7 @@
 
 ##### **Languages Available**: haskell, python, coffeescript, javascript, ruby, csharp, fsharp, ocaml, julia, java, cpp, c, cobol, lambdacalc, factor, go, lua, riscv, bf
 
-##### **My Completed Languages**: python ***as at*** 2022-10-02 | **Originally completed**: 2022-04-20
+##### **My Completed Languages**: python ***as at*** 2022-10-04 | **Originally completed**: 2022-04-20
 
 ---
 

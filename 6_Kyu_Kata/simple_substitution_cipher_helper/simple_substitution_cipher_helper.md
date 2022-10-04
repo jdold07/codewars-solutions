@@ -6,7 +6,7 @@
 
 ##### **Languages Available**: javascript, python, rust
 
-##### **My Completed Languages**: python, javascript ***as at*** 2022-10-02 | **Originally completed**: 2022-05-06
+##### **My Completed Languages**: python, javascript ***as at*** 2022-10-04 | **Originally completed**: 2022-05-06
 
 ---
 

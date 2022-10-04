@@ -6,7 +6,7 @@
 
 ##### **Languages Available**: javascript, python, c, kotlin, purescript, ruby, php, racket
 
-##### **My Completed Languages**: python ***as at*** 2022-10-02 | **Originally completed**: 2022-04-26
+##### **My Completed Languages**: python ***as at*** 2022-10-04 | **Originally completed**: 2022-04-26
 
 ---
 

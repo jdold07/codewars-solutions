@@ -6,7 +6,7 @@
 
 ##### **Languages Available**: javascript, coffeescript, ruby, php, csharp, cobol, python
 
-##### **My Completed Languages**: javascript, python ***as at*** 2022-10-02 | **Originally completed**: 2022-05-09
+##### **My Completed Languages**: javascript, python ***as at*** 2022-10-04 | **Originally completed**: 2022-05-09
 
 ---
 

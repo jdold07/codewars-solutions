@@ -1,0 +1,5 @@
+# 7 kyu - Remove All The Marked Elements of a List  [ ID: 563089b9b7be03472d00002b  (remove-all-the-marked-elements-of-a-list) ]
+# URL: https://www.codewars.com/kata/563089b9b7be03472d00002b
+# Category: NONE  |  Tags: FUNDAMENTALS | ALGORITHMS | DATA STRUCTURES
+# ******************************************************************************
+

@@ -6,7 +6,7 @@
 
 ##### **Languages Available**: haskell, python, fsharp, javascript, csharp, c, ruby, nasm, rust, php, dart, julia, racket, crystal, coffeescript, java, cobol, go, d
 
-##### **My Completed Languages**: python ***as at*** 2022-10-02 | **Originally completed**: 2022-05-07
+##### **My Completed Languages**: python ***as at*** 2022-10-04 | **Originally completed**: 2022-05-07
 
 ---
 

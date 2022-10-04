@@ -6,7 +6,7 @@
 
 ##### **Languages Available**: c, nasm, python, cobol, ruby, csharp, javascript, haskell
 
-##### **My Completed Languages**: python ***as at*** 2022-10-02 | **Originally completed**: 2022-05-07
+##### **My Completed Languages**: python ***as at*** 2022-10-04 | **Originally completed**: 2022-05-07
 
 ---
 

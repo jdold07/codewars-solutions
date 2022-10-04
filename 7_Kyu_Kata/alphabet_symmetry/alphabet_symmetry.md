@@ -6,7 +6,7 @@
 
 ##### **Languages Available**: python, javascript, lua, csharp, ruby, haskell, crystal, cpp, fortran, coffeescript, dart, php, typescript, go, java, rust, prolog, clojure, julia, nim, c
 
-##### **My Completed Languages**: javascript ***as at*** 2022-10-02 | **Originally completed**: 2022-09-09
+##### **My Completed Languages**: javascript ***as at*** 2022-10-04 | **Originally completed**: 2022-09-09
 
 ---
 
