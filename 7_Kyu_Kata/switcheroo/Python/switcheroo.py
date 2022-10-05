@@ -1,4 +1,5 @@
-# 7 kyu - Switcheroo  [ ID: 57f759bb664021a30300007d  (switcheroo) ]
+# [object Object] - Switcheroo  [ ID: 57f759bb664021a30300007d  (switcheroo) ]
 # URL: https://www.codewars.com/kata/57f759bb664021a30300007d
-# Category: NONE  |  Tags: FUNDAMENTALS | STRINGS
+# Category: REFERENCE  |  Tags: FUNDAMENTALS | STRINGS
 # ******************************************************************************
+

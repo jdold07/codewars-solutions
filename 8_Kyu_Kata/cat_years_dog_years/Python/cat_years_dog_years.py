@@ -1,4 +1,0 @@
-# 8 kyu - Cat years, Dog years  [ ID: 5a6663e9fd56cb5ab800008b  (cat-years-dog-years) ]
-# URL: https://www.codewars.com/kata/5a6663e9fd56cb5ab800008b
-# Category: NONE  |  Tags: FUNDAMENTALS
-# ******************************************************************************

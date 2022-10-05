@@ -1,6 +1,6 @@
-# 7 kyu - Anything  [ ID: 557d9e4d155e2dbf050000aa  (anything) ]
+# [object Object] - Anything  [ ID: 557d9e4d155e2dbf050000aa  (anything) ]
 # URL: https://www.codewars.com/kata/557d9e4d155e2dbf050000aa
-# Category: NONE  |  Tags: OBJECT-ORIENTED PROGRAMMING | FUNDAMENTALS
+# Category: REFERENCE  |  Tags: OBJECT-ORIENTED PROGRAMMING | FUNDAMENTALS
 # ******************************************************************************
 class Anything_True():
       def __eq__(self, other):
