@@ -1,5 +1,0 @@
-// [object Object] - Maximum  subarray sum  [ ID: 54521e9ec8e60bc4de000d6c  (maximum-subarray-sum) ]
-// URL: https://www.codewars.com/kata/54521e9ec8e60bc4de000d6c
-// Category: REFERENCE  |  Tags: ALGORITHMS | LISTS | DYNAMIC PROGRAMMING | FUNDAMENTALS
-// *****************************************************************************
-

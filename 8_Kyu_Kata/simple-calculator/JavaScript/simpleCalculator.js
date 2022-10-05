@@ -1,5 +1,0 @@
-// [object Object] - simple calculator   [ ID: 5810085c533d69f4980001cf  (simple-calculator) ]
-// URL: https://www.codewars.com/kata/5810085c533d69f4980001cf
-// Category: REFERENCE  |  Tags: FUNDAMENTALS
-// *****************************************************************************
-

@@ -1,5 +1,0 @@
-# [object Object] - Simple string characters  [ ID: 5a29a0898f27f2d9c9000058  (simple-string-characters) ]
-# URL: https://www.codewars.com/kata/5a29a0898f27f2d9c9000058
-# Category: REFERENCE  |  Tags: FUNDAMENTALS
-# ******************************************************************************
-
