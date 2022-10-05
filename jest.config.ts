@@ -123,14 +123,15 @@ export default {
 
   // A list of paths to directories that Jest should use to search for files in
   roots: [
-    "./1_Kyu_Kata/",
-    "./2_Kyu_Kata/",
-    "./3_Kyu_Kata/",
-    "./4_Kyu_Kata/",
-    "./5_Kyu_Kata/",
-    "./6_Kyu_Kata/",
-    "./7_Kyu_Kata/",
-    "./8_Kyu_Kata/"
+    "./1-kyu-kata/",
+    "./2-kyu-kata/",
+    "./3-kyu-kata/",
+    "./4-kyu-kata/",
+    "./5-kyu-kata/",
+    "./6-kyu-kata/",
+    "./7-kyu-kata/",
+    "./8-kyu-kata/",
+    "./beta-kyu-kata/"
   ],
 
   // Allows you to use a custom runner instead of Jest's default test runner
