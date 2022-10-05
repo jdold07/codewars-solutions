@@ -3,9 +3,9 @@
 // Category: REFERENCE  |  Tags: ARRAYS | FUNDAMENTALS
 // *****************************************************************************
 const count = (array) => {
-    const result = {}
-    for (const el of array) {
-      result[el] = result[el] ? result[el] + 1 : 1
-    }
-    return result
+  const result = {}
+  for (const el of array) {
+    result[el] = result[el] ? result[el] + 1 : 1
   }
+  return result
+}

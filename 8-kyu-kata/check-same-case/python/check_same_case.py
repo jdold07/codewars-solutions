@@ -3,12 +3,12 @@
 # Category: REFERENCE  |  Tags: FUNDAMENTALS
 # ******************************************************************************
 def same_case(a, b):
-      print(a, b)
-      if a.islower() and b.islower():
-          return 1
-      if a.isupper() and b.isupper():
-          return 1
-      if a.isalpha() and b.isalpha():
-          return 0
-      else:
-          return -1
+    print(a, b)
+    if a.islower() and b.islower():
+        return 1
+    if a.isupper() and b.isupper():
+        return 1
+    if a.isalpha() and b.isalpha():
+        return 0
+    else:
+        return -1

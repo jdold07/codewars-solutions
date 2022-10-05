@@ -4,12 +4,11 @@
 // *****************************************************************************
 describe("Tests", () => {
   it("test", () => {
-var arr = [0,5,5,2,"c", "a", "aba", "a"];
-Test.assertEquals(arr.numberOfOccurrences(0), 1);
-Test.assertEquals(arr.numberOfOccurrences(4), 0);
-Test.assertEquals(arr.numberOfOccurrences(5), 2);
-Test.assertEquals(arr.numberOfOccurrences("c"), 1);
-Test.assertEquals(arr.numberOfOccurrences("a"), 2);
-  });
-});
-
+    var arr = [0, 5, 5, 2, "c", "a", "aba", "a"]
+    Test.assertEquals(arr.numberOfOccurrences(0), 1)
+    Test.assertEquals(arr.numberOfOccurrences(4), 0)
+    Test.assertEquals(arr.numberOfOccurrences(5), 2)
+    Test.assertEquals(arr.numberOfOccurrences("c"), 1)
+    Test.assertEquals(arr.numberOfOccurrences("a"), 2)
+  })
+})

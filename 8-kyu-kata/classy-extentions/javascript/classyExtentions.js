@@ -3,5 +3,7 @@
 // Category: REFERENCE  |  Tags: FUNDAMENTALS
 // *****************************************************************************
 class Cat extends Animal {
-   speak() {return `${this.name} meows.`} 
+  speak() {
+    return `${this.name} meows.`
   }
+}

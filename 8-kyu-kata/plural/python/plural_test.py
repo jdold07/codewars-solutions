@@ -5,6 +5,7 @@
 import codewars_test as test
 from solution import plural
 
+
 @test.describe("Fixed tests")
 def _():
     @test.it("Tests")
@@ -13,10 +14,11 @@ def _():
         test.assert_equals(plural(1), False)
         test.assert_equals(plural(100), True)
 
+
 @test.describe("Random tests")
 def _():
     from random import randint
-    
+
     @test.it("Tests")
     def __():
         for _ in range(100):

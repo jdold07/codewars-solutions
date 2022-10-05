@@ -2,7 +2,5 @@
 // URL: https://www.codewars.com/kata/583203e6eb35d7980400002a
 // Category: REFERENCE  |  Tags: REGULAR EXPRESSIONS | FUNDAMENTALS
 // *****************************************************************************
-const countSmileys = arr => 
-      arr.toString().match(/([:;][-~]?[D\)])/g) 
-          ? arr.toString().match(/([:;][-~]?[D\)])/g).length 
-          : 0
+const countSmileys = (arr) =>
+  arr.toString().match(/([:;][-~]?[D\)])/g) ? arr.toString().match(/([:;][-~]?[D\)])/g).length : 0

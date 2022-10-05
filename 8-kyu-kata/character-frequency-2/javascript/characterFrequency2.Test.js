@@ -3,14 +3,14 @@
 // Category: REFERENCE  |  Tags: FUNDAMENTALS | STRINGS
 // *****************************************************************************
 function cf(message) {
-  let result = {};
-  message.split('').forEach(function(letter){
-    result[letter] = result[letter]? result[letter] + 1 : 1;
-  });
+  let result = {}
+  message.split("").forEach(function (letter) {
+    result[letter] = result[letter] ? result[letter] + 1 : 1
+  })
   return result
 }
 
-describe('Basic tests', function(){
+describe("Basic tests", function () {
   let basicTests = [
     "How can mirrors be real when our eyes aren't real?",
     "Everybody dance now!",
@@ -19,19 +19,19 @@ describe('Basic tests', function(){
     "Io sono giovanni rana!",
     "It's-a me, Mario!",
     "The End ( of the line ) "
-  ];
-  basicTests.forEach(function(str) {
-    console.info('Testing: ', str);
-    Test.assertDeepEquals(charFreq(str), cf(str));
-  });
-  Test.expect(true);
-});
+  ]
+  basicTests.forEach(function (str) {
+    console.info("Testing: ", str)
+    Test.assertDeepEquals(charFreq(str), cf(str))
+  })
+  Test.expect(true)
+})
 
-describe('Random tests', function(){
-  let str;
-  for(let i=0;i<100;i++) {
-    str = Test.randomToken() + " " + Test.randomToken();
-    console.info('Testing: ', str);
-    Test.assertDeepEquals(charFreq(str), cf(str));
+describe("Random tests", function () {
+  let str
+  for (let i = 0; i < 100; i++) {
+    str = Test.randomToken() + " " + Test.randomToken()
+    console.info("Testing: ", str)
+    Test.assertDeepEquals(charFreq(str), cf(str))
   }
-});
+})

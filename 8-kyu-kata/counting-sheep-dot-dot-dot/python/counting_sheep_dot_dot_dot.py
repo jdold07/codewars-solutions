@@ -3,4 +3,4 @@
 # Category: REFERENCE  |  Tags: ARRAYS | FUNDAMENTALS
 # ******************************************************************************
 def count_sheeps(sheep):
-      return sum(present == True for present in sheep)
+    return sum(present == True for present in sheep)

@@ -3,4 +3,4 @@
 # Category: REFERENCE  |  Tags: BINARY | STRINGS | FUNDAMENTALS
 # ******************************************************************************
 def binary_to_string(binary):
-      return "".join([chr(int(x, base=2)) for x in (binary[i : i + 8] for i in range(0, len(binary), 8))])
+    return "".join([chr(int(x, base=2)) for x in (binary[i : i + 8] for i in range(0, len(binary), 8))])

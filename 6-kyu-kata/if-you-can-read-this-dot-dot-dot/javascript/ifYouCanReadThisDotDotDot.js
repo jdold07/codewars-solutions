@@ -3,10 +3,10 @@
 // Category: REFERENCE  |  Tags: FUNDAMENTALS
 // *****************************************************************************
 const to_nato = (words) => {
-    return words
-      .split(" ")
-      .join("")
-      .split("")
-      .map((el) => (el.toLowerCase() in NATO ? NATO[el.toLowerCase()] : el))
-      .join(" ")
-  }
+  return words
+    .split(" ")
+    .join("")
+    .split("")
+    .map((el) => (el.toLowerCase() in NATO ? NATO[el.toLowerCase()] : el))
+    .join(" ")
+}

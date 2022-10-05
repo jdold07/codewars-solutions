@@ -2,18 +2,21 @@
 // URL: https://www.codewars.com/kata/57ab3c09bb994429df000a4a
 // Category: REFERENCE  |  Tags: FUNDAMENTALS | LISTS
 // *****************************************************************************
-const chai = require("chai");
-const assert = chai.assert;
-const _ = require("lodash");
-chai.config.truncateThreshold = 0;
+const chai = require("chai")
+const assert = chai.assert
+const _ = require("lodash")
+chai.config.truncateThreshold = 0
 
 function solution(arr) {
-  let newArr = [...new Set(arr)];
-  let sorted = newArr.sort((a, b) => b - a);
-  switch(sorted.length) {
-      case 0: return []
-      case 1: return [sorted[0]]
-      default: return [sorted[0], sorted[1]]
+  let newArr = [...new Set(arr)]
+  let sorted = newArr.sort((a, b) => b - a)
+  switch (sorted.length) {
+    case 0:
+      return []
+    case 1:
+      return [sorted[0]]
+    default:
+      return [sorted[0], sorted[1]]
   }
 }
 
@@ -28,12 +31,12 @@ describe("Fixed Tests", () => {
 describe("Random Tests", () => {
   it("Tests", () => {
     for (let i = 0; i < 200; i++) {
-      const randArr = Array.from({length: _.random(0, 50)}, () => _.random(1, 100000));
-      const randArrCopy = randArr.slice();
-      Object.freeze(randArrCopy);
-      let actual = twoHighest(randArr);
-      let expected = solution(randArrCopy);
-      assert.deepEqual(actual, expected, `Testing for [${randArrCopy}]`);
+      const randArr = Array.from({ length: _.random(0, 50) }, () => _.random(1, 100000))
+      const randArrCopy = randArr.slice()
+      Object.freeze(randArrCopy)
+      let actual = twoHighest(randArr)
+      let expected = solution(randArrCopy)
+      assert.deepEqual(actual, expected, `Testing for [${randArrCopy}]`)
     }
   })
 })

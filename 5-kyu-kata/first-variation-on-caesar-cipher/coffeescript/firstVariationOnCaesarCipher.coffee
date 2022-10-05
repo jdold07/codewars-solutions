@@ -2,4 +2,3 @@
 # URL: https://www.codewars.com/kata/5508249a98b3234f420000fb
 # Category: REFERENCE  |  Tags: FUNDAMENTALS | CIPHERS | STRINGS
 # ******************************************************************************
-

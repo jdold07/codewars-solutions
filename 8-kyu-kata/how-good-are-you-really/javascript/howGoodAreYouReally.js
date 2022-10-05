@@ -2,4 +2,5 @@
 // URL: https://www.codewars.com/kata/5601409514fc93442500010b
 // Category: REFERENCE  |  Tags: FUNDAMENTALS
 // *****************************************************************************
-const betterThanAverage = (classPoints, yourPoints) => yourPoints > (classPoints.reduce((a,b)=>a+b)+yourPoints)/(classPoints.length+1)
+const betterThanAverage = (classPoints, yourPoints) =>
+  yourPoints > (classPoints.reduce((a, b) => a + b) + yourPoints) / (classPoints.length + 1)

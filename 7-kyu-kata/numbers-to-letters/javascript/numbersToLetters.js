@@ -3,4 +3,3 @@
 // Category: REFERENCE  |  Tags: FUNDAMENTALS | STRINGS | ARRAYS
 // *****************************************************************************
 const switcher = (x) => x.reduce((a, c) => a + " ?!abcdefghijklmnopqrstuvwxyz".substr(-c, 1), "")
-  

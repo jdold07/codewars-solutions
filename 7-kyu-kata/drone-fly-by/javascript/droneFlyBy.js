@@ -3,5 +3,5 @@
 // Category: REFERENCE  |  Tags: FUNDAMENTALS | STRINGS | ARRAYS
 // *****************************************************************************
 function flyBy(l, d) {
-    return l.replace(RegExp("x{" + (x = Math.min(l.length, d.length)) + "}"), "o".repeat(x))
-  }
+  return l.replace(RegExp("x{" + (x = Math.min(l.length, d.length)) + "}"), "o".repeat(x))
+}

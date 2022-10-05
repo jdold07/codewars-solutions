@@ -3,15 +3,14 @@
 // Category: REFERENCE  |  Tags: REGULAR EXPRESSIONS | FUNDAMENTALS
 // *****************************************************************************
 class FileNameExtractor {
-    static extractFileName(dirtyFileName) {
-      return dirtyFileName.replace(/^\d+_([\w-]+)\.([\w-]+)\.[\w-]+$/g, "$1.$2")
-    }
+  static extractFileName(dirtyFileName) {
+    return dirtyFileName.replace(/^\d+_([\w-]+)\.([\w-]+)\.[\w-]+$/g, "$1.$2")
   }
+}
 // *****************************************************************************
 // *****************************************************************************
 class FileNameExtractor {
-    static extractFileName(dirtyFileName) {
-      return dirtyFileName.replace(/^\d+_([\w-]+)\.([\w-]+)\.[\w-]+/g, "$1.$2")
-    }
+  static extractFileName(dirtyFileName) {
+    return dirtyFileName.replace(/^\d+_([\w-]+)\.([\w-]+)\.[\w-]+/g, "$1.$2")
   }
-
+}

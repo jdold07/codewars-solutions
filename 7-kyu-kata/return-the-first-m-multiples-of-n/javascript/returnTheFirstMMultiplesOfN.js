@@ -2,4 +2,4 @@
 // URL: https://www.codewars.com/kata/593c9175933500f33400003e
 // Category: REFERENCE  |  Tags: MATHEMATICS | FUNDAMENTALS
 // *****************************************************************************
-const multiples = (m, n) => Array.from({length: m}, (_, i) => n * (i + 1))
+const multiples = (m, n) => Array.from({ length: m }, (_, i) => n * (i + 1))

@@ -2,30 +2,30 @@
 // URL: https://www.codewars.com/kata/5277c8a221e209d3f6000b56
 // Category: ALGORITHMS  |  Tags: ALGORITHMS
 // *****************************************************************************
-const strictEqual = require('chai').assert.strictEqual;
+const strictEqual = require("chai").assert.strictEqual
 
-function doTest (braces, expected) {
-	const actual = validBraces(braces);
-	strictEqual(actual, expected, `for braces:\n"${braces}"\n`);
+function doTest(braces, expected) {
+  const actual = validBraces(braces)
+  strictEqual(actual, expected, `for braces:\n"${braces}"\n`)
 }
 
-describe("Tests suite", function() {
-  it("sample tests", function() {
-	doTest("()))", false);
-    doTest("()", true);
-    doTest("[]", true);
-    doTest("{}", true);
-    doTest("(){}[]", true);
-    doTest("([{}])", true);
-    doTest("(}", false);
-    doTest("[(])", false);
-    doTest("({})[({})]", true);
-    doTest("(})", false);
-    doTest("(({{[[]]}}))", true);
-    doTest("{}({})[]", true);
-    doTest(")(}{][", false);
-    doTest("())({}}{()][][", false);
-    doTest("(((({{", false);
-    doTest("}}]]))}])", false);
-  });
-});
+describe("Tests suite", function () {
+  it("sample tests", function () {
+    doTest("()))", false)
+    doTest("()", true)
+    doTest("[]", true)
+    doTest("{}", true)
+    doTest("(){}[]", true)
+    doTest("([{}])", true)
+    doTest("(}", false)
+    doTest("[(])", false)
+    doTest("({})[({})]", true)
+    doTest("(})", false)
+    doTest("(({{[[]]}}))", true)
+    doTest("{}({})[]", true)
+    doTest(")(}{][", false)
+    doTest("())({}}{()][][", false)
+    doTest("(((({{", false)
+    doTest("}}]]))}])", false)
+  })
+})

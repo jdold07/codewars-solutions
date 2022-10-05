@@ -3,7 +3,4 @@
 // Category: ALGORITHMS  |  Tags: ALGORITHMS | CIPHERS | CRYPTOGRAPHY | STRINGS
 // *****************************************************************************
 const decode = (str) => encode(str, "d")
-  const encode = (str, d) => str.replace(/./g, (c) => String.fromCharCode(c.charCodeAt() * (!d ? 6 : 1 / 6)))
-  
-  
-  
+const encode = (str, d) => str.replace(/./g, (c) => String.fromCharCode(c.charCodeAt() * (!d ? 6 : 1 / 6)))

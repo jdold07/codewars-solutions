@@ -3,4 +3,4 @@
 # Category: ALGORITHMS  |  Tags: ALGORITHMS
 # ******************************************************************************
 def elevator(left, right, call):
-      return ["right", "left"][(max(left, call) - min(left, call)) < (max(right, call) - min(right, call))]
+    return ["right", "left"][(max(left, call) - min(left, call)) < (max(right, call) - min(right, call))]

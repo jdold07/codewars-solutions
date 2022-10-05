@@ -10,7 +10,7 @@ from solution import factorial
 
 @test.describe("Fixed Tests")
 def fixed_tests():
-    @test.it('Basic Test Cases')
+    @test.it("Basic Test Cases")
     def basic_test_cases():
         test.assert_equals(factorial(0), 1, "factorial for 0 is 1"),
         test.assert_equals(factorial(1), 1, "factorial for 1 is 1"),
@@ -29,16 +29,19 @@ def fixed_tests():
         test.expect_error("Should throw error", lambda: factorial(-100), exception=ValueError),
         test.expect_error("Should throw error", lambda: factorial(22), exception=ValueError),
 
+
 @test.describe("Random Cases")
 def random_tests():
     def solution(n):
         try:
-            assert(0 <= n < 13)
+            assert 0 <= n < 13
         except:
             raise ValueError()
         return fact(n)
+
     for _ in range(100):
         n = randint(0, 12) if randint(0, 5) else randint(-42, 42)
+
         @test.it(f"testing for factorial({n})")
         def random_test_cases():
             if n < 0 or n > 12:

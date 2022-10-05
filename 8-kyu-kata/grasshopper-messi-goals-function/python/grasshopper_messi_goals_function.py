@@ -3,4 +3,4 @@
 # Category: REFERENCE  |  Tags: FUNDAMENTALS
 # ******************************************************************************
 def goals(laLiga, copaDelRey, championsLeague):
-      return sum([laLiga, copaDelRey, championsLeague])
+    return sum([laLiga, copaDelRey, championsLeague])

@@ -3,29 +3,28 @@
 // Category: REFERENCE  |  Tags: FUNDAMENTALS
 // *****************************************************************************
 class Guesser {
-    constructor(number, lives) {
-      this.number = number
-      this.lives = lives
-    }
-    dead() {
-      throw "You're Dead!"
-    }
-    guess(n) {
-      return !this.lives ? this.dead() : n === this.number || (--this.lives, false)
-    }
+  constructor(number, lives) {
+    this.number = number
+    this.lives = lives
   }
+  dead() {
+    throw "You're Dead!"
+  }
+  guess(n) {
+    return !this.lives ? this.dead() : n === this.number || (--this.lives, false)
+  }
+}
 // *****************************************************************************
 // *****************************************************************************
 class Guesser {
-    constructor(number, lives) {
-      this.number = number
-      this.lives = lives
-    }
-    dead() {
-      throw "You're Dead!"
-    }
-    guess(n) {
-      return this.lives < 1 ? this.dead() : (this.lives > 0 && n === this.number) || (--this.lives < -1 && false)
-    }
+  constructor(number, lives) {
+    this.number = number
+    this.lives = lives
   }
-
+  dead() {
+    throw "You're Dead!"
+  }
+  guess(n) {
+    return this.lives < 1 ? this.dead() : (this.lives > 0 && n === this.number) || (--this.lives < -1 && false)
+  }
+}

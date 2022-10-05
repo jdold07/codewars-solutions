@@ -3,8 +3,8 @@
 // Category: REFERENCE  |  Tags: FUNDAMENTALS | MATHEMATICS
 // *****************************************************************************
 const jumpingNumber = (n) => {
-    for (i = 1; i < (x = [...`${n}`]).length; i++) {
-      if (Math.abs(x[i] - x[i - 1]) !== 1) return "Not!!"
-    }
-    return "Jumping!!"
+  for (i = 1; i < (x = [...`${n}`]).length; i++) {
+    if (Math.abs(x[i] - x[i - 1]) !== 1) return "Not!!"
   }
+  return "Jumping!!"
+}

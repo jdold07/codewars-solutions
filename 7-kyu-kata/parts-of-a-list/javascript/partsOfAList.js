@@ -3,9 +3,8 @@
 // Category: REFERENCE  |  Tags: ARRAYS | LISTS | DATA STRUCTURES | ALGORITHMS
 // *****************************************************************************
 const partlist = (arr) =>
-    Array.from({ length: arr.length - 1 }, (_, i) => [arr.slice(0, ++i).join(" "), arr.slice(i).join(" ")])
+  Array.from({ length: arr.length - 1 }, (_, i) => [arr.slice(0, ++i).join(" "), arr.slice(i).join(" ")])
 // *****************************************************************************
 // *****************************************************************************
 const partlist = (arr) =>
-    Array.from({ length: arr.length - 1 }, (_, i) => [arr.slice(0, i + 1).join(" "), arr.slice(i + 1).join(" ")])
-
+  Array.from({ length: arr.length - 1 }, (_, i) => [arr.slice(0, i + 1).join(" "), arr.slice(i + 1).join(" ")])

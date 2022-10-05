@@ -3,4 +3,4 @@
 # Category: REFERENCE  |  Tags: FUNCTIONAL PROGRAMMING | FUNDAMENTALS
 # ******************************************************************************
 def compose(f, g):
-      return lambda *x: f(g(*x))
+    return lambda *x: f(g(*x))

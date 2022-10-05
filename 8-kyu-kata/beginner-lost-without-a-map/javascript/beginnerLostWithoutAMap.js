@@ -2,4 +2,4 @@
 // URL: https://www.codewars.com/kata/57f781872e3d8ca2a000007e
 // Category: REFERENCE  |  Tags: FUNDAMENTALS | ARRAYS
 // *****************************************************************************
-const maps = x => x.map(el => el * 2)
+const maps = (x) => x.map((el) => el * 2)

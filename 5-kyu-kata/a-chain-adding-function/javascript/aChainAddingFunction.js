@@ -2,4 +2,3 @@
 // URL: https://www.codewars.com/kata/539a0e4d85e3425cb0000a88
 // Category: GAMES  |  Tags: MATHEMATICS | FUNCTIONAL PROGRAMMING | PUZZLES
 // *****************************************************************************
-

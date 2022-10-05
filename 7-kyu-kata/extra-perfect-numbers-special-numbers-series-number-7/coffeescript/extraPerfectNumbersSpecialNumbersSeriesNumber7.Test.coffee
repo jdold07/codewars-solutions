@@ -16,9 +16,9 @@ describe "Basic tests", ->
 
 describe "Random tests", ->
   randint = (min, max) -> Math.floor(Math.random() * (max - min + 1)) + min
-  sol = (n) -> Array.from({ length: n }, (_, i) -> i + 1).filter (item) -> item % 2 isnt 0
+  sol = (n) -> Array.from(length: n, (_, i) -> i + 1).filter (item) -> (item % 2) isnt 0
 
   for t in [1..100]
-    n = randint(1, Math.pow(10, randint(1, 2)))
+    n = randint 1, Math.pow 10, randint 1, 2
     it "Testing for #{n}", ->
-      Test.assertDeepEquals extraPerfect(n), sol(n)
+      Test.assertDeepEquals extraPerfect(n), sol n

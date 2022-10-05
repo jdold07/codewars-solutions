@@ -5,21 +5,23 @@
 import codewars_test as test
 from solution import find_average
 
+
 @test.describe("Fixed Tests")
 def fixed_tests():
-    @test.it('Basic Test Cases')
+    @test.it("Basic Test Cases")
     def basic_test_cases():
         test.assert_equals(find_average([1, 2, 3]), 2)
 
-@test.describe('Random Tests')
+
+@test.describe("Random Tests")
 def random_tests():
-    
+
     import random
 
     # The reference solution should be placed here, in order to prevent the warrior from abusing your reference solution
     def _reference(lst):
         return sum(lst) / len(lst)
-    
+
     def _generate_random_list():
         return random.sample(range(1, 50), random.randint(1, 15))
 
@@ -33,7 +35,7 @@ def random_tests():
 
     # The number of random tests must be enough to test every possible aspects of the input.
     # The rule of thumb is 100 tests, but you have to think carefully according to the requirements of your Kata.
-    @test.it('Random Test Cases')
+    @test.it("Random Test Cases")
     def random_test_cases():
         for _ in range(100):
             _do_one_test()

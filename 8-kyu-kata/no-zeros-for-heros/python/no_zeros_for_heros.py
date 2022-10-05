@@ -3,7 +3,7 @@
 # Category: REFERENCE  |  Tags: FUNDAMENTALS
 # ******************************************************************************
 def no_boring_zeros(n):
-      if n:
-          while n % 10 == 0:
-              n = n // 10
-      return n
+    if n:
+        while n % 10 == 0:
+            n = n // 10
+    return n

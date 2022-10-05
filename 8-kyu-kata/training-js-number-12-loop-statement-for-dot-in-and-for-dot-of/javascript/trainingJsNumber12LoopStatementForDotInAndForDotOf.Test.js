@@ -13,63 +13,66 @@ function an(ex){
 }
 */
 
+process.reallyExit = bak
 
-process.reallyExit=bak;
-
-const fcode=function(str){
-  const isChar = function(a) {
-    if(a){
+const fcode = function (str) {
+  const isChar = function (a) {
+    if (a) {
       var code = a.toLowerCase().charCodeAt(0)
-      return code >= 97 && code <= 122;
+      return code >= 97 && code <= 122
     }
-    return false;
+    return false
   }
-  return str.replace(/\r?\n|\r/g, '').split('').filter((a,i,x) => {
-    return a===' '?isChar(x[i-1])&&isChar(x[i+1])?true:false:true;
-  }).join('');
+  return str
+    .replace(/\r?\n|\r/g, "")
+    .split("")
+    .filter((a, i, x) => {
+      return a === " " ? (isChar(x[i - 1]) && isChar(x[i + 1]) ? true : false) : true
+    })
+    .join("")
 }
 
-
-function an(obj){
-  var five=[];
+function an(obj) {
+  var five = []
   for (var key in obj) {
-    if (key.length==5) five.push(key);
-    if (obj[key].length==5) five.push(obj[key]);
+    if (key.length == 5) five.push(key)
+    if (obj[key].length == 5) five.push(obj[key])
   }
-  return five;
+  return five
 }
 
-function rndc(){
-  return String.fromCharCode(~~(26*Math.random())+97); 
+function rndc() {
+  return String.fromCharCode(~~(26 * Math.random()) + 97)
 }
-function rnds(){
-  var len= ~~(6*Math.random())+2;
-  for (var i=0,rs=[];i<len;i++) rs[i]=rndc();
-  return rs.join("");
+function rnds() {
+  var len = ~~(6 * Math.random()) + 2
+  for (var i = 0, rs = []; i < len; i++) rs[i] = rndc()
+  return rs.join("")
 }
 //var ss="   abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!,.?"
-function rndobj(){
-  var len= ~~(10*Math.random())+3,rs={}
-  for (var i=0;i<len;i++) rs[rnds()]=rnds()
-  return rs;
+function rndobj() {
+  var len = ~~(10 * Math.random()) + 3,
+    rs = {}
+  for (var i = 0; i < len; i++) rs[rnds()] = rnds()
+  return rs
 }
 
 console.log("<br><font size=4><b>-------- Basic Test --------</b></font>")
 console.log("")
-    
+
 //test for equations and inequalities
-    //var ob={item1:"This",item2:"is",item3:"an",item4:"example"};
-    //Test.assertSimilar(giveMeFive(ob),["Pears","apple","sweet"]);
-    Test.assertSimilar(giveMeFive({Our:"earth",is:"a",beautyful:"world"}),["earth","world"]);
-    Test.assertSimilar(giveMeFive({Ihave:"enough", money:"to",buy:"a",car:"model"}),["Ihave","money","model"]);
-    Test.assertSimilar(giveMeFive({Pears:"than",apple:"sweet"}),["Pears","apple","sweet"]);
-    
+//var ob={item1:"This",item2:"is",item3:"an",item4:"example"};
+//Test.assertSimilar(giveMeFive(ob),["Pears","apple","sweet"]);
+Test.assertSimilar(giveMeFive({ Our: "earth", is: "a", beautyful: "world" }), ["earth", "world"])
+Test.assertSimilar(giveMeFive({ Ihave: "enough", money: "to", buy: "a", car: "model" }), ["Ihave", "money", "model"])
+Test.assertSimilar(giveMeFive({ Pears: "than", apple: "sweet" }), ["Pears", "apple", "sweet"])
+
 console.log("<br><font size=4><b>---should coding with 'for in'---</b></font>")
 console.log("")
-var code=giveMeFive+""
+var code = giveMeFive + ""
 //console.log(code)
-var passswitch=/for *\(.* in .*\)/.test(code) ? "Passed":"Your solution should contains keyword \"for in\"";
-Test.assertSimilar(passswitch,"Passed");
+var passswitch = /for *\(.* in .*\)/.test(code) ? "Passed" : 'Your solution should contains keyword "for in"'
+Test.assertSimilar(passswitch, "Passed")
 /*
 //anti-cheat and calc the code length
 console.log("<br><font size=4><b>--------Code length check --------</b></font>")
@@ -102,11 +105,14 @@ for (var myjinxini=0;myjinxini<3;myjinxini++){
 console.log("<br><font size=4><b>--------100 Random Test --------</b></font>")
 console.log("")
 
-for (var myjinxini=0;myjinxini<100;myjinxini++){
-  var oo= rndobj(), answer=an(oo)
-  console.log("<font color='#CD7F32'>Test for: obj="+JSON.stringify(oo)+"</font>","")
-  Test.assertSimilar(giveMeFive(oo), answer);
+for (var myjinxini = 0; myjinxini < 100; myjinxini++) {
+  var oo = rndobj(),
+    answer = an(oo)
+  console.log("<font color='#CD7F32'>Test for: obj=" + JSON.stringify(oo) + "</font>", "")
+  Test.assertSimilar(giveMeFive(oo), answer)
 }
-console.log('<br><font size=4><b>Congratulations, You pass the test!</b></font>','')
-console.log("<br><font size=4><b>After you submit your solution, <font color='yellow'>DON'T FORGET UPVOTE&RANK THIS KATA, THANK YOU!</b></font>","")
-
+console.log("<br><font size=4><b>Congratulations, You pass the test!</b></font>", "")
+console.log(
+  "<br><font size=4><b>After you submit your solution, <font color='yellow'>DON'T FORGET UPVOTE&RANK THIS KATA, THANK YOU!</b></font>",
+  ""
+)

@@ -5,6 +5,8 @@
 from random import randint
 from itertools import combinations
 from functools import reduce
+import codewars_test as test
+from best_travel import choose_best_sum
 
 test.describe("Basic tests")
 test.it("Small numbers")
@@ -47,17 +49,21 @@ test.assert_equals(choose_best_sum(2332, 3, xs), 2326)
 test.assert_equals(choose_best_sum(23331, 8, xs), 10789)
 test.assert_equals(choose_best_sum(331, 2, xs), None)
 
+
 def sol12341(t, k, ls):
     mx = -1
     res = []
     for c in combinations(ls, k):
-        s = reduce(lambda x,y: x + y, c)
-        if ((s >= mx) and (s <= t)):
+        s = reduce(lambda x, y: x + y, c)
+        if (s >= mx) and (s <= t):
             res = [c, s]
             mx = s
-    if (res == []): return None 
-    else: return res[1]
-    
+    if res == []:
+        return None
+    else:
+        return res[1]
+
+
 def randomTests():
     print("80 random tests ****************** ")
     for _ in range(0, 80):
@@ -65,11 +71,11 @@ def randomTests():
         for _ in range(10, 20):
             n = randint(10, 500)
             r.append(n)
-        #print(r)
+        # print(r)
         p = randint(1, 5)
         k = randint(50, 2000)
         sol = sol12341(k, p, r)
         test.assert_equals(choose_best_sum(k, p, r), sol)
-        
-randomTests()
 
+
+randomTests()

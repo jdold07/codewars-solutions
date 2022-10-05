@@ -2,4 +2,3 @@
 # URL: https://www.codewars.com/kata/562f91ff6a8b77dfe900006e
 # Category: REFERENCE  |  Tags: FUNDAMENTALS
 # ******************************************************************************
-

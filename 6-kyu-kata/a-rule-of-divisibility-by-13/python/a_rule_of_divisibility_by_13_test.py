@@ -3,7 +3,8 @@
 # Category: REFERENCE  |  Tags: FUNDAMENTALS | ALGORITHMS | MATHEMATICS
 # ******************************************************************************
 import codewars_test as test
-    
+
+
 @test.describe("thirt")
 def tests():
     @test.it("Fixed tests")
@@ -14,27 +15,33 @@ def tests():
         test.assert_equals(thirt(1111111111), 71)
         test.assert_equals(thirt(987654321), 30)
 
+
 from random import randint
+
 
 @test.describe("thirt")
 def random_tests():
-    #-----------------
+    # -----------------
     def thirtSol(n):
         w = [1, 10, 9, 12, 3, 4]
         while True:
-            r = n; q = -1; c = 0; j = 0
-            while (q != 0):
+            r = n
+            q = -1
+            c = 0
+            j = 0
+            while q != 0:
                 q = r // 10
                 c += (r % 10) * w[j % 6]
                 r = q
                 j += 1
-            if (c == n): return c
+            if c == n:
+                return c
             n = c
-    #-----------------
+
+    # -----------------
     @test.it("Random Tests")
     def random():
         for _ in range(0, 245):
             n = randint(1500, 1500000000)
             sol = thirtSol(n)
             test.assert_equals(thirt(n), sol)
-

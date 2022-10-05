@@ -3,4 +3,4 @@
 # Category: REFERENCE  |  Tags: FUNDAMENTALS
 # ******************************************************************************
 def is_even(n):
-      return not n % 2
+    return not n % 2

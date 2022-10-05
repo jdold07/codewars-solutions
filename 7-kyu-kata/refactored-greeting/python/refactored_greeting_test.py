@@ -2,4 +2,3 @@
 # URL: https://www.codewars.com/kata/5121303128ef4b495f000001
 # Category: REFACTORING  |  Tags: OBJECT-ORIENTED PROGRAMMING | REFACTORING
 # ******************************************************************************
-

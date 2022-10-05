@@ -2,30 +2,30 @@
 // URL: https://www.codewars.com/kata/547274e24481cfc469000416
 // Category: REFERENCE  |  Tags: FUNDAMENTALS
 // *****************************************************************************
-class God{
+class God {
   /**
    * @returns Human[]
    */
-    static create(){
-      return [Adam, Eve]
-    }
+  static create() {
+    return [Adam, Eve]
   }
-  class Human{
-    constructor(name){
-      this.name = name
-    }
+}
+class Human {
+  constructor(name) {
+    this.name = name
   }
-  class Man extends Human{
-    constructor(name){
-      super(name)
-      this.sex = "Male"
-    }
+}
+class Man extends Human {
+  constructor(name) {
+    super(name)
+    this.sex = "Male"
   }
-  class Woman extends Human{
-    constructor(name){
-      super(name)
-      this.sex = "Female"
-    }
+}
+class Woman extends Human {
+  constructor(name) {
+    super(name)
+    this.sex = "Female"
   }
-  const Adam = new Man("Adam")
-  const Eve = new Woman("Eve")
+}
+const Adam = new Man("Adam")
+const Eve = new Woman("Eve")

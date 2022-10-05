@@ -3,4 +3,4 @@
 # Category: BUG_FIXES  |  Tags: STRINGS | DEBUGGING
 # ******************************************************************************
 def capitalize_word(word):
-      return word.title()
+    return word.title()

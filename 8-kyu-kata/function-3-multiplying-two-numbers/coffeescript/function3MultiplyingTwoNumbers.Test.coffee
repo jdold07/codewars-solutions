@@ -5,14 +5,14 @@
 getRandom = ->
   Test.randomNumber() - Test.randomNumber()
 
-describe 'Testing multiply', ->
-  it 'Should be a function', ->
-    Test.assertEquals typeof multiply, 'function', 'Is no function!'
+describe "Testing multiply", ->
+  it "Should be a function", ->
+    Test.assertEquals typeof multiply, "function", "Is no function!"
 
-  it 'Should return 10 multiplications correctly', ->
+  it "Should return 10 multiplications correctly", ->
     i = 0
     while i < 10
       x = getRandom()
       y = getRandom()
-      Test.assertEquals multiply(x, y), x * y, 'that\'s not the correct multiplication!'
+      Test.assertEquals multiply(x, y), x * y, "that's not the correct multiplication!"
       i++

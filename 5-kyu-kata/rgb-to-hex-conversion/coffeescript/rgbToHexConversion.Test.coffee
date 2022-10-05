@@ -3,10 +3,13 @@
 # Category: ALGORITHMS  |  Tags: ALGORITHMS
 # ******************************************************************************
 check = (values, expected) ->
-  actual = rgb.apply(null, values)
-  Test.expect(actual == expected, "Expected rgb(" + values + ") to return '" + expected + "' but instead got '" + actual + "'");
+  actual = rgb.apply null, values
+  Test.expect(
+    actual == expected
+    "Expected rgb(" + values + ") to return '" + expected + "' but instead got '" + actual + "'"
+  )
 
-check([0, 0, 0], '000000')
-check([0, 0, -20], '000000')
-check([300,255,255], 'FFFFFF')
-check([173,255,47], 'ADFF2F')
+check [0, 0, 0], "000000"
+check [0, 0, -20], "000000"
+check [300, 255, 255], "FFFFFF"
+check [173, 255, 47], "ADFF2F"

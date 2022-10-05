@@ -3,4 +3,3 @@
 // Category: REFERENCE  |  Tags: DATE TIME | FUNDAMENTALS
 // *****************************************************************************
 const unluckyDays = (year) => [...Array(12).keys()].reduce((a, c) => a + (new Date(year, c, 13).getDay() === 5), 0)
-  

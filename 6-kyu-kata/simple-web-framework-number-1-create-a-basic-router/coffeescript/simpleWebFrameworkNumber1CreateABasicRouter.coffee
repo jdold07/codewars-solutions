@@ -2,4 +2,3 @@
 # URL: https://www.codewars.com/kata/588a00ad70720f2cd9000005
 # Category: REFERENCE  |  Tags: OBJECT-ORIENTED PROGRAMMING | ARRAYS | FUNDAMENTALS
 # ******************************************************************************
-

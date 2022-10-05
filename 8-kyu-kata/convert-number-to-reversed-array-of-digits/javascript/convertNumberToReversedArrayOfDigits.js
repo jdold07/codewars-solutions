@@ -3,5 +3,8 @@
 // Category: REFERENCE  |  Tags: ARRAYS | FUNDAMENTALS
 // *****************************************************************************
 function digitize(n) {
-    return String(n).split("").reverse().map(x => +x)
-  }
+  return String(n)
+    .split("")
+    .reverse()
+    .map((x) => +x)
+}

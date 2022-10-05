@@ -10,9 +10,10 @@ try:
 except NameError:
     pass
 
+
 @test.describe("Fixed Tests")
 def fixed_tests():
-    @test.it('Basic Test Cases')
+    @test.it("Basic Test Cases")
     def basic_test_cases():
         test.assert_equals(min_value([1, 3, 1]), 13)
         test.assert_equals(min_value([4, 7, 5, 7]), 457)
@@ -23,15 +24,16 @@ def fixed_tests():
         test.assert_equals(min_value([1, 9, 1, 3, 7, 4, 6, 6, 7]), 134679)
         test.assert_equals(min_value([3, 6, 5, 5, 9, 8, 7, 6, 3, 5, 9]), 356789)
 
+
 @test.describe("Random Tests")
 def _():
-    
+
     from random import randint
-            
+
     for _ in range(100):
-        test_arr = [ randint(1, 9) for _ in range(randint(1, 20)) ]
-        exp_res = int(''.join(map(str,sorted(set(test_arr)))))
+        test_arr = [randint(1, 9) for _ in range(randint(1, 20))]
+        exp_res = int("".join(map(str, sorted(set(test_arr)))))
+
         @test.it(f"Testing: {test_arr}, expecting: {exp_res}")
         def _():
-            test.assert_equals(min_value(test_arr[:]),exp_res)
-
+            test.assert_equals(min_value(test_arr[:]), exp_res)

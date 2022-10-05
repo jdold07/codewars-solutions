@@ -3,6 +3,8 @@
 # Category: REFERENCE  |  Tags: FUNDAMENTALS
 # ******************************************************************************
 from random import randint
+import codewars_test as test
+from how_good_are_you_really import better_than_average
 
 test.describe("Basic Tests")
 
@@ -23,16 +25,17 @@ test.assert_equals(better_than_average([29, 55, 74, 60, 11, 90, 67, 28], 21), Fa
 
 test.describe("Random Tests")
 
+
 def solution(arr, points):
     return sum(arr) < points * len(arr)
+
 
 for i in range(10):
     arr = []
     for j in range(50):
         arr.append(randint(0, 99))
-    
+
     points = randint(0, 99)
-    
+
     test.it("better_than_average(%s, %d) should return %s" % (arr, points, solution(arr, points)))
     test.assert_equals(better_than_average(arr, points), solution(arr, points))
-

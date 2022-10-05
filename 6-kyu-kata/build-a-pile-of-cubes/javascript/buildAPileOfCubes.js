@@ -3,11 +3,11 @@
 // Category: REFERENCE  |  Tags: MATHEMATICS | ALGORITHMS
 // *****************************************************************************
 function findNb(m) {
-      let sum = 0
-      let num = 0
-      while (sum < m) {
-          num++
-          sum += Math.pow(num, 3)
-      }
-      return sum === m ? num : -1
+  let sum = 0
+  let num = 0
+  while (sum < m) {
+    num++
+    sum += Math.pow(num, 3)
   }
+  return sum === m ? num : -1
+}

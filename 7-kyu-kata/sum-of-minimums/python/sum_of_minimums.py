@@ -3,7 +3,7 @@
 # Category: REFERENCE  |  Tags: FUNDAMENTALS | ARRAYS
 # ******************************************************************************
 def sum_of_minimums(numbers):
-      result = 0
-      for i,c in enumerate(numbers):
-          result += min(numbers[i])
-      return result
+    result = 0
+    for i, c in enumerate(numbers):
+        result += min(numbers[i])
+    return result

@@ -3,4 +3,3 @@
 // Category: REFERENCE  |  Tags: FUNCTIONAL PROGRAMMING | FUNDAMENTALS
 // *****************************************************************************
 const add = (n) => (x) => n + x
-  

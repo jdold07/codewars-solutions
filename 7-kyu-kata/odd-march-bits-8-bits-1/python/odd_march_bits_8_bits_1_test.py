@@ -12,23 +12,83 @@ import random
 def tests():
     @test.it("sample_tests")
     def sample_tests():
-        test.assert_equals(bit_march(2), [
-            [0, 0, 0, 0, 0, 0, 1, 1],
-            [0, 0, 0, 0, 0, 1, 1, 0],
-            [0, 0, 0, 0, 1, 1, 0, 0],
-            [0, 0, 0, 1, 1, 0, 0, 0],
-            [0, 0, 1, 1, 0, 0, 0, 0],
-            [0, 1, 1, 0, 0, 0, 0, 0],
-            [1, 1, 0, 0, 0, 0, 0, 0],
-        ])
-        test.assert_equals(bit_march(3), [
-            [0, 0, 0, 0, 0, 1, 1, 1, ],
-            [0, 0, 0, 0, 1, 1, 1, 0, ],
-            [0, 0, 0, 1, 1, 1, 0, 0, ],
-            [0, 0, 1, 1, 1, 0, 0, 0, ],
-            [0, 1, 1, 1, 0, 0, 0, 0, ],
-            [1, 1, 1, 0, 0, 0, 0, 0, ],
-        ])
+        test.assert_equals(
+            bit_march(2),
+            [
+                [0, 0, 0, 0, 0, 0, 1, 1],
+                [0, 0, 0, 0, 0, 1, 1, 0],
+                [0, 0, 0, 0, 1, 1, 0, 0],
+                [0, 0, 0, 1, 1, 0, 0, 0],
+                [0, 0, 1, 1, 0, 0, 0, 0],
+                [0, 1, 1, 0, 0, 0, 0, 0],
+                [1, 1, 0, 0, 0, 0, 0, 0],
+            ],
+        )
+        test.assert_equals(
+            bit_march(3),
+            [
+                [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    1,
+                ],
+                [
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    1,
+                    0,
+                ],
+                [
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                ],
+                [
+                    0,
+                    0,
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                ],
+                [
+                    0,
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                ],
+                [
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                ],
+            ],
+        )
 
         def solution(n: int) -> list:
             N = 8
@@ -38,12 +98,12 @@ def tests():
             ones = (1 << n) - 1
 
             for i in range(0, length):
-                list_2D.append([int(bit) for bit in format(ones, f'0{N}b')])
+                list_2D.append([int(bit) for bit in format(ones, f"0{N}b")])
                 ones <<= 1
 
             return list_2D
 
-        @test.it('random tests')
+        @test.it("random tests")
         def random_tests():
             input = [i for i in range(1, 8 + 1)]
             random.shuffle(input)
@@ -51,5 +111,4 @@ def tests():
                 expected = solution(n)
                 actual = bit_march(n)
 
-                test.assert_equals(actual, expected, allow_raise = True)
-
+                test.assert_equals(actual, expected, allow_raise=True)

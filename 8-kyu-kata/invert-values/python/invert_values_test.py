@@ -6,19 +6,20 @@ import random
 import codewars_test as test
 from solution import invert
 
+
 @test.describe("Invert values")
 def fixed_tests():
-    @test.it('Basic Test Cases')
+    @test.it("Basic Test Cases")
     def basic_test_cases():
-        test.assert_equals(invert([1,2,3,4,5]),[-1,-2,-3,-4,-5])
-        test.assert_equals(invert([1,-2,3,-4,5]), [-1,2,-3,4,-5])
+        test.assert_equals(invert([1, 2, 3, 4, 5]), [-1, -2, -3, -4, -5])
+        test.assert_equals(invert([1, -2, 3, -4, 5]), [-1, 2, -3, 4, -5])
         test.assert_equals(invert([]), [])
         test.assert_equals(invert([0]), [0])
 
     @test.it("Random Tests")
     def _():
-        
+
         for _ in range(500):
-            lst = [random.randint(-1000,1000) for _ in range(random.randint(0,1000))]
+            lst = [random.randint(-1000, 1000) for _ in range(random.randint(0, 1000))]
             expected = [-x for x in lst]
-            test.assert_equals(invert(lst[:]),expected, f'Testing for lst = {repr(lst)}')
+            test.assert_equals(invert(lst[:]), expected, f"Testing for lst = {repr(lst)}")

@@ -3,11 +3,9 @@
 // Category: ALGORITHMS  |  Tags: REGULAR EXPRESSIONS | ALGORITHMS | STRINGS
 // *****************************************************************************
 function toCamelCase(str) {
-      let arr = str
-          .replace(/[-_]/g, " ")
-          .split(" ")
-      for (i = 1; i < arr.length; i++) {
-          arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1).toLowerCase()
-      }
-      return arr.join("")
+  let arr = str.replace(/[-_]/g, " ").split(" ")
+  for (i = 1; i < arr.length; i++) {
+    arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1).toLowerCase()
   }
+  return arr.join("")
+}

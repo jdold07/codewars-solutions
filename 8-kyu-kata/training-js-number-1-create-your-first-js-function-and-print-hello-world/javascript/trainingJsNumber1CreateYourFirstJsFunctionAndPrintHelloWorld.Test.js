@@ -2,63 +2,70 @@
 // URL: https://www.codewars.com/kata/571ec274b1c8d4a61c0000c8
 // Category: REFERENCE  |  Tags: FUNDAMENTALS | TUTORIALS
 // *****************************************************************************
-process.reallyExit=bak;
+process.reallyExit = bak
 
-const fcode=function(str){
-  const isChar = function(a) {
-    if(a){
-      let code = a.toLowerCase().charCodeAt(0);
-      return code >= 97 && code <= 122;
+const fcode = function (str) {
+  const isChar = function (a) {
+    if (a) {
+      let code = a.toLowerCase().charCodeAt(0)
+      return code >= 97 && code <= 122
     }
-    return false;
+    return false
   }
-  return str.replace(/\r?\n|\r/g, '').split('').filter((a,i,x) => {
-    return a===' '?isChar(x[i-1])&&isChar(x[i+1])?true:false:true;
-  }).join('');
+  return str
+    .replace(/\r?\n|\r/g, "")
+    .split("")
+    .filter((a, i, x) => {
+      return a === " " ? (isChar(x[i - 1]) && isChar(x[i + 1]) ? true : false) : true
+    })
+    .join("")
 }
 
-
-
-
-function rndc(){
-  return String.fromCharCode(~~(26*Math.random())+97); 
+function rndc() {
+  return String.fromCharCode(~~(26 * Math.random()) + 97)
 }
-function rnds(){
-  let len= ~~(8*Math.random())+1;
-  for (let i=0, rs=[];i<len;i++) rs[i]=rndc();
-  return rs.join("");
+function rnds() {
+  let len = ~~(8 * Math.random()) + 1
+  for (let i = 0, rs = []; i < len; i++) rs[i] = rndc()
+  return rs.join("")
 }
 //var ss="   abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!,.?"
-function rndexcel(){
-  let len=~~(20*Math.random())+5;
-  for (let i=0, rs=[];i<len;i++) {
-    let jl=~~(100*Math.random())%4;
-    if (jl==0) rs[i]=rnds();
-    else if(jl==1) rs[i]=~~(1000000*Math.random());
-    else if(jl==2) rs[i]= +(~~(100*Math.random())+"."+(~~(10000*Math.random())))
-    else{
-      let yy= ~~(50*Math.random())+2000, mm= ~~(12*Math.random())+1, dd= ~~(28*Math.random())+1;
-      rs[i]=new Date(`${yy}-${mm}-${dd}`);
+function rndexcel() {
+  let len = ~~(20 * Math.random()) + 5
+  for (let i = 0, rs = []; i < len; i++) {
+    let jl = ~~(100 * Math.random()) % 4
+    if (jl == 0) rs[i] = rnds()
+    else if (jl == 1) rs[i] = ~~(1000000 * Math.random())
+    else if (jl == 2) rs[i] = +(~~(100 * Math.random()) + "." + ~~(10000 * Math.random()))
+    else {
+      let yy = ~~(50 * Math.random()) + 2000,
+        mm = ~~(12 * Math.random()) + 1,
+        dd = ~~(28 * Math.random()) + 1
+      rs[i] = new Date(`${yy}-${mm}-${dd}`)
     }
   }
-  return rs;
+  return rs
 }
 
 console.log("<br><font size=4><b>Test for mission 1: should create a function helloWorld</b></font>")
 console.log("")
-    Test.expect(helloWorld, "helloWorld is not defined")
+Test.expect(helloWorld, "helloWorld is not defined")
 console.log("<br><font size=4><b>Test for mission 2: should defined a variable str and set value</b></font>")
-let code=helloWorld+"";
-let varstr=/(var|let|const) +str/.test(code)?"variable str is defined":"variable str is not defined";
-    Test.assertSimilar(varstr,"variable str is defined")
+let code = helloWorld + ""
+let varstr = /(var|let|const) +str/.test(code) ? "variable str is defined" : "variable str is not defined"
+Test.assertSimilar(varstr, "variable str is defined")
 console.log("<br><font size=4><b>Test for mission 3: should use method console.log() to print Hello World!</b></font>")
-helloWorld();
-let recsave=rec;
-let typelog=/console\.log/.test(code)?"console.log() found in function":"console.log() is not found";
-    Test.assertSimilar(typelog,"console.log() found in function")
-    
-Test.assertSimilar("print value is \""+recsave+"\"","print value is \"Hello World!\"","you did not print \"Hello World!\" to the screen");
-    
+helloWorld()
+let recsave = rec
+let typelog = /console\.log/.test(code) ? "console.log() found in function" : "console.log() is not found"
+Test.assertSimilar(typelog, "console.log() found in function")
+
+Test.assertSimilar(
+  'print value is "' + recsave + '"',
+  'print value is "Hello World!"',
+  'you did not print "Hello World!" to the screen'
+)
+
 /*
 //anti-cheat and calc the code length
 console.log("<br><font size=4><b>--------Code length check --------</b></font>")

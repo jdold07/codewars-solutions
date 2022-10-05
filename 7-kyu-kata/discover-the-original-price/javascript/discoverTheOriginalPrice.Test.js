@@ -4,14 +4,12 @@
 // *****************************************************************************
 describe("Tests", () => {
   it("test", () => {
-Test.assertEquals(discoverOriginalPrice(75,25),100);
-Test.assertEquals(discoverOriginalPrice(25,75),100);
-Test.assertEquals(discoverOriginalPrice(75.75,25),101);
+    Test.assertEquals(discoverOriginalPrice(75, 25), 100)
+    Test.assertEquals(discoverOriginalPrice(25, 75), 100)
+    Test.assertEquals(discoverOriginalPrice(75.75, 25), 101)
 
-Test.assertEquals(discoverOriginalPrice(373.85,11.2),421);
-Test.assertEquals(discoverOriginalPrice(458.2,17.13),552.91);
-Test.assertEquals(discoverOriginalPrice(101.45,27),138.97);
-
-  });
-});
-
+    Test.assertEquals(discoverOriginalPrice(373.85, 11.2), 421)
+    Test.assertEquals(discoverOriginalPrice(458.2, 17.13), 552.91)
+    Test.assertEquals(discoverOriginalPrice(101.45, 27), 138.97)
+  })
+})

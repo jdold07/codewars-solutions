@@ -3,4 +3,3 @@
 // Category: REFERENCE  |  Tags: FUNDAMENTALS
 // *****************************************************************************
 const vaporcode = (string) => string.replace(/./g, (x) => (x === " " ? "" : `${x.toUpperCase()}  `)).trim()
-  

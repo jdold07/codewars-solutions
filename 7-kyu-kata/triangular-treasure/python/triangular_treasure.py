@@ -3,4 +3,4 @@
 # Category: ALGORITHMS  |  Tags: ALGORITHMS | MATHEMATICS
 # ******************************************************************************
 def triangular(n):
-      return (1 + n) * n // 2 if n > 0 else 0
+    return (1 + n) * n // 2 if n > 0 else 0

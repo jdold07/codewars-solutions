@@ -3,14 +3,14 @@
 // Category: REFERENCE  |  Tags: LINKED LISTS | DATA STRUCTURES | FUNDAMENTALS
 // *****************************************************************************
 function Node(data) {
-    this.data = data
-    this.next = null
-  }
-  
-  function length(node, cnt = 0) {
-    return node !== null ? length(node.next, ++cnt) : cnt
-  }
-  
-  function count(node, data, cnt = 0) {
-    return node !== null ? count(node.next, data, (cnt += node.data === data)) : cnt
-  }
+  this.data = data
+  this.next = null
+}
+
+function length(node, cnt = 0) {
+  return node !== null ? length(node.next, ++cnt) : cnt
+}
+
+function count(node, data, cnt = 0) {
+  return node !== null ? count(node.next, data, (cnt += node.data === data)) : cnt
+}

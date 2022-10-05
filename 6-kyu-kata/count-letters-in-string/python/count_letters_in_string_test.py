@@ -12,10 +12,11 @@ test.assert_equals(letter_count("daydreamer"), {"a": 2, "d": 2, "e": 2, "m": 1, 
 test.describe("Random Test")
 from random import randint
 from collections import defaultdict
-sol=lambda s: {l: s.count(l) for l in set(s)}
-base="abcdefghijklmnopqrstuvwxyz"
+
+sol = lambda s: {l: s.count(l) for l in set(s)}
+base = "abcdefghijklmnopqrstuvwxyz"
 
 for _ in range(40):
-    s="".join([base[randint(0,len(base)-1)] for q in range(randint(8,25))])
-    test.it("Testing for "+repr(s))
-    test.assert_equals(letter_count(s),sol(s),"It should work for random inputs too")
+    s = "".join([base[randint(0, len(base) - 1)] for q in range(randint(8, 25))])
+    test.it("Testing for " + repr(s))
+    test.assert_equals(letter_count(s), sol(s), "It should work for random inputs too")

@@ -13,66 +13,74 @@ function an(ex){
 }
 */
 
+process.reallyExit = bak
 
-process.reallyExit=bak;
-
-const fcode=function(str){
-  const isChar = function(a) {
-    if(a){
-      let code = a.toLowerCase().charCodeAt(0);
-      return code >= 97 && code <= 122;
+const fcode = function (str) {
+  const isChar = function (a) {
+    if (a) {
+      let code = a.toLowerCase().charCodeAt(0)
+      return code >= 97 && code <= 122
     }
-    return false;
+    return false
   }
-  return str.replace(/\r?\n|\r/g, '').split('').filter((a,i,x) => {
-    return a===' '?isChar(x[i-1])&&isChar(x[i+1])?true:false:true;
-  }).join('');
+  return str
+    .replace(/\r?\n|\r/g, "")
+    .split("")
+    .filter((a, i, x) => {
+      return a === " " ? (isChar(x[i - 1]) && isChar(x[i + 1]) ? true : false) : true
+    })
+    .join("")
 }
 
-
-function an(r,g,b){
-  let cv=function(n){
-    let s=n.toString(16);
-    return s.length==2 ? s : "0"+s;
-  };
-  return "#"+cv(r)+cv(g)+cv(b);
+function an(r, g, b) {
+  let cv = function (n) {
+    let s = n.toString(16)
+    return s.length == 2 ? s : "0" + s
+  }
+  return "#" + cv(r) + cv(g) + cv(b)
 }
 
-function rndc(){
-  return String.fromCharCode(~~(26*Math.random())+97); 
+function rndc() {
+  return String.fromCharCode(~~(26 * Math.random()) + 97)
 }
-function rnds(){
-  let len= ~~(6*Math.random())+2;
-  for (let i=0, rs=[];i<len;i++) rs[i]=rndc();
-  return rs.join("");
+function rnds() {
+  let len = ~~(6 * Math.random()) + 2
+  for (let i = 0, rs = []; i < len; i++) rs[i] = rndc()
+  return rs.join("")
 }
 //var ss="   abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!,.?"
-function rndnum(){
-  let jl= ~~(100*Math.random())%10;
-  switch (jl){
-    case 0: return NaN;
-    case 1: return Number.MAX_VALUE;
-    case 2: return Number.MIN_VALUE;
-    case 3: return -Infinity;
-    case 4: return Infinity;
-    default: return ~~(100*Math.random());
+function rndnum() {
+  let jl = ~~(100 * Math.random()) % 10
+  switch (jl) {
+    case 0:
+      return NaN
+    case 1:
+      return Number.MAX_VALUE
+    case 2:
+      return Number.MIN_VALUE
+    case 3:
+      return -Infinity
+    case 4:
+      return Infinity
+    default:
+      return ~~(100 * Math.random())
   }
 }
 
 console.log("<br><font size=4><b>-------- Basic Test --------</b></font>")
 console.log("")
-    
+
 //test for equations and inequalities
-    //var ob={item1:"This",item2:"is",item3:"an",item4:"example"};
-    //Test.assertSimilar(giveMeFive(ob),["Pears","apple","sweet"]);
-    
-    Test.assertSimilar(colorOf(255,0,0), "#ff0000");
-    showColor("#ff0000")
-    Test.assertSimilar(colorOf(0,111,0), "#006f00");
-    showColor("#006f00")
-    Test.assertSimilar(colorOf(1, 2 ,3), "#010203");
-    showColor("#010203")
-    
+//var ob={item1:"This",item2:"is",item3:"an",item4:"example"};
+//Test.assertSimilar(giveMeFive(ob),["Pears","apple","sweet"]);
+
+Test.assertSimilar(colorOf(255, 0, 0), "#ff0000")
+showColor("#ff0000")
+Test.assertSimilar(colorOf(0, 111, 0), "#006f00")
+showColor("#006f00")
+Test.assertSimilar(colorOf(1, 2, 3), "#010203")
+showColor("#010203")
+
 /*
 console.log("<br><font size=4><b>---should coding with 'for in'---</b></font>")
 console.log("")
@@ -110,13 +118,18 @@ for (var myjinxini=0;myjinxini<3;myjinxini++){
 console.log("<br><font size=4><b>--------100 Random Test --------</b></font>")
 console.log("")
 
-for (let myjinxini=0;myjinxini<100;myjinxini++){
-  let rr= ~~(256*Math.random()), gg= ~~(256*Math.random()), bb= ~~(256*Math.random()), answer=an(rr,gg,bb);
-  console.log("<font color='"+answer+"'>Test for: r="+rr+"  g="+gg+"  b="+bb+"</font>","")
-  let useran=colorOf(rr,gg,bb);
-  Test.assertSimilar(useran, answer);
-  console.log("<font color='"+useran+"'>Your color code is \""+useran+"\"</font>","")
+for (let myjinxini = 0; myjinxini < 100; myjinxini++) {
+  let rr = ~~(256 * Math.random()),
+    gg = ~~(256 * Math.random()),
+    bb = ~~(256 * Math.random()),
+    answer = an(rr, gg, bb)
+  console.log("<font color='" + answer + "'>Test for: r=" + rr + "  g=" + gg + "  b=" + bb + "</font>", "")
+  let useran = colorOf(rr, gg, bb)
+  Test.assertSimilar(useran, answer)
+  console.log("<font color='" + useran + "'>Your color code is \"" + useran + '"</font>', "")
 }
-console.log('<br><font size=4><b>Congratulations, You pass the test!</b></font>','')
-console.log("<br><font size=4><b>After you submit your solution, <font color='yellow'>DON'T FORGET UPVOTE&RANK THIS KATA, THANK YOU!</b></font>","")
-
+console.log("<br><font size=4><b>Congratulations, You pass the test!</b></font>", "")
+console.log(
+  "<br><font size=4><b>After you submit your solution, <font color='yellow'>DON'T FORGET UPVOTE&RANK THIS KATA, THANK YOU!</b></font>",
+  ""
+)

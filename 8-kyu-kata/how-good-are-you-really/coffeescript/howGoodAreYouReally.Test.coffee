@@ -3,7 +3,7 @@
 # Category: REFERENCE  |  Tags: FUNDAMENTALS
 # ******************************************************************************
 describe "Basic Tests", ->
-  Test.assertEquals betterThanAverage([2, 3], 5), true 
+  Test.assertEquals betterThanAverage([2, 3], 5), true
   Test.assertEquals betterThanAverage([100, 40, 34, 57, 29, 72, 57, 88], 75), true
   Test.assertEquals betterThanAverage([12, 23, 34, 45, 56, 67, 78, 89, 90], 69), true
   Test.assertEquals betterThanAverage([41, 75, 72, 56, 80, 82, 81, 33], 50), false

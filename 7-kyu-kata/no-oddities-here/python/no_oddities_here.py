@@ -3,4 +3,4 @@
 # Category: REFERENCE  |  Tags: ARRAYS | FUNDAMENTALS
 # ******************************************************************************
 def no_odds(values):
-      return [x for x in values if not x % 2]
+    return [x for x in values if not x % 2]

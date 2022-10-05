@@ -3,9 +3,9 @@
 # Category: GAMES  |  Tags: PUZZLES
 # ******************************************************************************
 def triple_trouble(one, two, three):
-      result = ""
-      for x in range(len(one)):
-          result += one[x]
-          result += two[x]
-          result += three[x]
-      return result
+    result = ""
+    for x in range(len(one)):
+        result += one[x]
+        result += two[x]
+        result += three[x]
+    return result

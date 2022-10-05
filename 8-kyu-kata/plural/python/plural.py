@@ -3,4 +3,4 @@
 # Category: REFERENCE  |  Tags: FUNDAMENTALS
 # ******************************************************************************
 def plural(n):
-      return False if n == 1 else True
+    return False if n == 1 else True

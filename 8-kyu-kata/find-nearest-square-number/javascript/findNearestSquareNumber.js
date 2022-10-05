@@ -3,10 +3,4 @@
 // Category: REFERENCE  |  Tags: FUNDAMENTALS
 // *****************************************************************************
 const nearestSq = (n, y = 1) =>
-    !(n ** 0.5 % 1) 
-    ? n 
-    : !((n - y) ** 0.5 % 1) 
-    ? n - y 
-    : !((n + y) ** 0.5 % 1) 
-    ? n + y 
-    : nearestSq(n, y + 1)
+  !(n ** 0.5 % 1) ? n : !((n - y) ** 0.5 % 1) ? n - y : !((n + y) ** 0.5 % 1) ? n + y : nearestSq(n, y + 1)

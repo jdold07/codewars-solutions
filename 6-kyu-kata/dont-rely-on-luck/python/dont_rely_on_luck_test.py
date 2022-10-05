@@ -2,5 +2,5 @@
 # URL: https://www.codewars.com/kata/5268af3872b786f006000228
 # Category: GAMES  |  Tags: GAMES | PUZZLES
 # ******************************************************************************
-lucky_number = randint(1,100)
+lucky_number = randint(1, 100)
 test.assert_equals(guess, lucky_number, "Sorry. Unlucky this time.")

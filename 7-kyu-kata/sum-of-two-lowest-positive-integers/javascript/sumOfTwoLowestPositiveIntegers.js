@@ -2,7 +2,6 @@
 // URL: https://www.codewars.com/kata/558fc85d8fd1938afb000014
 // Category: REFERENCE  |  Tags: ARRAYS | FUNDAMENTALS
 // *****************************************************************************
-function sumTwoSmallestNumbers(numbers) {  
-    return (numbers.sort((a, b) => (a - b))[0] + numbers.sort((a, b) => (a - b))[1])
-    
-  }
+function sumTwoSmallestNumbers(numbers) {
+  return numbers.sort((a, b) => a - b)[0] + numbers.sort((a, b) => a - b)[1]
+}

@@ -3,5 +3,5 @@
 // Category: REFERENCE  |  Tags: FUNDAMENTALS
 // *****************************************************************************
 export function betterThanAverage(classPoints: number[], yourPoints: number): boolean {
-    return (yourPoints + classPoints.reduce((a, c) => a + c, 0)) / (classPoints.length + 1) < yourPoints
-  }
+  return (yourPoints + classPoints.reduce((a, c) => a + c, 0)) / (classPoints.length + 1) < yourPoints
+}

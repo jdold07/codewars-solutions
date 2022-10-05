@@ -5,9 +5,10 @@
 import codewars_test as test
 from solution import Ball
 
+
 @test.describe("Fixed Tests")
 def fixed_tests():
-    @test.it('Basic Test Cases')
+    @test.it("Basic Test Cases")
     def basic_test_cases():
-        test.assert_equals(Ball().ball_type,"regular")
-        test.assert_equals(Ball('super').ball_type, "super")
+        test.assert_equals(Ball().ball_type, "regular")
+        test.assert_equals(Ball("super").ball_type, "super")

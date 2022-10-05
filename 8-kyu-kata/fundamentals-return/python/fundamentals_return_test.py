@@ -19,10 +19,13 @@ test.assert_equals(exponent(2, 10), 1024)
 test.assert_equals(subt(5832, 1832), 4000)
 
 test.it("Random Tests:")
+
+
 def random_tests():
     # in a separate function so we don't leak anything into the global namespace
     import operator
     import random
+
     operators = (
         (add, operator.add),
         (multiply, operator.mul),
@@ -30,21 +33,22 @@ def random_tests():
         (mod, operator.mod),
         (exponent, operator.pow),
         (subt, operator.sub),
-        )
+    )
     for _ in range(50):
         a = random.randint(1, 100)
         b = random.randint(1, 100)
         for op1, op2 in operators:
             expected = op2(a, b)
             actual = op1(a, b)
-            test.assert_equals(actual, expected,
-                "{.__name__}({!r}, {!r})".format(op1, a, b))
+            test.assert_equals(actual, expected, "{.__name__}({!r}, {!r})".format(op1, a, b))
         # for division we accept both truediv and floordiv
         expected1 = operator.floordiv(a, b)
         expected2 = operator.truediv(a, b)
         actual = divide(a, b)
-        test.expect(actual in (expected1, expected2),
-            "divide({!r}, {!r}) should return {!r} or {!r}, actual: {!r}".format(
-            a, b, expected1, expected2, actual))
-            
+        test.expect(
+            actual in (expected1, expected2),
+            "divide({!r}, {!r}) should return {!r} or {!r}, actual: {!r}".format(a, b, expected1, expected2, actual),
+        )
+
+
 random_tests()

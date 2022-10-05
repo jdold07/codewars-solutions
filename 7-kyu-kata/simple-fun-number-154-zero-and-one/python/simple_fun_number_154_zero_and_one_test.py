@@ -5,6 +5,7 @@
 import codewars_test as test
 from solution import zero_and_one
 
+
 @test.describe("Fixed tests")
 def test_group():
     @test.it("Sample tests")
@@ -21,12 +22,11 @@ def test_group():
 def test_group():
     from random import randint
     import re
-    
+
     for _ in range(100):
         s = "".join(str(randint(0, 1)) for _ in range(randint(1, 100)))
-        
+
         @test.it(f'Testing "{s}"')
         def test_case():
             expected = len(re.sub("01|10", "", s))
             test.assert_equals(zero_and_one(s), expected)
-            

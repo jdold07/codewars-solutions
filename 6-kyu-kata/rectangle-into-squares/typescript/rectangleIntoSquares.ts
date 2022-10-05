@@ -2,4 +2,3 @@
 // URL: https://www.codewars.com/kata/55466989aeecab5aac00003e
 // Category: GAMES  |  Tags: FUNDAMENTALS | GEOMETRY | PUZZLES
 // *****************************************************************************
-

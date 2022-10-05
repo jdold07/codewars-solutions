@@ -5,29 +5,32 @@
 import codewars_test as test
 from solution import check_alive
 
-try:    
+try:
     check_alive(0)
 except:
     check_alive = checkAlive
-    
+
+
 @test.describe("Fixed Tests")
 def fixed_tests():
-    @test.it('Basic Test Cases')
+    @test.it("Basic Test Cases")
     def basic_test_cases():
         test.assert_equals(check_alive(5), True)
         test.assert_equals(check_alive(0), False)
         test.assert_equals(check_alive(-5), False)
-        
+
+
 @test.describe("Random Tests")
 def random_tests():
-    
+
     from random import randint
-    
+
     def solution(h):
         return h > 0
-    
+
     for _ in range(10):
-        a=randint(-10,10)
+        a = randint(-10, 10)
+
         @test.it(f"testing for check_alive({a})")
         def test_case():
             test.assert_equals(check_alive(a), solution(a))

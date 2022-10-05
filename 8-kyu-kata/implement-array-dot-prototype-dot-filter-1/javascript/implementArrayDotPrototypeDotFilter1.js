@@ -3,11 +3,11 @@
 // Category: REFERENCE  |  Tags: ARRAYS | FUNDAMENTALS
 // *****************************************************************************
 Array.prototype.filter = function (func) {
-    const filteredArray = []
-    for (let i = 0; i < this.length; i++) {
-      if (func(this[i])) {
-        filteredArray.push(this[i])
-      }
+  const filteredArray = []
+  for (let i = 0; i < this.length; i++) {
+    if (func(this[i])) {
+      filteredArray.push(this[i])
     }
-    return filteredArray
   }
+  return filteredArray
+}

@@ -2,8 +2,9 @@
 # URL: https://www.codewars.com/kata/54dc6f5a224c26032800005c
 # Category: REFERENCE  |  Tags: FUNDAMENTALS | ALGORITHMS
 # ******************************************************************************
-from solution import stock_list
+from help_the_bookseller import stock_list
 import codewars_test as test
+
 
 @test.describe("Testing")
 def _():
@@ -36,4 +37,3 @@ def _():
         b = ["ROXANNE 102", "RHODODE 123", "BKWRKAA 125", "BTSQZFG 239", "DRTYMKH 060"]
         c = ["U", "V", "R"]
         test.assert_equals(stock_list(b, c), "(U : 0) - (V : 0) - (R : 225)")
-

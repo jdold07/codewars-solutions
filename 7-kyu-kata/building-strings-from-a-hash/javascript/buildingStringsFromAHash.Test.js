@@ -4,12 +4,11 @@
 // *****************************************************************************
 describe("Tests", () => {
   it("test", () => {
-result = solution({a: 1, b: 2})
-Test.assertSimilar(result, 'a = 1,b = 2')
-result = solution({b: 1, c: 2, e: 3})
-Test.assertSimilar(result, 'b = 1,c = 2,e = 3')
-result = solution({})
-Test.assertSimilar(result, '')
-  });
-});
-
+    result = solution({ a: 1, b: 2 })
+    Test.assertSimilar(result, "a = 1,b = 2")
+    result = solution({ b: 1, c: 2, e: 3 })
+    Test.assertSimilar(result, "b = 1,c = 2,e = 3")
+    result = solution({})
+    Test.assertSimilar(result, "")
+  })
+})

@@ -3,4 +3,4 @@
 # Category: REFERENCE  |  Tags: FUNDAMENTALS
 # ******************************************************************************
 def predict_age(*args):
-      return int(((sum(x*x for x in args))**0.5)//2)
+    return int(((sum(x * x for x in args)) ** 0.5) // 2)

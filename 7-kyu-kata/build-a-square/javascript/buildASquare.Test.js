@@ -4,26 +4,23 @@
 // *****************************************************************************
 describe("Tests", () => {
   it("test", () => {
-function checkSolution(num) {
-    let string = '';
+    function checkSolution(num) {
+      let string = ""
 
-    for (let i = 0; i < num * num; i++) {
+      for (let i = 0; i < num * num; i++) {
         if (i % num === 0 && i !== 0) {
-            string += '\n';
+          string += "\n"
         }
-        string += '+';
+        string += "+"
+      }
+
+      return string
     }
 
-    return string;
-}
-
-for(let i = 0; i < 25; i ++){
-  let num = Math.floor(Math.random() * 50) + 0;
-  Test.assertEquals( generateShape(num) , checkSolution(num) );
-}
-
-
-
-  });
-});
+    for (let i = 0; i < 25; i++) {
+      let num = Math.floor(Math.random() * 50) + 0
+      Test.assertEquals(generateShape(num), checkSolution(num))
+    }
+  })
+})
 //

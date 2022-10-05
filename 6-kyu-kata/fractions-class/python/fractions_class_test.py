@@ -5,7 +5,7 @@
 import fractions
 import random
 
-test.describe('Basic Tests')
+test.describe("Basic Tests")
 test.assert_equals(Fraction(1, 8) + Fraction(4, 5), Fraction(37, 40))
 test.assert_equals(Fraction(1, 4) + Fraction(3, 4), Fraction(1, 1))
 test.assert_equals(Fraction(911, 920) + Fraction(980, 906), Fraction(863483, 416760))
@@ -19,11 +19,10 @@ test.assert_equals(Fraction(740, 813) + Fraction(184, 348), Fraction(33926, 2357
 test.assert_equals(Fraction(579, 441) + Fraction(543, 807), Fraction(78524, 39543))
 test.assert_equals(Fraction(212, 979) + Fraction(46, 580), Fraction(83997, 283910))
 
-test.describe('Random Tests')
+test.describe("Random Tests")
 for _ in range(75):
     num1, den1, num2, den2 = [random.randint(1, 1000) for __ in range(4)]
     test.assert_equals(
         str(Fraction(num1, den1) + Fraction(num2, den2)),
-        str(fractions.Fraction(num1, den1) + fractions.Fraction(num2, den2))
+        str(fractions.Fraction(num1, den1) + fractions.Fraction(num2, den2)),
     )
-

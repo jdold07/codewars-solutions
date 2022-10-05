@@ -3,18 +3,17 @@
 // Category: ALGORITHMS  |  Tags: STRINGS | ALGORITHMS
 // *****************************************************************************
 function anagrams(word, words) {
-      wordSorted = word.split("").sort().join("")
-      return words.filter(value => value.split("").sort().join("") === wordSorted)
-  }
+  let wordSorted = word.split("").sort().join("")
+  return words.filter((value) => value.split("").sort().join("") === wordSorted)
+}
 // *****************************************************************************
 // *****************************************************************************
 function anagrams(word, words) {
-      wordSorted = word.split("").sort().join("")
-      wordsSorted = [...words].map(value => value.split("").sort().join(""))
-      result = []
-      for (let i = 0; i < wordsSorted.length; i++){
-          if (wordsSorted[i] === wordSorted) result.push(words[i])
-      }
-      return result
+  let wordSorted = word.split("").sort().join("")
+  let wordsSorted = [...words].map((value) => value.split("").sort().join(""))
+  let result = []
+  for (let i = 0; i < wordsSorted.length; i++) {
+    if (wordsSorted[i] === wordSorted) result.push(words[i])
   }
-
+  return result
+}

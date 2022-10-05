@@ -2,4 +2,3 @@
 # URL: https://www.codewars.com/kata/592edfda5be407b9640000b2
 # Category: REFERENCE  |  Tags: FUNDAMENTALS | CIPHERS | CRYPTOGRAPHY
 # ******************************************************************************
-

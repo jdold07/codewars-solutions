@@ -2,4 +2,4 @@
 // URL: https://www.codewars.com/kata/5a55f04be6be383a50000187
 // Category: REFERENCE  |  Tags: FUNDAMENTALS | MATHEMATICS
 // *****************************************************************************
-const specialNumber = (n) => !`${n}`.replace(/[012345]/g,"").length ? "Special!!" : "NOT!!"
+const specialNumber = (n) => (!`${n}`.replace(/[012345]/g, "").length ? "Special!!" : "NOT!!")

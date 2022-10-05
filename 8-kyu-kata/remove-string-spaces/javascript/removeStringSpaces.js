@@ -2,4 +2,4 @@
 // URL: https://www.codewars.com/kata/57eae20f5500ad98e50002c5
 // Category: REFERENCE  |  Tags: FUNDAMENTALS | STRINGS | ARRAYS
 // *****************************************************************************
-noSpace = x => x.replace(/\s/g, "")
+noSpace = (x) => x.replace(/\s/g, "")

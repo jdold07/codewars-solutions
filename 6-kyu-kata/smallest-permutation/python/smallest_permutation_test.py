@@ -2,12 +2,14 @@
 # URL: https://www.codewars.com/kata/5fefee21b64cc2000dbfa875
 # Category: REFERENCE  |  Tags: FUNDAMENTALS
 # ******************************************************************************
-from solution import min_permutation
+from smallest_permutation import min_permutation
 import codewars_test as test
 import random
 
+
 def testing(n, res):
     test.assert_equals(min_permutation(n), res)
+
 
 @test.describe("Sample tests")
 def sampleTests():
@@ -19,6 +21,7 @@ def sampleTests():
         testing(10, 10)
         testing(29394, 23499)
 
+
 def solution(n):
     if n >= 0 and type(n) == int:
         sortedDigits = sorted([int(digit) for digit in str(n)])
@@ -27,15 +30,16 @@ def solution(n):
     hasLeadingZeros = True
     for index in range(len(sortedDigits)):
         if sortedDigits[index] != 0 and hasLeadingZeros:
-            firstNonZero =  sortedDigits[index]
+            firstNonZero = sortedDigits[index]
             sortedDigits.pop(index)
             sortedDigits.insert(0, firstNonZero)
             hasLeadingZeros = False
-    if n >= 0 and type(n) == int:        
+    if n >= 0 and type(n) == int:
         return int("".join([str(digit) for digit in sortedDigits]))
     else:
         sortedDigits.insert(0, "-")
         return int("".join([str(digit) for digit in sortedDigits]))
+
 
 @test.describe("Random Tests")
 def randomTests():

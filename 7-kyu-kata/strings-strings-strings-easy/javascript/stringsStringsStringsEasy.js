@@ -3,14 +3,14 @@
 // Category: REFERENCE  |  Tags: FUNDAMENTALS | OBJECT-ORIENTED PROGRAMMING
 // *****************************************************************************
 Boolean.prototype.toString = function () {
-    return this + "" // `${this}`
-  }
-  Number.prototype.toString = function () {
-    return this + "" // `${this}`
-  }
-  Object.prototype.toString = function () {
-    return this + "" // `${this}`
-  }
-  Array.prototype.toString = function () {
-    return "[" + this.join(",") + "]" // `${this}`
-  }
+  return this + "" // `${this}`
+}
+Number.prototype.toString = function () {
+  return this + "" // `${this}`
+}
+Object.prototype.toString = function () {
+  return this + "" // `${this}`
+}
+Array.prototype.toString = function () {
+  return "[" + this.join(",") + "]" // `${this}`
+}

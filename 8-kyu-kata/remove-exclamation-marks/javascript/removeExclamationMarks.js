@@ -3,5 +3,5 @@
 // Category: REFERENCE  |  Tags: FUNDAMENTALS
 // *****************************************************************************
 function removeExclamationMarks(s) {
-    return s.replace(/!/g, "")
-  }
+  return s.replace(/!/g, "")
+}

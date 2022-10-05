@@ -3,23 +3,22 @@
 // Category: ALGORITHMS  |  Tags: FUNDAMENTALS | ALGORITHMS
 // *****************************************************************************
 const grid = (N) =>
-    N < 0
-      ? null
-      : Array.from({ length: N }, (_, i) =>
-          Array.from({ length: N }, (_, j) => String.fromCharCode(97 + ((i + j) % 26))).join(" ")
-        ).join("\n") || ""
+  N < 0
+    ? null
+    : Array.from({ length: N }, (_, i) =>
+        Array.from({ length: N }, (_, j) => String.fromCharCode(97 + ((i + j) % 26))).join(" ")
+      ).join("\n") || ""
 // *****************************************************************************
 // *****************************************************************************
 function grid(N) {
-    if (N < 0) return null
-    
-    const result = []
-    const stupidLongAlpha = "abcdefghijklmnopqrstuvwxyz".repeat(Math.ceil((N / 26) ** 2) + 1)
-    
-    for (let i = 0; i < N; i++) {
-      result.push(Array.from({ length: N }, (_, j) => stupidLongAlpha[i + j]).join(" "))
-    }
-    
-    return result.join("\n") || ""
+  if (N < 0) return null
+
+  const result = []
+  const stupidLongAlpha = "abcdefghijklmnopqrstuvwxyz".repeat(Math.ceil((N / 26) ** 2) + 1)
+
+  for (let i = 0; i < N; i++) {
+    result.push(Array.from({ length: N }, (_, j) => stupidLongAlpha[i + j]).join(" "))
   }
 
+  return result.join("\n") || ""
+}

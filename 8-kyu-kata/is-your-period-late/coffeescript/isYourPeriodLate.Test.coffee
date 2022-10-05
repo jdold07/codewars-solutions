@@ -2,4 +2,3 @@
 # URL: https://www.codewars.com/kata/578a8a01e9fd1549e50001f1
 # Category: REFERENCE  |  Tags: FUNDAMENTALS | DATE TIME
 # ******************************************************************************
-

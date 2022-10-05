@@ -3,8 +3,9 @@
 # Category: ALGORITHMS  |  Tags: ALGORITHMS
 # ******************************************************************************
 def solution(digits):
-      result = 0
-      for i in range(0, len(digits)):
-          num = int(digits[i : i + 5])
-          if num > result: result = num
-      return result
+    result = 0
+    for i in range(0, len(digits)):
+        num = int(digits[i : i + 5])
+        if num > result:
+            result = num
+    return result

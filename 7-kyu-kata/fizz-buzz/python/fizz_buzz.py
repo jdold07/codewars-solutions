@@ -3,6 +3,7 @@
 # Category: ALGORITHMS  |  Tags: ALGORITHMS | FUNDAMENTALS | ARRAYS
 # ******************************************************************************
 def fizzbuzz(n):
-      return ["FizzBuzz" if not val % 3 and not val % 5 else "Fizz" if not val % 3
-              else "Buzz" if not val % 5 else val for val in range(1, n + 1)]
-      
+    return [
+        "FizzBuzz" if not val % 3 and not val % 5 else "Fizz" if not val % 3 else "Buzz" if not val % 5 else val
+        for val in range(1, n + 1)
+    ]

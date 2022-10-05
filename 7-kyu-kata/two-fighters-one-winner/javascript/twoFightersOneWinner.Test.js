@@ -2,4 +2,3 @@
 // URL: https://www.codewars.com/kata/577bd8d4ae2807c64b00045b
 // Category: REFERENCE  |  Tags: GAMES | ALGORITHMS | LOGIC | FUNDAMENTALS
 // *****************************************************************************
-

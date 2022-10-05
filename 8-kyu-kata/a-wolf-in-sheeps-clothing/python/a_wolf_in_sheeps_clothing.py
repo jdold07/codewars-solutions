@@ -3,6 +3,10 @@
 # Category: REFERENCE  |  Tags: FUNDAMENTALS | ARRAYS
 # ******************************************************************************
 def warn_the_sheep(queue):
-      wolf = queue.index("wolf")
-      q = len(queue)-1
-      return (f"Oi! Sheep number {q - wolf}! You are about to be eaten by a wolf!" if q != wolf else "Pls go away and stop eating my sheep")
+    wolf = queue.index("wolf")
+    q = len(queue) - 1
+    return (
+        f"Oi! Sheep number {q - wolf}! You are about to be eaten by a wolf!"
+        if q != wolf
+        else "Pls go away and stop eating my sheep"
+    )

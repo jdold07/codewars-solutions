@@ -3,5 +3,4 @@
 # Category: ALGORITHMS  |  Tags: ALGORITHMS
 # ******************************************************************************
 def pyramid(n):
-      return [[1] * l for l in range(1, n + 1)]
-  
+    return [[1] * l for l in range(1, n + 1)]

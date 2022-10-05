@@ -3,4 +3,3 @@
 // Category: REFERENCE  |  Tags: FUNDAMENTALS
 // *****************************************************************************
 const solve = (s) => [/[A-Z]/g, /[a-z]/g, /\d/g, /\W/g].map((el) => (s.match(el) || []).length)
-  

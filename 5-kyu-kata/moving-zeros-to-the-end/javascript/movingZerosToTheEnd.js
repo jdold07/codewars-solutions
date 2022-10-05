@@ -3,8 +3,8 @@
 // Category: ALGORITHMS  |  Tags: ARRAYS | SORTING | ALGORITHMS
 // *****************************************************************************
 function moveZeros(arr) {
-      const arrLength = arr.length
-      arr = arr.filter(value => value !== 0)
-      while (arr.length !== arrLength) arr.push(0)
-      return arr
-  }
+  const arrLength = arr.length
+  arr = arr.filter((value) => value !== 0)
+  while (arr.length !== arrLength) arr.push(0)
+  return arr
+}

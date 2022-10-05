@@ -5,24 +5,27 @@
 import codewars_test as test
 from solution import powers_of_two
 
+
 @test.describe("Fixed Tests")
 def fixed_tests():
-    @test.it('Basic Test Cases')
+    @test.it("Basic Test Cases")
     def basic_test_cases():
         test.assert_equals(powers_of_two(0), [1])
         test.assert_equals(powers_of_two(1), [1, 2])
         test.assert_equals(powers_of_two(4), [1, 2, 4, 8, 16])
-        
+
+
 @test.describe("Random Tests")
 def random_test():
     from random import shuffle
-    
+
     tests = list(range(0, 201))
     shuffle(tests)
-    
-    _powers_of_two = lambda n: [2 ** x for x in range(0, n+1)]
-    
+
+    _powers_of_two = lambda n: [2**x for x in range(0, n + 1)]
+
     for n in tests:
+
         @test.it(f"testing for powers_of_two({n})")
         def test_case():
             test.assert_equals(powers_of_two(n), _powers_of_two(n))

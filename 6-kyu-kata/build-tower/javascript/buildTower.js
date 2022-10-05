@@ -3,10 +3,10 @@
 // Category: REFERENCE  |  Tags: STRINGS | ASCII ART | FUNDAMENTALS
 // *****************************************************************************
 function towerBuilder(nFloors) {
-      const lineLength = nFloors * 2 - 1
-      let arr = []
-      for (i = 1; i <= lineLength; i+=2){
-          arr.push(" ".repeat((lineLength-i)/2) + "*".repeat(i) + " ".repeat((lineLength-i)/2))
-      }
-      return arr
+  const lineLength = nFloors * 2 - 1
+  let arr = []
+  for (i = 1; i <= lineLength; i += 2) {
+    arr.push(" ".repeat((lineLength - i) / 2) + "*".repeat(i) + " ".repeat((lineLength - i) / 2))
   }
+  return arr
+}

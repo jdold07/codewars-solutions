@@ -5,21 +5,23 @@
 import codewars_test as test
 from solution import unusual_five
 
+
 @test.describe("Fixed Tests")
 def fixed_tests():
-    @test.it('Basic Test Cases')
+    @test.it("Basic Test Cases")
     def basic_test_cases():
 
-        """ Use this as a base: """
-        with open('/workspace/solution.txt', 'r') as file:
+        """Use this as a base:"""
+        with open("/workspace/solution.txt", "r") as file:
             solution = file.read()
-        
+
         """ then check the presence of characters in `solution` """
+
         def check(file):
             for i in "0123456789+-*/":
                 if i in file:
                     return True
             return False
-        
-        test.assert_equals(check(solution),False,"cheater u can't use digits !!!")
-        test.assert_equals(unusual_five(),5 ,"lol")
+
+        test.assert_equals(check(solution), False, "cheater u can't use digits !!!")
+        test.assert_equals(unusual_five(), 5, "lol")

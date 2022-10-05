@@ -3,6 +3,5 @@
 // Category: REFERENCE  |  Tags: FUNDAMENTALS
 // *****************************************************************************
 function doubleChar(str) {
-    return str.replace(/(.)/gi, "$1$1")
-  }
-  
+  return str.replace(/(.)/gi, "$1$1")
+}

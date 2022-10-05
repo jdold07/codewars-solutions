@@ -2,27 +2,29 @@
 # URL: https://www.codewars.com/kata/5388f0e00b24c5635e000fc6
 # Category: BUG_FIXES  |  Tags: DEBUGGING | ARRAYS | FUNDAMENTALS
 # ******************************************************************************
-@test.describe('Example Tests')
+@test.describe("Example Tests")
 def example_tests():
-    @test.it('Example Test Case')
+    @test.it("Example Test Case")
     def example_test_case():
         swap = [1, 2]
         swap_values(swap)
-        test.assert_equals(swap[0], 2)        
+        test.assert_equals(swap[0], 2)
         test.assert_equals(swap[1], 1)
+
 
 from random import choice
 from string import digits
-@test.describe('Random Tests')
-def random_tests():
 
-    def _swap_values_solution(args): 
+
+@test.describe("Random Tests")
+def random_tests():
+    def _swap_values_solution(args):
         return [args[1], args[0]]
 
-    def generate_random_case(): 
+    def generate_random_case():
         res = []
-        OPTIONS = list(digits) + [x for x in range(10)] 
-        for _ in range(2): 
+        OPTIONS = list(digits) + [x for x in range(10)]
+        for _ in range(2):
             res.append(choice(OPTIONS))
         return res
 
@@ -31,10 +33,10 @@ def random_tests():
         lst_pairs2 = lst_pairs[:]
         expected_solution = _swap_values_solution(lst_pairs)
         swap_values(lst_pairs2)
-        
+
         test.assert_equals(lst_pairs2, expected_solution)
 
-    @test.it('Random Test Cases')
+    @test.it("Random Test Cases")
     def random_test_cases():
         for _ in range(100):
             _do_one_test()

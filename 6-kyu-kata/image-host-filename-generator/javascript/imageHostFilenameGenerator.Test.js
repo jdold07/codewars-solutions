@@ -4,14 +4,12 @@
 // *****************************************************************************
 describe("Tests", () => {
   it("test", () => {
-for(let i = 0;i<10;i++)
-{
-  let name = generateName();
+    for (let i = 0; i < 10; i++) {
+      let name = generateName()
 
-  Test.assertEquals(typeof name, "string" , "Name has to be a string.");
-  Test.assertEquals(photoManager.nameWasUnique(name), true, "Name has to be unique.");
-  Test.assertEquals(name.length, 6, "Name has to be 6 digits long.");
-}
-  });
-});
-
+      Test.assertEquals(typeof name, "string", "Name has to be a string.")
+      Test.assertEquals(photoManager.nameWasUnique(name), true, "Name has to be unique.")
+      Test.assertEquals(name.length, 6, "Name has to be 6 digits long.")
+    }
+  })
+})

@@ -2,4 +2,10 @@
 // URL: https://www.codewars.com/kata/57274562c8dcebe77e001012
 // Category: REFERENCE  |  Tags: FUNDAMENTALS | TUTORIALS
 // *****************************************************************************
-const cutIt = (arr) => arr.map((v) => v.slice(0, arr.reduce((a, c) => (c.length < a ? (a = c.length) : a), Infinity)))
+const cutIt = (arr) =>
+  arr.map((v) =>
+    v.slice(
+      0,
+      arr.reduce((a, c) => (c.length < a ? (a = c.length) : a), Infinity)
+    )
+  )

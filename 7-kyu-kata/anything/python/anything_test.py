@@ -11,14 +11,13 @@ import codewars_test as test
 
 @test.describe("Anything can be true")
 def test_truthness():
-
     @test.it("A Dictionary can not equal to a List")
     def test_dict():
         test.expect(anything({}) != [])
 
     @test.it("The String Hello can be less than the String world")
     def test_hello():
-        test.expect(anything('Hello') < 'World')
+        test.expect(anything("Hello") < "World")
 
     @test.it("80 can be greater than 81")
     def test_80():
@@ -41,13 +40,12 @@ def test_truthness():
         for i in range(5):
             test.expect(anything(i) == i)
             test.expect(anything(i) == -i)
-            test.expect(anything(i) == ""+str(-i)+" "+str(i))
+            test.expect(anything(i) == "" + str(-i) + " " + str(i))
 
     @test.it("A boolean can be both True and False")
     def test_bool():
         test.expect(anything(True) == False)
-        
+
     @test.it("A Dictionary can equal a List")
     def test_dict_equal():
         test.expect(anything({}) == [])
-

@@ -2,4 +2,3 @@
 // URL: https://www.codewars.com/kata/576757b1df89ecf5bd00073b
 // Category: REFERENCE  |  Tags: STRINGS | ASCII ART | FUNDAMENTALS
 // *****************************************************************************
-

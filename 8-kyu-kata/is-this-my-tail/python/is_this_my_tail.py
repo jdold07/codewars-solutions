@@ -3,4 +3,4 @@
 # Category: BUG_FIXES  |  Tags: DEBUGGING
 # ******************************************************************************
 def correct_tail(body, tail):
-      return body[-1] == tail
+    return body[-1] == tail

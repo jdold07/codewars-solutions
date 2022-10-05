@@ -3,4 +3,4 @@
 # Category: ALGORITHMS  |  Tags: MATHEMATICS | ARRAYS | ALGORITHMS
 # ******************************************************************************
 def square_or_square_root(arr):
-      return [int(num ** 0.5) if not num ** 0.5 % 1 else num ** 2 for num in arr]
+    return [int(num**0.5) if not num ** 0.5 % 1 else num**2 for num in arr]

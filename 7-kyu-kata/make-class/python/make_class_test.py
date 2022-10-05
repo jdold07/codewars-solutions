@@ -14,18 +14,19 @@ def fixed_tests():
                 self.health = health
                 self.weight = weight
                 self.color = color
-        
+
         Animel = make_class("name", "species", "age", "health", "weight", "color")
-        
+
         dog1 = Animal("Bob", "Dog", 5, "good", "50lb", "brown")
         dog2 = Animel("Bob", "Dog", 5, "good", "50lb", "brown")
-        
+
         test.assert_equals(dog1.name, dog2.name)
         test.assert_equals(dog1.species, dog2.species)
         test.assert_equals(dog1.age, dog2.age)
         test.assert_equals(dog1.health, dog2.health)
         test.assert_equals(dog1.weight, dog2.weight)
         test.assert_equals(dog1.color, dog2.color)
+
 
 @test.describe("Random tests")
 def random_tests():
@@ -36,6 +37,7 @@ def random_tests():
         class F:
             def __init__(self, *brgs):
                 self.__dict__ = {x: y for x, y in zip(args, brgs)}
+
         return F
 
     @test.it("Tests")

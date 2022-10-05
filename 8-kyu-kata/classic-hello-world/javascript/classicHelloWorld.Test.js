@@ -4,8 +4,7 @@
 // *****************************************************************************
 describe("Tests", () => {
   it("test", () => {
-Solution.main("greetings from Javatlacati!");
-Test.expect(logRecord.indexOf("Hello World!") !== -1);
-  });
-});
-
+    Solution.main("greetings from Javatlacati!")
+    Test.expect(logRecord.indexOf("Hello World!") !== -1)
+  })
+})

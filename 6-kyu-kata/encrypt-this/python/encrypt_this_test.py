@@ -19,11 +19,13 @@ for t in tests:
 
 from random import choice, randint
 from string import ascii_letters as al
-    
+
+
 def random_tests(count=100):
     def solution(text):
         if not text:
             return ""
+
         def encrypt_word(word):
             if len(word) == 1:
                 return str(ord(word))
@@ -31,13 +33,15 @@ def random_tests(count=100):
             word[0] = str(ord(word[0]))
             word[1], word[-1] = word[-1], word[1]
             return "".join(word)
+
         return " ".join(map(encrypt_word, text.split()))
-        
+
     random_word = lambda length=5: "".join(choice(al) for _ in range(length))
     random_input = lambda: " ".join(random_word(randint(1, 20)) for _ in range(randint(1, 50)))
-    
+
     for _ in range(count):
         ri = random_input()
         test.assert_equals(encrypt_this(ri), solution(ri))
-        
+
+
 random_tests()

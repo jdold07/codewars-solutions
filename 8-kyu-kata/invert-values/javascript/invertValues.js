@@ -3,5 +3,5 @@
 // Category: REFERENCE  |  Tags: LISTS | FUNDAMENTALS
 // *****************************************************************************
 function invert(array) {
-     return array.map(num => -num)
-  }
+  return array.map((num) => -num)
+}

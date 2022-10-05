@@ -12,7 +12,6 @@ from random import randint
 
 @test.describe("Tests...")
 def _():
-
     @test.it("Basic Tests")
     def _():
         test.assert_equals(sq_in_rect(5, 5), None)
@@ -39,23 +38,76 @@ def _():
                 wdth, lng = lng, wdth
         res.append(wdth)
         return res
-    
-    
+
     @test.describe("Random Tests")
     def randomTests():
-        someLengths = [55,89,144,233,377,610,987,1597,2584,418,
-                       676,41,99,56,78,907,561,453,32,12,
-                       24,13,59,90,21,66,77,88,62,11
-                      ]
-        someWidths = [22,75,121,340,52,78,157,88,55,102,
-                      120,73,37,44,565,1002,43,90,72,10,
-                      24,13,59,32,34,51,12,68,34,100
-                     ]
+        someLengths = [
+            55,
+            89,
+            144,
+            233,
+            377,
+            610,
+            987,
+            1597,
+            2584,
+            418,
+            676,
+            41,
+            99,
+            56,
+            78,
+            907,
+            561,
+            453,
+            32,
+            12,
+            24,
+            13,
+            59,
+            90,
+            21,
+            66,
+            77,
+            88,
+            62,
+            11,
+        ]
+        someWidths = [
+            22,
+            75,
+            121,
+            340,
+            52,
+            78,
+            157,
+            88,
+            55,
+            102,
+            120,
+            73,
+            37,
+            44,
+            565,
+            1002,
+            43,
+            90,
+            72,
+            10,
+            24,
+            13,
+            59,
+            32,
+            34,
+            51,
+            12,
+            68,
+            34,
+            100,
+        ]
         for x in range(0, 20):
             rn = randint(0, 29)
-            f1 = someLengths[rn]; 
-            f2 = someWidths[rn];
+            f1 = someLengths[rn]
+            f2 = someWidths[rn]
             test.it(f"Random Tests: sq_in_rect({f1}, {f2})")
             test.assert_equals(sq_in_rect(f1, f2), sq_in_rectTest(f1, f2))
-
-    

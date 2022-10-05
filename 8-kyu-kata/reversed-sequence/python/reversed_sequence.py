@@ -3,10 +3,11 @@
 # Category: REFERENCE  |  Tags: FUNDAMENTALS
 # ******************************************************************************
 def reverse_seq(n):
-      return list(range(1,n+1))[::-1]
-  
-  #     result = []
-  #     while n > 0:
-  #         result.append(n)
-  #         n -= 1
-  #     return result
+    return list(range(1, n + 1))[::-1]
+
+
+#     result = []
+#     while n > 0:
+#         result.append(n)
+#         n -= 1
+#     return result

@@ -3,7 +3,8 @@
 # Category: REFERENCE  |  Tags: FUNDAMENTALS
 # ******************************************************************************
 import codewars_test as test
-    
+
+
 @test.describe("longest")
 def tests():
     @test.it("basic tests")
@@ -15,20 +16,24 @@ def tests():
         test.assert_equals(longest("codewars", "codewars"), "acdeorsw")
         test.assert_equals(longest("agenerationmustconfrontthelooming", "codewarrs"), "acdefghilmnorstuw")
 
+
 from random import randint
+
 
 @test.describe("longest")
 def random_tests():
-    #-----------------
+    # -----------------
     def do_ex(k):
         i, res = 0, ""
-        while (i < 15):
-            res += chr(randint(97+k, 122)) * randint(1, 10)
+        while i < 15:
+            res += chr(randint(97 + k, 122)) * randint(1, 10)
             i += 1
         return res
+
     def longest_sol(a1, a2):
         return "".join(sorted(set(a1 + a2)))
-    #-----------------
+
+    # -----------------
     @test.it("Random tests")
     def random():
         for _ in range(0, 200):
@@ -36,4 +41,3 @@ def random_tests():
             s2 = do_ex(randint(0, 8))
             sol = longest_sol(s1, s2)
             test.assert_equals(longest(s1, s2), sol)
-

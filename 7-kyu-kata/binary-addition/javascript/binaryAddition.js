@@ -2,8 +2,8 @@
 // URL: https://www.codewars.com/kata/551f37452ff852b7bd000139
 // Category: REFERENCE  |  Tags: BINARY | FUNDAMENTALS
 // *****************************************************************************
-function addBinary(a,b) {
-    let sumDecimal = a + b
-    let sumBinary = Number(sumDecimal).toString(2)
-    return sumBinary
-  }
+function addBinary(a, b) {
+  let sumDecimal = a + b
+  let sumBinary = Number(sumDecimal).toString(2)
+  return sumBinary
+}

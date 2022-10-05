@@ -6,6 +6,7 @@ import codewars_test as test
 import random
 from solution import kill_monsters
 
+
 @test.describe("Default Tests")
 def test_group():
     @test.it("Default Test Cases")
@@ -18,25 +19,30 @@ def test_group():
         test.assert_equals(kill_monsters(42, 30, 2), "hits: 9, damage: 18, health: 24", "For input (42, 30, 2)")
         test.assert_equals(kill_monsters(10, 7, 5), "hero died", "For input (10, 7, 5)")
 
+
 @test.describe("Random Tests")
 def test_group():
     def solution(health, monsters, damage):
         hits = 0
         damage_taken = 0
         monsters -= 3
-        while (monsters > 0):
+        while monsters > 0:
             health -= damage
             hits += 1
             damage_taken += damage
             monsters -= 3
-            if (health <= 0):
+            if health <= 0:
                 return "hero died"
         return f"hits: {hits}, damage: {damage_taken}, health: {health}"
+
     @test.it("100 Random Test Cases")
     def test_case():
         for i in range(100):
             randomh = random.randint(10, 1000)
             randomm = random.randint(1, 200)
             randomdm = random.randint(1, 60)
-            test.assert_equals(kill_monsters(randomh, randomm, randomdm), solution(randomh, randomm, randomdm), f"For input ({randomh}, {randomm}, {randomdm})")
-
+            test.assert_equals(
+                kill_monsters(randomh, randomm, randomdm),
+                solution(randomh, randomm, randomdm),
+                f"For input ({randomh}, {randomm}, {randomdm})",
+            )

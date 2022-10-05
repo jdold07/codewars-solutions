@@ -3,10 +3,10 @@
 // Category: REFERENCE  |  Tags: FUNDAMENTALS | TUTORIALS
 // *****************************************************************************
 const giveMeFive = (obj) => {
-    const five = []
-    for (const key in obj){
-      if (key.length === 5) five.push(key)
-      if (obj[key].length === 5) five.push(obj[key])
-    }
-    return five
+  const five = []
+  for (const key in obj) {
+    if (key.length === 5) five.push(key)
+    if (obj[key].length === 5) five.push(obj[key])
   }
+  return five
+}

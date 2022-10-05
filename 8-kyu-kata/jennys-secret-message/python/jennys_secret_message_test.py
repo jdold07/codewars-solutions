@@ -7,6 +7,7 @@ from solution import greet
 import random
 import string
 
+
 @test.describe("Tests")
 def all_tests():
     @test.it("Fixed Tests")
@@ -22,7 +23,9 @@ def all_tests():
             if name == "Johnny":
                 return "Hello, my love!"
             return "Hello, {name}!".format(name=name)
-        
+
         for _ in range(100):
-            name = "".join(random.choice(string.ascii_lowercase + string.ascii_uppercase) for _ in range(random.randint(2, 10)))
+            name = "".join(
+                random.choice(string.ascii_lowercase + string.ascii_uppercase) for _ in range(random.randint(2, 10))
+            )
             test.assert_equals(greet(name), reference_solution(name), f"name = {repr(name)}")

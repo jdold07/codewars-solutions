@@ -2,4 +2,3 @@
 # URL: https://www.codewars.com/kata/559536379512a64472000053
 # Category: ALGORITHMS  |  Tags: STRINGS | ALGORITHMS
 # ******************************************************************************
-

@@ -3,7 +3,7 @@
 # Category: ALGORITHMS  |  Tags: STRINGS | ALGORITHMS
 # ******************************************************************************
 def first_non_repeating_letter(string):
-      for letter in string:
-          if string.lower().count(letter.lower()) == 1:
-              return letter
-      return ""
+    for letter in string:
+        if string.lower().count(letter.lower()) == 1:
+            return letter
+    return ""

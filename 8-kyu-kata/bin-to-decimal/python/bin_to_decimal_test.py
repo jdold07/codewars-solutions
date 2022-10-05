@@ -13,7 +13,7 @@ tests = (
 for t in tests:
     inp, exp = t
     test.assert_equals(bin_to_decimal(inp), exp)
-    
+
 test.describe("Random Tests")
 
 from random import randint
@@ -21,4 +21,4 @@ from random import randint
 for _ in range(100):
     n = randint(1, 5000000)
     b = bin(n)[2:]
-    test.assert_equals(bin_to_decimal(b), n) 
+    test.assert_equals(bin_to_decimal(b), n)

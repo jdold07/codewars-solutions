@@ -3,4 +3,4 @@
 # Category: REFERENCE  |  Tags: FUNDAMENTALS
 # ******************************************************************************
 def vowel_indices(word):
-      return [(indx + 1) for indx, letter in enumerate(word.lower()) if letter in "aeiouy"]
+    return [(indx + 1) for indx, letter in enumerate(word.lower()) if letter in "aeiouy"]

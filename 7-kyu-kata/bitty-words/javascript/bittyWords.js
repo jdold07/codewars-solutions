@@ -3,8 +3,8 @@
 // Category: GAMES  |  Tags: STRINGS | BINARY | ALGORITHMS | CIPHERS | CRYPTOGRAPHY
 // *****************************************************************************
 const bittyWords = (words, bits) =>
-    words
-      .split(" ")
-      .slice(-(x = bits.toString(2)).length)
-      .filter((_, i) => +x[i])
-      .join(" ")
+  words
+    .split(" ")
+    .slice(-(x = bits.toString(2)).length)
+    .filter((_, i) => +x[i])
+    .join(" ")

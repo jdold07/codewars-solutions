@@ -3,22 +3,22 @@
 # Category: REFERENCE  |  Tags: STRINGS | ASCII ART | FUNDAMENTALS
 # ******************************************************************************
 def diamond(n):
-      if n < 1 or not n % 2:
-          return None
-  
-      result = ""
-      middle = int((n - 1) / 2)
-      space_print = middle + 1
-      star_print = -1
-  
-      for x in range((middle + 1)):
-          star_print += 2
-          space_print -= 1
-          result += f"{' '*space_print}{'*'*star_print}\n"
-  
-      for x in range(middle, 0, -1):
-          star_print -= 2
-          space_print += 1
-          result += f"{' '*space_print}{'*'*star_print}\n"
-  
-      return result
+    if n < 1 or not n % 2:
+        return None
+
+    result = ""
+    middle = int((n - 1) / 2)
+    space_print = middle + 1
+    star_print = -1
+
+    for x in range((middle + 1)):
+        star_print += 2
+        space_print -= 1
+        result += f"{' '*space_print}{'*'*star_print}\n"
+
+    for x in range(middle, 0, -1):
+        star_print -= 2
+        space_print += 1
+        result += f"{' '*space_print}{'*'*star_print}\n"
+
+    return result

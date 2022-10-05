@@ -13,97 +13,93 @@ function an(ex){
 }
 */
 
+process.reallyExit = bak
 
-process.reallyExit=bak;
-
-const fcode=function(str){
-  const isChar = function(a) {
-    if(a){
-      let code = a.toLowerCase().charCodeAt(0);
-      return code >= 97 && code <= 122;
+const fcode = function (str) {
+  const isChar = function (a) {
+    if (a) {
+      let code = a.toLowerCase().charCodeAt(0)
+      return code >= 97 && code <= 122
     }
-    return false;
+    return false
   }
-  return str.replace(/\r?\n|\r/g, '').split('').filter((a,i,x) => {
-    return a===' '?isChar(x[i-1])&&isChar(x[i+1])?true:false:true;
-  }).join('');
+  return str
+    .replace(/\r?\n|\r/g, "")
+    .split("")
+    .filter((a, i, x) => {
+      return a === " " ? (isChar(x[i - 1]) && isChar(x[i + 1]) ? true : false) : true
+    })
+    .join("")
 }
 
-
-function an(a,b,c){
-  let result=a+b+c;  //combine a,b,and c
-  return result;
+function an(a, b, c) {
+  let result = a + b + c //combine a,b,and c
+  return result
 }
 
-function rndc(){
-  return String.fromCharCode(~~(26*Math.random())+97); 
+function rndc() {
+  return String.fromCharCode(~~(26 * Math.random()) + 97)
 }
-function rnds(){
-  let len= ~~(8*Math.random())+1;
-  for (let i=0, rs=[];i<len;i++) rs[i]=rndc();
-  return rs.join("");
+function rnds() {
+  let len = ~~(8 * Math.random()) + 1
+  for (let i = 0, rs = []; i < len; i++) rs[i] = rndc()
+  return rs.join("")
 }
 //var ss="   abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!,.?"
-function rndchars(){
-  let chars="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  let rs=[];
-  rs[0]=chars[~~(52*Math.random())];
-  rs[1]=chars[~~(52*Math.random())];
-  rs[2]=chars[~~(52*Math.random())];
-  return rs;
+function rndchars() {
+  let chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+  let rs = []
+  rs[0] = chars[~~(52 * Math.random())]
+  rs[1] = chars[~~(52 * Math.random())]
+  rs[2] = chars[~~(52 * Math.random())]
+  return rs
 }
 
 console.log("<br><font size=4><b>-------- Basic Test --------</b></font>")
 console.log("")
-    
-    Test.assertSimilar(Dad(),"Dad");
-    Test.assertSimilar(Bee(),"Bee");
-    Test.assertSimilar(banana(),"banana");
-let text1=
-"John's iron axe fell into the river. He cried sadly by the river.\n"+
-"Then a monster came out of the water, with a golden axe in his hand.\n"+
-"He asked John: is this golden axe yours?";
+
+Test.assertSimilar(Dad(), "Dad")
+Test.assertSimilar(Bee(), "Bee")
+Test.assertSimilar(banana(), "banana")
+let text1 =
+  "John's iron axe fell into the river. He cried sadly by the river.\n" +
+  "Then a monster came out of the water, with a golden axe in his hand.\n" +
+  "He asked John: is this golden axe yours?"
 console.log(text1)
-if (answer1()!="no"&&answer1()!=""){
-  let fail="The monster frowned and said to John: \"This is not your axe,\n"+
-  "you are not an honest boy!!!\"";
+if (answer1() != "no" && answer1() != "") {
+  let fail = 'The monster frowned and said to John: "This is not your axe,\n' + 'you are not an honest boy!!!"'
   console.log(fail)
 }
-Test.assertSimilar(answer1(),"no");
-let text2=
-"John replied that it was not his axe. The monster took out a silver axe.\n"+
-"He asked John: is this silver axe yours?";
+Test.assertSimilar(answer1(), "no")
+let text2 =
+  "John replied that it was not his axe. The monster took out a silver axe.\n" + "He asked John: is this silver axe yours?"
 console.log(text2)
-if (answer2()!="no"&&answer2()!=""){
-  let fail="The monster frowned and said to John: \"This is not your axe,\n"+
-  "you are not an honest boy!!!\"";
+if (answer2() != "no" && answer2() != "") {
+  let fail = 'The monster frowned and said to John: "This is not your axe,\n' + 'you are not an honest boy!!!"'
   console.log(fail)
 }
-Test.assertSimilar(answer2(),"no");
-let text3=
-"John replied that it was not his axe. The monster took out a iron axe.\n"+
-"He asked John: is this iron axe yours?";
+Test.assertSimilar(answer2(), "no")
+let text3 =
+  "John replied that it was not his axe. The monster took out a iron axe.\n" + "He asked John: is this iron axe yours?"
 console.log(text3)
-if (answer3()!="yes"&&answer3()!=""){
-  let fail="The monster frowned and said to John: \"This is your axe,\n"+
-  "are you a foolish boy???\"";
+if (answer3() != "yes" && answer3() != "") {
+  let fail = 'The monster frowned and said to John: "This is your axe,\n' + 'are you a foolish boy???"'
   console.log(fail)
 }
-Test.assertSimilar(answer3(),"yes");
-let text4=
-"John said happily: This is my iron axe!!!\n";
+Test.assertSimilar(answer3(), "yes")
+let text4 = "John said happily: This is my iron axe!!!\n"
 console.log(text4)
-a2="x",e2="x"
-if (Dad()=="Dad"||Bee()=="Bee"||banana()=="banana"){
-  let text5=
-  "The monster frowned and said to John: \"Yes, this is your iron axe,\n"+
-  "but you write code that always cheat me, you are not an honest boy!!!\"";
+;(a2 = "x"), (e2 = "x")
+if (Dad() == "Dad" || Bee() == "Bee" || banana() == "banana") {
+  let text5 =
+    'The monster frowned and said to John: "Yes, this is your iron axe,\n' +
+    'but you write code that always cheat me, you are not an honest boy!!!"'
   console.log(text5)
-  Test.assertNotSimilar(Dad(),"Dad")
-  Test.assertNotSimilar(Bee(),"Bee")
-  Test.assertNotSimilar(banana(),"banana")
+  Test.assertNotSimilar(Dad(), "Dad")
+  Test.assertNotSimilar(Bee(), "Bee")
+  Test.assertNotSimilar(banana(), "banana")
 }
-let text6="The monster smiled and said to John, \"you are an honest boy!\"";
+let text6 = 'The monster smiled and said to John, "you are an honest boy!"'
 console.log(text6)
 //var code1=Dad+"";
 //var code2=Bee+"";
@@ -151,6 +147,8 @@ for (var myjinxini=0;myjinxini<100;myjinxini++){
   Test.assertSimilar(combineChars(...cc), answer);
 }
 */
-console.log('<br><font size=4><b>Congratulations, You pass the test!</b></font>','')
-console.log("<br><font size=4><b>After you submit your solution, <font color='yellow'>DON'T FORGET UPVOTE&RANK THIS KATA, THANK YOU!</b></font>","")
-
+console.log("<br><font size=4><b>Congratulations, You pass the test!</b></font>", "")
+console.log(
+  "<br><font size=4><b>After you submit your solution, <font color='yellow'>DON'T FORGET UPVOTE&RANK THIS KATA, THANK YOU!</b></font>",
+  ""
+)

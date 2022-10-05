@@ -3,4 +3,4 @@
 # Category: REFERENCE  |  Tags: ARRAYS | FUNDAMENTALS
 # ******************************************************************************
 def digitize(n):
-      return list(map(int, str(n)[::-1]))
+    return list(map(int, str(n)[::-1]))

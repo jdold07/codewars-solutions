@@ -2,4 +2,3 @@
 # URL: https://www.codewars.com/kata/58dced7b702b805b200000be
 # Category: REFERENCE  |  Tags: GEOMETRY | FUNDAMENTALS
 # ******************************************************************************
-

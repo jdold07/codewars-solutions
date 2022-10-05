@@ -2,4 +2,4 @@
 // URL: https://www.codewars.com/kata/588a3c3ef0fbc9c8e1000095
 // Category: REFERENCE  |  Tags: MATHEMATICS | LISTS | ARRAYS | FUNDAMENTALS
 // *****************************************************************************
-const maxDiff = (list) => list.length < 2 ? 0 : list.sort((a,b) => a - b).pop() - list[0]
+const maxDiff = (list) => (list.length < 2 ? 0 : list.sort((a, b) => a - b).pop() - list[0])

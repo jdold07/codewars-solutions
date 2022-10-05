@@ -3,7 +3,7 @@
 # Category: REFERENCE  |  Tags: FUNDAMENTALS | STRINGS
 # ******************************************************************************
 def multi_table(number):
-      result = ""
-      for x in range(1,10):
-          result += f"{x} * {number} = {x * number}\n"
-      return result + f"10 * {number} = {10 * number}"
+    result = ""
+    for x in range(1, 10):
+        result += f"{x} * {number} = {x * number}\n"
+    return result + f"10 * {number} = {10 * number}"

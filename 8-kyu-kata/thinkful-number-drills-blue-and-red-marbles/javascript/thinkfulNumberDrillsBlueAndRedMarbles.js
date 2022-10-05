@@ -2,4 +2,5 @@
 // URL: https://www.codewars.com/kata/5862f663b4e9d6f12b00003b
 // Category: REFERENCE  |  Tags: PROBABILITY | FUNDAMENTALS
 // *****************************************************************************
-const guessBlue = (blueStart, redStart, bluePulled, redPulled) => (blueStart - bluePulled) / (blueStart + redStart - bluePulled - redPulled)
+const guessBlue = (blueStart, redStart, bluePulled, redPulled) =>
+  (blueStart - bluePulled) / (blueStart + redStart - bluePulled - redPulled)

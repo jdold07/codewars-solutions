@@ -3,4 +3,4 @@
 # Category: ALGORITHMS  |  Tags: ARRAYS | ALGORITHMS
 # ******************************************************************************
 def get_average(marks):
-      return sum(marks) // len(marks)
+    return sum(marks) // len(marks)

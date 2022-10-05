@@ -3,20 +3,20 @@
 // Category: REFERENCE  |  Tags: ARRAYS | FUNDAMENTALS
 // *****************************************************************************
 const boredom = (staff) =>
-    (x = [...Object.entries(staff)].reduce((a, [_, c]) => a + DEPT[c], 0)) <= 80
-      ? "kill me now"
-      : x < 100
-      ? "i can handle this"
-      : "party time!!"
-  const DEPT = {
-    accounts: 1,
-    finance: 2,
-    canteen: 10,
-    regulation: 3,
-    trading: 6,
-    change: 6,
-    IS: 8,
-    retail: 5,
-    cleaning: 4,
-    "pissing about": 25,
-  }
+  (x = [...Object.entries(staff)].reduce((a, [_, c]) => a + DEPT[c], 0)) <= 80
+    ? "kill me now"
+    : x < 100
+    ? "i can handle this"
+    : "party time!!"
+const DEPT = {
+  accounts: 1,
+  finance: 2,
+  canteen: 10,
+  regulation: 3,
+  trading: 6,
+  change: 6,
+  IS: 8,
+  retail: 5,
+  cleaning: 4,
+  "pissing about": 25
+}

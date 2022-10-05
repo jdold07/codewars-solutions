@@ -2,4 +2,4 @@
 // URL: https://www.codewars.com/kata/57fb142297e0860073000064
 // Category: REFERENCE  |  Tags: FUNDAMENTALS
 // *****************************************************************************
-const product = (s) =>  (s.match(/\?/g) || []).length * (s.match(/\!/g) || []).length
+const product = (s) => (s.match(/\?/g) || []).length * (s.match(/\!/g) || []).length

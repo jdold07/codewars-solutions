@@ -3,7 +3,7 @@
 // Category: REFERENCE  |  Tags: FUNDAMENTALS | STRINGS | ARRAYS | SORTING
 // *****************************************************************************
 const dbSort = (a) =>
-    a
-      .filter((v) => ""+v !== v)
-      .sort((a, b) => a - b)
-      .concat(a.filter((v) => ""+v === v).sort())
+  a
+    .filter((v) => "" + v !== v)
+    .sort((a, b) => a - b)
+    .concat(a.filter((v) => "" + v === v).sort())

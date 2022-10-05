@@ -3,9 +3,9 @@
 // Category: REFERENCE  |  Tags: FUNDAMENTALS | STRINGS
 // *****************************************************************************
 const containAllRots = ([...strng], arr) => {
-    for (i = 0; i < strng.length; i++) {
-      if (!arr.includes(strng.join(""))) return false
-      strng.push(strng.shift())
-    }
-    return true
+  for (i = 0; i < strng.length; i++) {
+    if (!arr.includes(strng.join(""))) return false
+    strng.push(strng.shift())
   }
+  return true
+}

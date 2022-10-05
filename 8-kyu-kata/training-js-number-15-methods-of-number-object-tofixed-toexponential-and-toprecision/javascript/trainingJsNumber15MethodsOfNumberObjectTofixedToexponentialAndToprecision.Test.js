@@ -13,62 +13,64 @@ function an(ex){
 }
 */
 
+process.reallyExit = bak
 
-process.reallyExit=bak;
-
-const fcode=function(str){
-  const isChar = function(a) {
-    if(a){
+const fcode = function (str) {
+  const isChar = function (a) {
+    if (a) {
       var code = a.toLowerCase().charCodeAt(0)
-      return code >= 97 && code <= 122;
+      return code >= 97 && code <= 122
     }
-    return false;
+    return false
   }
-  return str.replace(/\r?\n|\r/g, '').split('').filter((a,i,x) => {
-    return a===' '?isChar(x[i-1])&&isChar(x[i+1])?true:false:true;
-  }).join('');
+  return str
+    .replace(/\r?\n|\r/g, "")
+    .split("")
+    .filter((a, i, x) => {
+      return a === " " ? (isChar(x[i - 1]) && isChar(x[i + 1]) ? true : false) : true
+    })
+    .join("")
 }
 
-
-function an(arr,n){
-  for (var i=0,rs=0;i<arr.length;i++) rs+=(n > +arr[i].toFixed(2));
-  return rs;
+function an(arr, n) {
+  for (var i = 0, rs = 0; i < arr.length; i++) rs += n > +arr[i].toFixed(2)
+  return rs
 }
 
-function rndc(){
-  return String.fromCharCode(~~(26*Math.random())+97); 
+function rndc() {
+  return String.fromCharCode(~~(26 * Math.random()) + 97)
 }
-function rnds(){
-  var len= ~~(6*Math.random())+2;
-  for (var i=0,rs=[];i<len;i++) rs[i]=rndc();
-  return rs.join("");
+function rnds() {
+  var len = ~~(6 * Math.random()) + 2
+  for (var i = 0, rs = []; i < len; i++) rs[i] = rndc()
+  return rs.join("")
 }
 //var ss="   abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!,.?"
-function rndarn(){
-  var nn= (~~(100000*Math.random())+(~~(9*Math.random())+1)*100000)/100000
+function rndarn() {
+  var nn = (~~(100000 * Math.random()) + (~~(9 * Math.random()) + 1) * 100000) / 100000
   //console.log("nn=",nn)
-  var js=(nn+"").substr(0,4);
+  var js = (nn + "").substr(0, 4)
   //console.log("js=",js)
-  var len= ~~(16*Math.random())+4
-  for (var i=0,rs=[];i<len;i++){
-    var t=js;
-    for (var j=0;j<6;j++) t+= ~~(10*Math.random())
-    rs[i]= +t;
+  var len = ~~(16 * Math.random()) + 4
+  for (var i = 0, rs = []; i < len; i++) {
+    var t = js
+    for (var j = 0; j < 6; j++) t += ~~(10 * Math.random())
+    rs[i] = +t
   }
-  return [rs,nn]
+  return [rs, nn]
 }
 
 console.log("<br><font size=4><b>-------- Basic Test --------</b></font>")
 console.log("")
-    
+
 //test for equations and inequalities
-    //var ob={item1:"This",item2:"is",item3:"an",item4:"example"};
-    //Test.assertSimilar(giveMeFive(ob),["Pears","apple","sweet"]);
-    
-    Test.assertSimilar(howManySmaller([1.234,1.235,1.228],1.24), 2);
-    Test.assertSimilar(howManySmaller([1.1888,1.1868,1.1838],1.19), 1);
-    Test.assertSimilar(howManySmaller([3.1288,3.1212,3.1205],3.1212), 2);
-    
+//var ob={item1:"This",item2:"is",item3:"an",item4:"example"};
+//Test.assertSimilar(giveMeFive(ob),["Pears","apple","sweet"]);
+
+Test.assertSimilar(howManySmaller([1.234, 1.235, 1.228], 1.24), 2)
+Test.assertSimilar(howManySmaller([1.1888, 1.1868, 1.1838], 1.19), 1)
+Test.assertSimilar(howManySmaller([3.1288, 3.1212, 3.1205], 3.1212), 2)
+
 /*
 console.log("<br><font size=4><b>---should coding with 'for in'---</b></font>")
 console.log("")
@@ -106,12 +108,15 @@ for (var myjinxini=0;myjinxini<3;myjinxini++){
 console.log("<br><font size=4><b>--------100 Random Test --------</b></font>")
 console.log("")
 
-for (var myjinxini=0;myjinxini<100;myjinxini++){
-  var arn= rndarn(), answer=an(arn[0].slice(),arn[1])
-  console.log("<font color='#CD7F32'>Test for: arr=["+arn[0]+"]  n="+arn[1]+"</font>","")
-  var useran=howManySmaller(arn[0],arn[1]);
-  Test.assertSimilar(useran, answer);
+for (var myjinxini = 0; myjinxini < 100; myjinxini++) {
+  var arn = rndarn(),
+    answer = an(arn[0].slice(), arn[1])
+  console.log("<font color='#CD7F32'>Test for: arr=[" + arn[0] + "]  n=" + arn[1] + "</font>", "")
+  var useran = howManySmaller(arn[0], arn[1])
+  Test.assertSimilar(useran, answer)
 }
-console.log('<br><font size=4><b>Congratulations, You pass the test!</b></font>','')
-console.log("<br><font size=4><b>After you submit your solution, <font color='yellow'>DON'T FORGET UPVOTE&RANK THIS KATA, THANK YOU!</b></font>","")
-
+console.log("<br><font size=4><b>Congratulations, You pass the test!</b></font>", "")
+console.log(
+  "<br><font size=4><b>After you submit your solution, <font color='yellow'>DON'T FORGET UPVOTE&RANK THIS KATA, THANK YOU!</b></font>",
+  ""
+)

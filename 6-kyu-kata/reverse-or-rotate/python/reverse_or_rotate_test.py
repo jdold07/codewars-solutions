@@ -2,11 +2,13 @@
 # URL: https://www.codewars.com/kata/56b5afb4ed1f6d5fb0000991
 # Category: REFERENCE  |  Tags: ALGORITHMS | STRINGS
 # ******************************************************************************
-from solution import rev_rot
+from reverse_or_rotate import rev_rot
 import codewars_test as test
+
 
 def testing(actual, expected):
     test.assert_equals(actual, expected)
+
 
 @test.describe("rev_rot")
 def _():
@@ -39,29 +41,29 @@ def _():
 
     def rev_rot_sol1(strng, sz):
         def auxsol(r):
-            u = sum(map(lambda y: int(y)**3, r))
-            if (u % 2 == 0):
+            u = sum(map(lambda y: int(y) ** 3, r))
+            if u % 2 == 0:
                 return r[::-1]
             else:
-                return (r * 2)[1:len(r) + 1]
-        if ((sz <= 0) or (strng == "") or (sz > len(strng))): return ""
-        u = map(lambda r: auxsol(r), [ strng[i : i + sz] for i in range(0, len(strng) - sz + 1, sz) ])
-        return ''.join(u)
+                return (r * 2)[1 : len(r) + 1]
+
+        if (sz <= 0) or (strng == "") or (sz > len(strng)):
+            return ""
+        u = map(lambda r: auxsol(r), [strng[i : i + sz] for i in range(0, len(strng) - sz + 1, sz)])
+        return "".join(u)
 
     from random import randint
 
-    @test.it('Random tests')
+    @test.it("Random tests")
     def tests():
         i, s = 0, ""
-        while (i < 100):
+        while i < 100:
             v = randint(1, 10)
             j = 0
-            while (j <= v):
+            while j <= v:
                 k = randint(10000, 10000000)
                 s += str(k)
                 j += 1
             n = randint(3, max(len(s) // 3, 5))
             testing(rev_rot(s, n), rev_rot_sol1(s, n))
             i += 1
-
-

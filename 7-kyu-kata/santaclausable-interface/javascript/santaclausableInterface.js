@@ -3,13 +3,13 @@
 // Category: REFERENCE  |  Tags: OBJECT-ORIENTED PROGRAMMING
 // *****************************************************************************
 function isSantaClausable(obj) {
-    console.log(obj)
-    return (
-      obj.sayHoHoHo !== undefined &&
-      typeof obj.sayHoHoHo !== "boolean" &&
-      obj.distributeGifts !== undefined &&
-      typeof obj.distributeGifts !== "boolean" &&
-      obj.goDownTheChimney !== undefined &&
-      typeof obj.goDownTheChimney !== "boolean"
-    )
-  }
+  console.log(obj)
+  return (
+    obj.sayHoHoHo !== undefined &&
+    typeof obj.sayHoHoHo !== "boolean" &&
+    obj.distributeGifts !== undefined &&
+    typeof obj.distributeGifts !== "boolean" &&
+    obj.goDownTheChimney !== undefined &&
+    typeof obj.goDownTheChimney !== "boolean"
+  )
+}

@@ -2,17 +2,16 @@
 // URL: https://www.codewars.com/kata/514b92a657cdc65150000006
 // Category: ALGORITHMS  |  Tags: MATHEMATICS | ALGORITHMS
 // *****************************************************************************
-const solution = (n) => n > 0 ? [...Array(n).keys()].reduce((a,c,i) => a + (!(i%3) || !(i%5) ? c : 0), 0) : 0
+const solution = (n) => (n > 0 ? [...Array(n).keys()].reduce((a, c, i) => a + (!(i % 3) || !(i % 5) ? c : 0), 0) : 0)
 // *****************************************************************************
 // *****************************************************************************
-function solution(number){
-      let factors = []
-      if (number <= 0) return 0
-      for (let i = 0; i < number; i++) {
-          if (i % 3 === 0 || i % 5 ===0){
-              factors.push(i)
-          }
-      }
-      return factors.reduce((a,b) => a+b, 0)
+function solution(number) {
+  let factors = []
+  if (number <= 0) return 0
+  for (let i = 0; i < number; i++) {
+    if (i % 3 === 0 || i % 5 === 0) {
+      factors.push(i)
+    }
   }
-
+  return factors.reduce((a, b) => a + b, 0)
+}

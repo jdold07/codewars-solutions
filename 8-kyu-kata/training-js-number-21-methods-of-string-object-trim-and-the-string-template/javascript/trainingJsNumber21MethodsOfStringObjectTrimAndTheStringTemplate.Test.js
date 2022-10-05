@@ -13,86 +13,95 @@ function an(ex){
 }
 */
 
+process.reallyExit = bak
 
-process.reallyExit=bak;
-
-const fcode=function(str){
-  const isChar = function(a) {
-    if(a){
+const fcode = function (str) {
+  const isChar = function (a) {
+    if (a) {
       var code = a.toLowerCase().charCodeAt(0)
-      return code >= 97 && code <= 122;
+      return code >= 97 && code <= 122
     }
-    return false;
+    return false
   }
-  return str.replace(/\r?\n|\r/g, '').split('').filter((a,i,x) => {
-    return a===' '?isChar(x[i-1])&&isChar(x[i+1])?true:false:true;
-  }).join('');
+  return str
+    .replace(/\r?\n|\r/g, "")
+    .split("")
+    .filter((a, i, x) => {
+      return a === " " ? (isChar(x[i - 1]) && isChar(x[i + 1]) ? true : false) : true
+    })
+    .join("")
 }
 
-
-function an(s){
-  var a=s.trim();
-  return `${a}\n${a+a}\n${a+a+a}\n${a+a+a+a}\n${a+a+a+a+a}`;
+function an(s) {
+  var a = s.trim()
+  return `${a}\n${a + a}\n${a + a + a}\n${a + a + a + a}\n${a + a + a + a + a}`
 }
-function enIt(str){
-  var chars=str.split("");
-  for (var i=0;i<chars.length;i++){
-    var tmp=chars[i];
-    if (/[a-z]/i.test(tmp)){
-      var cod=tmp.charCodeAt(), sub=cod>96 ? 97:65;
-      chars[i]=String.fromCharCode((cod-sub+3)%26+sub);
+function enIt(str) {
+  var chars = str.split("")
+  for (var i = 0; i < chars.length; i++) {
+    var tmp = chars[i]
+    if (/[a-z]/i.test(tmp)) {
+      var cod = tmp.charCodeAt(),
+        sub = cod > 96 ? 97 : 65
+      chars[i] = String.fromCharCode(((cod - sub + 3) % 26) + sub)
     }
   }
-  return chars.join("");
+  return chars.join("")
 }
 
-function rndc(){
-  var allc="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-  return allc[~~(allc.length*Math.random())]; 
+function rndc() {
+  var allc = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+  return allc[~~(allc.length * Math.random())]
 }
-function rndsp(){
-  var all=" !#$%&*-+=_,.|".split("")
-  return all[~~(all.length*Math.random())]; 
+function rndsp() {
+  var all = " !#$%&*-+=_,.|".split("")
+  return all[~~(all.length * Math.random())]
 }
 
-function rnds(){
-  var len= ~~(4*Math.random())+3;
-  for (var i=0,rs=[];i<len;i++) rs[i]=rndc();
-  return rs.join("");
+function rnds() {
+  var len = ~~(4 * Math.random()) + 3
+  for (var i = 0, rs = []; i < len; i++) rs[i] = rndc()
+  return rs.join("")
 }
 //var ss="   abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!,.?"
-function rndtrim(){
-  var ws=[" ","\n","\t","\r"],l=[],r=[],m=[];
-  var len= ~~(5*Math.random())+3;
-  for (var i=0;i<len;i++) l[i]=ws[~~(4*Math.random())]
-  var len= ~~(5*Math.random())+3;
-  for (var i=0;i<len;i++) r[i]=ws[~~(4*Math.random())]
-  var len= ~~(8*Math.random())+1;
-  for (var i=0;i<len;i++) m[i]=rndc();
-  return l.join("")+m.join("")+r.join("");
+function rndtrim() {
+  var ws = [" ", "\n", "\t", "\r"],
+    l = [],
+    r = [],
+    m = []
+  var len = ~~(5 * Math.random()) + 3
+  for (var i = 0; i < len; i++) l[i] = ws[~~(4 * Math.random())]
+  var len = ~~(5 * Math.random()) + 3
+  for (var i = 0; i < len; i++) r[i] = ws[~~(4 * Math.random())]
+  var len = ~~(8 * Math.random()) + 1
+  for (var i = 0; i < len; i++) m[i] = rndc()
+  return l.join("") + m.join("") + r.join("")
 }
-function checkfile(nb,nm,tm){
-  if (!nb||!nm||!tm) return false;
-  if (isNaN(nb)) return false;
-  if (nm.length<3) return false;
-  if (tm=="?") return false;
-  if (tm.length<8) return false;
-  if (/[^a-z]/i.test(nm)) return false;
-  if (/[^a-z '?]/i.test(tm)) return false;
-  var name= nm, tt=tm,s=name+tt,num=0;
-  for (var i=0;i<s.length;i++){
-    var tmp=s[i].charCodeAt();
-    num+=tmp%2 ? tmp*3+1:tmp/2
+function checkfile(nb, nm, tm) {
+  if (!nb || !nm || !tm) return false
+  if (isNaN(nb)) return false
+  if (nm.length < 3) return false
+  if (tm == "?") return false
+  if (tm.length < 8) return false
+  if (/[^a-z]/i.test(nm)) return false
+  if (/[^a-z '?]/i.test(tm)) return false
+  var name = nm,
+    tt = tm,
+    s = name + tt,
+    num = 0
+  for (var i = 0; i < s.length; i++) {
+    var tmp = s[i].charCodeAt()
+    num += tmp % 2 ? tmp * 3 + 1 : tmp / 2
   }
-  return num==nb;
+  return num == nb
 }
 
 console.log("<br><font size=4><b>-------- Basic Test --------</b></font>")
 console.log("")
-    
-    Test.assertSimilar(fiveLine("  a") , "a\naa\naaa\naaaa\naaaaa");
-    Test.assertSimilar(fiveLine("\txy \n") , "xy\nxyxy\nxyxyxy\nxyxyxyxy\nxyxyxyxyxy");
-    Test.assertSimilar(fiveLine("           Ok               ") , "Ok\nOkOk\nOkOkOk\nOkOkOkOk\nOkOkOkOkOk");
+
+Test.assertSimilar(fiveLine("  a"), "a\naa\naaa\naaaa\naaaaa")
+Test.assertSimilar(fiveLine("\txy \n"), "xy\nxyxy\nxyxyxy\nxyxyxyxy\nxyxyxyxyxy")
+Test.assertSimilar(fiveLine("           Ok               "), "Ok\nOkOk\nOkOkOk\nOkOkOkOk\nOkOkOkOkOk")
 /*
 console.log("<br><font size=4><b>---should coding with 'for in'---</b></font>")
 console.log("")
@@ -130,13 +139,16 @@ for (var myjinxini=0;myjinxini<3;myjinxini++){
 console.log("<br><font size=4><b>--------100 Random Test--------</b></font>")
 console.log("")
 
-for (var myjinxini=0;myjinxini<100;myjinxini++){
-  var tt= rndtrim(), ans="\n"+an(tt)
-  console.log("<font color='#CD7F32'>Test for: s="+tt+"</font>","")
-  var useran="\n"+fiveLine(tt);
-  Test.assertSimilar(useran, ans);
+for (var myjinxini = 0; myjinxini < 100; myjinxini++) {
+  var tt = rndtrim(),
+    ans = "\n" + an(tt)
+  console.log("<font color='#CD7F32'>Test for: s=" + tt + "</font>", "")
+  var useran = "\n" + fiveLine(tt)
+  Test.assertSimilar(useran, ans)
 }
 
-console.log('<br><font size=4><b>Congratulations, You pass the test!</b></font>','')
-console.log("<br><font size=4><b>After you submit your solution, <font color='yellow'>DON'T FORGET UPVOTE&RANK THIS KATA, THANK YOU!</b></font>","")
-
+console.log("<br><font size=4><b>Congratulations, You pass the test!</b></font>", "")
+console.log(
+  "<br><font size=4><b>After you submit your solution, <font color='yellow'>DON'T FORGET UPVOTE&RANK THIS KATA, THANK YOU!</b></font>",
+  ""
+)

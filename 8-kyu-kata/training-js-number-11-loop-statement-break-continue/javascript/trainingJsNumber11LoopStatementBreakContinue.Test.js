@@ -13,65 +13,93 @@ function an(ex){
 }
 */
 
+process.reallyExit = bak
 
-process.reallyExit=bak;
-
-const fcode=function(str){
-  const isChar = function(a) {
-    if(a){
-      let code = a.toLowerCase().charCodeAt(0);
-      return code >= 97 && code <= 122;
+const fcode = function (str) {
+  const isChar = function (a) {
+    if (a) {
+      let code = a.toLowerCase().charCodeAt(0)
+      return code >= 97 && code <= 122
     }
-    return false;
+    return false
   }
-  return str.replace(/\r?\n|\r/g, '').split('').filter((a,i,x) => {
-    return a===' '?isChar(x[i-1])&&isChar(x[i+1])?true:false:true;
-  }).join('');
+  return str
+    .replace(/\r?\n|\r/g, "")
+    .split("")
+    .filter((a, i, x) => {
+      return a === " " ? (isChar(x[i - 1]) && isChar(x[i + 1]) ? true : false) : true
+    })
+    .join("")
 }
 
-
-function an(dolls){
-  let bag=[];
-  bagisfull:                             //set label is corner use of break
-  for (let i=0;i<dolls.length;i++){      //unneed to learn it.
-    if (dolls[i]!=="Hello Kitty"&&dolls[i]!=="Barbie doll") continue;
-    bag.push(dolls[i]);                  //break can also used with a label 
-    if(bag.length==3) break bagisfull;   //but it's easy to mess with code
-  }                                      //so it's not a good method.
-  return bag;
+function an(dolls) {
+  let bag = []
+  //set label is corner use of break
+  bagisfull: for (let i = 0; i < dolls.length; i++) {
+    //unneed to learn it.
+    if (dolls[i] !== "Hello Kitty" && dolls[i] !== "Barbie doll") continue
+    bag.push(dolls[i]) //break can also used with a label
+    if (bag.length == 3) break bagisfull //but it's easy to mess with code
+  } //so it's not a good method.
+  return bag
 }
 
-function rndc(){
-  return String.fromCharCode(~~(26*Math.random())+97); 
+function rndc() {
+  return String.fromCharCode(~~(26 * Math.random()) + 97)
 }
-function rnds(){
-  let len= ~~(10*Math.random())+1;
-  for (let i=0, rs=[];i<len;i++) rs[i]=rndc();
-  return rs.join("");
+function rnds() {
+  let len = ~~(10 * Math.random()) + 1
+  for (let i = 0, rs = []; i < len; i++) rs[i] = rndc()
+  return rs.join("")
 }
 //var ss="   abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!,.?"
-function rnddolls(){
-  let len= ~~(20*Math.random())+3, rs=[], alldolls=["Hello Kitty","Hello Kitty","Hello Kitty","Snow white","Barbie doll","Barbie doll","Barbie doll","Tom cat","Snoopy dog","Mickey Mouse","Donald Duck"];
-  for (let i=0;i<len;i++) rs[i]= alldolls[~~(alldolls.length*Math.random())];
-  return rs;
+function rnddolls() {
+  let len = ~~(20 * Math.random()) + 3,
+    rs = [],
+    alldolls = [
+      "Hello Kitty",
+      "Hello Kitty",
+      "Hello Kitty",
+      "Snow white",
+      "Barbie doll",
+      "Barbie doll",
+      "Barbie doll",
+      "Tom cat",
+      "Snoopy dog",
+      "Mickey Mouse",
+      "Donald Duck"
+    ]
+  for (let i = 0; i < len; i++) rs[i] = alldolls[~~(alldolls.length * Math.random())]
+  return rs
 }
 
 console.log("<br><font size=4><b>-------- Basic Test --------</b></font>")
 console.log("")
-    
+
 //test for equations and inequalities
-    
-    Test.assertSimilar(grabDoll(["Mickey Mouse","Hello Kitty","Snow white"]),["Hello Kitty"]);
-    Test.assertSimilar(grabDoll(["Mickey Mouse","Hello Kitty","Hello Kitty","Snow white"]),["Hello Kitty","Hello Kitty"]);
-    Test.assertSimilar(grabDoll(["Mickey Mouse","Hello Kitty","Hello Kitty","Barbie doll","Snow white"]),["Hello Kitty","Hello Kitty","Barbie doll"]);
-    Test.assertSimilar(grabDoll(["Mickey Mouse","Barbie doll","Hello Kitty","Hello Kitty","Hello Kitty","Snow white"]),["Barbie doll","Hello Kitty","Hello Kitty"]);
-    
+
+Test.assertSimilar(grabDoll(["Mickey Mouse", "Hello Kitty", "Snow white"]), ["Hello Kitty"])
+Test.assertSimilar(grabDoll(["Mickey Mouse", "Hello Kitty", "Hello Kitty", "Snow white"]), ["Hello Kitty", "Hello Kitty"])
+Test.assertSimilar(grabDoll(["Mickey Mouse", "Hello Kitty", "Hello Kitty", "Barbie doll", "Snow white"]), [
+  "Hello Kitty",
+  "Hello Kitty",
+  "Barbie doll"
+])
+Test.assertSimilar(grabDoll(["Mickey Mouse", "Barbie doll", "Hello Kitty", "Hello Kitty", "Hello Kitty", "Snow white"]), [
+  "Barbie doll",
+  "Hello Kitty",
+  "Hello Kitty"
+])
+
 console.log("<br><font size=4><b>---should coding with 'for','break' and 'continue'---</b></font>")
 console.log("")
-let code=grabDoll+"";
+let code = grabDoll + ""
 //console.log(code)
-let passswitch=/for *\(/.test(code)&&/break/.test(code)&&/continue/.test(code) ? "Passed":"Your solution should contains keyword \"for\",\"break\" and \"continue\"";
-Test.assertSimilar(passswitch,"Passed");
+let passswitch =
+  /for *\(/.test(code) && /break/.test(code) && /continue/.test(code)
+    ? "Passed"
+    : 'Your solution should contains keyword "for","break" and "continue"'
+Test.assertSimilar(passswitch, "Passed")
 /*
 //anti-cheat and calc the code length
 console.log("<br><font size=4><b>--------Code length check --------</b></font>")
@@ -104,11 +132,14 @@ for (var myjinxini=0;myjinxini<3;myjinxini++){
 console.log("<br><font size=4><b>--------100 Random Test --------</b></font>")
 console.log("")
 
-for (let myjinxini=0;myjinxini<100;myjinxini++){
-  let dd= rnddolls(), answer=an(dd);
-  console.log("<font color='#CD7F32'>Test for: dolls=["+dd+"]</font>","")
-  Test.assertSimilar(grabDoll(dd), answer);
+for (let myjinxini = 0; myjinxini < 100; myjinxini++) {
+  let dd = rnddolls(),
+    answer = an(dd)
+  console.log("<font color='#CD7F32'>Test for: dolls=[" + dd + "]</font>", "")
+  Test.assertSimilar(grabDoll(dd), answer)
 }
-console.log('<br><font size=4><b>Congratulations, You pass the test!</b></font>','')
-console.log("<br><font size=4><b>After you submit your solution, <font color='yellow'>DON'T FORGET UPVOTE&RANK THIS KATA, THANK YOU!</b></font>","")
-
+console.log("<br><font size=4><b>Congratulations, You pass the test!</b></font>", "")
+console.log(
+  "<br><font size=4><b>After you submit your solution, <font color='yellow'>DON'T FORGET UPVOTE&RANK THIS KATA, THANK YOU!</b></font>",
+  ""
+)

@@ -3,4 +3,4 @@
 # Category: REFERENCE  |  Tags: ARRAYS | FUNDAMENTALS
 # ******************************************************************************
 def get_even_numbers(arr):
-      return list(filter(lambda x: not x % 2, arr))
+    return list(filter(lambda x: not x % 2, arr))

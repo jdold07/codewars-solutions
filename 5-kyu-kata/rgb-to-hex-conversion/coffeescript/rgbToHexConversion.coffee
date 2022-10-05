@@ -3,9 +3,9 @@
 # Category: ALGORITHMS  |  Tags: ALGORITHMS
 # ******************************************************************************
 rgb = (r, g, b) ->
-    toHex = (num) ->
-      return Math.min 255, Math.max 0, num
-        .toString 16
-        .toUpperCase()
-        .padStart 2, "0"
-    return toHex(r) + toHex(g) + toHex b
+  toHex = (num) ->
+    return Math.min 255, Math.max 0, num
+      .toString 16
+      .toUpperCase()
+      .padStart 2, "0"
+  return toHex(r) + toHex(g) + toHex b

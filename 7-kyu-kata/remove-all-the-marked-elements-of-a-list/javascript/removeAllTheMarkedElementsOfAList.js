@@ -3,5 +3,5 @@
 // Category: REFERENCE  |  Tags: FUNDAMENTALS | ALGORITHMS | DATA STRUCTURES
 // *****************************************************************************
 Array.prototype.remove_ = function (integer_list, values_list) {
-    return integer_list.filter((v) => !values_list.includes(v))
-  }
+  return integer_list.filter((v) => !values_list.includes(v))
+}

@@ -3,7 +3,8 @@
 # Category: REFERENCE  |  Tags: FUNDAMENTALS
 # ******************************************************************************
 import codewars_test as test
-from solution import populate_my_vault
+from vault_experience_3_populate_the_vaults import populate_my_vault
+
 
 @test.describe("Fixed tests")
 def fixed_tests():
@@ -22,13 +23,14 @@ def fixed_tests():
         test.assert_equals(populate_my_vault(51), (2, 25, 24))
         test.assert_equals(populate_my_vault(200), (2, 99, 99))
 
+
 @test.describe("Random tests")
 def random_tests():
     from random import randint
-    
+
     def reference(n):
         return (1, 0, 0) if n == 1 else ((n > 0) + (n > 50), n - n // 2 - (n > 50), n // 2 - bool(n))
-    
+
     @test.it("Tests")
     def it_1():
         for _ in range(200):

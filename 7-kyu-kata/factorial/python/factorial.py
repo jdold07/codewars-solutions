@@ -3,10 +3,10 @@
 # Category: REFERENCE  |  Tags: ALGORITHMS | FUNDAMENTALS
 # ******************************************************************************
 def factorial(n):
-      result = 1
-      if n >= 0 and n <= 12:
-          for x in range(1, n + 1):
-              result *= x
-      else:
-          raise ValueError("ValueError")
-      return result
+    result = 1
+    if n >= 0 and n <= 12:
+        for x in range(1, n + 1):
+            result *= x
+    else:
+        raise ValueError("ValueError")
+    return result

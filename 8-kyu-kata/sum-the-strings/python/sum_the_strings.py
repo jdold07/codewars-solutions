@@ -3,4 +3,4 @@
 # Category: REFERENCE  |  Tags: FUNDAMENTALS
 # ******************************************************************************
 def sum_str(a, b):
-      return str((int(a) if len(a) else 0) + (int(b) if len(b) else 0))
+    return str((int(a) if len(a) else 0) + (int(b) if len(b) else 0))

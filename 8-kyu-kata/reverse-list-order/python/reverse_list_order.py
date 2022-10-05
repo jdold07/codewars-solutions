@@ -3,4 +3,4 @@
 # Category: REFERENCE  |  Tags: LISTS | FUNDAMENTALS
 # ******************************************************************************
 def reverse_list(l):
-      return l[::-1]
+    return l[::-1]

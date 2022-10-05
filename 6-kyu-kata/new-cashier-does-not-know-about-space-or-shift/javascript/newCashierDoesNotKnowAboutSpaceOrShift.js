@@ -3,31 +3,30 @@
 // Category: REFERENCE  |  Tags: STRINGS | FUNDAMENTALS
 // *****************************************************************************
 function getOrder(input) {
-    const menu = ["burger", "fries", "chicken", "pizza", "sandwich", "onionrings", "milkshake", "coke"]
-    return input
-      .match(new RegExp(menu.join("|"), "g"))
-      .sort((a, b) => menu.indexOf(a) - menu.indexOf(b))
-      .map((el) => el[0].toUpperCase() + el.slice(1))
-      .join(" ")
-  }
+  const menu = ["burger", "fries", "chicken", "pizza", "sandwich", "onionrings", "milkshake", "coke"]
+  return input
+    .match(new RegExp(menu.join("|"), "g"))
+    .sort((a, b) => menu.indexOf(a) - menu.indexOf(b))
+    .map((el) => el[0].toUpperCase() + el.slice(1))
+    .join(" ")
+}
 // *****************************************************************************
 // *****************************************************************************
 function getOrder(input) {
-    const MENU = {
-      burger: "Burger",
-      fries: "Fries",
-      chicken: "Chicken",
-      pizza: "Pizza",
-      sandwich: "Sandwich",
-      onionrings: "Onionrings",
-      milkshake: "Milkshake",
-      coke: "Coke",
-    }
-    let kitchenOrder = []
-    for (const key in MENU) {
-      const re = new RegExp(key, "g")
-      kitchenOrder = kitchenOrder.concat(input.match(re) || [])
-    }
-    return kitchenOrder.map((el) => MENU[el]).join(" ")
+  const MENU = {
+    burger: "Burger",
+    fries: "Fries",
+    chicken: "Chicken",
+    pizza: "Pizza",
+    sandwich: "Sandwich",
+    onionrings: "Onionrings",
+    milkshake: "Milkshake",
+    coke: "Coke"
   }
-
+  let kitchenOrder = []
+  for (const key in MENU) {
+    const re = new RegExp(key, "g")
+    kitchenOrder = kitchenOrder.concat(input.match(re) || [])
+  }
+  return kitchenOrder.map((el) => MENU[el]).join(" ")
+}

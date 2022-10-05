@@ -3,4 +3,4 @@
 # Category: REFERENCE  |  Tags: LISTS | FUNDAMENTALS
 # ******************************************************************************
 def pipe_fix(nums):
-      return list(range(min(nums), max(nums)+1))
+    return list(range(min(nums), max(nums) + 1))

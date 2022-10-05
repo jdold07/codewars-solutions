@@ -3,4 +3,3 @@
 // Category: REFERENCE  |  Tags: ARRAYS | FUNDAMENTALS
 // *****************************************************************************
 websites.push("codewars")
-  

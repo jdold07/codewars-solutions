@@ -3,13 +3,13 @@
 // Category: REFERENCE  |  Tags: FUNDAMENTALS | ARRAYS
 // *****************************************************************************
 function oddOrEven(array) {
-      let sum = 0
-      if (array === [] || array === null || array === [0]) {
-          return "even"
-      }else {
-      for (let i = 0; i < array.length; i++) {
-        sum += array[i]
-      }
-      } 
-      return sum % 2 === 0 ? "even" : "odd"
+  let sum = 0
+  if (array === [] || array === null || array === [0]) {
+    return "even"
+  } else {
+    for (let i = 0; i < array.length; i++) {
+      sum += array[i]
     }
+  }
+  return sum % 2 === 0 ? "even" : "odd"
+}

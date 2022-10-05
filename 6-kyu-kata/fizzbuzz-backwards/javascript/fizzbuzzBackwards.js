@@ -3,15 +3,15 @@
 // Category: REFERENCE  |  Tags: FUNDAMENTALS
 // *****************************************************************************
 function reverseFizzBuzz(array) {
-    const arr = [...Array(101).keys()].slice(1)
-    for (n = 1; n < 51; n++) {
-      for (m = 1; m < 51; m++) {
-        if (
-          RegExp(array.join(",")).test(
-            arr.map((v) => (!(v % n) && !(v % m) ? "FizzBuzz" : !(v % n) ? "Fizz" : !(v % m) ? "Buzz" : v)).join(",")
-          )
+  const arr = [...Array(101).keys()].slice(1)
+  for (n = 1; n < 51; n++) {
+    for (m = 1; m < 51; m++) {
+      if (
+        RegExp(array.join(",")).test(
+          arr.map((v) => (!(v % n) && !(v % m) ? "FizzBuzz" : !(v % n) ? "Fizz" : !(v % m) ? "Buzz" : v)).join(",")
         )
-          return [n, m]
-      }
+      )
+        return [n, m]
     }
   }
+}

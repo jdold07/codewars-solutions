@@ -3,9 +3,9 @@
 // Category: REFERENCE  |  Tags: FUNDAMENTALS
 // *****************************************************************************
 function seven(m) {
-    const stack = []
-    while (m.toString().length > 2) {
-      stack.push((m = m.toString().slice(0, -1) - m.toString().slice(-1) * 2))
-    }
-    return [stack[stack.length - 1] || m, stack.length]
+  const stack = []
+  while (m.toString().length > 2) {
+    stack.push((m = m.toString().slice(0, -1) - m.toString().slice(-1) * 2))
   }
+  return [stack[stack.length - 1] || m, stack.length]
+}

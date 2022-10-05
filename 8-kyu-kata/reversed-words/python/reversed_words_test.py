@@ -9,27 +9,30 @@ try:
 except ImportError:
     from solution import reverse_words
 
+
 @test.describe("Fixed Tests")
 def fixed_tests():
     @test.it("Basic Tests")
     def basic_tests():
         test.assert_equals(reverse_words("hello world!"), "world! hello")
-        test.assert_equals(reverse_words("yoda doesn't speak like this" ),  "this like speak doesn't yoda")
-        test.assert_equals(reverse_words("foobar"                       ),  "foobar")
-        test.assert_equals(reverse_words("kata editor"                  ),  "editor kata")
-        test.assert_equals(reverse_words("row row row your boat"        ),  "boat your row row row")
-        
-@test.describe('Random Tests')
+        test.assert_equals(reverse_words("yoda doesn't speak like this"), "this like speak doesn't yoda")
+        test.assert_equals(reverse_words("foobar"), "foobar")
+        test.assert_equals(reverse_words("kata editor"), "editor kata")
+        test.assert_equals(reverse_words("row row row your boat"), "boat your row row row")
+
+
+@test.describe("Random Tests")
 def random_tests():
-    
+
     from random import randint, choice
     from string import ascii_letters, punctuation
-    
+
     s = ascii_letters + punctuation
-    
+
     for _ in range(100):
-        strng = " ".join(''.join(choice(s) for j in range(0, randint(1, 10))) for i in range(0, randint(0, 100)))
+        strng = " ".join("".join(choice(s) for j in range(0, randint(1, 10))) for i in range(0, randint(0, 100)))
         expected = " ".join(strng.split(" ")[::-1])
+
         @test.it(f"Testing for reverse_words({strng})")
         def test_case():
-            test.assert_equals(reverse_words(strng),expected)
+            test.assert_equals(reverse_words(strng), expected)

@@ -3,4 +3,4 @@
 # Category: REFERENCE  |  Tags: GEOMETRY | FUNDAMENTALS
 # ******************************************************************************
 def getVolumeOfCubiod(l, w, h):
-      return l*w*h
+    return l * w * h

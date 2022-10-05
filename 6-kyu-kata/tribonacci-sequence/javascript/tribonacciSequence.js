@@ -3,13 +3,20 @@
 // Category: REFERENCE  |  Tags: NUMBER THEORY | ARRAYS | LISTS | FUNDAMENTALS
 // *****************************************************************************
 function tribonacci(signature, n) {
-      while (signature.length < n) {
-          signature.push((signature[signature.length-1] + signature[signature.length-2] + signature[signature.length-3]))
-      }
-      switch(n){
-          case 0: return []
-          case 1: signature.pop(); signature.pop(); return signature
-          case 2: signature.pop(); return signature
-          default: return signature
-      }
+  while (signature.length < n) {
+    signature.push(signature[signature.length - 1] + signature[signature.length - 2] + signature[signature.length - 3])
   }
+  switch (n) {
+    case 0:
+      return []
+    case 1:
+      signature.pop()
+      signature.pop()
+      return signature
+    case 2:
+      signature.pop()
+      return signature
+    default:
+      return signature
+  }
+}

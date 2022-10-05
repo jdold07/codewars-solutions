@@ -4,6 +4,7 @@
 # ******************************************************************************
 from random import randrange
 
+
 @test.describe("elevator(left, right, call)")
 def elevator_test():
     @test.it("should work for the examples provided in the Kata description")
@@ -13,6 +14,7 @@ def elevator_test():
         test.assert_equals(elevator(0, 1, 2), "right")
         test.assert_equals(elevator(0, 0, 0), "right")
         test.assert_equals(elevator(0, 2, 1), "right")
+
     @test.it("should work for all 3^3 possible cases (tested in sequence)")
     def fixed_tests():
         test.assert_equals(elevator(0, 0, 0), "right")
@@ -42,10 +44,12 @@ def elevator_test():
         test.assert_equals(elevator(2, 2, 0), "right")
         test.assert_equals(elevator(2, 2, 1), "right")
         test.assert_equals(elevator(2, 2, 2), "right")
+
     @test.it("should work for random tests")
     def random_tests():
         def solution(left, right, call):
             return "left" if abs(call - left) < abs(call - right) else "right"
+
         for _ in range(100):
             left, right, call = randrange(0, 3), randrange(0, 3), randrange(0, 3)
             print("Testing for: left = %d, right = %d, call = %d" % (left, right, call))

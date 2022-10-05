@@ -3,4 +3,3 @@
 // Category: REFERENCE  |  Tags: MATHEMATICS | FUNDAMENTALS
 // *****************************************************************************
 const root = (x, n) => x ** (1 / n)
-  

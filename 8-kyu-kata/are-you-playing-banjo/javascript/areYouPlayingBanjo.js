@@ -2,5 +2,4 @@
 // URL: https://www.codewars.com/kata/53af2b8861023f1d88000832
 // Category: REFERENCE  |  Tags: STRINGS | FUNDAMENTALS
 // *****************************************************************************
-const areYouPlayingBanjo = name =>
-    /^r/i.test(name) ? `${name} plays banjo` : `${name} does not play banjo`
+const areYouPlayingBanjo = (name) => (/^r/i.test(name) ? `${name} plays banjo` : `${name} does not play banjo`)

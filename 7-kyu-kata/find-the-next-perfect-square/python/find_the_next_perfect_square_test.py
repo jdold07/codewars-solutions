@@ -5,6 +5,7 @@
 import codewars_test as test
 from solution import find_next_square
 
+
 @test.describe("Fixed Tests")
 def fixed_tests():
     @test.it("should return the next square for perfect squares")
@@ -18,23 +19,24 @@ def fixed_tests():
     def _():
         test.assert_equals(find_next_square(155), -1, "Wrong output for 155")
         test.assert_equals(find_next_square(342786627), -1, "Wrong output for 342786627")
-        
+
+
 @test.describe("should work for random inputs")
 def random_tests():
-    
+
     from random import randint, uniform
-    
+
     def solution(sq):
-        root = sq ** 0.5
-        
-        return (root + 1)**2 if root % 1 == 0 else -1
-    
+        root = sq**0.5
+
+        return (root + 1) ** 2 if root % 1 == 0 else -1
+
     for _ in range(40):
         sq = int(uniform(0, 1) * 10 ** randint(1, 5))
-        
-        if randint(0, 1): sq = sq*sq
-        
+
+        if randint(0, 1):
+            sq = sq * sq
+
         @test.it(f"testing for find_next_square({sq})")
         def test_case():
-            test.assert_equals(find_next_square(sq),solution(sq))
-
+            test.assert_equals(find_next_square(sq), solution(sq))

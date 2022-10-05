@@ -3,5 +3,5 @@
 // Category: REFERENCE  |  Tags: BINARY | STRINGS | FUNDAMENTALS
 // *****************************************************************************
 function binaryToString(binary) {
-    return binary.replace(/[01]{8}/g, (v) => String.fromCharCode(parseInt(v, 2)))
-  }
+  return binary.replace(/[01]{8}/g, (v) => String.fromCharCode(parseInt(v, 2)))
+}

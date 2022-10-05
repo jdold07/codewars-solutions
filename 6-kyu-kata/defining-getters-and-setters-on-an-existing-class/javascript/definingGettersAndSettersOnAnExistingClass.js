@@ -3,11 +3,11 @@
 // Category: REFERENCE  |  Tags: OBJECT-ORIENTED PROGRAMMING | FUNDAMENTALS
 // *****************************************************************************
 Object.defineProperty(Person.prototype, "name", {
-    get: function name() {
-      return this.getName()
-    },
-    set: function name(fullName) {
-      this.firstName = fullName.split(" ")[0]
-      this.lastName = fullName.split(" ")[1]
-    },
-  })
+  get: function name() {
+    return this.getName()
+  },
+  set: function name(fullName) {
+    this.firstName = fullName.split(" ")[0]
+    this.lastName = fullName.split(" ")[1]
+  }
+})

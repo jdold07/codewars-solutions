@@ -3,4 +3,4 @@
 # Category: REFERENCE  |  Tags: ARRAYS | LISTS | FUNDAMENTALS
 # ******************************************************************************
 def square_sum(numbers):
-      return sum(map(lambda value: value ** 2, numbers))
+    return sum(map(lambda value: value**2, numbers))

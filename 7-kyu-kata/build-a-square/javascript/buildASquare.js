@@ -2,6 +2,6 @@
 // URL: https://www.codewars.com/kata/59a96d71dbe3b06c0200009c
 // Category: REFERENCE  |  Tags: FUNDAMENTALS | ASCII ART
 // *****************************************************************************
-function generateShape(integer){
-    return Array(integer).fill("+".repeat(integer)).join("\n")
-  }
+function generateShape(integer) {
+  return Array(integer).fill("+".repeat(integer)).join("\n")
+}

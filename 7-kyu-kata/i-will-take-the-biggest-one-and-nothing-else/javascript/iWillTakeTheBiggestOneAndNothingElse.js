@@ -2,4 +2,4 @@
 // URL: https://www.codewars.com/kata/631082840289bf000e95a334
 // Category: REFERENCE  |  Tags: MATHEMATICS
 // *****************************************************************************
-const maxIntChain = (n) => n < 5 ? -1 : Math.floor(n / 2 + 1) * (n - Math.floor(n / 2 + 1))
+const maxIntChain = (n) => (n < 5 ? -1 : Math.floor(n / 2 + 1) * (n - Math.floor(n / 2 + 1)))

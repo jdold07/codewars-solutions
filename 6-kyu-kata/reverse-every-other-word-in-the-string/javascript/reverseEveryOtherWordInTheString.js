@@ -3,7 +3,7 @@
 // Category: REFERENCE  |  Tags: ARRAYS | FUNDAMENTALS
 // *****************************************************************************
 const reverse = (str) =>
-    str
-      .split(" ")
-      .reduce((a, c, i) => a + (i % 2 ? `${c.split("").reverse().join("")} ` : `${c} `), "")
-      .trim()
+  str
+    .split(" ")
+    .reduce((a, c, i) => a + (i % 2 ? `${c.split("").reverse().join("")} ` : `${c} `), "")
+    .trim()

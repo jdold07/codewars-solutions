@@ -3,5 +3,5 @@
 // Category: REFERENCE  |  Tags: FUNDAMENTALS
 // *****************************************************************************
 function otherAngle(a, b) {
-    return 180 - a - b
-  }
+  return 180 - a - b
+}

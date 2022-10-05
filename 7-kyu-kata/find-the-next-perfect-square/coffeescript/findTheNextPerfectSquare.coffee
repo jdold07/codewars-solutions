@@ -3,4 +3,4 @@
 # Category: REFERENCE  |  Tags: ALGEBRA | FUNDAMENTALS
 # ******************************************************************************
 findNextSquare = (sq) ->
-    if sq ** 0.5 % 1 then -1 else (sq ** 0.5 + 1) ** 2
+  if sq ** 0.5 % 1 then -1 else (sq ** 0.5 + 1) ** 2

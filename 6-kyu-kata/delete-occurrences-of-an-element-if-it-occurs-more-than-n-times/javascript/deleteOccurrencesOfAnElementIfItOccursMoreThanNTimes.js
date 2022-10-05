@@ -3,11 +3,11 @@
 // Category: REFERENCE  |  Tags: LISTS | FUNDAMENTALS
 // *****************************************************************************
 function deleteNth(arr, n) {
-      let result = []
-      let photoCount = {}
-      arr.forEach(element => {
-          photoCount[element] = (photoCount[element] || 0) + 1
-          if (photoCount[element] <= n) result.push(element)
-      })
-      return result
-  }
+  let result = []
+  let photoCount = {}
+  arr.forEach((element) => {
+    photoCount[element] = (photoCount[element] || 0) + 1
+    if (photoCount[element] <= n) result.push(element)
+  })
+  return result
+}

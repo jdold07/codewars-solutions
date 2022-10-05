@@ -3,4 +3,4 @@
 # Category: REFERENCE  |  Tags: FUNDAMENTALS
 # ******************************************************************************
 def paperwork(n, m):
-      return 0 if n<1 or m<1 else n*m
+    return 0 if n < 1 or m < 1 else n * m

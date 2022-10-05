@@ -3,7 +3,8 @@
 // Category: REFERENCE  |  Tags: FUNDAMENTALS
 // *****************************************************************************
 const sum = (nums) => (!nums || nums == -1 ? 0 : nums.reduce((a, c) => a + +c, 0))
-  const evenOrOdd = (str) => sum(str.match(/[13579]/g)) - sum(str.match(/[2468]/g)) == 0
+const evenOrOdd = (str) =>
+  sum(str.match(/[13579]/g)) - sum(str.match(/[2468]/g)) == 0
     ? "Even and Odd are the same"
     : sum(str.match(/[13579]/g)) - sum(str.match(/[2468]/g)) < 0
     ? "Even is greater than Odd"

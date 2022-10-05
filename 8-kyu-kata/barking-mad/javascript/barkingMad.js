@@ -3,19 +3,19 @@
 // Category: REFERENCE  |  Tags: FUNDAMENTALS
 // *****************************************************************************
 class Dog {
-    constructor(breed) {
-      this.breed = breed
-    }
-  
-    bark() {
-      return "Woof"
-    }
+  constructor(breed) {
+    this.breed = breed
   }
-  
-  var snoopy = new Dog("Beagle")
-  
-  snoopy.bark = function () {
+
+  bark() {
     return "Woof"
   }
-  
-  var scoobydoo = new Dog("Great Dane")
+}
+
+var snoopy = new Dog("Beagle")
+
+snoopy.bark = function () {
+  return "Woof"
+}
+
+var scoobydoo = new Dog("Great Dane")

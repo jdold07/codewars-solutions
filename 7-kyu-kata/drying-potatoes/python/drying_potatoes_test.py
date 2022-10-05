@@ -3,14 +3,16 @@
 # Category: REFERENCE  |  Tags: FUNDAMENTALS | PUZZLES
 # ******************************************************************************
 def dotest(p0, w0, p1, exp):
-    if (potatoes(p0, w0, p1) == exp):
+    if potatoes(p0, w0, p1) == exp:
         print("GOOD")
     else:
         print("BAD")
     test.assert_equals(potatoes(p0, w0, p1), exp)
 
+
 def dotest(p0, w0, p1, exp):
     test.assert_equals(potatoes(p0, w0, p1), exp)
+
 
 test.describe("potatoes")
 test.it("Basic tests")
@@ -37,19 +39,20 @@ dotest(78, 173, 77, 165)
 
 from random import randint
 
+
 def potatoesNUD(p0, w0, p1):
     return int(w0 * (100.0 - p0) / (100.0 - p1))
-    
+
+
 def random_tests():
     i = 0
-    while (i < 50):
-        p0 = randint(75,99)
-        w0 = randint(50,250)
-        p1 = p0 - randint(1,5)
+    while i < 50:
+        p0 = randint(75, 99)
+        w0 = randint(50, 250)
+        p1 = p0 - randint(1, 5)
         dotest(p0, w0, p1, potatoesNUD(p0, w0, p1))
         i += 1
 
+
 test.it("Random tests")
 random_tests()
-
-

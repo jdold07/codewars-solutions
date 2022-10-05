@@ -16,16 +16,18 @@ print("<COMPLETEDIN::>")
 
 test.describe("Random Tests")
 test.it("Should pass random tests")
+
+
 def random_tests():
     import random
+
     def zeros_sol(n):
-        x = n//5
-        return x+zeros_sol(x) if x else 0
-  
+        x = n // 5
+        return x + zeros_sol(x) if x else 0
+
     for _ in range(100):
         n = random.randint(0, 1000000000)
         test.assert_equals(zeros(n), zeros_sol(n), "Testing with n = %d" % n)
-        
-random_tests()        
 
 
+random_tests()

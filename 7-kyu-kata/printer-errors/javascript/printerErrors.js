@@ -3,7 +3,7 @@
 // Category: REFERENCE  |  Tags: FUNDAMENTALS
 // *****************************************************************************
 function printerError(s) {
-      let denom = s.length
-      s = s.replace(/[a-m]/g, "")
-      return `${s.length}/${denom}`
-  }
+  let denom = s.length
+  s = s.replace(/[a-m]/g, "")
+  return `${s.length}/${denom}`
+}

@@ -3,30 +3,29 @@
 # Category: REFERENCE  |  Tags: BINARY | FUNDAMENTALS
 # ******************************************************************************
 def unbleach(ws):
-    return ws.replace(' ', '[space]').replace('\t', '[tab]').replace('\n', '[LF]')
+    return ws.replace(" ", "[space]").replace("\t", "[tab]").replace("\n", "[LF]")
 
-def tester81247129(n, expected = None):
+
+def tester81247129(n, expected=None):
     test.it("Let's try it with %s:" % n)
     actual = whitespace_number(n)
-    assert not set(actual) - set(' \n\t'), ('Please return only spaces, tabs and newlines. ' +
-                                            'Other characters are not allowed.\n' +
-                                            'Tests will convert the allowed characters' +
-                                            'to readable tags for your convenience.')
+    assert not set(actual) - set(" \n\t"), (
+        "Please return only spaces, tabs and newlines. "
+        + "Other characters are not allowed.\n"
+        + "Tests will convert the allowed characters"
+        + "to readable tags for your convenience."
+    )
     if not expected:
-        expected = ' \t'[n < 0] + (bin(abs(n))[2:]
-                    .replace('0', ' ').replace('1', '\t')
-                    if n else '') + '\n'
+        expected = " \t"[n < 0] + (bin(abs(n))[2:].replace("0", " ").replace("1", "\t") if n else "") + "\n"
     test.assert_equals(unbleach(actual), unbleach(expected))
-    
-test.describe('Example tests')
-for n, expected in (( 1,    " \t\n"),
-                    ( 0,      " \n"),
-                    (-1,   "\t\t\n"),
-                    ( 2,   " \t \n"),
-                    (-3, "\t\t\t\n")):
+
+
+test.describe("Example tests")
+for n, expected in ((1, " \t\n"), (0, " \n"), (-1, "\t\t\n"), (2, " \t \n"), (-3, "\t\t\t\n")):
     tester81247129(n, expected)
-    
+
 from random import randint
-test.describe('Random tests')
+
+test.describe("Random tests")
 for i174271 in range(1, 38):
     tester81247129(randint(9 - 2**i174271, 9 + 2**i174271))

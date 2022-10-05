@@ -5,7 +5,4 @@
 const findMultiples = (n, limit) => Array.from({ length: Math.floor(limit / n) }, (_, i) => n * (i + 1))
 // *****************************************************************************
 // *****************************************************************************
-const findMultiples = (n, limit, res = [], m = 1) =>
-    n * m > limit ? res : findMultiples(n, limit, res.concat(n * m), ++m)
-  
-
+const findMultiples = (n, limit, res = [], m = 1) => (n * m > limit ? res : findMultiples(n, limit, res.concat(n * m), ++m))

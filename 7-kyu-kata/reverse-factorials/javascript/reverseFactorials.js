@@ -3,15 +3,14 @@
 // Category: REFERENCE  |  Tags: FUNDAMENTALS
 // *****************************************************************************
 function reverseFactorial(num) {
-      let factorial = 1
-      while (num > 1 && num % 1 === 0) { 
-          factorial += 1
-          num = num / factorial
-      }
-      if (num === 1) {
-          return `${factorial}!`
-      }
-      else {
-          return "None"
-      }
+  let factorial = 1
+  while (num > 1 && num % 1 === 0) {
+    factorial += 1
+    num = num / factorial
   }
+  if (num === 1) {
+    return `${factorial}!`
+  } else {
+    return "None"
+  }
+}

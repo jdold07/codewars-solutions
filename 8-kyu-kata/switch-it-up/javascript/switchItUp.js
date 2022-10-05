@@ -2,8 +2,8 @@
 // URL: https://www.codewars.com/kata/5808dcb8f0ed42ae34000031
 // Category: REFERENCE  |  Tags: FUNDAMENTALS
 // *****************************************************************************
-const switchItUp = num => {
-    const numMap = {
+const switchItUp = (num) => {
+  const numMap = {
     0: "Zero",
     1: "One",
     2: "Two",
@@ -13,7 +13,7 @@ const switchItUp = num => {
     6: "Six",
     7: "Seven",
     8: "Eight",
-    9: "Nine"  
-    }
-    return numMap[num]
+    9: "Nine"
   }
+  return numMap[num]
+}

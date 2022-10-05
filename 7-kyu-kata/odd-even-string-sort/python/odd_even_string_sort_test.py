@@ -2,4 +2,3 @@
 # URL: https://www.codewars.com/kata/580755730b5a77650500010c
 # Category: REFERENCE  |  Tags: STRINGS | FUNDAMENTALS | SORTING
 # ******************************************************************************
-

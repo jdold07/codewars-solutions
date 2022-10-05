@@ -3,4 +3,4 @@
 # Category: ALGORITHMS  |  Tags: STRINGS | ALGORITHMS
 # ******************************************************************************
 def reverse_words(s):
-      return " ".join(reversed(s.split()))
+    return " ".join(reversed(s.split()))

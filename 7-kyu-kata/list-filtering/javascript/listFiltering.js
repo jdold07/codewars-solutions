@@ -3,6 +3,6 @@
 // Category: REFERENCE  |  Tags: LISTS | FILTERING | DATA STRUCTURES | FUNDAMENTALS
 // *****************************************************************************
 function filter_list(l) {
-    // Return a new array with the strings filtered out
-    return l.filter(Number.isInteger)
-  }
+  // Return a new array with the strings filtered out
+  return l.filter(Number.isInteger)
+}

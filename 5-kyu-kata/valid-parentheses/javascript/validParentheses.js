@@ -3,8 +3,7 @@
 // Category: ALGORITHMS  |  Tags: ALGORITHMS
 // *****************************************************************************
 function validParentheses(parens) {
-      if (parens.length % 2 !== 0) return false
-      while (/\(\)/g.test(parens))
-          parens = parens.replace(/\(\)/g, "")
-      return parens.length == 0
-  }
+  if (parens.length % 2 !== 0) return false
+  while (/\(\)/g.test(parens)) parens = parens.replace(/\(\)/g, "")
+  return parens.length == 0
+}

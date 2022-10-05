@@ -3,7 +3,7 @@
 // Category: REFERENCE  |  Tags: FUNDAMENTALS
 // *****************************************************************************
 function Sleigh() {}
-  
-  Sleigh.prototype.authenticate = function(name, password) {
-    return name === "Santa Claus" && password === "Ho Ho Ho!"
-  };
+
+Sleigh.prototype.authenticate = function (name, password) {
+  return name === "Santa Claus" && password === "Ho Ho Ho!"
+}

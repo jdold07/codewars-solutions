@@ -2,4 +2,3 @@
 # URL: https://www.codewars.com/kata/52597aa56021e91c93000cb0
 # Category: ALGORITHMS  |  Tags: ARRAYS | SORTING | ALGORITHMS
 # ******************************************************************************
-

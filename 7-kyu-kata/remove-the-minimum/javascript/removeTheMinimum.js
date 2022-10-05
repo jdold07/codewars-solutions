@@ -3,7 +3,7 @@
 // Category: REFERENCE  |  Tags: LISTS | ARRAYS | FUNDAMENTALS
 // *****************************************************************************
 function removeSmallest(numbers) {
-    let numbers2 = [...numbers]
-    numbers2.splice(numbers.indexOf(Math.min(...numbers)), 1)
-    return numbers2 || []
-  }
+  let numbers2 = [...numbers]
+  numbers2.splice(numbers.indexOf(Math.min(...numbers)), 1)
+  return numbers2 || []
+}

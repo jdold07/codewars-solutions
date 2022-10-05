@@ -3,9 +3,9 @@
 // Category: REFERENCE  |  Tags: FUNDAMENTALS | ARRAYS
 // *****************************************************************************
 function toCsvText(array) {
-    let result = ""
-    for (let row of array) {
-      result += (row.join(",") + "\n")
-    }
-    return result.trim()
+  let result = ""
+  for (let row of array) {
+    result += row.join(",") + "\n"
   }
+  return result.trim()
+}

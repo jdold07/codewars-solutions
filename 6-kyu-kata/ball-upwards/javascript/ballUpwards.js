@@ -3,4 +3,4 @@
 // Category: REFERENCE  |  Tags: FUNDAMENTALS
 // *****************************************************************************
 const maxBall = (v, h = 0, t = 0.1) =>
-    (x = (v / 3.6) * t - 0.5 * 9.81 * t * t) > h ? maxBall(v, x, t + 0.1) : Math.round((t - 0.1) * 10)
+  (x = (v / 3.6) * t - 0.5 * 9.81 * t * t) > h ? maxBall(v, x, t + 0.1) : Math.round((t - 0.1) * 10)

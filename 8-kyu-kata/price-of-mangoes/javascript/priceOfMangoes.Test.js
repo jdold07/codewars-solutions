@@ -9,13 +9,13 @@ Test.assertEquals(mango(7, 3), 15)
 Test.assertEquals(mango(31, 11), 231)
 Test.assertEquals(mango(14, 2), 20)
 
-describe("Random Tests:", function(){
-function mangoCheck(quantity, price){
-  return ~~(quantity/3)*2*price + (quantity%3)*price
- }
- for (let i=1; i<100; i++){
-   let q1 = Math.floor((Math.random()*100)+1);
-   let p1 = Math.floor((Math.random()*100)+1);
-   Test.assertEquals(mango(q1, p1), mangoCheck(q1,p1));
+describe("Random Tests:", function () {
+  function mangoCheck(quantity, price) {
+    return ~~(quantity / 3) * 2 * price + (quantity % 3) * price
   }
-});
+  for (let i = 1; i < 100; i++) {
+    let q1 = Math.floor(Math.random() * 100 + 1)
+    let p1 = Math.floor(Math.random() * 100 + 1)
+    Test.assertEquals(mango(q1, p1), mangoCheck(q1, p1))
+  }
+})

@@ -3,6 +3,6 @@
 // Category: REFERENCE  |  Tags: LOGIC | OBJECT-ORIENTED PROGRAMMING | STRINGS | FUNDAMENTALS
 // *****************************************************************************
 const generateName = () =>
-    !photoManager.nameExists((x = [...Array(6)].map((v) => String.fromCharCode((Math.random() * 42 + 48) | 0)).join("")))
-      ? x
-      : generateName()
+  !photoManager.nameExists((x = [...Array(6)].map((v) => String.fromCharCode((Math.random() * 42 + 48) | 0)).join("")))
+    ? x
+    : generateName()

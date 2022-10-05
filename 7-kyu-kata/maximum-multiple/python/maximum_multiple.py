@@ -3,11 +3,14 @@
 # Category: BUG_FIXES  |  Tags: FUNDAMENTALS
 # ******************************************************************************
 def max_multiple(divisor, bound):
-      for n in range(bound, divisor-1, -1):
-          if not n % divisor: return n
+    for n in range(bound, divisor - 1, -1):
+        if not n % divisor:
+            return n
+
+
 # ******************************************************************************
 # ******************************************************************************
 def max_multiple(divisor, bound):
-      for n in range(bound, 0, -1):
-          if not n % divisor: return n
-
+    for n in range(bound, 0, -1):
+        if not n % divisor:
+            return n

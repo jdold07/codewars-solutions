@@ -3,4 +3,4 @@
 # Category: REFERENCE  |  Tags: FUNDAMENTALS
 # ******************************************************************************
 def remove(s):
-      return f"{''.join(x for x in s if x != '!')}!"
+    return f"{''.join(x for x in s if x != '!')}!"

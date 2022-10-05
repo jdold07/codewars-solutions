@@ -3,4 +3,4 @@
 # Category: REFERENCE  |  Tags: ARRAYS | FUNDAMENTALS
 # ******************************************************************************
 def arr(n=0):
-      return list(range(n)) if n > 0 else []
+    return list(range(n)) if n > 0 else []

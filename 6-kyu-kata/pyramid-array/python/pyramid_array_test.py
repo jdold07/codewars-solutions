@@ -13,7 +13,7 @@ def basic_tests():
 @test.describe("Random tests")
 def random_tests():
     from random import randint
-    
+
     for _ in range(20):
         n = randint(0, 20)
-        test.assert_equals(pyramid(n), [[1]*x for x in range(1, n+1)])
+        test.assert_equals(pyramid(n), [[1] * x for x in range(1, n + 1)])

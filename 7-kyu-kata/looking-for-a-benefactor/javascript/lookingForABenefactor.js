@@ -3,6 +3,6 @@
 // Category: REFERENCE  |  Tags: FUNDAMENTALS | ARRAYS
 // *****************************************************************************
 const newAvg = (arr, newavg) => {
-    if ((x = (arr.length + 1) * newavg - arr.reduce((a, c) => a + c, 0)) <= 0) throw Error("Expected New Average is too low")
-    return Math.ceil(x)
-  }
+  if ((x = (arr.length + 1) * newavg - arr.reduce((a, c) => a + c, 0)) <= 0) throw Error("Expected New Average is too low")
+  return Math.ceil(x)
+}

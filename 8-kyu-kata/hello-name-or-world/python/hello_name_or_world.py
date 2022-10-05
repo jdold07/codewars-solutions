@@ -3,4 +3,4 @@
 # Category: REFERENCE  |  Tags: FUNDAMENTALS
 # ******************************************************************************
 def hello(name="World"):
-      return f"Hello, {name.title()}!" if len(name) > 0 else "Hello, World!"
+    return f"Hello, {name.title()}!" if len(name) > 0 else "Hello, World!"

@@ -3,15 +3,15 @@
 // Category: REFERENCE  |  Tags: FUNDAMENTALS
 // *****************************************************************************
 const movie = (card, ticket, perc, visits = 1) => {
-    while (visits * ticket <= Math.ceil(card + ticket * perc ** visits)) {
-      card += ticket * perc ** visits
-      visits += 1
-    }
-    return visits
+  while (visits * ticket <= Math.ceil(card + ticket * perc ** visits)) {
+    card += ticket * perc ** visits
+    visits += 1
   }
-  
-  // Recursion - fails due to max call tack size
-  const movieRecursion = (card, ticket, perc, visits = 1) =>
-    visits * ticket > Math.ceil(card + ticket * perc ** visits)
-      ? visits
-      : movie(card + ticket * perc ** visits, ticket, perc, visits + 1)
+  return visits
+}
+
+// Recursion - fails due to max call tack size
+const movieRecursion = (card, ticket, perc, visits = 1) =>
+  visits * ticket > Math.ceil(card + ticket * perc ** visits)
+    ? visits
+    : movie(card + ticket * perc ** visits, ticket, perc, visits + 1)

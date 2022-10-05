@@ -4,7 +4,7 @@
 // *****************************************************************************
 Test.expect(isReallyNaN(0) === false)
 Test.expect(isReallyNaN(37) === false)
-Test.expect(isReallyNaN('37') === false)
+Test.expect(isReallyNaN("37") === false)
 Test.expect(isReallyNaN(NaN) === true)
 Test.expect(isReallyNaN(undefined) === false)
 
@@ -13,9 +13,9 @@ Test.expect(isReallyNaN(Number.NaN) === true)
 Test.expect(isReallyNaN(0 / 0) === true)
 
 // These are not NaN, but would have been true with global isNaN()
-Test.expect(isReallyNaN('NaN') === false)
+Test.expect(isReallyNaN("NaN") === false)
 Test.expect(isReallyNaN({}) === false)
-Test.expect(isReallyNaN('blabla') === false)
+Test.expect(isReallyNaN("blabla") === false)
 
 const rand_int = () => ~~(Math.random() * 100)
 const rand_float = () => Math.random() * 100
@@ -30,14 +30,14 @@ Test.expect(isReallyNaN(true) === false)
 Test.expect(isReallyNaN(null) === false)
 Test.expect(isReallyNaN(rand_float()) === false)
 Test.expect(isReallyNaN(rand_string_from_float()) === false)
-Test.expect(isReallyNaN('') === false)
-Test.expect(isReallyNaN(' ') === false)
+Test.expect(isReallyNaN("") === false)
+Test.expect(isReallyNaN(" ") === false)
 
 // Random tests, to stop people gaming this Kata
-describe("Random Tests:", function() {
+describe("Random Tests:", function () {
   const cases = [
-    '',
-    ' ',
+    "",
+    " ",
     null,
     undefined,
     rand_int(),
@@ -47,15 +47,15 @@ describe("Random Tests:", function() {
     rand_string_from_float(),
     true,
     false,
-    'blablabla',
-    'NaN',
+    "blablabla",
+    "NaN",
     {},
     Number.NaN,
-    NaN,
+    NaN
   ]
   for (let i = 0; i < 100; i++) {
-    let rand = ~~(Math.random() * cases.length);
+    let rand = ~~(Math.random() * cases.length)
     let testcase = cases[rand]
-    Test.assertEquals(isReallyNaN(testcase), Number.isNaN(testcase));
+    Test.assertEquals(isReallyNaN(testcase), Number.isNaN(testcase))
   }
-});
+})

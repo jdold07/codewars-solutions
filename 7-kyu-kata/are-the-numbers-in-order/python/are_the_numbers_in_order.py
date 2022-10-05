@@ -3,4 +3,4 @@
 # Category: ALGORITHMS  |  Tags: FUNDAMENTALS | MATHEMATICS | ALGORITHMS
 # ******************************************************************************
 def in_asc_order(arr):
-      return arr == list(sorted(arr))
+    return arr == list(sorted(arr))

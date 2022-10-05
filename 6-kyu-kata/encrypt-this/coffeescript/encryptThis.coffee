@@ -2,4 +2,3 @@
 # URL: https://www.codewars.com/kata/5848565e273af816fb000449
 # Category: REFERENCE  |  Tags: FUNDAMENTALS | STRINGS | REGULAR EXPRESSIONS | ARRAYS | CIPHERS | ALGORITHMS | CRYPTOGRAPHY | SECURITY
 # ******************************************************************************
-

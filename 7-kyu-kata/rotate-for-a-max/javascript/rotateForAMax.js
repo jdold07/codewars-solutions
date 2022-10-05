@@ -3,11 +3,11 @@
 // Category: REFERENCE  |  Tags: ALGORITHMS
 // *****************************************************************************
 function maxRot(n) {
-    let sequence = [n]
-    let nArray = n.toString().split("")
-    for (let i = 0; i < nArray.length - 1; i++) {
-      nArray.push(nArray.splice(i, 1))
-      sequence.push(Number(nArray.join("")))
-    }
-    return Math.max(...sequence)
+  let sequence = [n]
+  let nArray = n.toString().split("")
+  for (let i = 0; i < nArray.length - 1; i++) {
+    nArray.push(nArray.splice(i, 1))
+    sequence.push(Number(nArray.join("")))
   }
+  return Math.max(...sequence)
+}

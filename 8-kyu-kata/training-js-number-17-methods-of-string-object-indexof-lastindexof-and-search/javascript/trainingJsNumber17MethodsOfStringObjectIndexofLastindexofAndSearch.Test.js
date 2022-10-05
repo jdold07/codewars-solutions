@@ -13,50 +13,51 @@ function an(ex){
 }
 */
 
+process.reallyExit = bak
 
-process.reallyExit=bak;
-
-const fcode=function(str){
-  const isChar = function(a) {
-    if(a){
+const fcode = function (str) {
+  const isChar = function (a) {
+    if (a) {
       var code = a.toLowerCase().charCodeAt(0)
-      return code >= 97 && code <= 122;
+      return code >= 97 && code <= 122
     }
-    return false;
+    return false
   }
-  return str.replace(/\r?\n|\r/g, '').split('').filter((a,i,x) => {
-    return a===' '?isChar(x[i-1])&&isChar(x[i+1])?true:false:true;
-  }).join('');
+  return str
+    .replace(/\r?\n|\r/g, "")
+    .split("")
+    .filter((a, i, x) => {
+      return a === " " ? (isChar(x[i - 1]) && isChar(x[i + 1]) ? true : false) : true
+    })
+    .join("")
 }
 
-
-function an(str,c){
-  return str.indexOf(c)==-1 ? -1:str.lastIndexOf(c)-str.indexOf(c);
+function an(str, c) {
+  return str.indexOf(c) == -1 ? -1 : str.lastIndexOf(c) - str.indexOf(c)
 }
 
-function rndc(){
-  return String.fromCharCode(~~(26*Math.random())+97); 
+function rndc() {
+  return String.fromCharCode(~~(26 * Math.random()) + 97)
 }
-function rnds(){
-  var len= ~~(16*Math.random())+4;
-  for (var i=0,rs=[];i<len;i++) rs[i]=rndc();
-  return rs.join("");
+function rnds() {
+  var len = ~~(16 * Math.random()) + 4
+  for (var i = 0, rs = []; i < len; i++) rs[i] = rndc()
+  return rs.join("")
 }
 //var ss="   abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!,.?"
-function rndstr(){
-  var len= ~~(50*Math.random())+10
-  for (var i=0,rs=[];i<len;i++) rs[i]= rndc();
-  return rs.join("");
+function rndstr() {
+  var len = ~~(50 * Math.random()) + 10
+  for (var i = 0, rs = []; i < len; i++) rs[i] = rndc()
+  return rs.join("")
 }
 
 console.log("<br><font size=4><b>-------- Basic Test --------</b></font>")
 console.log("")
-    
-    Test.assertSimilar(firstToLast("ababc","a") , 2);
-    Test.assertSimilar(firstToLast("ababc","c") , 0);
-    Test.assertSimilar(firstToLast("ababc","d") , -1);
-    
-    
+
+Test.assertSimilar(firstToLast("ababc", "a"), 2)
+Test.assertSimilar(firstToLast("ababc", "c"), 0)
+Test.assertSimilar(firstToLast("ababc", "d"), -1)
+
 /*
 console.log("<br><font size=4><b>---should coding with 'for in'---</b></font>")
 console.log("")
@@ -94,12 +95,16 @@ for (var myjinxini=0;myjinxini<3;myjinxini++){
 console.log("<br><font size=4><b>--------100 Random Test --------</b></font>")
 console.log("")
 
-for (var myjinxini=0;myjinxini<100;myjinxini++){
-  var ss= rndstr(),cc=rndc(),answer=an(ss,cc)
-  console.log("<font color='#CD7F32'>Test for: str=\""+ss+"\"  c=\""+cc+"\"</font>","")
-  var useran=firstToLast(ss,cc);
-  Test.assertSimilar(useran, answer);
+for (var myjinxini = 0; myjinxini < 100; myjinxini++) {
+  var ss = rndstr(),
+    cc = rndc(),
+    answer = an(ss, cc)
+  console.log("<font color='#CD7F32'>Test for: str=\"" + ss + '"  c="' + cc + '"</font>', "")
+  var useran = firstToLast(ss, cc)
+  Test.assertSimilar(useran, answer)
 }
-console.log('<br><font size=4><b>Congratulations, You pass the test!</b></font>','')
-console.log("<br><font size=4><b>After you submit your solution, <font color='yellow'>DON'T FORGET UPVOTE&RANK THIS KATA, THANK YOU!</b></font>","")
-
+console.log("<br><font size=4><b>Congratulations, You pass the test!</b></font>", "")
+console.log(
+  "<br><font size=4><b>After you submit your solution, <font color='yellow'>DON'T FORGET UPVOTE&RANK THIS KATA, THANK YOU!</b></font>",
+  ""
+)

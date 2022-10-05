@@ -13,53 +13,55 @@ function an(ex){
 }
 */
 
+process.reallyExit = bak
 
-process.reallyExit=bak;
-
-const fcode=function(str){
-  const isChar = function(a) {
-    if(a){
+const fcode = function (str) {
+  const isChar = function (a) {
+    if (a) {
       var code = a.toLowerCase().charCodeAt(0)
-      return code >= 97 && code <= 122;
+      return code >= 97 && code <= 122
     }
-    return false;
+    return false
   }
-  return str.replace(/\r?\n|\r/g, '').split('').filter((a,i,x) => {
-    return a===' '?isChar(x[i-1])&&isChar(x[i+1])?true:false:true;
-  }).join('');
+  return str
+    .replace(/\r?\n|\r/g, "")
+    .split("")
+    .filter((a, i, x) => {
+      return a === " " ? (isChar(x[i - 1]) && isChar(x[i + 1]) ? true : false) : true
+    })
+    .join("")
 }
 
-
-function an(arr){
-  var min=Infinity,rs=[];
-  for (var i=0;i<arr.length;i++) if (arr[i].length<min) min=arr[i].length;
-  for (var i=0;i<arr.length;i++) rs[i]=arr[i].slice(0,min);
-  return rs;
+function an(arr) {
+  var min = Infinity,
+    rs = []
+  for (var i = 0; i < arr.length; i++) if (arr[i].length < min) min = arr[i].length
+  for (var i = 0; i < arr.length; i++) rs[i] = arr[i].slice(0, min)
+  return rs
 }
 
-function rndc(){
-  return String.fromCharCode(~~(26*Math.random())+97); 
+function rndc() {
+  return String.fromCharCode(~~(26 * Math.random()) + 97)
 }
-function rnds(){
-  var len= ~~(16*Math.random())+4;
-  for (var i=0,rs=[];i<len;i++) rs[i]=rndc();
-  return rs.join("");
+function rnds() {
+  var len = ~~(16 * Math.random()) + 4
+  for (var i = 0, rs = []; i < len; i++) rs[i] = rndc()
+  return rs.join("")
 }
 //var ss="   abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!,.?"
-function rndarr(){
-  var len= ~~(11*Math.random())+4
-  for (var i=0,rs=[];i<len;i++) rs[i]= rnds();
-  return rs;
+function rndarr() {
+  var len = ~~(11 * Math.random()) + 4
+  for (var i = 0, rs = []; i < len; i++) rs[i] = rnds()
+  return rs
 }
 
 console.log("<br><font size=4><b>-------- Basic Test --------</b></font>")
 console.log("")
-    
-    
-    Test.assertSimilar(cutIt(["ab","cde","fgh"]) , ["ab","cd","fg"]);
-    Test.assertSimilar(cutIt(["abc","defgh","ijklmn"]) , ["abc","def","ijk"]);
-    Test.assertSimilar(cutIt(["codewars","javascript","java"]) , ["code","java","java"]);
-    
+
+Test.assertSimilar(cutIt(["ab", "cde", "fgh"]), ["ab", "cd", "fg"])
+Test.assertSimilar(cutIt(["abc", "defgh", "ijklmn"]), ["abc", "def", "ijk"])
+Test.assertSimilar(cutIt(["codewars", "javascript", "java"]), ["code", "java", "java"])
+
 /*
 console.log("<br><font size=4><b>---should coding with 'for in'---</b></font>")
 console.log("")
@@ -97,12 +99,15 @@ for (var myjinxini=0;myjinxini<3;myjinxini++){
 console.log("<br><font size=4><b>--------100 Random Test --------</b></font>")
 console.log("")
 
-for (var myjinxini=0;myjinxini<100;myjinxini++){
-  var ar= rndarr(), answer=an(ar)
-  console.log("<font color='#CD7F32'>Test for: arr=["+ar+"]</font>","")
-  var useran=cutIt(ar);
-  Test.assertSimilar(useran, answer);
+for (var myjinxini = 0; myjinxini < 100; myjinxini++) {
+  var ar = rndarr(),
+    answer = an(ar)
+  console.log("<font color='#CD7F32'>Test for: arr=[" + ar + "]</font>", "")
+  var useran = cutIt(ar)
+  Test.assertSimilar(useran, answer)
 }
-console.log('<br><font size=4><b>Congratulations, You pass the test!</b></font>','')
-console.log("<br><font size=4><b>After you submit your solution, <font color='yellow'>DON'T FORGET UPVOTE&RANK THIS KATA, THANK YOU!</b></font>","")
-
+console.log("<br><font size=4><b>Congratulations, You pass the test!</b></font>", "")
+console.log(
+  "<br><font size=4><b>After you submit your solution, <font color='yellow'>DON'T FORGET UPVOTE&RANK THIS KATA, THANK YOU!</b></font>",
+  ""
+)

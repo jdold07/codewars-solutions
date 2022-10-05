@@ -13,70 +13,72 @@ function an(ex){
 }
 */
 
+process.reallyExit = bak
 
-process.reallyExit=bak;
-
-const fcode=function(str){
-  const isChar = function(a) {
-    if(a){
+const fcode = function (str) {
+  const isChar = function (a) {
+    if (a) {
       var code = a.toLowerCase().charCodeAt(0)
-      return code >= 97 && code <= 122;
+      return code >= 97 && code <= 122
     }
-    return false;
+    return false
   }
-  return str.replace(/\r?\n|\r/g, '').split('').filter((a,i,x) => {
-    return a===' '?isChar(x[i-1])&&isChar(x[i+1])?true:false:true;
-  }).join('');
+  return str
+    .replace(/\r?\n|\r/g, "")
+    .split("")
+    .filter((a, i, x) => {
+      return a === " " ? (isChar(x[i - 1]) && isChar(x[i + 1]) ? true : false) : true
+    })
+    .join("")
 }
 
-
-function an(str,n){
-  var times=0;
-  while (times<n){
-    if (times%2==0) str="*"+str;
-    else str=str+"*";
-    times++;
+function an(str, n) {
+  var times = 0
+  while (times < n) {
+    if (times % 2 == 0) str = "*" + str
+    else str = str + "*"
+    times++
   }
-  return str;
+  return str
 }
 
-function rndc(){
-  return String.fromCharCode(~~(26*Math.random())+97); 
+function rndc() {
+  return String.fromCharCode(~~(26 * Math.random()) + 97)
 }
-function rnds(){
-  var len= ~~(10*Math.random())+1;
-  for (var i=0,rs=[];i<len;i++) rs[i]=rndc();
-  return rs.join("");
+function rnds() {
+  var len = ~~(10 * Math.random()) + 1
+  for (var i = 0, rs = []; i < len; i++) rs[i] = rndc()
+  return rs.join("")
 }
 //var ss="   abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!,.?"
-function rndtf(){
-  var chars="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",
-      values=[true,123,"123",["123"],"false",false,0,"",null,undefined],
-      jl= ~~(100*Math.random())%6,rs;
-  if (jl==0) rs=~~(100*Math.random())
-  else if (jl==1) rs=rnds();
-  else rs=values[~~(10*Math.random())]
-  return rs;
+function rndtf() {
+  var chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",
+    values = [true, 123, "123", ["123"], "false", false, 0, "", null, undefined],
+    jl = ~~(100 * Math.random()) % 6,
+    rs
+  if (jl == 0) rs = ~~(100 * Math.random())
+  else if (jl == 1) rs = rnds()
+  else rs = values[~~(10 * Math.random())]
+  return rs
 }
 
 console.log("<br><font size=4><b>-------- Basic Test --------</b></font>")
 console.log("")
-    
+
 //test for equations and inequalities
-    
-    Test.assertSimilar(padIt("a",1),"*a");
-    Test.assertSimilar(padIt("a",2),"*a*");
-    Test.assertSimilar(padIt("a",3),"**a*");
-    Test.assertSimilar(padIt("a",4),"**a**");
-    Test.assertSimilar(padIt("a",5),"***a**");
-    
-    
+
+Test.assertSimilar(padIt("a", 1), "*a")
+Test.assertSimilar(padIt("a", 2), "*a*")
+Test.assertSimilar(padIt("a", 3), "**a*")
+Test.assertSimilar(padIt("a", 4), "**a**")
+Test.assertSimilar(padIt("a", 5), "***a**")
+
 console.log("<br><font size=4><b>---should coding with 'while'---</b></font>")
 console.log("")
-var code=padIt+""
+var code = padIt + ""
 //console.log(code)
-var passswitch=code.indexOf("while")>-1 ? "Passed":"Your solution should contains keyword \"while\"";
-Test.assertSimilar(passswitch,"Passed");
+var passswitch = code.indexOf("while") > -1 ? "Passed" : 'Your solution should contains keyword "while"'
+Test.assertSimilar(passswitch, "Passed")
 /*
 //anti-cheat and calc the code length
 console.log("<br><font size=4><b>--------Code length check --------</b></font>")
@@ -109,11 +111,15 @@ for (var myjinxini=0;myjinxini<3;myjinxini++){
 console.log("<br><font size=4><b>--------100 Random Test --------</b></font>")
 console.log("")
 
-for (var myjinxini=0;myjinxini<100;myjinxini++){
-  var ss= rnds(),nn=~~(30*Math.random())+1, answer=an(ss,nn)
-  console.log("<font color='#CD7F32'>Test for: str=\""+ss+"\"  n="+nn+"</font>","")
-  Test.assertSimilar(padIt(ss,nn), answer);
+for (var myjinxini = 0; myjinxini < 100; myjinxini++) {
+  var ss = rnds(),
+    nn = ~~(30 * Math.random()) + 1,
+    answer = an(ss, nn)
+  console.log("<font color='#CD7F32'>Test for: str=\"" + ss + '"  n=' + nn + "</font>", "")
+  Test.assertSimilar(padIt(ss, nn), answer)
 }
-console.log('<br><font size=4><b>Congratulations, You pass the test!</b></font>','')
-console.log("<br><font size=4><b>After you submit your solution, <font color='yellow'>DON'T FORGET UPVOTE&RANK THIS KATA, THANK YOU!</b></font>","")
-
+console.log("<br><font size=4><b>Congratulations, You pass the test!</b></font>", "")
+console.log(
+  "<br><font size=4><b>After you submit your solution, <font color='yellow'>DON'T FORGET UPVOTE&RANK THIS KATA, THANK YOU!</b></font>",
+  ""
+)

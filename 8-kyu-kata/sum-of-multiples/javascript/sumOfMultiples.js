@@ -2,8 +2,8 @@
 // URL: https://www.codewars.com/kata/57241e0f440cd279b5000829
 // Category: REFERENCE  |  Tags: FUNDAMENTALS
 // *****************************************************************************
-function sumMul(n,m){
-    if (n >= m) return "INVALID"
-    const multiples = Math.floor((m - 1) / n)
-    return multiples * (multiples + 1) / 2 * n
-  }
+function sumMul(n, m) {
+  if (n >= m) return "INVALID"
+  const multiples = Math.floor((m - 1) / n)
+  return ((multiples * (multiples + 1)) / 2) * n
+}

@@ -3,8 +3,11 @@
 // Category: ALGORITHMS  |  Tags: MATHEMATICS | ALGORITHMS
 // *****************************************************************************
 function digital_root(n) {
-      while (n > 9) {
-          n = (n+"").split("").map(Number).reduce((a,b) => a+b,0)
-      }
-      return n
+  while (n > 9) {
+    n = (n + "")
+      .split("")
+      .map(Number)
+      .reduce((a, b) => a + b, 0)
   }
+  return n
+}

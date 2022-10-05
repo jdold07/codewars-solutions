@@ -3,4 +3,4 @@
 # Category: ALGORITHMS  |  Tags: MATHEMATICS | ALGORITHMS
 # ******************************************************************************
 def solution(n):
-      return sum(i for i in range(1, n) if i % 3 == 0 or i % 5 == 0)
+    return sum(i for i in range(1, n) if i % 3 == 0 or i % 5 == 0)

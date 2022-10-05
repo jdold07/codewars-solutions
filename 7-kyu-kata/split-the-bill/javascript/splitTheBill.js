@@ -3,7 +3,7 @@
 // Category: REFERENCE  |  Tags: FUNDAMENTALS | OBJECT-ORIENTED PROGRAMMING | DATA STRUCTURES
 // *****************************************************************************
 const splitTheBill = (x) => {
-    const xArray = [...Object.entries(x)]
-    const shareAmount = xArray.reduce((a, [_, v]) => a + v, 0) / xArray.length
-    return xArray.reduce((a, [k, v]) => ((a[k] = Math.round((v - shareAmount) * 100) / 100), a), {})
-  }
+  const xArray = [...Object.entries(x)]
+  const shareAmount = xArray.reduce((a, [_, v]) => a + v, 0) / xArray.length
+  return xArray.reduce((a, [k, v]) => ((a[k] = Math.round((v - shareAmount) * 100) / 100), a), {})
+}

@@ -8,9 +8,7 @@ from solution import pipe_fix
 
 
 def check(indata, expected):
-    test.it(f"pipe_fix({indata!r})")(
-        lambda: test.assert_equals(pipe_fix(indata), expected)
-    )
+    test.it(f"pipe_fix({indata!r})")(lambda: test.assert_equals(pipe_fix(indata), expected))
 
 
 @test.describe("Fixed tests")
@@ -26,8 +24,6 @@ def _fixed():
 @test.describe("Random tests")
 def _random():
     for _ in range(100):
-        question = sorted(
-            random.sample(range(0, 1000), random.randint(50, 100))
-        )
+        question = sorted(random.sample(range(0, 1000), random.randint(50, 100)))
         answer = list(range(min(question), max(question) + 1))
         check(question, answer)

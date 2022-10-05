@@ -3,18 +3,22 @@
 # Category: REFERENCE  |  Tags: FUNDAMENTALS | PROBABILITY
 # ******************************************************************************
 import random
+
 REPETITIONS, MARGIN = 10000, 0.02
 
+
 def ans(input, output):
-    if input == output: return 0
-    if (input, output) in (('rock', 'paper'), ('paper', 'scissors'), ('scissors', 'rock')):
+    if input == output:
+        return 0
+    if (input, output) in (("rock", "paper"), ("paper", "scissors"), ("scissors", "rock")):
         return -1
     else:
         return 1
 
+
 wins, draws, losses = 0, 0, 0
 for i in xrange(REPETITIONS):
-    c = random.choice(['rock', 'paper', 'scissors'])
+    c = random.choice(["rock", "paper", "scissors"])
     result = ans(r_p_s_cheat(c), c)
     if result == 1:
         wins += 1
@@ -23,7 +27,7 @@ for i in xrange(REPETITIONS):
     else:
         draws += 1
 
-print('{} wins, {} draws, {} losses'.format(wins, draws, losses))
+print("{} wins, {} draws, {} losses".format(wins, draws, losses))
 
 test.assert_equals(draws, 0, "There shouldn't be any draw")
 test.expect(abs(0.9 * REPETITIONS - wins) <= MARGIN * REPETITIONS, "You should win more often")

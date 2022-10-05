@@ -5,6 +5,7 @@
 def gen_test_case(inp, res):
     test.assert_equals(is_uppercase(inp), res, inp)
 
+
 test.describe("Basic Tests")
 
 gen_test_case("c", False)
@@ -20,9 +21,7 @@ test.describe("Random Test")
 from string import ascii_lowercase, ascii_uppercase
 from random import sample, randrange
 
-CHARS = (ascii_lowercase
-         + ascii_uppercase
-         + ' _!@#$%^&*())_+1234567890~`{}|[]\:";<>?,./')
+CHARS = ascii_lowercase + ascii_uppercase + ' _!@#$%^&*())_+1234567890~`{}|[]\:";<>?,./'
 
 for i in range(50):
     strng = "".join(sample(CHARS, randrange(1, 51)))

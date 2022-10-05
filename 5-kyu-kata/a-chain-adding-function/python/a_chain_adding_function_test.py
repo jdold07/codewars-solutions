@@ -12,12 +12,7 @@ import codewars_test as test
 
 def genvars():
     # a b c .. y z aa ab ac .. zz aaa aab ..
-    yield from (
-        name
-        for len in count(1)
-        for name in map("".join, product(abc, repeat=len))
-        if name not in kwlist
-    )
+    yield from (name for len in count(1) for name in map("".join, product(abc, repeat=len)) if name not in kwlist)
 
 
 class AssertionFailed(Exception):
@@ -105,9 +100,7 @@ def run_scenario():
         vars.append(out)
         check(*out)
 
-    actions = choices(
-        [init, plus, callassign, addadd], weights=[1, 1, 4, 4], k=15
-    )
+    actions = choices([init, plus, callassign, addadd], weights=[1, 1, 4, 4], k=15)
     actions = [init] + actions + [checkallvars]
     for action in actions:
         try:
@@ -123,6 +116,7 @@ def run_scenario():
             raise
     else:
         test.expect(True)
+
 
 def check_fixed(xs, expected):
     # a simpler version for the fixed tests that only checks the end result

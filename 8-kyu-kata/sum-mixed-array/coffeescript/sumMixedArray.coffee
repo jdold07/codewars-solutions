@@ -2,4 +2,4 @@
 # URL: https://www.codewars.com/kata/57eaeb9578748ff92a000009
 # Category: REFERENCE  |  Tags: FUNDAMENTALS | STRINGS | ARRAYS
 # ******************************************************************************
-sumMix = (x) -> x.reduce ((a,c) -> a + +c), 0
+sumMix = (x) -> x.reduce ((a, c) -> a + +c), 0

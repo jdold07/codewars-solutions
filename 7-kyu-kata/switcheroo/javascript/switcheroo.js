@@ -2,4 +2,8 @@
 // URL: https://www.codewars.com/kata/57f759bb664021a30300007d
 // Category: REFERENCE  |  Tags: FUNDAMENTALS | STRINGS
 // *****************************************************************************
-const switcheroo = (x) => x.split("").map(el => el === "a" ? "b" : el === "b" ? "a" : el).join("")
+const switcheroo = (x) =>
+  x
+    .split("")
+    .map((el) => (el === "a" ? "b" : el === "b" ? "a" : el))
+    .join("")

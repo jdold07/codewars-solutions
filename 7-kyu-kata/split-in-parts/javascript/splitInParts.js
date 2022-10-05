@@ -3,6 +3,6 @@
 // Category: REFERENCE  |  Tags: STRINGS | FUNDAMENTALS
 // *****************************************************************************
 const splitInParts = (s, partLength) => {
-    const re = new RegExp("(\\S{" + partLength + "})", "g")
-    return s.replace(re, "$1 ").trim()
-  }
+  const re = new RegExp("(\\S{" + partLength + "})", "g")
+  return s.replace(re, "$1 ").trim()
+}

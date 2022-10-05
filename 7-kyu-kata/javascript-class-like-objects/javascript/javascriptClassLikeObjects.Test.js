@@ -4,12 +4,11 @@
 // *****************************************************************************
 describe("Tests", () => {
   it("test", () => {
-var cat = new Animal('Sam', 'cat')
-Test.expect(cat.name == 'Sam', 'animal.name does not return correct value')
-Test.expect(cat.type == 'cat', 'animal.type does not return correct value')
-Test.expect(cat.toString() == 'Sam is a cat', 'animal.toString() does not return correct value')
-cat.name = 'Max'
-Test.expect(cat.toString() == 'Max is a cat', 'animal.toString() does not return correct value')
-  });
-});
-
+    var cat = new Animal("Sam", "cat")
+    Test.expect(cat.name == "Sam", "animal.name does not return correct value")
+    Test.expect(cat.type == "cat", "animal.type does not return correct value")
+    Test.expect(cat.toString() == "Sam is a cat", "animal.toString() does not return correct value")
+    cat.name = "Max"
+    Test.expect(cat.toString() == "Max is a cat", "animal.toString() does not return correct value")
+  })
+})

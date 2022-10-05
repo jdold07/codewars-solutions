@@ -3,10 +3,10 @@
 // Category: REFERENCE  |  Tags: FUNDAMENTALS
 // *****************************************************************************
 function updateLight(current) {
-    const lightMap = {
-      green: "yellow",
-      yellow: "red",
-      red: "green"
-    }
-    return lightMap[current]
+  const lightMap = {
+    green: "yellow",
+    yellow: "red",
+    red: "green"
   }
+  return lightMap[current]
+}

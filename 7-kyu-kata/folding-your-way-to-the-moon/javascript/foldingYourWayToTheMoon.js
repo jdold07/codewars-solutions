@@ -3,4 +3,4 @@
 // Category: REFERENCE  |  Tags: MATHEMATICS | FUNDAMENTALS
 // *****************************************************************************
 const foldTo = (distance, folds = 0) =>
-    distance < 0 ? null : distance < 0.0001 * 2 ** folds ? folds : foldTo(distance, ++folds)
+  distance < 0 ? null : distance < 0.0001 * 2 ** folds ? folds : foldTo(distance, ++folds)

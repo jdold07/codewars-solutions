@@ -4,29 +4,27 @@
 // *****************************************************************************
 describe("Tests", () => {
   it("test", () => {
-// useless and it allows the user to cheat    
-/*Ship.prototype.testing = function(){
+    // useless and it allows the user to cheat
+    /*Ship.prototype.testing = function(){
 return this.draft-(this.crew*1.5) > 20;
 }*/
-console.log('Captain, we see some ships!');
-let emptyShip = new Ship(0,0);
-Test.assertEquals(emptyShip.isWorthIt(),false)
-let aBoat = new Ship(15,20);
-Test.assertEquals(aBoat.isWorthIt(),false)
-let biggerBoat = new Ship(35,20);
-Test.assertEquals(biggerBoat.isWorthIt(),false)
-let aWorthyShip = new Ship(100,20);
-Test.assertEquals(aWorthyShip.isWorthIt(),true)
+    console.log("Captain, we see some ships!")
+    let emptyShip = new Ship(0, 0)
+    Test.assertEquals(emptyShip.isWorthIt(), false)
+    let aBoat = new Ship(15, 20)
+    Test.assertEquals(aBoat.isWorthIt(), false)
+    let biggerBoat = new Ship(35, 20)
+    Test.assertEquals(biggerBoat.isWorthIt(), false)
+    let aWorthyShip = new Ship(100, 20)
+    Test.assertEquals(aWorthyShip.isWorthIt(), true)
 
-console.log('OK, how about the whole fleet of them?');
-for (let a = 0; a < 100; a++)
-{
-let var1 = Math.floor(Math.random()*100+50);
-let var2 = Math.floor(Math.random()*100+20);
-let tests = new Ship(var1,var2);
-let expected = var1 - (var2 * 1.5) > 20;  
-Test.assertEquals(tests.isWorthIt(), expected)
-}
-  });
-});
-
+    console.log("OK, how about the whole fleet of them?")
+    for (let a = 0; a < 100; a++) {
+      let var1 = Math.floor(Math.random() * 100 + 50)
+      let var2 = Math.floor(Math.random() * 100 + 20)
+      let tests = new Ship(var1, var2)
+      let expected = var1 - var2 * 1.5 > 20
+      Test.assertEquals(tests.isWorthIt(), expected)
+    }
+  })
+})

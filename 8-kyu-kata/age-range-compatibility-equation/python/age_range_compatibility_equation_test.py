@@ -22,18 +22,14 @@ test.assert_equals(dating_range(33), "23-52")
 
 test.describe("Random Test Cases")
 
+
 def solution(age):
     if age <= 14:
-        AGE_RANGE = (
-            int(age * 0.9), 
-            int(age * 1.1)
-        )
+        AGE_RANGE = (int(age * 0.9), int(age * 1.1))
     else:
-        AGE_RANGE = (
-            age//2 + 7,
-            2 * (age - 7)
-        )
+        AGE_RANGE = (age // 2 + 7, 2 * (age - 7))
     return "{}-{}".format(*AGE_RANGE)
+
 
 from random import randint
 

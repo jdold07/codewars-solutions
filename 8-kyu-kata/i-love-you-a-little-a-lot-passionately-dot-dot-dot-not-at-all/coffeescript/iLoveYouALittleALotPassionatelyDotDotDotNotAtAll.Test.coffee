@@ -2,4 +2,3 @@
 # URL: https://www.codewars.com/kata/57f24e6a18e9fad8eb000296
 # Category: REFERENCE  |  Tags: ARRAYS | FUNDAMENTALS
 # ******************************************************************************
-

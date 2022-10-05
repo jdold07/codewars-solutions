@@ -3,6 +3,6 @@
 # Category: REFERENCE  |  Tags: BINARY | FUNDAMENTALS
 # ******************************************************************************
 whitespaceNumber = (n) ->
-    "#{if n > 0 then " " else ""}#{n
-      .toString 2
-      .replace /./g, (v) -> if v == "0" then " " else "\t"}\n"
+  "#{if n > 0 then " " else ""}#{n
+    .toString 2
+    .replace /./g, (v) -> if v == "0" then " " else "\t"}\n"

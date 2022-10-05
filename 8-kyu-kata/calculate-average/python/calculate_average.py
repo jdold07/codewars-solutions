@@ -3,4 +3,4 @@
 # Category: REFERENCE  |  Tags: FUNDAMENTALS | FUNCTIONAL PROGRAMMING
 # ******************************************************************************
 def find_average(numbers):
-      return 0 if not len(numbers) else float(sum(numbers) / len(numbers))
+    return 0 if not len(numbers) else float(sum(numbers) / len(numbers))

@@ -2,4 +2,5 @@
 // URL: https://www.codewars.com/kata/57238ceaef9008adc7000603
 // Category: REFERENCE  |  Tags: FUNDAMENTALS | TUTORIALS
 // *****************************************************************************
-const colorOf = (r,g,b) => "#" + r.toString(16).padStart(2,"0") + g.toString(16).padStart(2,"0") + b.toString(16).padStart(2,"0")
+const colorOf = (r, g, b) =>
+  "#" + r.toString(16).padStart(2, "0") + g.toString(16).padStart(2, "0") + b.toString(16).padStart(2, "0")

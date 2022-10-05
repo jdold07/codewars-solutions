@@ -5,9 +5,10 @@
 import codewars_test as test
 from solution import factorial
 
+
 @test.describe("Fixed Tests")
 def fixed_tests():
-    @test.it('Basic Test Cases')
+    @test.it("Basic Test Cases")
     def basic_test_cases():
 
         tests = (
@@ -20,23 +21,21 @@ def fixed_tests():
             (6, 720),
             (7, 5040),
         )
-        
+
         for t in tests:
             inp, exp = t
             test.assert_equals(factorial(inp), exp)
-    
+
+
 @test.describe("Random Tests")
 def _():
-    
+
     from random import randint
     from math import factorial as _reference
-        
+
     for _ in range(100):
         n = randint(0, 17)
+
         @test.it(f"testing for factorial({n})")
         def test_case():
             test.assert_equals(factorial(n), _reference(n))
-        
-
-    
-

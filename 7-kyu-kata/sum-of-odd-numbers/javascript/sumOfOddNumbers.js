@@ -2,4 +2,4 @@
 // URL: https://www.codewars.com/kata/55fd2d567d94ac3bc9000064
 // Category: REFERENCE  |  Tags: ARRAYS | LISTS | MATHEMATICS | FUNDAMENTALS
 // *****************************************************************************
-const rowSumOddNumbers = n => n ** 3
+const rowSumOddNumbers = (n) => n ** 3

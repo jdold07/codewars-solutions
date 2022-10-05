@@ -3,19 +3,19 @@
 // Category: ALGORITHMS  |  Tags: ALGORITHMS
 // *****************************************************************************
 function fizzbuzzPlusPlus(numbers, words) {
-    const resultLength = numbers.reduce((acc, curr) => acc * curr)
-    let result = Array.from({ length: resultLength }, (_, i) => i + 1)
-  
-    for (let i = 0; i < result.length; i++) {
-      let codeWord = ""
-      for (let j = 0; j < numbers.length; j++) {
-        if (result[i] % numbers[j] === 0) {
-          codeWord += words[j]
-        }
-      }
-      if (codeWord !== "") {
-        result[i] = codeWord
+  const resultLength = numbers.reduce((acc, curr) => acc * curr)
+  let result = Array.from({ length: resultLength }, (_, i) => i + 1)
+
+  for (let i = 0; i < result.length; i++) {
+    let codeWord = ""
+    for (let j = 0; j < numbers.length; j++) {
+      if (result[i] % numbers[j] === 0) {
+        codeWord += words[j]
       }
     }
-    return result
+    if (codeWord !== "") {
+      result[i] = codeWord
+    }
   }
+  return result
+}

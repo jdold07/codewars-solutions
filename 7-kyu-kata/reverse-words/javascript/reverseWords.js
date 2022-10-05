@@ -2,10 +2,8 @@
 // URL: https://www.codewars.com/kata/5259b20d6021e9e14c0010d4
 // Category: REFERENCE  |  Tags: STRINGS | FUNDAMENTALS
 // *****************************************************************************
-const reverseWords = str => str
+const reverseWords = (str) =>
+  str
     .split(" ")
-    .map(el => el
-      .split("")
-      .reverse()
-      .join(""))
+    .map((el) => el.split("").reverse().join(""))
     .join(" ")

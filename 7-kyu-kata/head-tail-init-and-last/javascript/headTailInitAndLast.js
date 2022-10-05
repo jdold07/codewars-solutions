@@ -3,6 +3,6 @@
 // Category: REFERENCE  |  Tags: ARRAYS | LISTS | FUNDAMENTALS
 // *****************************************************************************
 const head = (prop) => prop[0]
-  const tail = (prop) => prop.slice(1)
-  const init = (prop) => prop.slice(0, -1)
-  const last = (prop) => prop[prop.length - 1]
+const tail = (prop) => prop.slice(1)
+const init = (prop) => prop.slice(0, -1)
+const last = (prop) => prop[prop.length - 1]

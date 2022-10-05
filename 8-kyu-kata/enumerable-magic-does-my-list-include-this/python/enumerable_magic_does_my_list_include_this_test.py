@@ -2,7 +2,7 @@
 # URL: https://www.codewars.com/kata/545991b4cbae2a5fda000158
 # Category: REFERENCE  |  Tags: FUNDAMENTALS
 # ******************************************************************************
-list = [0,1,2,3,5,8,13,2,2,2,11];
+list = [0, 1, 2, 3, 5, 8, 13, 2, 2, 2, 11]
 test.assert_equals(include(list, 100), False, "list does not include 100")
 test.assert_equals(include(list, 2), True, "list includes 2 multiple times")
 test.assert_equals(include(list, 11), True, "list includes 11")

@@ -3,5 +3,5 @@
 // Category: REFERENCE  |  Tags: FUNDAMENTALS | ARRAYS
 // *****************************************************************************
 function extraPerfect(n) {
-    return Array.from({ length: n }, (_, i) => i + 1).filter((v) => v % 2)
-  }
+  return Array.from({ length: n }, (_, i) => i + 1).filter((v) => v % 2)
+}

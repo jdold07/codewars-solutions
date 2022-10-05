@@ -3,4 +3,4 @@
 # Category: REFERENCE  |  Tags: MATHEMATICS | FUNDAMENTALS
 # ******************************************************************************
 def powers_of_two(n):
-      return [2 ** x for x in range(n+1)]
+    return [2**x for x in range(n + 1)]

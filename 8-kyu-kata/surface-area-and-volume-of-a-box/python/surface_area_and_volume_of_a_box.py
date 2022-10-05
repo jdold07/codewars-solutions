@@ -3,4 +3,4 @@
 # Category: REFERENCE  |  Tags: GEOMETRY | FUNDAMENTALS
 # ******************************************************************************
 def get_size(w, h, d):
-      return [d * w * 2 + d * h * 2 + w * h * 2, w * h * d]
+    return [d * w * 2 + d * h * 2 + w * h * 2, w * h * d]

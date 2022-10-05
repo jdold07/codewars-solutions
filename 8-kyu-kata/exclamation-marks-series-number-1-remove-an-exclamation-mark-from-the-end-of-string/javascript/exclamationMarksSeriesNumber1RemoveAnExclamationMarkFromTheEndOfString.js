@@ -2,4 +2,4 @@
 // URL: https://www.codewars.com/kata/57fae964d80daa229d000126
 // Category: REFERENCE  |  Tags: FUNDAMENTALS
 // *****************************************************************************
-const remove = s => s.replace((/\!$/), "")
+const remove = (s) => s.replace(/\!$/, "")

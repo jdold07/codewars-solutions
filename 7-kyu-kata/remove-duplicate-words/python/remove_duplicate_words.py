@@ -3,6 +3,6 @@
 # Category: ALGORITHMS  |  Tags: STRINGS | REGULAR EXPRESSIONS | ALGORITHMS
 # ******************************************************************************
 def remove_duplicate_words(s):
-      result = []
-      [result.append(x) for x in s.split() if x not in result]
-      return " ".join(result)
+    result = []
+    [result.append(x) for x in s.split() if x not in result]
+    return " ".join(result)

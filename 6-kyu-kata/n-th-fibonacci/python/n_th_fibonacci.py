@@ -3,9 +3,9 @@
 # Category: ALGORITHMS  |  Tags: ALGORITHMS
 # ******************************************************************************
 def nth_fib(n):
-      if n > 1:
-          a, b = 0, 1
-          for i in range(2, n):
-              b, a = a + b, b
-          return b
-      return 0
+    if n > 1:
+        a, b = 0, 1
+        for i in range(2, n):
+            b, a = a + b, b
+        return b
+    return 0

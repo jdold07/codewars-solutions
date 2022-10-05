@@ -3,5 +3,5 @@
 // Category: ALGORITHMS  |  Tags: MATHEMATICS | ALGORITHMS
 // *****************************************************************************
 function cookingTime(eggs) {
-    return Math.ceil(eggs/8) * 5
-  }
+  return Math.ceil(eggs / 8) * 5
+}

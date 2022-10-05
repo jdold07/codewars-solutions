@@ -19,6 +19,5 @@ from random import randint
 
 for _ in range(100):
     arr = [randint(0, 50) for _ in range(randint(5, 25))]
-    exp = sorted(arr, key=lambda k: (-{x:arr.count(x) for x in arr}[k], -k))[0]
+    exp = sorted(arr, key=lambda k: (-{x: arr.count(x) for x in arr}[k], -k))[0]
     test.assert_equals(highest_rank(arr), exp)
-

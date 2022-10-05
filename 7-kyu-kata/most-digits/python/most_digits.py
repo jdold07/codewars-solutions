@@ -3,5 +3,5 @@
 # Category: REFERENCE  |  Tags: STRINGS | FUNDAMENTALS
 # ******************************************************************************
 def find_longest(arr):
-      length_arr = [len(str(x)) for x in arr]
-      return arr[length_arr.index(max(length_arr))]
+    length_arr = [len(str(x)) for x in arr]
+    return arr[length_arr.index(max(length_arr))]

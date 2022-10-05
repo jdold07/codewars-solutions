@@ -2,4 +2,3 @@
 # URL: https://www.codewars.com/kata/53368a47e38700bd8300030d
 # Category: REFERENCE  |  Tags: FUNDAMENTALS | STRINGS | DATA TYPES | FORMATTING | ALGORITHMS | LOGIC
 # ******************************************************************************
-

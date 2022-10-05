@@ -3,8 +3,8 @@
 // Category: REFERENCE  |  Tags: FUNDAMENTALS
 // *****************************************************************************
 function paintLetterboxes(start, end) {
-    const count = Array.from({ length: end - start + 1 }, (_, i) => [...(i + start + "")])
-      .flat()
-      .reduce((a, c) => ({ ...a, [c]: (a[c] || 0) + 1 }), {})
-    return Array.from({ length: 10 }, (_, i) => count[i] || 0)
-  }
+  const count = Array.from({ length: end - start + 1 }, (_, i) => [...(i + start + "")])
+    .flat()
+    .reduce((a, c) => ({ ...a, [c]: (a[c] || 0) + 1 }), {})
+  return Array.from({ length: 10 }, (_, i) => count[i] || 0)
+}

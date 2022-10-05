@@ -3,9 +3,9 @@
 // Category: ALGORITHMS  |  Tags: OBJECT-ORIENTED PROGRAMMING | ALGORITHMS
 // *****************************************************************************
 function makeClass(...keys) {
-    return function (...values) {
-      keys.forEach((key, i) => {
-        this[key] = values[i]
-      })
-    }
+  return function (...values) {
+    keys.forEach((key, i) => {
+      this[key] = values[i]
+    })
   }
+}

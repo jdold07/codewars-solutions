@@ -3,7 +3,7 @@
 // Category: REFERENCE  |  Tags: ALGORITHMS | STRINGS
 // *****************************************************************************
 const rot = (s) => s.reverse().map((v) => [...v].reverse().join(""))
-  
-  const selfieAndRot = (s) => (x = s.map((v) => v + ".".repeat(v.length))).concat(rot([...x]))
-  
-  const oper = (f, s) => f(s.split("\n")).join("\n")
+
+const selfieAndRot = (s) => (x = s.map((v) => v + ".".repeat(v.length))).concat(rot([...x]))
+
+const oper = (f, s) => f(s.split("\n")).join("\n")

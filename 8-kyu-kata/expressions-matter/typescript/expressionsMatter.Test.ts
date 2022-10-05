@@ -2,4 +2,3 @@
 // URL: https://www.codewars.com/kata/5ae62fcf252e66d44d00008e
 // Category: REFERENCE  |  Tags: ALGORITHMS | FUNDAMENTALS
 // *****************************************************************************
-

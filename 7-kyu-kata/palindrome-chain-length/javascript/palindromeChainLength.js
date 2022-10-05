@@ -3,4 +3,4 @@
 // Category: ALGORITHMS  |  Tags: ALGORITHMS
 // *****************************************************************************
 const palindromeChainLength = (n, c = 0) =>
-    n == [...n.toString()].reverse().join("") ? c : palindromeChainLength(n + +[...n.toString()].reverse().join(""), ++c)
+  n == [...n.toString()].reverse().join("") ? c : palindromeChainLength(n + +[...n.toString()].reverse().join(""), ++c)

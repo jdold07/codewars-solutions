@@ -3,4 +3,4 @@
 # Category: REFERENCE  |  Tags: FUNDAMENTALS
 # ******************************************************************************
 def longest(a1, a2):
-      return "".join(sorted(set("".join(a1 + a2))))
+    return "".join(sorted(set("".join(a1 + a2))))

@@ -9,10 +9,9 @@ from random import randint
 
 @test.describe("Tests")
 def all_tests():
-    
     @test.it("Fixed Tests")
     def fixed_tests():
-        
+
         tests = [
             ["foo", "foo1"],
             ["foobar001", "foobar002"],
@@ -26,24 +25,27 @@ def all_tests():
             ["fo99obar99", "fo99obar100"],
             ["foobar001", "foobar002"],
             ["1", "2"],
-            ["009", "010"]
+            ["009", "010"],
         ]
-        
+
         for t in tests:
             test.assert_equals(increment_string(t[0]), t[1], f"String = {repr(t[0])}")
 
-    
     @test.it("Random Tests")
     def random_tests():
-
         def sklasdfjioweu2(s):
             if s and s[-1].isdigit():
                 return sklasdfjioweu2(s[:-1]) + "0" if s[-1] == "9" else s[:-1] + repr(int(s[-1]) + 1)
             return s + "1"
 
-        randstr = lambda: ''.join(chr(randint(32, 126)) for i in range(randint(0, 9)))
-        randnum = lambda: ''.join(chr(randint(48, 57)) for i in range(randint(0, 9)))
-        probe   = lambda: ''.join(randstr() + randnum() for i in range(randint(0, 9))) + randint(0, 9) * "0" + randnum() + randint(0, 1) * "9"
+        randstr = lambda: "".join(chr(randint(32, 126)) for i in range(randint(0, 9)))
+        randnum = lambda: "".join(chr(randint(48, 57)) for i in range(randint(0, 9)))
+        probe = (
+            lambda: "".join(randstr() + randnum() for i in range(randint(0, 9)))
+            + randint(0, 9) * "0"
+            + randnum()
+            + randint(0, 1) * "9"
+        )
 
         for i in range(100):
             x = probe()

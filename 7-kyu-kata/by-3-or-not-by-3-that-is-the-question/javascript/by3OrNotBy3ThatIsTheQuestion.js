@@ -3,13 +3,13 @@
 // Category: REFERENCE  |  Tags: ARRAYS | STRINGS | FUNDAMENTALS
 // *****************************************************************************
 const divisibleByThree = (str) => (+str <= Number.MAX_SAFE_INTEGER ? !(str % 3) : !(eval(str.split("").join("+")) % 3))
-  // ~10% slower ** const divisibleByThree = (str) => !(eval(str.split("").join("+")) % 3)
-  // ~30% slower ** const divisibleByThree = (str) => +str <= Number.MAX_SAFE_INTEGER ? !(str % 3) : !([...str].reduce((a, c) => a + +c, 0) % 3)
-  // ~34% slower ** const divisibleByThree = (str) => !([...str].reduce((a, c) => a + +c, 0) % 3)
-  // ~41% slower ** const divisibleByThree = (str) => !(eval(str.match(/(.)/g).join("+")) % 3)
-  // ~80% slower ** const divisibleByThree = (str) => !(eval(str.replace(/(.)/g, "$1+").slice(0, -1)) % 3)
-  
-  /* Tested on
+// ~10% slower ** const divisibleByThree = (str) => !(eval(str.split("").join("+")) % 3)
+// ~30% slower ** const divisibleByThree = (str) => +str <= Number.MAX_SAFE_INTEGER ? !(str % 3) : !([...str].reduce((a, c) => a + +c, 0) % 3)
+// ~34% slower ** const divisibleByThree = (str) => !([...str].reduce((a, c) => a + +c, 0) % 3)
+// ~41% slower ** const divisibleByThree = (str) => !(eval(str.match(/(.)/g).join("+")) % 3)
+// ~80% slower ** const divisibleByThree = (str) => !(eval(str.replace(/(.)/g, "$1+").slice(0, -1)) % 3)
+
+/* Tested on
   divisibleByThree("92329239744007574483128433869965431813058543224305674297058659965615141691498257583604")
   divisibleByThree("123")
   divisibleByThree("19254")
@@ -21,4 +21,4 @@ const divisibleByThree = (str) => (+str <= Number.MAX_SAFE_INTEGER ? !(str % 3) 
   divisibleByThree("1000002")
   divisibleByThree("1000000002")
   */
-  // Obviously results will vary the more the tests get skewed toward numbers exceeding Max Safe Integer
+// Obviously results will vary the more the tests get skewed toward numbers exceeding Max Safe Integer

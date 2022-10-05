@@ -3,16 +3,16 @@
 // Category: REFERENCE  |  Tags: MEMOIZATION | FUNDAMENTALS | PERFORMANCE
 // *****************************************************************************
 const sumPairs = (arr, n) => {
-    const seenIt = new Map()
-    let stop = arr.length
-    let res = undefined
-    for (i = 0; i < stop; i++) {
-      if (seenIt.has(arr[i])) continue
-      seenIt.set(arr[i], i)
-      if ((x = arr.indexOf(n - arr[i], i + 1)) !== -1 && x < stop) {
-        stop = x
-        res = [arr[i], n - arr[i]]
-      }
+  const seenIt = new Map()
+  let stop = arr.length
+  let res = undefined
+  for (i = 0; i < stop; i++) {
+    if (seenIt.has(arr[i])) continue
+    seenIt.set(arr[i], i)
+    if ((x = arr.indexOf(n - arr[i], i + 1)) !== -1 && x < stop) {
+      stop = x
+      res = [arr[i], n - arr[i]]
     }
-    return res
   }
+  return res
+}

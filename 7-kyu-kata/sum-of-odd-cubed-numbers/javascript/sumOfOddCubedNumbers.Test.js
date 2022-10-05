@@ -4,36 +4,30 @@
 // *****************************************************************************
 describe("Tests", () => {
   it("test", () => {
-Test.assertEquals(cubeOdd([-5,-5,5,5]), 0);
-for(let i = 0; i <= 100; i++)
-{
-let r = [];
-for(let j = 0; j <= (Math.floor(Math.random()*(8)+3)); j++)
-{
-if((Math.floor(Math.random()*(20)+1)) == 1) r.push('a')
+    Test.assertEquals(cubeOdd([-5, -5, 5, 5]), 0)
+    for (let i = 0; i <= 100; i++) {
+      let r = []
+      for (let j = 0; j <= Math.floor(Math.random() * 8 + 3); j++) {
+        if (Math.floor(Math.random() * 20 + 1) == 1) r.push("a")
+        else r.push(Math.floor(Math.random() * 61 - 10))
+      }
+      let myAnswer = solution(r)
+      let theirAnswer = cubeOdd(r)
+      Test.assertEquals(theirAnswer, myAnswer)
+    }
 
-else r.push(Math.floor(Math.random()*(61)-10));
-
-
-}
-let myAnswer = solution(r);
-let theirAnswer = cubeOdd(r);
-Test.assertEquals(theirAnswer, myAnswer);
-}
-
-function solution(arr) {
-let sum = 0;
-for (let i = 0; i <arr.length; i++){
-let cubed = (arr[i]*arr[i]*arr[i]);
-  if (isNaN(cubed)){
-      return undefined;
-}
-  if(cubed % 2 != 0 ){
-     sum += cubed;
-}
-}
-return sum;
-}
-  });
-});
-
+    function solution(arr) {
+      let sum = 0
+      for (let i = 0; i < arr.length; i++) {
+        let cubed = arr[i] * arr[i] * arr[i]
+        if (isNaN(cubed)) {
+          return undefined
+        }
+        if (cubed % 2 != 0) {
+          sum += cubed
+        }
+      }
+      return sum
+    }
+  })
+})

@@ -3,4 +3,3 @@
 // Category: REFERENCE  |  Tags: FUNDAMENTALS
 // *****************************************************************************
 const consecutive = (arr, a, b) => arr.filter((v, i) => a === v && (b === arr[i - 1] || b === arr[i + 1])).length > 0
-  

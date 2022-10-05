@@ -3,9 +3,9 @@
 // Category: REFERENCE  |  Tags: ALGEBRA | FUNDAMENTALS
 // *****************************************************************************
 function findNextSquare(sq) {
-      if (Math.sqrt(sq) % 1 !== 0){
-        return -1
-      }else {
-        return (Math.sqrt(sq) + 1) * (Math.sqrt(sq) + 1)
-      }
-    }
+  if (Math.sqrt(sq) % 1 !== 0) {
+    return -1
+  } else {
+    return (Math.sqrt(sq) + 1) * (Math.sqrt(sq) + 1)
+  }
+}

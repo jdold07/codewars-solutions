@@ -3,5 +3,5 @@
 # Category: ALGORITHMS  |  Tags: STRINGS | ALGORITHMS
 # ******************************************************************************
 def generate_hashtag(s):
-      s = f"#{''.join(s.title().split())}"
-      return s if 1 < len(s) <= 140 else False
+    s = f"#{''.join(s.title().split())}"
+    return s if 1 < len(s) <= 140 else False

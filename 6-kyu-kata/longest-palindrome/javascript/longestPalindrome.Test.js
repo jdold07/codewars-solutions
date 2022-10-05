@@ -4,16 +4,18 @@
 // *****************************************************************************
 describe("Tests", () => {
   it("test", () => {
-Test.assertEquals(longestPalindrome("a"), 1);
-Test.assertEquals(longestPalindrome("aa"), 2);
-Test.assertEquals(longestPalindrome("baa"), 2);
-Test.assertEquals(longestPalindrome("aab"), 2);
-Test.assertEquals(longestPalindrome("baabcd"), 4);
-Test.assertEquals(longestPalindrome("baablkj12345432133d"), 9);
-Test.assertEquals(longestPalindrome("I like racecars that go fast"), 7);
-Test.assertEquals(longestPalindrome("abcdefghba"), 1);
-Test.assertEquals(longestPalindrome(""), 0);
-Test.assertEquals(longestPalindrome(`
+    Test.assertEquals(longestPalindrome("a"), 1)
+    Test.assertEquals(longestPalindrome("aa"), 2)
+    Test.assertEquals(longestPalindrome("baa"), 2)
+    Test.assertEquals(longestPalindrome("aab"), 2)
+    Test.assertEquals(longestPalindrome("baabcd"), 4)
+    Test.assertEquals(longestPalindrome("baablkj12345432133d"), 9)
+    Test.assertEquals(longestPalindrome("I like racecars that go fast"), 7)
+    Test.assertEquals(longestPalindrome("abcdefghba"), 1)
+    Test.assertEquals(longestPalindrome(""), 0)
+    Test.assertEquals(
+      longestPalindrome(
+        `
   Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.
 
   Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, can long endure. We are met on a great battle-field of that war.
@@ -24,7 +26,9 @@ Test.assertEquals(longestPalindrome(`
   which they who fought here have thus far so nobly advanced. It is rather for us to be here dedicated to the great task remaining before us — that from these honored dead we take increased devotion to that cause
   for which they gave the last full measure of devotion — that we here highly resolve that these dead shall not have died in vain — that this nation, under God, shall have a new birth of freedom —
   and that government of the people, by the people, for the people, shall not perish from the earth.
-`.replace(/\W/g,"")), 5);
-  });
-});
-
+`.replace(/\W/g, "")
+      ),
+      5
+    )
+  })
+})

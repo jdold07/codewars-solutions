@@ -3,5 +3,5 @@
 // Category: REFERENCE  |  Tags: FUNDAMENTALS | FUNCTIONAL PROGRAMMING
 // *****************************************************************************
 function find_average(array) {
-    return array.length ? array.reduce((a,b) => a+b) / array.length : 0
-  }
+  return array.length ? array.reduce((a, b) => a + b) / array.length : 0
+}

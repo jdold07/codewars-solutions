@@ -3,4 +3,3 @@
 // Category: REFERENCE  |  Tags: FUNDAMENTALS | MATHEMATICS
 // *****************************************************************************
 const disariumNumber = (n) => ([...("" + n)].reduce((a, c, i) => a + c ** (i + 1), 0) === n ? "Disarium !!" : "Not !!")
-  
