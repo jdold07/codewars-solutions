@@ -61,7 +61,6 @@
       "type": "lldb",
       "request": "launch",
       "program": "${file}",
-      "cwd": "${workspaceFolder}",
       "console": "internalConsole",
       "args": []
     }
