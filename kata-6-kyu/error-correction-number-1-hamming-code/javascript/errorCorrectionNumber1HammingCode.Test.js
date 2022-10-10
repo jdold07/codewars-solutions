@@ -1,0 +1,120 @@
+//+ ====================================================================================================================
+//+
+//+ 6 kyu - Error correction #1 - Hamming Code  [ ID: 5ef9ca8b76be6d001d5e1c3e ] (error-correction-number-1-hamming-code)
+//+ URL: https://www.codewars.com/kata/5ef9ca8b76be6d001d5e1c3e
+//+ Category: ALGORITHMS  |  Tags: ALGORITHMS | BITS
+//+
+//+ ====================================================================================================================
+
+const { assert } = require("chai")
+const { encode, decode } = require("./errorCorrectionNumber1HammingCode")
+
+describe("Test encode function", function () {
+  it("Should work with short word", function () {
+    assert.deepEqual(encode("hey"), "000111111000111000000000000111111000000111000111000111111111111000000111")
+  })
+  it("Should work with long word", function () {
+    assert.deepEqual(
+      encode("The Sensei told me that i can do this kata"),
+      "000111000111000111000000000111111000111000000000000111111000000111000111000000111000000000000000000111000111000000111111000111111000000111000111000111111000111111111000000111111111000000111111000111111000000111000111000111111000111000000111000000111000000000000000000111111111000111000000000111111000111111111111000111111000111111000000000111111000000111000000000000111000000000000000000111111000111111000111000111111000000111000111000000111000000000000000000111111111000111000000000111111000111000000000000111111000000000000111000111111111000111000000000000111000000000000000000111111000111000000111000000111000000000000000000111111000000000111111000111111000000000000111000111111000111111111000000000111000000000000000000111111000000111000000000111111000111111111111000000111000000000000000000111111111000111000000000111111000111000000000000111111000111000000111000111111111000000111111000000111000000000000000000111111000111000111111000111111000000000000111000111111111000111000000000111111000000000000111"
+    )
+  })
+  it("Should work with numbers", function () {
+    assert.deepEqual(
+      encode("T3st"),
+      "000111000111000111000000000000111111000000111111000111111111000000111111000111111111000111000000"
+    )
+  })
+  it("Should work with special characters", function () {
+    assert.deepEqual(
+      encode("T?st!%"),
+      "000111000111000111000000000000111111111111111111000111111111000000111111000111111111000111000000000000111000000000000111000000111000000111000111"
+    )
+  })
+})
+
+describe("Test decode function", function () {
+  it("Should work with short word", function () {
+    assert.deepEqual(decode("100111111000111001000010000111111000000111001111000111110110111000010111"), "hey")
+  })
+  it("Should work with long word", function () {
+    assert.deepEqual(
+      decode(
+        "000111000111000111000100000111111000111000001000000111111000000111000111000100111000000000000000000111000111000000111111000111111000000111000111000111111000111111111000000111111111000000111111000110111000010111000111000111111000111001000111000000111000000000000000000111111111000111000000000111111000111111111111000111111000111111000000000111111000000111000001000000111000000000001000000111111000111111000111000111111000000111000111000000111000000000000000000111111111000111000000000111111000111000000000000111111000000010000111000111111111000111000000000100111000000000000000000111111000111000000111000000111000000000000000000111111000000000111111000111111000000000000111000111111000111111111000000000111000000000000010000111111000000111000000000111111000111111110111000000111000000000000000000111111111000111000000000111111000111000000000000111111000111000000111000111111111000000111111000000111000000000000000000111111000111000111111000111111000000000000111000111111111000111000000000111111000000000000111"
+      ),
+      "The Sensei told me that i can do this kata"
+    )
+  })
+  it("Should work with numbers", function () {
+    assert.deepEqual(
+      decode("000111000111000111000001000000111111000000111111000111111111000000111011000111111111000111000000"),
+      "T3st"
+    )
+  })
+  it("Should work with special characters", function () {
+    assert.deepEqual(
+      decode(
+        "000111000111000111000010000000111111111111011111000111111111000000111111000111101111000111000000000000111000000000000111000000111000000111000111"
+      ),
+      "T?st!%"
+    )
+  })
+})
+
+describe("Random test encode function", function () {
+  const letters = "abcdefghijklmnopqrstuvwxyz0123456789+#-/%"
+  it("Random test", function () {
+    for (let x = 0; x < 100; x++) {
+      let buffer = "",
+        length = Math.ceil(Math.random() * 16) + 2
+      for (let i = 0; i < length; i++) {
+        buffer += letters[Math.floor(Math.random() * 41)]
+      }
+      assert.deepEqual(encode(buffer), e(buffer))
+    }
+  })
+})
+
+describe("Random test decode function", function () {
+  const letters = "abcdefghijklmnopqrstuvwxyz0123456789+#-/%"
+  it("Random test without errors", function () {
+    for (let x = 0; x < 100; x++) {
+      let buffer = "",
+        length = Math.ceil(Math.random() * 16) + 2
+      for (let i = 0; i < length; i++) {
+        buffer += letters[Math.floor(Math.random() * 41)]
+      }
+      assert.deepEqual(decode(e(buffer)), buffer)
+    }
+  })
+
+  it("Random test with errors", function () {
+    for (let x = 0; x < 100; x++) {
+      let buffer = "",
+        errors = "",
+        length = Math.ceil(Math.random() * 16) + 2
+      for (let i = 0; i < length; i++) {
+        buffer += letters[Math.floor(Math.random() * 41)]
+      }
+      let buffer2 = e(buffer)
+      for (let i = 0; i < buffer2.length; i++) {
+        if (i % 3 === 0) {
+          if (buffer2[i] === "1") errors += "0"
+          else errors += "1"
+        } else errors += buffer2[i]
+      }
+      assert.deepEqual(decode(errors), buffer)
+    }
+  })
+})
+
+function e(string) {
+  let bits = "",
+    code = ""
+  for (let i = 0; i < string.length; i++) bits += string[i].charCodeAt(0).toString(2).padStart(8, "0")
+  for (let i = 0; i < bits.length; i++) {
+    if (bits[i] === "1") code += "111"
+    else code += "000"
+  }
+  return code
+}
