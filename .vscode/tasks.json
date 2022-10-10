@@ -2,9 +2,15 @@
   "version": "2.0.0",
   "tasks": [
     {
+      "label": "ESlint: Lint Entire Project",
       "type": "eslint",
+      "problemMatcher": ["$eslint-stylish"]
+    },
+    {
+      "label": "ESLint: Lint with Auto Fix",
+      "type": "shell",
       "problemMatcher": ["$eslint-stylish"],
-      "label": "eslint: Lint Entire Project"
+      "command": "./node_modules/.bin/eslint . --ext .ts,.tsx,.js,.jsx,.mjs --fix"
     }
   ]
 }
