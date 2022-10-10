@@ -113,20 +113,20 @@ export default {
       coverageDirectory: "coverage",
       coveragePathIgnorePatterns: ["/node_modules/"],
       verbose: true
-    },
+    }
 
     // This is not working with current versions of things.  Project appears abandoned unfortunately.  Great idea!
-    {
-      displayName: "Python Tests",
-      testRunner: "<rootDir>/node_modules/jest-python/built/src/jestPython",
-      moduleFileExtensions: ["py", "js"],
-      testRegex: [".+/(python)/.+\\_test\\.py"],
-      collectCoverage: true,
-      coverageProvider: "v8",
-      coverageDirectory: "coverage/python",
-      coveragePathIgnorePatterns: ["/node_modules/"],
-      verbose: true
-    }
+    // {
+    //   displayName: "Python Tests",
+    //   testRunner: "<rootDir>/node_modules/jest-python/built/src/jestPython",
+    //   moduleFileExtensions: ["py", "js"],
+    //   testRegex: [".+/(python)/.+\\_test\\.py"],
+    //   // collectCoverage: true,
+    //   // coverageProvider: "v8",
+    //   // coverageDirectory: "coverage/python",
+    //   // coveragePathIgnorePatterns: ["/node_modules/"],
+    //   verbose: true
+    // }
   ],
 
   // Use this configuration option to add custom reporters to Jest
