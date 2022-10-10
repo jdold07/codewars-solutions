@@ -109,17 +109,23 @@ export default {
       moduleFileExtensions: ["js", "mjs", "cjs", "jsx", "ts", "tsx"],
       testRegex: [".+/(javascript|typescript)/.+\\.Test\\.m?[jt]s(x)?"],
       collectCoverage: true,
+      coverageProvider: "v8",
       coverageDirectory: "coverage",
-      coveragePathIgnorePatterns: ["/node_modules/"]
+      coveragePathIgnorePatterns: ["/node_modules/"],
+      verbose: true
     },
+
+    // This is not working with current versions of things.  Project appears abandoned unfortunately.  Great idea!
     {
       displayName: "Python Tests",
-      runner: "jest-python",
-      moduleFileExtensions: ["py"],
+      testRunner: "<rootDir>/node_modules/jest-python/built/src/jestPython",
+      moduleFileExtensions: ["py", "js"],
       testRegex: [".+/(python)/.+\\_test\\.py"],
       collectCoverage: true,
+      coverageProvider: "v8",
       coverageDirectory: "coverage/python",
-      coveragePathIgnorePatterns: ["/node_modules/"]
+      coveragePathIgnorePatterns: ["/node_modules/"],
+      verbose: true
     }
   ],
 

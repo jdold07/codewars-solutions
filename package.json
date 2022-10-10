@@ -5,7 +5,7 @@
   "author": "JDOld07",
   "license": "MIT",
   "scripts": {
-    "test": "jest",
+    "test": "jest --colors ",
     "test:mocha": "mocha -v --ui bdd --timeout 12000 --colors --require ts-node/register --require tsconfig-paths/register "
   },
   "keywords": [
@@ -33,16 +33,21 @@
     "eslint-plugin-coffee": "^0.1.15",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jest": "^27.1.1",
+    "eslint-plugin-json": "^3.1.0",
+    "eslint-plugin-markdown": "^3.0.0",
     "eslint-plugin-n": "^15.3.0",
     "eslint-plugin-promise": "^6.0.1",
+    "eslint-plugin-regexp": "^1.9.0",
     "jest": "^29.1.2",
     "jest-python": "^1.0.5",
     "nyc": "^15.1.0",
     "prettier": "github:helixbass/prettier#prettier-v2.1.0-dev.100-gitpkg",
     "prettier-plugin-coffeescript": "^0.1.5",
+    "ramda": "^0.28.0",
     "ts-jest": "^29.0.3",
     "ts-node": "^10.9.1",
     "tsconfig-paths": "^4.1.0",
-    "typescript": "^4.8.4"
+    "typescript": "^4.8.4",
+    "underscore": "^1.13.6"
   }
 }
