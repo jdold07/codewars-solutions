@@ -4,9 +4,9 @@
 
 ##### **First Published**: 2018-03-13 ***by*** [MollyJeanB-pdx](https://www.codewars.com/users/MollyJeanB-pdx) | **Approved**: 2018-03-23 ***by*** [PG1](https://www.codewars.com/users/PG1)
 
-##### **Languages Available**: javascript, ruby, python, typescript, fortran, csharp, crystal, cpp, php, haskell, java, rust, kotlin, c, nasm, go
+##### **Languages Available**: javascript, ruby, python, typescript, fortran, csharp, crystal, cpp, php, haskell, java, rust, kotlin, c, nasm, go, scala, factor
 
-##### **My Completed Languages**: javascript ***as at*** 2022-10-08 | **Originally completed**: 2021-12-03
+##### **My Completed Languages**: javascript, typescript, python ***as at*** 2022-10-11 | **Originally completed**: 2021-12-03
 
 ---
 
