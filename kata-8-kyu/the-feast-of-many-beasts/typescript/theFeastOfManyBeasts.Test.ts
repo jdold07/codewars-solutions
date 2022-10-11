@@ -10,7 +10,7 @@ import { assert } from "chai"
 import { feast } from "./theFeastOfManyBeasts"
 
 describe("Testing...", function () {
-  it("Additional tests", function () {
+  it("Basic fixed tests", function () {
     assert.isTrue(feast("great blue heron", "garlic naan"), "Should be true")
     assert.isTrue(feast("chickadee", "chocolate cake"), "Should be true")
     assert.isFalse(feast("brown bear", "bear claw"), "Should be false")
