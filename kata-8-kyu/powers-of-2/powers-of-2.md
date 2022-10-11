@@ -4,9 +4,9 @@
 
 ##### **First Published**: 2016-08-02 ***by*** [wichu](https://www.codewars.com/users/wichu) | **Approved**: 2016-08-04 ***by*** [suic](https://www.codewars.com/users/suic)
 
-##### **Languages Available**: haskell, python, coffeescript, javascript, ruby, csharp, fsharp, ocaml, julia, java, cpp, c, cobol, lambdacalc, factor, go, lua, riscv, bf
+##### **Languages Available**: haskell, python, coffeescript, javascript, ruby, csharp, fsharp, ocaml, julia, java, cpp, c, cobol, lambdacalc, factor, go, lua, riscv, bf, typescript
 
-##### **My Completed Languages**: python ***as at*** 2022-10-08 | **Originally completed**: 2022-04-20
+##### **My Completed Languages**: python, javascript, typescript ***as at*** 2022-10-11 | **Originally completed**: 2022-04-20
 
 ---
 
