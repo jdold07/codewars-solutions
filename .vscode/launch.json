@@ -2,6 +2,18 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "JS/TS File in Terminal",
+      "type": "node",
+      "request": "launch",
+      "program": "${file}",
+      "console": "externalTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "outFiles": ["${workspaceFolder}/**/*.js", "!**/node_modules/**"],
+      "skipFiles": ["<node_internals>/**"],
+      "sourceMaps": true,
+      "runtimeArgs": ["-r", "ts-node/register", "-r", "tsconfig-paths/register"]
+    },
+    {
       "name": "JS/TS File in Console",
       "type": "node",
       "request": "launch",
@@ -18,7 +30,7 @@
       "type": "node",
       "request": "launch",
       "program": "${workspaceFolder}/node_modules/nyc/bin/nyc",
-      "console": "integratedTerminal",
+      "console": "externalTerminal",
       "internalConsoleOptions": "neverOpen",
       "cwd": "${fileDirname}",
       "outFiles": ["${fileDirname}/out/*.js", "!**/node_modules/**"],
@@ -41,7 +53,7 @@
       "type": "python",
       "request": "launch",
       "program": "${file}",
-      "console": "integratedTerminal",
+      "console": "externalTerminal",
       "internalConsoleOptions": "neverOpen"
     },
     {
@@ -57,7 +69,7 @@
       "type": "node",
       "request": "launch",
       "program": "${workspaceFolder}/node_modules/nyc/bin/nyc",
-      "console": "integratedTerminal",
+      "console": "externalTerminal",
       "internalConsoleOptions": "neverOpen",
       "cwd": "${fileDirname}",
       "outFiles": ["${fileDirname}/out/*.js", "!**/node_modules/**"],
