@@ -39,7 +39,7 @@ describe("Solution", () => {
     for (let i = 0; i < 100; i += 1) {
       let ppg = randPpg()
       let mpg = randMpg()
-      assert.approximately(pointsPer48(ppg, mpg), ans(ppg, mpg), 0.1, "Close Enough!")
+      assert.approximately(pointsPer48(ppg, mpg), ans(ppg, mpg), 0.11, "Close Enough!")
     }
   })
 })
