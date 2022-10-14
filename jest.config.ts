@@ -113,6 +113,19 @@ export default {
       coverageDirectory: "coverage",
       coveragePathIgnorePatterns: ["/node_modules/"],
       verbose: true
+    },
+
+    // Test setup for scratch pad files
+    {
+      displayName: "JS & TS Scratch Pad Test",
+      preset: "ts-jest",
+      moduleFileExtensions: ["js", "ts"],
+      testRegex: ["scratchPad.m?[jt]s(x)?"],
+      collectCoverage: true,
+      coverageProvider: "v8",
+      coverageDirectory: "coverage",
+      coveragePathIgnorePatterns: ["/node_modules/"],
+      verbose: true
     }
 
     // This is not working with current versions of things.  Project appears abandoned unfortunately.  Great idea!
@@ -158,6 +171,7 @@ export default {
     "./kata-7-kyu/",
     "./kata-8-kyu/",
     "./kata-beta-kyu/",
+    "./private/",
     "<rootDir>"
   ]
 
