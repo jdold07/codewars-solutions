@@ -38,8 +38,8 @@ describe("Tests", function () {
     const rnd = () => Math.floor(Math.random() * Number.MAX_SAFE_INTEGER)
     const cb = (n: number) => n.toString(2).split("0").join("").length
     for (let i = 100; i--; ) {
-      let q = rnd()
-      let a = cb(q)
+      const q = rnd()
+      const a = cb(q)
       assert.equal(countBits(q), a, String(q))
     }
   })
