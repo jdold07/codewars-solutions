@@ -396,3 +396,4 @@ sketch
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,dropbox,visualstudiocode,synology,text,python,node,react
 *.OLD
+.vscode/settings.json
