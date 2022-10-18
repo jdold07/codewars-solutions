@@ -20,7 +20,7 @@ describe(`Number.prototype.times`, () => {
   })
   it("should behave as expected for a few basic tests", () => {
     function incrementByOne(n) {
-      var r = 0
+      let r = 0
       n.times(() => {
         r++
         console.log(r)
@@ -33,19 +33,20 @@ describe(`Number.prototype.times`, () => {
     assert.strictEqual(incrementByOne(3), 3)
     assert.strictEqual(incrementByOne(5), 5)
     for (let i = 0; i < 3; i++) {
-      var randNum = randomNumber()
+      const randNum = randomNumber()
       assert.strictEqual(incrementByOne(randNum), randNum)
     }
   })
   it("should provide the iteration index number to the anonymous function", () => {
     assert.doesNotThrow(() => {
       ;(6).times((i) => {
-        if (i === undefined || typeof i !== "number") throw "Iteration index not supplied to anonymous function!"
+        if (i === undefined || typeof i !== "number")
+          throw "Iteration index not supplied to anonymous function!"
         console.log(i)
       })
     })
     function sumOfNaturalNumbers(n) {
-      var r = 0
+      let r = 0
       n.times((i) => {
         r += i + 1
         console.log(i + 1)
@@ -59,7 +60,7 @@ describe(`Number.prototype.times`, () => {
     assert.strictEqual(sumOfNaturalNumbers(4), 10)
     assert.strictEqual(sumOfNaturalNumbers(100), 5050)
     function loopThroughArrayAndReturnSameArray(array) {
-      var r = []
+      const r = []
       array.length.times((i) => {
         console.log(`Pushing ${array[i]} to result`)
         r.push(array[i])
@@ -92,7 +93,7 @@ describe(`Number.prototype.times`, () => {
   })
   it("should finally work for advanced (and random) tests", () => {
     function manuallySumSquares(n) {
-      var r = 0
+      let r = 0
       n.times((i) => {
         console.log(`Adding ${i + 1} ** 2 to result ... `)
         r += (i + 1) ** 2
@@ -100,7 +101,7 @@ describe(`Number.prototype.times`, () => {
       return r
     }
     function manuallySumCubes(n) {
-      var r = 0
+      let r = 0
       n.times((i) => {
         console.log(`Adding ${i + 1} ** 3 to result ... `)
         r += (i + 1) ** 3
@@ -108,7 +109,7 @@ describe(`Number.prototype.times`, () => {
       return r
     }
     for (let i = 0; i < 100; i++) {
-      var rand = randomNumber()
+      const rand = randomNumber()
       assert.strictEqual(manuallySumSquares(rand), (rand * (rand + 1) * (2 * rand + 1)) / 6)
       assert.strictEqual(manuallySumCubes(rand), (rand ** 2 * (rand + 1) ** 2) / 4)
     }

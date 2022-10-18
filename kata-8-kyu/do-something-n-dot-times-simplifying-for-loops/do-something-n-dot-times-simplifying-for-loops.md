@@ -6,7 +6,7 @@
 
 ##### **Languages Available**: javascript
 
-##### **My Completed Languages**: javascript ***as at*** 2022-10-15 | **Originally completed**: 2022-10-15
+##### **My Completed Languages**: javascript ***as at*** 2022-10-18 | **Originally completed**: 2022-10-15
 
 ---
 
