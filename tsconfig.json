@@ -13,7 +13,7 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "moduleDetection": "auto",
-    "moduleResolution": "Node",
+    "moduleResolution": "nodenext",
     "types": ["node", "chai", "jest"]
   }
 }
