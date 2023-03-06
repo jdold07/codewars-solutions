@@ -6,13 +6,8 @@
 //+
 //+ ====================================================================================================================
 
-
 const { assert } = require("chai")
 const { sumMul } = require("./sumOfMultiples")
-
-
-
-
 
 describe("Basic Tests", function () {
   it("should test", function () {
@@ -40,10 +35,8 @@ describe("Random Tests", function () {
   for (let i = 0; i < 100; i++) {
     let n = ~~(Math.random() * 1000)
     let m = ~~(Math.random() * 1000000)
-    it("Testing for n = " + n + " and m = " + m, function () {
+    it(`Testing for n = ${n} and m = ${m}`, function () {
       assert.strictEqual(sumMul(n, m), sumMulSolv(n, m))
     })
   }
 })
-
-
