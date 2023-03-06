@@ -1,7 +1,5 @@
 {
-  "$schema": "https://json.schemastore.org/tsconfig",
-  "display": "Node 16",
-  "exclude": ["node_modules", "**/node_modules/*"],
+  "exclude": ["**/node_modules/**"],
 
   "compilerOptions": {
     "lib": ["ES2022"],
@@ -9,6 +7,7 @@
     "target": "ESNext",
 
     "strict": true,
+    "checkJs": false,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,

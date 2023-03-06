@@ -35,7 +35,7 @@ module.exports = {
         node: true,
         "jest/globals": true
       },
-      files: ["*.jsx", "*.js", "*.mjs", "*.cjs"],
+      files: ["*.jsx", "*.js"],
       plugins: ["jest"],
       extends: ["eslint:recommended"],
       parserOptions: {
