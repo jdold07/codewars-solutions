@@ -1,8 +1,8 @@
 {
   "name": "codewars-kata-solutions",
   "version": "1.1.0",
-  "description": "Codewars Kata Solutions by jdold07",
-  "author": "jdold07",
+  "description": "Codewars Kata Solutions by tsdevau",
+  "author": "tsdevau",
   "license": "MIT",
   "scripts": {
     "test": "jest --colors ",
