@@ -6,4 +6,11 @@
 //+
 //+ ====================================================================================================================
 
-export { rgb }
+export function rgb(r: number, g: number, b: number) {
+  const toHex = (num: number) => {
+    if (num < 0) num = 0
+    if (num > 255) num = 255
+    return num.toString(16).toUpperCase().padStart(2, "0")
+  }
+  return toHex(r) + toHex(g) + toHex(b)
+}
