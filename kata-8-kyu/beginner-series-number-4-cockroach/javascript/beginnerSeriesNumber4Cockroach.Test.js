@@ -23,7 +23,7 @@ describe("Random Tests", function () {
   for (let i = 0; i < 500; ++i) {
     let s = Math.random() + parseInt(Math.random() * 4)
     it(`500 random tests - Testing for s = ${s}`, () => {
-      assert.approximately(cockroachSpeed(s), ans(s), 0.000000001)
+      assert.strictEqual(cockroachSpeed(s), ans(s))
     })
   }
 })
