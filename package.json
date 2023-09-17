@@ -40,5 +40,9 @@
     "tsconfig-paths": "^4.2.0",
     "typescript": "^5.2.2",
     "underscore": "^1.13.6"
+  },
+  "devDependencies": {
+    "prettier-plugin-packagejson": "^2.4.5",
+    "standard-version": "^9.5.0"
   }
 }
