@@ -1,6 +1,4 @@
 {
-  "exclude": ["**/node_modules/**"],
-
   "compilerOptions": {
     "strict": true,
     "target": "ES2022",
@@ -12,5 +10,6 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "types": ["node", "chai", "jest"]
-  }
+  },
+  "exclude": ["**/node_modules/**"]
 }
