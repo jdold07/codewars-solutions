@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.3](https://github.com/tsdevau/codewars-kata-solutions/compare/v1.1.2...v1.1.3) (2023-09-17)
+
+
+### Build Related
+
+* 🔨 Add script for standard-version bumps ([967b7ba](https://github.com/tsdevau/codewars-kata-solutions/commit/967b7ba29714351ac0e58f53455cce4d22ffe9d0))
+
 ### 1.1.2 (2023-09-17)
 
 
