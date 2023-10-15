@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.5](https://github.com/tsdevau/codewars-kata-solutions/compare/v1.1.4...v1.1.5) (2023-10-15)
+
+
+### General Config Updates
+
+* 📦 Update dependcies to latest ([5080dec](https://github.com/tsdevau/codewars-kata-solutions/commit/5080dec2220888b6205f65f6ef254673decdf609))
+* 🔧 Config change for standard-version ([4950281](https://github.com/tsdevau/codewars-kata-solutions/commit/49502815a6d8f325b0f103bc2a521a4d4c1710d7))
+* **semver:** 🔧 Switch standard-version to release-please action ([b2ffeee](https://github.com/tsdevau/codewars-kata-solutions/commit/b2ffeee04591414b42a951b423097b1742339031))
+
 ### [1.1.4](https://github.com/tsdevau/codewars-kata-solutions/compare/v1.1.3...v1.1.4) (2023-09-18)
 
 ### [1.1.3](https://github.com/tsdevau/codewars-kata-solutions/compare/v1.1.2...v1.1.3) (2023-09-17)
