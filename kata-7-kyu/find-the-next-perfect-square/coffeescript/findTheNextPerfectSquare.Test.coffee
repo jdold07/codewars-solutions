@@ -6,7 +6,7 @@
 #+
 #+ =====================================================================================================================
 
-{ assert } = require "chai"
+{ assert } = require "vitest"
 { findNextSquare } = require "./findTheNextPerfectSquare"
 
 describe "findNextSquare", ->

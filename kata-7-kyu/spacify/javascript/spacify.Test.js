@@ -7,7 +7,7 @@
 //+ ====================================================================================================================
 
 const { randomToken } = require("../../../utils/cwUtils")
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { spacify } = require("./spacify")
 
 describe("spacify", function () {

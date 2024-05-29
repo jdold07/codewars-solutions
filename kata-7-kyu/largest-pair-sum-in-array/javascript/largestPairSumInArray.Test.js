@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { largestPairSum } = require("./largestPairSumInArray")
 
 function doTest(array, expected) {

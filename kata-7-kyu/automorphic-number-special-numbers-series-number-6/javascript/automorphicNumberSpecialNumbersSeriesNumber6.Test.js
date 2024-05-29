@@ -6,10 +6,11 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { automorphic } = require("./automorphicNumberSpecialNumbersSeriesNumber6")
 
 describe("Basic tests", () => {
+  it("Should work with basic tests", function () {
   assert.strictEqual(automorphic(1), "Automorphic")
   assert.strictEqual(automorphic(3), "Not!!")
   assert.strictEqual(automorphic(6), "Automorphic")
@@ -20,6 +21,7 @@ describe("Basic tests", () => {
   assert.strictEqual(automorphic(95), "Not!!")
   assert.strictEqual(automorphic(625), "Automorphic")
   assert.strictEqual(automorphic(225), "Not!!")
+})
 })
 
 describe("Random tests", () => {

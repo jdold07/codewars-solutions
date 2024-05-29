@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-import { assert } from "chai"
+import { assert } from "vitest"
 import { accum } from "./mumbling"
 
 function testing(s: string, expected: string) {

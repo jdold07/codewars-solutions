@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { multiples } = require("./returnTheFirstMMultiplesOfN")
 
 describe("Kata Tests", function () {

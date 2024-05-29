@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-import { assert } from "chai"
+import { assert } from "vitest"
 import { save } from "./computerProblemSeriesNumber1FillTheHardDiskDrive"
 
 describe("Fixed tests", () => {

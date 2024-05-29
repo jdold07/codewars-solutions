@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-import { assert } from "chai"
+import { assert } from "vitest"
 import { divisors } from "./countTheDivisorsOfANumber"
 
 describe("basic tests", function () {

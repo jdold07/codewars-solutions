@@ -6,7 +6,7 @@
 #+
 #+ =====================================================================================================================
 
-{ assert } = require "chai"
+{ assert } = require "vitest"
 { shorter_reverse_longer } = require "./shorterConcatReverseLonger"
 
 assert.strictEqual shorter_reverse_longer("first", "abcde"), "abcdetsrifabcde"

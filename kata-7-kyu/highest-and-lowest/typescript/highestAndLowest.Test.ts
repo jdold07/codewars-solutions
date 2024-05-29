@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-import { assert } from "chai"
+import { assert } from "vitest"
 import { Kata } from "./highestAndLowest"
 
 describe("Fixed Tests", function () {

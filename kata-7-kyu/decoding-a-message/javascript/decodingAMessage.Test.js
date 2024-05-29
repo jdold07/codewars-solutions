@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { decode } = require("./decodingAMessage")
 
 describe("Basic tests", function () {

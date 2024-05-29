@@ -7,7 +7,7 @@
 //+ ====================================================================================================================
 
 const { randomNumber, randomToken } = require("../../../utils/cwUtils")
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { Shark, Cat, Dog } = require("./funWithEs6ClassesNumber2AnimalsAndInheritance")
 
 describe("The Animal class", () => {

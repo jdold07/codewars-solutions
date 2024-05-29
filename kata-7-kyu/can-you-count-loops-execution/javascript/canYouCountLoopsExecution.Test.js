@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { countLoopIterations } = require("./canYouCountLoopsExecution")
 
 describe("Can you count loop's iteration?", () => {

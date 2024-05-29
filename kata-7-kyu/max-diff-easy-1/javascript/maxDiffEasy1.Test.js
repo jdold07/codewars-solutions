@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { maxDiff } = require("./maxDiffEasy1")
 
 describe("Basic tests", function () {

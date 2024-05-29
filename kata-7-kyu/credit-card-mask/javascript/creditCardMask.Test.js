@@ -7,7 +7,7 @@
 //+ ====================================================================================================================
 
 const { randomNumber, randomToken } = require("../../../utils/cwUtils")
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { maskify } = require("./creditCardMask")
 
 describe("maskify", function () {

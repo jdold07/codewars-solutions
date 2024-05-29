@@ -6,15 +6,17 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { disariumNumber } = require("./disariumNumberSpecialNumbersSeriesNumber3")
 
 describe("Basic tests", () => {
+  it("Should work with basic tests", function () {
   assert.strictEqual(disariumNumber(89), "Disarium !!")
   assert.strictEqual(disariumNumber(564), "Not !!")
   assert.strictEqual(disariumNumber(1024), "Not !!")
   assert.strictEqual(disariumNumber(135), "Disarium !!")
   assert.strictEqual(disariumNumber(136586), "Not !!")
+})
 })
 
 describe("Random tests", () => {

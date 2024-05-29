@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { removeVowels } = require("./allStarCodeChallengeNumber3")
 
 let mySol = function (str) {

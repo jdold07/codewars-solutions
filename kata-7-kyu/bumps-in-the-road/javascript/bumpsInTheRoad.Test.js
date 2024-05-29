@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { bump } = require("./bumpsInTheRoad")
 
 describe("Bumps in the Road", () => {

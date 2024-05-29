@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { divCon } = require("./divideAndConquer")
 
 describe("Divide and Conquer", () => {

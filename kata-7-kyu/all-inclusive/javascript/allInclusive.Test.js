@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { containAllRots } = require("./allInclusive")
 
 function testing(actual, expected) {

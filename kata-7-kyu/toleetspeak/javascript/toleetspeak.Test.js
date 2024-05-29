@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { toLeetSpeak } = require("./toleetspeak")
 
 it("Basic tests", function () {

@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { toNumberArray } = require("./convertAnArrayOfStringsToArrayOfNumbers")
 
 it('Running toNumberArray("1.1", "2.2", "3.3")...', function () {

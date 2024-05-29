@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { Block } = require("./buildingBlocks")
 
 const block = new Block([3, 4, 5])

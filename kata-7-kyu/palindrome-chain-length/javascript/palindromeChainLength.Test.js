@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { palindromeChainLength } = require("./palindromeChainLength")
 
 describe("Fixed tests", () => {

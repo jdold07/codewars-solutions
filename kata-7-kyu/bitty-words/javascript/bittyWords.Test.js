@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { bittyWords } = require("./bittyWords")
 
 it("Long live the king", () => {

@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-import { assert } from "chai"
+import { assert } from "vitest"
 import { isIsogram } from "./isograms"
 
 describe("Tests", function () {

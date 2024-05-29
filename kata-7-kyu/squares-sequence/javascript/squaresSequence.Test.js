@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { squares } = require("./squaresSequence")
 
 describe("Test Suite", () => {

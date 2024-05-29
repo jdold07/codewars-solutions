@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { grid } = require("./alphabeticalGrid")
 
 function shuffle(a) {

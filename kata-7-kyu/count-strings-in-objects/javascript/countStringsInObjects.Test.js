@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { strCount } = require("./countStringsInObjects")
 
 function fm88(obj) {

@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { evensAndOdds } = require("./evensAndOdds")
 
 function doTest(number, expected) {

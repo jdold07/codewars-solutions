@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { sevenAte9 } = require("./sevenate9")
 
 const test = (input, expected, message) => {

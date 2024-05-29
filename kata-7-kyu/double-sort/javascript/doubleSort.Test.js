@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { dbSort } = require("./doubleSort")
 
 const _ = require("lodash")

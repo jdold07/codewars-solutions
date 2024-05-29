@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { divisibleByThree } = require("./by3OrNotBy3ThatIsTheQuestion")
 
 describe("By 3, or not by 3?  That is the question . . .", () => {

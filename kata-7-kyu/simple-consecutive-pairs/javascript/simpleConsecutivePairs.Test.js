@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { pairs } = require("./simpleConsecutivePairs")
 
 const _ = require("lodash")

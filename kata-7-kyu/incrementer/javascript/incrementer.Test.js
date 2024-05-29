@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { incrementer } = require("./incrementer")
 
 describe("Basic Tests", function () {

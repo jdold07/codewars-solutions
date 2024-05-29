@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { meeting } = require("./theOfficeIvFindAMeetingRoom")
 
 describe("The Office IV - Find a Meeting Room", () => {

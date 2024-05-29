@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { evenOrOdd } = require("./evenOrOddWhichIsGreater")
 
 describe("Even or Odd - Which is Greater?", () => {

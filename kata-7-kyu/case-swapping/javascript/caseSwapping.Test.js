@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { swap } = require("./caseSwapping")
 
 describe("Basic tests", () => {

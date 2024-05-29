@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { partlist } = require("./partsOfAList")
 
 function testing(actual, expected) {

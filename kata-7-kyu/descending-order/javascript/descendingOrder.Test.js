@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { descendingOrder } = require("./descendingOrder")
 
 describe("Basic tests", () => {

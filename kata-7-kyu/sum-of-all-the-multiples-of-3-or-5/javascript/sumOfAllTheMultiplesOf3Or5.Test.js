@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { findSum } = require("./sumOfAllTheMultiplesOf3Or5")
 
 describe("Tests", () => {

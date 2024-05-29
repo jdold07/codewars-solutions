@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { duplicates } = require("./findAllPairs1")
 
 describe("Tests", () => {

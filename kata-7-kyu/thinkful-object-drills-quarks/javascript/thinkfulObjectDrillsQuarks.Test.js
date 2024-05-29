@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { Quark } = require("./thinkfulObjectDrillsQuarks")
 
 describe("Basic tests", () => {

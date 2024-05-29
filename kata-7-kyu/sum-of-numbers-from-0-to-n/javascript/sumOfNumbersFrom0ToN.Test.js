@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const SequenceSum = require("./sumOfNumbersFrom0ToN")
 
 describe("Tests", () => {

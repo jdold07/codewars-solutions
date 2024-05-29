@@ -7,7 +7,7 @@
 //+ ====================================================================================================================
 
 const { randomNumber } = require("../../../utils/cwUtils")
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { Cuboid, Cube } = require("./funWithEs6ClassesNumber3CuboidsCubesAndGetters")
 
 describe("class Cuboid", () => {

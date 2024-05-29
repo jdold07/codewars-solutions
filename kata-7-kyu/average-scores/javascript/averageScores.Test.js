@@ -7,7 +7,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { average } = require("./averageScores")
 
 it("RegExp Test Strings", () => {

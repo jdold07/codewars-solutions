@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { encode, decode } = require("./gaDeRyPoLuKiCypher")
 
 describe("Scouts are waiting!", function () {

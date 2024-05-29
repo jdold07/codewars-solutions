@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-import { assert } from "chai"
+import { assert } from "vitest"
 import { flyBy } from "./droneFlyBy"
 
 describe("Example Tests", function () {

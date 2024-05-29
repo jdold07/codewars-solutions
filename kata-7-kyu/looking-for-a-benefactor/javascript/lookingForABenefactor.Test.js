@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { newAvg } = require("./lookingForABenefactor")
 
 function testing(arr, newavg, expected) {

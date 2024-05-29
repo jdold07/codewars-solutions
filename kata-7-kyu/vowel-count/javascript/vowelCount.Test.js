@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { getCount } = require("./vowelCount")
 
 describe("Vowels Count Tests", function () {

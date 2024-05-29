@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { sumOfIntegersInString } = require("./sumOfIntegersInString")
 
 it("Example test cases", () => {

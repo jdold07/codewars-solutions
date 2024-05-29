@@ -6,7 +6,7 @@
 #+
 #+ =====================================================================================================================
 
-{ assert } = require "chai"
+{ assert } = require "vitest"
 { sortme } = require "./sortArrays1"
 
 describe "Basic Tests", ->

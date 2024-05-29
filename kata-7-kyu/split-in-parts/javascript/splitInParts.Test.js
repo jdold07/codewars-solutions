@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { splitInParts } = require("./splitInParts")
 
 it("Basic Tests", function () {

@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { decode } = require("./digitalCypherVol2")
 
 describe("Decoding..", function () {

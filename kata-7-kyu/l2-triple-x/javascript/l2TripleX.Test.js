@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { tripleX } = require("./l2TripleX")
 
 describe("Basic tests", () => {

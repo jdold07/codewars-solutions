@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { specialNumber } = require("./specialNumberSpecialNumbersSeriesNumber5")
 
 it("Basic tests", () => {

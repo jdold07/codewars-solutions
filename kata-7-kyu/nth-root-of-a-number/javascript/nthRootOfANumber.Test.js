@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { expect } = require("chai")
+import { expect } from "vitest"
 const { root } = require("./nthRootOfANumber")
 
 describe("root", function () {

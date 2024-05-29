@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { last } = require("./sortByLastChar")
 
 describe("Sort by Last Char", () => {

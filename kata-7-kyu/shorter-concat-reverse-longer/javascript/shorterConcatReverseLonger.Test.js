@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { shorter_reverse_longer } = require("./shorterConcatReverseLonger")
 
 it("Tests", () => {

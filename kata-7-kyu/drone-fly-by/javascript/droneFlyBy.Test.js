@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { flyBy } = require("./droneFlyBy")
 
 describe("Drone Fly-By", () => {

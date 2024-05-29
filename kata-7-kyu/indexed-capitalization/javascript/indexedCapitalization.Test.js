@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { capitalize } = require("./indexedCapitalization")
 
 it("Basic tests", function () {

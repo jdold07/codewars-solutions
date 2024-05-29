@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-import { assert } from "chai"
+import { assert } from "vitest"
 import { Kata } from "./disemvowelTrolls"
 
 describe("disemvowel", function () {

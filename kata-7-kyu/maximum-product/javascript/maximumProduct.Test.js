@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { adjacentElementsProduct } = require("./maximumProduct")
 
 it("Fixed tests", function () {

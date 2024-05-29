@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-import { assert } from "chai"
+import { assert } from "vitest"
 import { isSquare } from "./youreASquare"
 
 import _ from "lodash"

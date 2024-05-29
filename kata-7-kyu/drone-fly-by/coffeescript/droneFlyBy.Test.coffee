@@ -6,7 +6,7 @@
 #+
 #+ =====================================================================================================================
 
-{ assert } = require "chai"
+{ assert } = require "vitest"
 { flyBy } = require "./droneFlyBy"
 
 describe "Basic Tests", ->

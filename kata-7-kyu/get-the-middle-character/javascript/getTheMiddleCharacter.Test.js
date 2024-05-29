@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { getMiddle } = require("./getTheMiddleCharacter")
 
 describe("GetMiddle", function () {

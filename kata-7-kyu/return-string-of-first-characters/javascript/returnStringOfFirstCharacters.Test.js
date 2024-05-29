@@ -7,7 +7,7 @@
 //+ ====================================================================================================================
 
 const { randomize } = require("../../../utils/cwUtils")
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { makeString } = require("./returnStringOfFirstCharacters")
 
 it("makeString should work for some examples", () => {

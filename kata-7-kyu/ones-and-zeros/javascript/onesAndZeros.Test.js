@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { binaryArrayToNumber } = require("./onesAndZeros")
 
 describe("One's and Zero's", () => {

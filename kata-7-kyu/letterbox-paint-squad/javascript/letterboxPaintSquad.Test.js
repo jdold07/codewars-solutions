@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { paintLetterboxes } = require("./letterboxPaintSquad")
 
 describe("Solution Tests", function () {

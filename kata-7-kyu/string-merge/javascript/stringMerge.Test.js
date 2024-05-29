@@ -7,10 +7,12 @@
 //+ ====================================================================================================================
 
 const { randomize } = require("../../../utils/cwUtils")
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { stringMerge } = require("./stringMerge")
 
 describe("String Merge Tests:", () => {
+  it("Should work with basic tests", function () {
+
   assert.strictEqual(stringMerge("person", "here", "e"), "pere")
   assert.strictEqual(stringMerge("apowiejfoiajsf", "iwahfeijouh", "j"), "apowiejouh")
   assert.strictEqual(stringMerge("abcdefxxxyzz", "abcxxxyyyxyzz", "x"), "abcdefxxxyyyxyzz")
@@ -19,6 +21,7 @@ describe("String Merge Tests:", () => {
   assert.strictEqual(stringMerge("aaaab", "abc", "a"), "abc")
   assert.strictEqual(stringMerge("aaaab", "abc", "b"), "aaaabc")
   assert.strictEqual(stringMerge("incredible", "people", "e"), "increople")
+})
 })
 
 describe("Some 'edge cases' test", () => {
@@ -37,6 +40,8 @@ describe("Some 'edge cases' test", () => {
 })
 
 describe("Some random tests", () => {
+  it("Should work with random tests", function () {
+
   let zoo = "alligator,baboon,caribou,donkey,elephant,flamingo,gorilla,hedgehog,iguana,jellyfish,kangaroo,leopard,mosquito,octopus,pelican,quetzal,rhinoceros,spider,tiger,urubu,vulture,wallaby,xerus,yak,zebra".split(
     ","
   )
@@ -59,4 +64,5 @@ describe("Some random tests", () => {
     console.log(`What for merging ${z1} and ${z2} on ${exp[0]}?`)
     assert.strictEqual(stringMerge(z1, z2, exp[0]), exp.slice(1))
   }
+})
 })

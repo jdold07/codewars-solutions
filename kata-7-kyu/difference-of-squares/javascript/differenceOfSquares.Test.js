@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { differenceOfSquares } = require("./differenceOfSquares")
 
 describe("Difference of squares", function () {

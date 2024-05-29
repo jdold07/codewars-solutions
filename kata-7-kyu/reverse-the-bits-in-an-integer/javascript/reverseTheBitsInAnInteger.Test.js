@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { reverseBits } = require("./reverseTheBitsInAnInteger")
 
 describe("Sample tests", function () {

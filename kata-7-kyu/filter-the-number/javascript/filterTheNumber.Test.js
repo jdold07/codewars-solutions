@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { filterString } = require("./filterTheNumber")
 
 let p17b9fe10e8d57952934e977b31da3c78 = function (g54) {

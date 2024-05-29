@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { sumCubes } = require("./sumOfCubes")
 
 const _ = require("lodash")

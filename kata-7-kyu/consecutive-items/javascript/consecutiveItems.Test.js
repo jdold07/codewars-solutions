@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { consecutive } = require("./consecutiveItems")
 
 function solution(arr, a, b) {

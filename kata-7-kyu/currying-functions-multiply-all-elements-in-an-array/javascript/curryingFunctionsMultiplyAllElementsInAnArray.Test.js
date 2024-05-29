@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert, expect } = require("chai")
+import { assert, expect } from "vitest"
 const { multiplyAll } = require("./curryingFunctionsMultiplyAllElementsInAnArray")
 
 const mySolution = (array) => (n) => array.map((e) => e * n)

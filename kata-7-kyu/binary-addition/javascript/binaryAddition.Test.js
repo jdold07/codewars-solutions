@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert, expect } = require("chai")
+import { assert, expect } from "vitest"
 const { addBinary } = require("./binaryAddition")
 
 describe("addBinary(1,2)", function () {

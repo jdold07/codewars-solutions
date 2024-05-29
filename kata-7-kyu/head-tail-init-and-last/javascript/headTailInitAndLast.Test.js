@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { head, tail, init, last } = require("./headTailInitAndLast")
 
 const randArray = () => {

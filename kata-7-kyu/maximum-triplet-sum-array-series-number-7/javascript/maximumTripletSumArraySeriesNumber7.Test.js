@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { maxTriSum } = require("./maximumTripletSumArraySeriesNumber7")
 
 describe("Basic tests", () => {

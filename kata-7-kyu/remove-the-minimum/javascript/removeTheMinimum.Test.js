@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { removeSmallest } = require("./removeTheMinimum")
 
 describe("removeSmallest", function () {

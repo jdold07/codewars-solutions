@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert, expect } = require("chai")
+import { assert, expect } from "vitest"
 const { factorial } = require("./recursionNumber1Factorial")
 
 const factorialTable = [

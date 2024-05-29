@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { save } = require("./computerProblemSeriesNumber1FillTheHardDiskDrive")
 
 describe("Fixed tests", () => {

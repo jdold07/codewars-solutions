@@ -6,7 +6,7 @@
 #+
 #+ =====================================================================================================================
 
-{ assert } = require "chai"
+{ assert } = require "vitest"
 { flatten } = require "./flatten1"
 
 assert.deepEqual flatten([]), []

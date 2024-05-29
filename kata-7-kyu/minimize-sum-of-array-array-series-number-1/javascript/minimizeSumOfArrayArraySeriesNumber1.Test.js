@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { minSum } = require("./minimizeSumOfArrayArraySeriesNumber1")
 
 describe("Basic Tests", function () {

@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { calculate } = require("./basicMathAddOrSubtract")
 
 describe("Let's go...", function () {

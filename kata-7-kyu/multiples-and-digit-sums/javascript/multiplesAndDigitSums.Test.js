@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { procedure } = require("./multiplesAndDigitSums")
 
 describe("Solution", function () {

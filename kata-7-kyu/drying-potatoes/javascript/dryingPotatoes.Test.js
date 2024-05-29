@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { potatoes } = require("./dryingPotatoes")
 
 describe("Basic tests", function () {
@@ -35,6 +35,7 @@ describe("Basic tests", function () {
 })
 
 describe("Random tests", function () {
+  it("Should work with random tests", function () {
   function randint(a, b) {
     return Math.floor(Math.random() * (b - a + 1) + a)
   }
@@ -56,4 +57,5 @@ describe("Random tests", function () {
     }
   }
   tests_code()
+})
 })

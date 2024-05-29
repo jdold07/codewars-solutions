@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { switcher } = require("./numbersToLetters")
 
 describe("Numbers to Letters", () => {

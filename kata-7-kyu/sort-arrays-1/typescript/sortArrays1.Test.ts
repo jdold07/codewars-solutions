@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-import { assert } from "chai"
+import { assert } from "vitest"
 import { sortMe } from "./sortArrays1"
 
 describe("Basic tests", () => {

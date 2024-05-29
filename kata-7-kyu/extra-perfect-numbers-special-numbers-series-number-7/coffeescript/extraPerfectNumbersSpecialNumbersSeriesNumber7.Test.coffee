@@ -6,7 +6,7 @@
 #+
 #+ =====================================================================================================================
 
-{ assert } = require "chai"
+{ assert } = require "vitest"
 { extraPerfect } = require "./extraPerfectNumbersSpecialNumbersSeriesNumber7"
 
 describe "Basic tests", ->

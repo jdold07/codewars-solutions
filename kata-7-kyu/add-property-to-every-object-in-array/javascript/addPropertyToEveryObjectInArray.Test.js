@@ -7,7 +7,7 @@
 //+
 //+ ====================================================================================================================
 
-const { expect } = require("chai")
+import { expect } from "vitest"
 const { questions } = require("./addPropertyToEveryObjectInArray")
 
 describe("Kata Tests", () => {

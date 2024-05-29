@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { isSantaClausable } = require("./santaclausableInterface")
 
 describe("SantaClausable Interface", function () {

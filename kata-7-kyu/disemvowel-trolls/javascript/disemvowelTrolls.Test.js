@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { disemvowel } = require("./disemvowelTrolls")
 
 // const disemvowel = disemvowel2

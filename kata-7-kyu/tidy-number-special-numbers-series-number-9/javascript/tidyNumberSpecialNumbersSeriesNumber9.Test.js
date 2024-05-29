@@ -6,15 +6,18 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { tidyNumber } = require("./tidyNumberSpecialNumbersSeriesNumber9")
 
 describe("Basic tests", () => {
+  it("Should work with basic tests", function () {
+
   assert.strictEqual(tidyNumber(12), true)
   assert.strictEqual(tidyNumber(102), false)
   assert.strictEqual(tidyNumber(9672), false)
   assert.strictEqual(tidyNumber(2789), true)
   assert.strictEqual(tidyNumber(2335), true)
+})
 })
 
 describe("Random tests", () => {

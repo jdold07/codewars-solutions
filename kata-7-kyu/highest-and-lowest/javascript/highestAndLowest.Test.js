@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { highAndLow } = require("./highestAndLowest")
 
 describe("Fixed tests", () => {

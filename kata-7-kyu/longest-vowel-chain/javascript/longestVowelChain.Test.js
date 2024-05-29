@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { solve } = require("./longestVowelChain")
 
 describe("Basic tests", function () {

@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { balancedNum } = require("./balancedNumberSpecialNumbersSeriesNumber1")
 
 describe("Check less than thousand", function () {

@@ -6,10 +6,11 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { findMissingNumber } = require("./brokenSequence")
 
 describe("Basic tests", function () {
+  it("Should work with basic tests", function () {
   assert.strictEqual(findMissingNumber("1 2 3 5"), 4, "It must work for missing middle terms")
   assert.strictEqual(findMissingNumber("1 3"), 2, "It must work for missing middle terms")
   assert.strictEqual(findMissingNumber("1 5"), 2, "It must work for missing more than one number")
@@ -35,6 +36,7 @@ describe("Basic tests", function () {
     90,
     "It must return 90"
   )
+})
 })
 
 describe("Random Tests", function () {

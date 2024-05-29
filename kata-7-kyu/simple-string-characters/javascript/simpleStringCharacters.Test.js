@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { solve } = require("./simpleStringCharacters")
 
 const _ = require("lodash")

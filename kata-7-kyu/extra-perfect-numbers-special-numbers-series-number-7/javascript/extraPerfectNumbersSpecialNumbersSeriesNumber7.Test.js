@@ -6,15 +6,18 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { extraPerfect } = require("./extraPerfectNumbersSpecialNumbersSeriesNumber7")
 
 describe("Basic tests", () => {
+  it("Should work with basic tests", function () {
+
   assert.deepEqual(extraPerfect(3), [1, 3])
   assert.deepEqual(extraPerfect(5), [1, 3, 5])
   assert.deepEqual(extraPerfect(7), [1, 3, 5, 7])
   assert.deepEqual(extraPerfect(28), [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27])
   assert.deepEqual(extraPerfect(39), [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39])
+})
 })
 
 describe("Random tests", () => {

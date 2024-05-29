@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { nthSmallest } = require("./nthSmallestElementArraySeriesNumber4")
 
 it("Basic tests", () => {

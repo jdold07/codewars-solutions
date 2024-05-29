@@ -7,7 +7,7 @@
 //+ ====================================================================================================================
 
 const { randomize } = require("../../../utils/cwUtils")
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { one } = require("./enumerableMagicNumber5TrueForJustOne")
 
 describe("one ?", function () {

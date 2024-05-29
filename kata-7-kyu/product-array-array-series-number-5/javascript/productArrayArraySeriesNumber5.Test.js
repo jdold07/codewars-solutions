@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { productArray } = require("./productArrayArraySeriesNumber5")
 
 it("Basic Tests", () => {

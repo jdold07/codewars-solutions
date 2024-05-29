@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-import { assert } from "chai"
+import { assert } from "vitest"
 import { getMiddle } from "./getTheMiddleCharacter"
 
 function doTest(string: string, expected: string) {

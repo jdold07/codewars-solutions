@@ -6,10 +6,12 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { nextHappyYear } = require("./seeYouNextHappyYear")
 
 describe("Basic tests", () => {
+  it("Should work with basic tests", function () {
+
   assert.strictEqual(nextHappyYear(1001), 1023)
   assert.strictEqual(nextHappyYear(1123), 1203)
   assert.strictEqual(nextHappyYear(2001), 2013)
@@ -20,6 +22,7 @@ describe("Basic tests", () => {
   assert.strictEqual(nextHappyYear(7712), 7801)
   assert.strictEqual(nextHappyYear(8088), 8091)
   assert.strictEqual(nextHappyYear(8999), 9012)
+})
 })
 
 describe("Random tests", () => {

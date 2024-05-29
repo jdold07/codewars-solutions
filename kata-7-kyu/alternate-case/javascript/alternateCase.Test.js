@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { alternateCase } = require("./alternateCase")
 
 const _ = require("lodash")

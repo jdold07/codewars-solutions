@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { add } = require("./functionalAddition")
 
 describe("fixed tests", function () {

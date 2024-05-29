@@ -6,10 +6,12 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { maxProduct } = require("./productOfMaximumsOfArrayArraySeriesNumber2")
 
 describe("Basic tests", () => {
+  it("Should work with basic tests", function () {
+
   assert.strictEqual(maxProduct([4, 3, 5], 2), 20)
   assert.strictEqual(maxProduct([10, 8, 7, 9], 3), 720)
   assert.strictEqual(maxProduct([8, 6, 4, 6], 3), 288)
@@ -20,6 +22,7 @@ describe("Basic tests", () => {
   assert.strictEqual(maxProduct([10, 3, -27, -1], 3), -30)
   assert.strictEqual(maxProduct([14, 29, -28, 39, -16, -48], 4), -253344)
   assert.strictEqual(maxProduct([1], 1), 1)
+})
 })
 
 describe("Random tests", () => {

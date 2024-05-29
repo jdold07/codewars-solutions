@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { vowel2index } = require("./theOldSwitcheroo")
 
 it("Initial test", () => {

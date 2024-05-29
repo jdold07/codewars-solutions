@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { seven } = require("./aRuleOfDivisibilityBy7")
 
 describe("Seven", function () {

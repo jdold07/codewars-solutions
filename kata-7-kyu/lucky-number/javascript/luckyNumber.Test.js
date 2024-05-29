@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { isLucky } = require("./luckyNumber")
 
 describe("Testing if number is lucky", function () {

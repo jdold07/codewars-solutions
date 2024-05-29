@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { nthFloyd } = require("./nthFloydLine")
 
 const _ = require("lodash")

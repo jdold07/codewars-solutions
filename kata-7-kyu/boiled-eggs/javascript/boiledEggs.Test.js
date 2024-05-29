@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { cookingTime } = require("./boiledEggs")
 
 describe("Boiled Eggs", function () {

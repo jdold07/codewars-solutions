@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { isIsogram } = require("./isograms")
 
 describe("Basic tests", () => {

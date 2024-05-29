@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { expect } = require("chai")
+import { expect } from "vitest"
 const { gps } = require("./speedControl")
 
 let testing = function (actual, expected, msg) {

@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { strong } = require("./strongNumberSpecialNumbersSeriesNumber2")
 
 describe("Fixed Tests", () => {

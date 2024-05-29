@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { wordValue } = require("./wordValues")
 
 describe("Word values", () => {

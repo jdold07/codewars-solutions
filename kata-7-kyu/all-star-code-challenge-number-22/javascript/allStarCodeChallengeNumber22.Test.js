@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { toTime } = require("./allStarCodeChallengeNumber22")
 
 let random = function (num) {

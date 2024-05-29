@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-import { assert } from "chai"
+import { assert } from "vitest"
 import { xo } from "./exesAndOhs"
 
 describe("xo", function () {
