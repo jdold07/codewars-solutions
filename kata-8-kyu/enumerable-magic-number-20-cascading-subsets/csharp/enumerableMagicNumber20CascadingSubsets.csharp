@@ -1,0 +1,23 @@
+//+ ====================================================================================================================
+//+
+//+ 8 kyu - Enumerable Magic #20 - Cascading Subsets  [ ID: 545af3d185166a3dec001190 ] (enumerable-magic-number-20-cascading-subsets)
+//+ URL: https://www.codewars.com/kata/545af3d185166a3dec001190
+//+ Category: REFERENCE  |  Tags: FUNDAMENTALS | LISTS | DATA STRUCTURES | ARRAYS | ALGORITHMS
+//+
+//+ ====================================================================================================================
+
+using System;
+using System.Collections.Generic;
+
+static class Kata
+{
+  public static IEnumerable<IEnumerable<int>> EachCons(int[] list, int n)
+  {
+    List<int[]> ans = new List<int[]>();
+    for (int i = 0; i + n <= list.Length; i++)
+    {
+      ans.Add(list[i..(i + n)]);
+    }
+    return ans;
+  }
+}
