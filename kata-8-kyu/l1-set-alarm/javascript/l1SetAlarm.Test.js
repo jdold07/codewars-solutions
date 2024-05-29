@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { setAlarm } = require("./l1SetAlarm")
 
 describe("Test Suite", () => {

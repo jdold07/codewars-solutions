@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { apple } = require("./alanPartridgeIiAppleTurnover")
 
 describe("Alan Partridge II - Apple Turnover", () => {

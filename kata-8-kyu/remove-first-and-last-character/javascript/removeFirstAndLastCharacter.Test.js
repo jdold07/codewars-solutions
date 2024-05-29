@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { removeChar } = require("./removeFirstAndLastCharacter")
 
 describe("Tests", () => {
@@ -21,7 +21,7 @@ describe("Tests", () => {
 
 describe("Random Tests", () => {
   function testSolution(str) {
-    return (this.str = str.substring(1, str.length - 1))
+    return (str = str.substring(1, str.length - 1))
   }
 
   it("Testing for 100 random tests", () => {

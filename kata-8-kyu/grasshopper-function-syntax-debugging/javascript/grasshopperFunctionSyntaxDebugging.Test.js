@@ -7,7 +7,7 @@
 //+ ====================================================================================================================
 
 const { randomToken } = require("../../../utils/cwUtils")
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { main } = require("./grasshopperFunctionSyntaxDebugging")
 
 describe("Your function", () => {

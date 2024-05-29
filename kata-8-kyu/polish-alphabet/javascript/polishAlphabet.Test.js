@@ -6,10 +6,12 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { correctPolishLetters } = require("./polishAlphabet")
 
 describe("Basic Tests", function () {
+  it("Should work with basic tests", function () {
+
   assert.strictEqual(correctPolishLetters("Jędrzej Błądziński"), "Jedrzej Bladzinski")
   assert.strictEqual(correctPolishLetters("Lech Wałęsa"), "Lech Walesa")
   assert.strictEqual(correctPolishLetters("Maria Skłodowska-Curie"), "Maria Sklodowska-Curie")
@@ -24,6 +26,7 @@ describe("Basic Tests", function () {
     correctPolishLetters("Wół go pyta: 'Panie chrząszczu,Po co pan tak brzęczy w gąszczu?'"),
     "Wol go pyta: 'Panie chrzaszczu,Po co pan tak brzeczy w gaszczu?'"
   )
+})
 })
 
 describe("Random Test", function () {

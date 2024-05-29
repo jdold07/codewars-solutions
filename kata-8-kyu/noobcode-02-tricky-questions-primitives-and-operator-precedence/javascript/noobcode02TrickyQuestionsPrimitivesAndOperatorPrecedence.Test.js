@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { greaterThanLessThan } = require("./noobcode02TrickyQuestionsPrimitivesAndOperatorPrecedence")
 
 describe("Tests", () => {

@@ -6,9 +6,9 @@
 //+
 //+ ====================================================================================================================
 
-import { assert } from "chai"
-import { powersOfTwo } from "./powersOf2"
 import { shuffle as _shuffle } from "lodash"
+import { assert } from "vitest"
+import { powersOfTwo } from "./powersOf2"
 
 describe("Basic Tests", function () {
   it("Testing for fixed tests", () => {

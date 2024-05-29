@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { quote } = require("./forUfcFansTotalBeginnersConorMcgregorVsGeorgeSaintPierre")
 
 describe("Uppercase Forms", function () {
@@ -21,6 +21,9 @@ describe("Uppercase Forms", function () {
 })
 
 describe("Lowercase Forms", function () {
+  it("Should work with basic tests", function () {
+
   assert.strictEqual(quote("george saint pierre"), "I am not impressed by your performance.")
   assert.strictEqual(quote("conor mcgregor"), "I'd like to take this chance to apologize.. To absolutely NOBODY!")
+})
 })

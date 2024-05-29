@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { excludingVatPrice } = require("./calculatePriceExcludingVat")
 
 describe("Fixed Tests", () => {

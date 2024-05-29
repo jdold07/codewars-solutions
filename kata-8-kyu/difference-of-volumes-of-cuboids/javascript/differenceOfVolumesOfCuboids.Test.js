@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const funcToBeTested = require("./differenceOfVolumesOfCuboids").findDifference
 
 describe("Tests", function () {

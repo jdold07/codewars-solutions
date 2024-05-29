@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { quarterOf } = require("./quarterOfTheYear")
 
 describe("Basic Tests", () => {

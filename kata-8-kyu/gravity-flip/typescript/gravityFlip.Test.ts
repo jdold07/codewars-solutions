@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-import { assert } from "chai"
+import { assert } from "vitest"
 import { flip } from "./gravityFlip"
 
 const randInt = (a: number, b: number): number => (Math.random() * (b - a + 1) + a) | 0

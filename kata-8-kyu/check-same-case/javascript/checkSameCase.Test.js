@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { sameCase } = require("./checkSameCase")
 
 function doTest(a, b, expected) {

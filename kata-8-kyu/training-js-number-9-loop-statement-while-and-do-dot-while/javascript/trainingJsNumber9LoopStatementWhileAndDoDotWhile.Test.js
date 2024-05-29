@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { padIt } = require("./trainingJsNumber9LoopStatementWhileAndDoDotWhile")
 
 function rndc() {

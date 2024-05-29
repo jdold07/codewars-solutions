@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { nameShuffler } = require("./nameShuffler")
 
 // if (typeof nameShuffler != "function") {
@@ -16,6 +16,8 @@ const { nameShuffler } = require("./nameShuffler")
 // }
 
 describe("Basic tests", function () {
+  it("Should work with basic tests", function () {
+
   assert.strictEqual(nameShuffler("john McClane"), "McClane john")
   assert.strictEqual(nameShuffler("Mary jeggins"), "jeggins Mary")
   assert.strictEqual(nameShuffler("tom jerry"), "jerry tom")
@@ -23,6 +25,7 @@ describe("Basic tests", function () {
   assert.strictEqual(nameShuffler("John Doe"), "Doe John")
   assert.strictEqual(nameShuffler("William O'Brien"), "O'Brien William")
   assert.strictEqual(nameShuffler("George Huffingquane-McGafferty"), "Huffingquane-McGafferty George")
+})
 })
 
 describe("Basic tests", function () {

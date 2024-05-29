@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { countSheep } = require("./ifYouCantSleepJustCountSheep")
 
 describe("Fixed tests", () => {

@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert, expect } = require("chai")
+import { assert, expect } from "vitest"
 const { isReallyNaN } = require("./isreallynan")
 
 const rand_int = () => ~~(Math.random() * 100)

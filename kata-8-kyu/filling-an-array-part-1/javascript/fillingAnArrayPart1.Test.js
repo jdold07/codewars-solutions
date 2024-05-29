@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { arr } = require("./fillingAnArrayPart1")
 
 describe("#arr creates a new array with the numbers 0 to N-1", () => {

@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { bigToSmall } = require("./trainingJsNumber29MethodsOfArrayobjectConcatAndJoin")
 
 function an(arr) {

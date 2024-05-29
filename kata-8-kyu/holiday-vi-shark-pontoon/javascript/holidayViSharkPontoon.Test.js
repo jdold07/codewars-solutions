@@ -6,15 +6,18 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { shark } = require("./holidayViSharkPontoon")
 
 describe("Basic tests", () => {
+  it("Should work with basic tests", function () {
+
   assert.strictEqual(shark(12, 50, 4, 8, true), "Alive!")
   assert.strictEqual(shark(7, 55, 4, 16, true), "Alive!")
   assert.strictEqual(shark(24, 0, 4, 8, true), "Shark Bait!")
   assert.strictEqual(shark(40, 35, 3, 20, true), "Shark Bait!")
   assert.strictEqual(shark(7, 8, 3, 4, true), "Alive!")
+})
 })
 
 describe("Random tests", () => {

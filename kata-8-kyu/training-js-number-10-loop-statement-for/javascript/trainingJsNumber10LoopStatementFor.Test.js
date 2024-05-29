@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { pickIt } = require("./trainingJsNumber10LoopStatementFor")
 
 function an(arr) {

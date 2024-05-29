@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-import { assert } from "chai"
+import { assert } from "vitest"
 import { solution } from "./reversedStrings"
 
 // import the type of assertion library you wish to use (Chai recommended)

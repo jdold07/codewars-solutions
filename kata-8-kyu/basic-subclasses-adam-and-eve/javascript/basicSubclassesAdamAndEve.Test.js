@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { Man, Woman, Human, God } = require("./basicSubclassesAdamAndEve")
 
 describe("GodTest", function () {

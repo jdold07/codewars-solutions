@@ -7,7 +7,7 @@
 //+ ====================================================================================================================
 
 const { randomNumber } = require("../../../utils/cwUtils")
-const { assert, expect } = require("chai")
+import { assert, expect } from "vitest"
 const { sumSquares } = require("./beConciseIiiSumSquares")
 
 describe("Your refactored solution", () => {

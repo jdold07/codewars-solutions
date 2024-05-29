@@ -18,7 +18,7 @@ class Point {
 
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { distanceBetweenPoints } = require("./geometryBasicsDistanceBetweenPointsIn2d")
 
 describe("Solution", function () {

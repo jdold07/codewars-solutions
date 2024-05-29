@@ -7,7 +7,7 @@
 //+ ====================================================================================================================
 
 
-import { assert } from "chai"
+import { assert } from "vitest"
 import String from "./regexpBasicsIsItADigit"
 console.log(String.prototype.digit)
 

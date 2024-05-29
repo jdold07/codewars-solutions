@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { howManySmaller } = require("./trainingJsNumber15MethodsOfNumberObjectTofixedToexponentialAndToprecision")
 
 function an(arr, n) {

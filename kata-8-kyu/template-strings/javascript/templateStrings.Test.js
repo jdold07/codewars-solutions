@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { TempleStrings } = require("./templateStrings")
 
 // let o = Object.freeze(Math)

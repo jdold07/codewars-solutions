@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { a, b, name } = require("./grasshopperVariableAssignmentDebug")
 
 describe("variable assignment", () => {

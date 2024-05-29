@@ -6,15 +6,18 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { checkTheBucket } = require("./manInTheWest")
 
 describe("Basic tests", () => {
+  it("Should work with basic tests", function () {
+
   assert.strictEqual(checkTheBucket(["stone", "stone", "stone", "stone", "stone"]), false)
   assert.strictEqual(checkTheBucket(["stone", "stone", "stone", "stone", "gold"]), true)
   assert.strictEqual(checkTheBucket(["gold", "stone", "stone", "stone", "stone"]), true)
   assert.strictEqual(checkTheBucket([]), false)
   assert.strictEqual(checkTheBucket(["stone", "stone", "stone", "gold", "gold"]), true)
+})
 })
 
 describe("Random tests", () => {

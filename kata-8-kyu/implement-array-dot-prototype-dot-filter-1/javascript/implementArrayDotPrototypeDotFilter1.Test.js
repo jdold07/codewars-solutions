@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 require("./implementArrayDotPrototypeDotFilter1")
 
 describe("Tests", () => {

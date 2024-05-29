@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { correct } = require("./correctTheMistakesOfTheCharacterRecognitionSoftware")
 
 describe("More test cases", function () {

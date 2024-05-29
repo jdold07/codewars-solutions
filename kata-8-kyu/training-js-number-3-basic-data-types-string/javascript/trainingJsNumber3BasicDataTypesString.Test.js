@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { Dad, Bee, banana, answer1, answer2, answer3 } = require("./trainingJsNumber3BasicDataTypesString")
 
 it("<br><font size=4><b>-------- Basic Test --------</b></font>", () => {

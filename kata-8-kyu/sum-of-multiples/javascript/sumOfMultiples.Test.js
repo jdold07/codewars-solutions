@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { sumMul } = require("./sumOfMultiples")
 
 describe("Basic Tests", function () {

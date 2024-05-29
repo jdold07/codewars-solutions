@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { distinct } = require("./removeDuplicatesFromList")
 
 describe("Fixed tests", function () {

@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { past } = require("./beginnerSeriesNumber2Clock")
 
 if (Math.random == undefined) assert.strictEqual(false, true, "Math Object must contain random Method!")

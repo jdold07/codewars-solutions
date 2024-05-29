@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { all } = require("./enumerableMagicNumber1TrueForAll")
 
 it("all", function () {

@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { shortenToDate } = require("./removeTheTime")
 
 describe("Tests", () => {

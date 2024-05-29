@@ -6,7 +6,7 @@
 #+
 #+ =====================================================================================================================
 
-{ assert } = require "chai"
+{ assert } = require "vitest"
 { noSpace } = require "./removeStringSpaces"
 
 describe "Basic tests", ->

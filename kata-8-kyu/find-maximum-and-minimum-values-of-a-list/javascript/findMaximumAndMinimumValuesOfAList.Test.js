@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { min, max } = require("./findMaximumAndMinimumValuesOfAList")
 
 let sol1 = function (list) {

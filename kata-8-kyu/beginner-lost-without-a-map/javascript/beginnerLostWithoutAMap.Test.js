@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { maps } = require("./beginnerLostWithoutAMap")
 
 describe("Basic tests", () => {

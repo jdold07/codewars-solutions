@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-import { assert } from "chai"
+import { assert } from "vitest"
 import { finalGrade } from "./studentsFinalGrade"
 
 describe("Student's Final Grade", () => {

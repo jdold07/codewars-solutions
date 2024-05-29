@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { trueOrFalse } = require("./trainingJsNumber6BasicDataTypesBooleanAndConditionalStatementsIfDotElse")
 
 function an(val) {

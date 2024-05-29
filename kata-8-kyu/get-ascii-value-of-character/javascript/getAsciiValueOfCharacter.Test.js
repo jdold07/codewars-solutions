@@ -7,7 +7,7 @@
 //+ ====================================================================================================================
 
 const { randomize } = require("../../../utils/cwUtils")
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { getASCII } = require("./getAsciiValueOfCharacter")
 
 it("Should work from <kbd>' '</kbd> to <kb>'~'</kbd>", function () {

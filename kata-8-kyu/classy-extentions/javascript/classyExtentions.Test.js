@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { Cat, Animal } = require("./classyExtentions")
 
 it("Fixed Tests", () => {

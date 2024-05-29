@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { cutIt } = require("./trainingJsNumber16MethodsOfStringObjectSliceSubstringAndSubstr")
 
 function an(arr) {

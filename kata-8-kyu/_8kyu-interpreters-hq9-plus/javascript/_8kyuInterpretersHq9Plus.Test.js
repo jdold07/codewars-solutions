@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { HQ9 } = require("./_8kyuInterpretersHq9Plus")
 
 it("Example tests", function () {

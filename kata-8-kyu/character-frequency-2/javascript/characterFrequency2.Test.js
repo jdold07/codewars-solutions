@@ -7,7 +7,7 @@
 //+ ====================================================================================================================
 
 const { randomToken } = require("../../../utils/cwUtils")
-const { assert, expect } = require("chai")
+import { assert, expect } from "vitest"
 const { charFreq } = require("./characterFrequency2")
 
 function cf(message) {

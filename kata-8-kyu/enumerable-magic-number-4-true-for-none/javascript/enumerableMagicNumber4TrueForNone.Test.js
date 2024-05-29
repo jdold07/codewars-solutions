@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { none } = require("./enumerableMagicNumber4TrueForNone")
 
 describe("none ?", function () {

@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { hoopCount } = require("./keepUpTheHoop")
 
 describe("Your Solution", function () {

@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { include } = require("./enumerableMagicDoesMyListIncludeThis")
 
 it("include ?", function () {

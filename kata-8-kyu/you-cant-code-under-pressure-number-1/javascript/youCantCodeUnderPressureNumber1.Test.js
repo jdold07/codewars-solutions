@@ -7,7 +7,7 @@
 //+ ====================================================================================================================
 
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { doubleInteger } = require("./youCantCodeUnderPressureNumber1")
 
 describe("Double integer", () => {

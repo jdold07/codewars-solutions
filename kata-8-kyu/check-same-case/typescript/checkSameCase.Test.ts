@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-import { assert } from "chai"
+import { assert } from "vitest"
 import { sameCase } from "./checkSameCase"
 
 function doTest(a: string, b: string, expected: number): void {

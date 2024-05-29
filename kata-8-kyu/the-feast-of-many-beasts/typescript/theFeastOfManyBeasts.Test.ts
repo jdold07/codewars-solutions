@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-import { assert } from "chai"
+import { assert } from "vitest"
 import { feast } from "./theFeastOfManyBeasts"
 
 describe("Testing...", function () {

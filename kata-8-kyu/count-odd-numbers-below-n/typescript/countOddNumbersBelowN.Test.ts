@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-import { assert } from "chai"
+import { assert } from "vitest"
 import { oddCount } from "./countOddNumbersBelowN"
 
 describe("Test Cases", function () {

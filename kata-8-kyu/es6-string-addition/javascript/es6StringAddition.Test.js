@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { joinStrings } = require("./es6StringAddition")
 
 describe("add", () => {

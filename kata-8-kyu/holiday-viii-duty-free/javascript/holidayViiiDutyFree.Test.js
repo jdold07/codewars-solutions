@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { dutyFree } = require("./holidayViiiDutyFree")
 
 describe("Basic tests", () => {

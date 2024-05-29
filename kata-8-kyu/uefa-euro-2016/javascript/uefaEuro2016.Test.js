@@ -7,7 +7,7 @@
 //+ ====================================================================================================================
 
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { uefaEuro2016 } = require("./uefaEuro2016")
 
 

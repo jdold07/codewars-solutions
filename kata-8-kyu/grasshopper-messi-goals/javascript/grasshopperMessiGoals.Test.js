@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { totalGoals, laLigaGoals, championsLeagueGoals, copaDelReyGoals } = require("./grasshopperMessiGoals")
 
 describe("total goals", function () {

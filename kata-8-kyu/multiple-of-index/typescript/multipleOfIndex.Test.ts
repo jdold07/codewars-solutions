@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-import { assert } from "chai"
+import { assert } from "vitest"
 import { multipleOfIndex } from "./multipleOfIndex"
 
 describe("Basic tests", () => {

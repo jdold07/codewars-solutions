@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-import { assert } from "chai"
+import { assert } from "vitest"
 import { countSheep } from "./ifYouCantSleepJustCountSheep"
 
 describe("Sample Test Cases", function () {

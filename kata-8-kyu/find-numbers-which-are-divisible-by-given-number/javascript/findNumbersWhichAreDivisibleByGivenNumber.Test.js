@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { divisibleBy } = require("./findNumbersWhichAreDivisibleByGivenNumber")
 
 describe("Fixed tests", function () {

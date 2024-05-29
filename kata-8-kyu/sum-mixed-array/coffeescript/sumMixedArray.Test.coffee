@@ -7,7 +7,7 @@
 #+ =====================================================================================================================
 
 
-{ assert } = require "chai"
+{ assert } = require "vitest"
 { sumMix } = require "./sumMixedArray"
 
 describe "Basic Tests", ->

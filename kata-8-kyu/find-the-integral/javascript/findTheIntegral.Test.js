@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { integrate } = require("./findTheIntegral")
 
 const randNum = (min, max) => Math.ceil(Math.random() * (max - min) + min)

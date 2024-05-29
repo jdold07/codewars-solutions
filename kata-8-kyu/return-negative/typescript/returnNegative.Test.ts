@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-import { assert } from "chai"
+import { assert } from "vitest"
 import { makeNegative } from "./returnNegative"
 
 describe("makeNegative", function () {

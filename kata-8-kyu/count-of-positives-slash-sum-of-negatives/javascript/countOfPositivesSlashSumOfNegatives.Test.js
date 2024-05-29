@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { countPositivesSumNegatives } = require("./countOfPositivesSlashSumOfNegatives")
 
 describe("Example tests", () => {

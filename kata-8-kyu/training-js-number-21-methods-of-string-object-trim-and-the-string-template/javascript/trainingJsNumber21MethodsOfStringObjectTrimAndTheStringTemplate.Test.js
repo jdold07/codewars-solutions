@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { fiveLine } = require("./trainingJsNumber21MethodsOfStringObjectTrimAndTheStringTemplate")
 
 function an(s) {

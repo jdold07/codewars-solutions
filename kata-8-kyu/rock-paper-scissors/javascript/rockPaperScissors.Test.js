@@ -7,7 +7,7 @@
 //+ ====================================================================================================================
 
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { rps } = require("./rockPaperScissors")
 
 describe("rock paper scissors", function () {

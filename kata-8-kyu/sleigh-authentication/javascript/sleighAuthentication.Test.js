@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { Sleigh } = require("./sleighAuthentication")
 
 describe("Santa's Sleigh", function () {

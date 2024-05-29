@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { boolToWord } = require("./convertBooleanValuesToStringsYesOrNo")
 
 describe("Basic tests", () => {

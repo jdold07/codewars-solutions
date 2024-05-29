@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { sumOfDifferences } = require("./sumOfDifferencesInArray")
 
 it("sumOfDifferences([1, 2, 10]", function () {

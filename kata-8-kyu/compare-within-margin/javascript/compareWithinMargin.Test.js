@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { closeCompare } = require("./compareWithinMargin")
 
 describe("Close compare function.", () => {

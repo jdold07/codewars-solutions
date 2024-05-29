@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { yearDays } = require("./daysInTheYear")
 
 it("Sample Tests", function () {

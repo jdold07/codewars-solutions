@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { isDigit } = require("./isItANumber")
 
 describe("Solution", function () {

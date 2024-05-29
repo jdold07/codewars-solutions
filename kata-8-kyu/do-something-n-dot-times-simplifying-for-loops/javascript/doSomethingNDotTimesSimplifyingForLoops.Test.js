@@ -7,7 +7,7 @@
 //+ ====================================================================================================================
 
 const { randomNumber } = require("../../../utils/cwUtils")
-const { assert } = require("chai")
+import { assert } from "vitest"
 require("./doSomethingNDotTimesSimplifyingForLoops")
 
 describe(`Number.prototype.times`, () => {

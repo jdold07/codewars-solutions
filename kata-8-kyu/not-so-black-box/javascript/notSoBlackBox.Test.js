@@ -40,8 +40,7 @@ function check() {
 }
 
 //+ ====================================================================================================================
-const { assert } = require("chai")
-
+import { assert } from "vitest"
 it("Did you open the box?", function () {
   function secretCheck() {
     if (theBoxHasBeenOpenedTheProperWay) return true

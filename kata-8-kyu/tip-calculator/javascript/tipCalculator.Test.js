@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { calculateTip } = require("./tipCalculator")
 
 function getRandomNum(min, max) {

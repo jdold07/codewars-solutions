@@ -7,7 +7,7 @@
 //+
 //+ ====================================================================================================================
 
-import { assert } from "chai"
+import { assert } from "vitest"
 import { typeOfSum } from "./typeOfSum"
 
 describe("Basic tests", () => {

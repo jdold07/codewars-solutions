@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-import { assert } from "chai"
+import { assert } from "vitest"
 import { centuryFromYear } from "./centuryFromYear"
 
 const modelSolution = (year: number): number => Math.trunc((year + 99) / 100)

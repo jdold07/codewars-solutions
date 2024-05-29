@@ -19,7 +19,7 @@ class TestClass {
 //+ ====================================================================================================================
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { typeValidation } = require("./forTwins1Types")
 
 function solution(variable, type) {

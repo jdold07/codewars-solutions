@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { contamination } = require("./contaminationNumber1String")
 
 it("Basic tests", () => {

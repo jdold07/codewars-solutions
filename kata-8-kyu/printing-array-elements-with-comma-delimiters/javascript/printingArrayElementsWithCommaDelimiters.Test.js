@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { expect } = require("chai")
+import { expect } from "vitest"
 const { printArray } = require("./printingArrayElementsWithCommaDelimiters")
 
 describe("Tests", () => {

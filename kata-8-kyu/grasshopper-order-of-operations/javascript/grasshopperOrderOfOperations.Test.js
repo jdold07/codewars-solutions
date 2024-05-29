@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { orderOperations } = require("./grasshopperOrderOfOperations")
 
 const func = orderOperations.toString()

@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { logicalCalc } = require("./logicalCalculator")
 
 describe("Testing", function () {

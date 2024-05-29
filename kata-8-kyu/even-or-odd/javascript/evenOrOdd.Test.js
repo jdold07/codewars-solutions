@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { even_or_odd } = require("./evenOrOdd")
 
 const _ = require("lodash")

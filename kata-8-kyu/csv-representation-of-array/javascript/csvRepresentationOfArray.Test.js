@@ -6,10 +6,12 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { toCsvText } = require("./csvRepresentationOfArray")
 
 describe("Basic tests", () => {
+  it("Should work with basic tests", function () {
+
   assert.strictEqual(
     toCsvText([
       [0, 1, 2, 3, 45],
@@ -36,6 +38,7 @@ describe("Basic tests", () => {
     ]),
     "5,55,5,5,55\n6,6,66,23,24\n666,31,66,33,7"
   )
+})
 })
 
 describe("Random Tests", () => {

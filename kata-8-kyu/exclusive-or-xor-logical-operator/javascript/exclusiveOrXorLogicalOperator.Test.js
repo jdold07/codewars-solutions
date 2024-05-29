@@ -7,7 +7,7 @@
 //+ ====================================================================================================================
 
 const { randomNumber } = require("../../../utils/cwUtils")
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { xor } = require("./exclusiveOrXorLogicalOperator")
 
 describe("Your 'xor' function/operator", () => {

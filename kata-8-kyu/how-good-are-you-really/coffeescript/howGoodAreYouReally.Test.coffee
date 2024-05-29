@@ -6,7 +6,7 @@
 #+
 #+ =====================================================================================================================
 
-{ assert } = require "chai"
+{ assert } = require "vitest"
 { betterThanAverage } = require "./howGoodAreYouReally"
 
 describe "Basic Tests", ->

@@ -7,7 +7,7 @@
 //+ ====================================================================================================================
 
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { createArray } = require("./unfinishedLoopBugFixingNumber1")
 
 describe("Fix Timmys Counter", function () {

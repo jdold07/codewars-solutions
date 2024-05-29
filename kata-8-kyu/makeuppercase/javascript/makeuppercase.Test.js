@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { makeUpperCase } = require("./makeuppercase")
 
 describe("Extra Tests", function () {

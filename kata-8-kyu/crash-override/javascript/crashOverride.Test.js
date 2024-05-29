@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { aliasGen, firstName, surname } = require("./crashOverride")
 
 describe("Lets go...", () => {

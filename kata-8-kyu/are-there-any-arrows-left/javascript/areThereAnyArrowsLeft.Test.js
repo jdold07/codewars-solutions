@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { anyArrows } = require("./areThereAnyArrowsLeft")
 
 it("Should handle basic quivers", function () {

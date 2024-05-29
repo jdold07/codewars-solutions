@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { betterThanAverage } = require("./howGoodAreYouReally")
 
 describe("Basic Tests", function () {

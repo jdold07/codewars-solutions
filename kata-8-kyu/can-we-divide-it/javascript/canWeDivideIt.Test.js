@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { isDivideBy } = require("./canWeDivideIt")
 
 describe("Basic tests", function () {

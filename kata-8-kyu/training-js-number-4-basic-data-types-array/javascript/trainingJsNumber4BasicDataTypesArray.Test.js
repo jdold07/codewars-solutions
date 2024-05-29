@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { getLength, getFirst, getLast, pushElement, popElement } = require("./trainingJsNumber4BasicDataTypesArray")
 
 function an1(arr) {

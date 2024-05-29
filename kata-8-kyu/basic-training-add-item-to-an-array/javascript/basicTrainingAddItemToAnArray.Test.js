@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { websites, _websitesInternal } = require("./basicTrainingAddItemToAnArray")
 
 describe("Checking Content", () => {

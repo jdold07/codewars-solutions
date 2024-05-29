@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { areaOrPerimeter } = require("./areaOrPerimeter")
 
 const area = (l, w) => (l == w ? Math.pow(l, 2) : 2 * (l + w))

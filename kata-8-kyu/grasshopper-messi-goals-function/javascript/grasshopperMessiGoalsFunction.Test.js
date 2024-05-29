@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { goals } = require("./grasshopperMessiGoalsFunction")
 
 describe("goals test", function () {

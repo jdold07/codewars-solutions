@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { odds } = require("./areArrowFunctionsOdd")
 
 it("Should handle basic arrays", function () {

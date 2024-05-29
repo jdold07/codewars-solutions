@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { colorOf } = require("./trainingJsNumber14MethodsOfNumberObjectTostringAndTolocalestring")
 
 function an(r, g, b) {

@@ -6,7 +6,7 @@
 #+
 #+ =====================================================================================================================
 
-{ assert } = require "chai"
+{ assert } = require "vitest"
 { UNKNOWN } = require "./countOfPositivesSlashSumOfNegatives"
 
 describe "Example tests", ->

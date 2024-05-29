@@ -7,7 +7,7 @@
 //+ ====================================================================================================================
 
 const { randomNumber } = require("../../../utils/cwUtils")
-const { assert, expect } = require("chai")
+import { assert, expect } from "vitest"
 const { sum } = require("./sumArrays")
 
 describe("sum", function () {

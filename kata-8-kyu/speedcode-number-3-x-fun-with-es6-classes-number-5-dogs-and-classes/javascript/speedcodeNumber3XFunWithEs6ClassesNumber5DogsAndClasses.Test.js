@@ -7,7 +7,7 @@
 //+ ====================================================================================================================
 
 const { randomNumber, randomToken } = require("../../../utils/cwUtils")
-const { assert, expect } = require("chai")
+import { assert, expect } from "vitest"
 const { Labrador, Dog } = require("./speedcodeNumber3XFunWithEs6ClassesNumber5DogsAndClasses")
 
 describe("class Labrador", () => {

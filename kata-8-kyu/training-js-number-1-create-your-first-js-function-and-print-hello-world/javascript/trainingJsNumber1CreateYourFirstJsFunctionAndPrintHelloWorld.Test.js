@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert, expect } = require("chai")
+import { assert, expect } from "vitest"
 const { helloWorld } = require("./trainingJsNumber1CreateYourFirstJsFunctionAndPrintHelloWorld")
 
 it("Fuck Me!  What an unnecessary mess!", () => {

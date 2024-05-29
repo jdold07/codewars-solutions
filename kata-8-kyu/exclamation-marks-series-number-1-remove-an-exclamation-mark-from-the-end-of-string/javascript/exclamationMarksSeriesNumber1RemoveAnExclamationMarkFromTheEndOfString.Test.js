@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { remove } = require("./exclamationMarksSeriesNumber1RemoveAnExclamationMarkFromTheEndOfString")
 
 function doTest(input, expected) {

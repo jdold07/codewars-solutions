@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-import { assert } from "chai"
+import { assert } from "vitest"
 import { sumOfDifferences } from "./sumOfDifferencesInArray"
 
 describe("Fixed tests", function () {

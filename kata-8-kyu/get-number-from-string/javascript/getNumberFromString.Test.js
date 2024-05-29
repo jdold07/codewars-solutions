@@ -7,7 +7,7 @@
 //+ ====================================================================================================================
 
 const { randomNumber, randomToken } = require("../../../utils/cwUtils")
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { getNumberFromString } = require("./getNumberFromString")
 
 function solution(s) {

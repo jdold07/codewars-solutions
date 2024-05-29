@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-import { assert } from "chai"
+import { assert } from "vitest"
 import { quarterOf } from "./quarterOfTheYear"
 
 describe("Basic tests", () => {

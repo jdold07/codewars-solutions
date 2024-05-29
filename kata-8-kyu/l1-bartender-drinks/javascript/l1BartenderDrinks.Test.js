@@ -7,7 +7,7 @@
 //+ ====================================================================================================================
 
 const { randomToken } = require("../../../utils/cwUtils")
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { getDrinkByProfession } = require("./l1BartenderDrinks")
 
 it("Tests", () => {

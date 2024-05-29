@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { getAverage } = require("./getTheMeanOfAnArray")
 
 describe("Test with pre-create arrays", function () {

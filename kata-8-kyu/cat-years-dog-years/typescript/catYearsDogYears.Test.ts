@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-import { assert } from "chai"
+import { assert } from "vitest"
 import { humanYearsCatYearsDogYears } from "./catYearsDogYears"
 
 describe("Solution Tests", function () {

@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { validateHello } = require("./didSheSayHallo")
 
 it("Basic tests", () => {

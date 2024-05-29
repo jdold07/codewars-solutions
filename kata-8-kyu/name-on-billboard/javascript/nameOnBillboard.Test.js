@@ -6,10 +6,12 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { billboard } = require("./nameOnBillboard")
 
 describe("Basic tests", () => {
+  it("Should work with basic tests", function () {
+
   assert.strictEqual((billboard + "").indexOf("*"), -1, "You are not allowed to use multiplier '*' operator")
   assert.strictEqual(billboard("Jeong-Ho Aristotelis"), 600)
   assert.strictEqual(billboard("Abishai Charalampos"), 570)
@@ -22,6 +24,7 @@ describe("Basic tests", () => {
   assert.strictEqual(billboard("Paolo Oli"), 270)
   assert.strictEqual(billboard("Hjalmar Liupold", 40), 600)
   assert.strictEqual(billboard("Simon Eadwulf"), 390)
+})
 })
 
 describe("Random tests", () => {

@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { arrayPlusArray } = require("./arrayPlusArray")
 
 describe("Basic tests", () => {

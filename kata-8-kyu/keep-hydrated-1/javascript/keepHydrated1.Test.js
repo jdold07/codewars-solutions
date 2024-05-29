@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { litres } = require("./keepHydrated1")
 
 describe("Fixed tests", () => {

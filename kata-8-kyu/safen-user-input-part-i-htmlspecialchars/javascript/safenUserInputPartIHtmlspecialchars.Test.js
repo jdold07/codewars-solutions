@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { htmlspecialchars } = require("./safenUserInputPartIHtmlspecialchars")
 
 describe("Basic tests", () => {

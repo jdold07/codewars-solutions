@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { equal1, equal2, equal3, equal4, equal5 } = require("./trainingJsNumber2BasicDataTypesNumber")
 let v1 = 50,
   v2 = 100,

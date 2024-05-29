@@ -8,7 +8,7 @@
 
 
 const { randomNumber, randomToken } = require("../../../utils/cwUtils")
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { repeatStr } = require("./stringRepeat")
 
 const solution = (n, s) => Array.from({ length: n + 1 }).join(s)

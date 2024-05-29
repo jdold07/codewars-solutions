@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { sc } = require("./coding3minJumpingDutchAct")
 
 describe("<br><font size=6><b>-------- Coding 3min : Jumping Dutch act --------</b></font>", () => {

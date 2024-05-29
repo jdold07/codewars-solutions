@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { main, health, position, coins, log } = require("./grasshopperBugSquashing")
 
 describe("syntax bug fixes", () => {

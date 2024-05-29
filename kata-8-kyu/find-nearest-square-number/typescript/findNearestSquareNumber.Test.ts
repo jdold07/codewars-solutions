@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-import { assert } from "chai"
+import { assert } from "vitest"
 import { nearestSq } from "./findNearestSquareNumber"
 
 // TODO Add your tests here

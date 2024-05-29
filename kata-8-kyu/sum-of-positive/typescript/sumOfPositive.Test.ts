@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-import { assert } from "chai"
+import { assert } from "vitest"
 import { positiveSum } from "./sumOfPositive"
 
 describe("solution", function () {

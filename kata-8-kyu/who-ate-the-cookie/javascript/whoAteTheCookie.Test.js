@@ -8,7 +8,7 @@
 
 
 const { inspect } = require("../../../utils/cwUtils")
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { cookie } = require("./whoAteTheCookie")
 
 assert.strictEqual(cookie("Ryan"), "Who ate the last cookie? It was Zach!")

@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { guessBlue } = require("./thinkfulNumberDrillsBlueAndRedMarbles")
 
 it("Basic tests", function () {

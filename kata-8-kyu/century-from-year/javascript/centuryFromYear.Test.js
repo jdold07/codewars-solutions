@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { century } = require("./centuryFromYear")
 
 describe("Basic Tests", function () {

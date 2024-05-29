@@ -6,10 +6,12 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { calculateAge } = require("./howOldWillIBeIn2099")
 
 describe("Random test cases", function () {
+  it("Should work with basic tests", function () {
+
   assert.strictEqual(calculateAge(2012, 2016), "You are 4 years old.")
   assert.strictEqual(calculateAge(1989, 2016), "You are 27 years old.")
   assert.strictEqual(calculateAge(2000, 2090), "You are 90 years old.")
@@ -20,6 +22,7 @@ describe("Random test cases", function () {
   assert.strictEqual(calculateAge(2010, 1500), "You will be born in 510 years.")
   assert.strictEqual(calculateAge(2011, 2012), "You are 1 year old.")
   assert.strictEqual(calculateAge(2000, 1999), "You will be born in 1 year.")
+})
 })
 
 describe("Random test cases", function () {

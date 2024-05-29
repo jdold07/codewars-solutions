@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { howManydays } = require("./trainingJsNumber8ConditionalStatementSwitch")
 
 function an(month) {

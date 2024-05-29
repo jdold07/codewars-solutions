@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { warnTheSheep } = require("./aWolfInSheepsClothing")
 
 function doTest(queue, expected) {

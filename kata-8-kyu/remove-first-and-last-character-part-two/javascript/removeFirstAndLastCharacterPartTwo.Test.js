@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { array } = require("./removeFirstAndLastCharacterPartTwo")
 
 it("Tests", function () {

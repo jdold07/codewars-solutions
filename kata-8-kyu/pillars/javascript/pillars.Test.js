@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { pillars } = require("./pillars")
 
 describe("Basic tests", function () {

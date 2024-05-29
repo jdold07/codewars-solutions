@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-import { assert } from "chai"
+import { assert } from "vitest"
 import { betterThanAverage } from "./howGoodAreYouReally"
 
 describe("Basic tests", () => {

@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { firstToLast } = require("./trainingJsNumber17MethodsOfStringObjectIndexofLastindexofAndSearch")
 
 function an(str, c) {

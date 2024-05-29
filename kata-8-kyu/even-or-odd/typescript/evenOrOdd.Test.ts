@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-import { assert } from "chai"
+import { assert } from "vitest"
 import { even_or_odd } from "./evenOrOdd"
 
 describe("solution", function () {

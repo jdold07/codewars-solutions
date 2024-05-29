@@ -6,11 +6,11 @@
 //+
 //+ ====================================================================================================================
 
-const { assert, config } = require("chai")
+import { assert, vi } from "vitest"
 const { powersOfTwo } = require("./powersOf2")
 const _shuffle = require("lodash").shuffle
 
-config.truncateThreshold = 0
+vi.setConfig.truncateThreshold = 0
 
 describe("Basic Tests", function () {
   it("Testing for fixed tests", () => {

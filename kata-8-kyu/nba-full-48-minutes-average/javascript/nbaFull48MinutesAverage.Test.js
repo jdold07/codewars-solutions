@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { pointsPer48 } = require("./nbaFull48MinutesAverage")
 
 const ans = (ppg, mpg) => {

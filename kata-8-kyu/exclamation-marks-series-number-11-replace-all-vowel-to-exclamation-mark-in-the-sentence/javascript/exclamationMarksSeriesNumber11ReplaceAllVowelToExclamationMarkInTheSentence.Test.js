@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { replace } = require("./exclamationMarksSeriesNumber11ReplaceAllVowelToExclamationMarkInTheSentence")
 
 function an(s) {

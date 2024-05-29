@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { stringToNumber } = require("./convertAStringToANumber")
 
 describe("stringToNumber", function () {

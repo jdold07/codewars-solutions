@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { remove } = require("./exclamationMarksSeriesNumber6RemoveNExclamationMarksInTheSentenceFromLeftToRight")
 
 function an(s, n) {

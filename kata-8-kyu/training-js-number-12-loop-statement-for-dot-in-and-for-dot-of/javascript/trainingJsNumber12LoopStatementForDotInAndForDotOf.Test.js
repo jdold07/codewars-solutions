@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { giveMeFive } = require("./trainingJsNumber12LoopStatementForDotInAndForDotOf")
 
 function an(obj) {

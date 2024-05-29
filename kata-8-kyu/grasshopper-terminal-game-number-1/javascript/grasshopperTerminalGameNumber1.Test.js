@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { Hero } = require("./grasshopperTerminalGameNumber1")
 
 describe("hero class", function () {
