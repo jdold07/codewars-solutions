@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { findChildren } = require("./whereIsMyParentCry")
 
 function doTest(input, expected) {

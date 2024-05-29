@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-import { expect } from "chai"
+import { expect } from "vitest"
 import { narcissistic } from "./doesMyNumberLookBigInThis"
 
 describe("Basic tests", () => {

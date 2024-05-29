@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { highlight } = require("./roboscriptNumber1ImplementSyntaxHighlighting")
 
 describe("Your Syntax Highlighter", function () {

@@ -7,7 +7,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { numPrimorial } = require("./primorialOfANumber")
 
 it("Basic tests", () => {

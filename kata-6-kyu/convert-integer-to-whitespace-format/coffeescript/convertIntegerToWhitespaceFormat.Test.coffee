@@ -6,7 +6,7 @@
 #+
 #+ =====================================================================================================================
 
-{ assert } = require "chai"
+{ assert } = require "vitest"
 { unbleach } = require "./convertIntegerToWhitespaceFormat"
 
 unbleach = (ws) ->

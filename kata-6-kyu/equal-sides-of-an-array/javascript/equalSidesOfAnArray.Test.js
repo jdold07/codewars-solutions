@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { findEvenIndex } = require("./equalSidesOfAnArray")
 
 describe("FindEvenIndex", function () {

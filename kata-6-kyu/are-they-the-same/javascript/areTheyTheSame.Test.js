@@ -6,10 +6,11 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { comp } = require("./areTheyTheSame")
 
 describe("Basic tests", function () {
+  it("Should work with basic tests", function () {
   let a1 = [121, 144, 19, 161, 19, 144, 19, 11]
   let a2 = [11 * 11, 121 * 121, 144 * 144, 19 * 19, 161 * 161, 19 * 19, 144 * 144, 19 * 19]
   assert.strictEqual(comp(a1, a2), true)
@@ -52,6 +53,7 @@ describe("Basic tests", function () {
   a1 = null
   a2 = []
   assert.strictEqual(comp(a1, a2), false)
+})
 })
 
 describe("Random tests", function () {

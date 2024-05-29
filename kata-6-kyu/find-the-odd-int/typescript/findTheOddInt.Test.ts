@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-import { assert } from "chai"
+import { assert } from "vitest"
 import { findOdd } from "./findTheOddInt"
 
 function doTest(a: number[], n: number) {

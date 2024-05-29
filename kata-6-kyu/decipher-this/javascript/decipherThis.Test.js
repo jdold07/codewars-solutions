@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { decipherThis } = require("./decipherThis")
 
 it("Basic Tests", () => {

@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { chained } = require("./unaryFunctionChainer")
 
 function f1(x) {

@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const _ = require("lodash")
 const { Person, _InitPerson93247594859385495834435 } = require("./definingGettersAndSettersOnAnExistingClass")
 

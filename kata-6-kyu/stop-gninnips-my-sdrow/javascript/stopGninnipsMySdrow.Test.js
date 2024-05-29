@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { spinWords } = require("./stopGninnipsMySdrow")
 
 describe("Spinning words", () => {

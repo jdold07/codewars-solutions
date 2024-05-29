@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { mostMoney } = require("./whoHasTheMostMoney")
 
 describe("Who has the most money?", () => {

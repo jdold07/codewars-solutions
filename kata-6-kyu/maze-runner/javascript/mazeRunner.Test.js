@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { mazeRunner } = require("./mazeRunner")
 
 describe("Tests", () => {

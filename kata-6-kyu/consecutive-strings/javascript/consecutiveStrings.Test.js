@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { longestConsec } = require("./consecutiveStrings")
 
 function testing(actual, expected) {

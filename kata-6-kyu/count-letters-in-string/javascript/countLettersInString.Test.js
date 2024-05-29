@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { letterCount } = require("./countLettersInString")
 
 describe("Basic tests", () => {

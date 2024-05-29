@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { ipToInt32 } = require("./ipv4ToInt32")
 
 describe("Tests", () => {

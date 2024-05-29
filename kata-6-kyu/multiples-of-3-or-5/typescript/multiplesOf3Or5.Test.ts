@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-import { assert } from "chai"
+import { assert } from "vitest"
 import { Challenge } from "./multiplesOf3Or5"
 
 function test(num: number, expected: number) {

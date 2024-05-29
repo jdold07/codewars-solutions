@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { solution } = require("./multiplesOf3Or5")
 
 function test(n, expected) {

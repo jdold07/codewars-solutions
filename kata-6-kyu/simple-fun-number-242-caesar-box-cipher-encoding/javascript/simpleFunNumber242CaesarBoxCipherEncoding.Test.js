@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { caesarBoxCipherEncoding } = require("./simpleFunNumber242CaesarBoxCipherEncoding")
 
 function an(s) {

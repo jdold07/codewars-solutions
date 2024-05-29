@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { list } = require("./formatAStringOfNamesLikeBartLisaAndMaggie")
 
 Array.prototype.shuffle = function () {

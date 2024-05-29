@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { Node, length, count } = require("./linkedListsLengthAndCount")
 
 it("tests for counting the length of a linked list.", function () {

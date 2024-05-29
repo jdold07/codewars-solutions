@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { permuteAPalindrome } = require("./permuteAPalindrome")
 
 describe("Should work for the sample Tests", () => {

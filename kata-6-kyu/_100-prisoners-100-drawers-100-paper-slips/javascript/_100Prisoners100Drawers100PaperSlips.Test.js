@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { solve100Prisoners } = require("./_100Prisoners100Drawers100PaperSlips")
 
 describe("Your strategy", () => {

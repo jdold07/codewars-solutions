@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { expandedForm } = require("./writeNumberInExpandedForm")
 
 describe("Basic Tests", function () {

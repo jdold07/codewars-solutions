@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { sc } = require("./coding3minWaitingForABus")
 
 const fcode = function (str) {

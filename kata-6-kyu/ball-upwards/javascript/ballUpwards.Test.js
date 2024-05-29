@@ -7,7 +7,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { maxBall } = require("./ballUpwards")
 
 describe("maxBall", function () {

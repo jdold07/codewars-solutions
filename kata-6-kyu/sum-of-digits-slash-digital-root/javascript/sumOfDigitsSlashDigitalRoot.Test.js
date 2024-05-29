@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { digitalRoot } = require("./sumOfDigitsSlashDigitalRoot")
 
 describe("Basic tests", function () {

@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { AtbashCipher } = require("./atbashCipherHelper")
 
 let desc = "Testing with Latin lowercase alphabet"

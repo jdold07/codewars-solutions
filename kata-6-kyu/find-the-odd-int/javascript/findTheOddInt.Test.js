@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { findOdd } = require("./findTheOddInt")
 
 function doTest(a, n) {

@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { Router } = require("./simpleWebFrameworkNumber1CreateABasicRouter")
 
 it("Should handle GET routes", function () {

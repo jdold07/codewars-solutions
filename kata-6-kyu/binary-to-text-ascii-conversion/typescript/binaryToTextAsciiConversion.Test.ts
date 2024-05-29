@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-import { assert } from "chai"
+import { assert } from "vitest"
 import { binaryToString } from "./binaryToTextAsciiConversion"
 
 describe("example", function () {

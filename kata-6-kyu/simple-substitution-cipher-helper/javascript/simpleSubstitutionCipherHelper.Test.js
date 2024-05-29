@@ -7,7 +7,7 @@
 //+ ====================================================================================================================
 
 const { randomToken, randomize } = require("../../../utils/cwUtils")
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { SubstitutionCipher } = require("./simpleSubstitutionCipherHelper")
 
 it("Test Group", () => {

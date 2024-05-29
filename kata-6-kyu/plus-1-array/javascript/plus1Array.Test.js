@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { upArray } = require("./plus1Array")
 
 describe("Fixed tests", function () {

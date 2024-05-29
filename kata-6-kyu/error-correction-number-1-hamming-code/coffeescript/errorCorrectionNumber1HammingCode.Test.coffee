@@ -6,7 +6,7 @@
 #+
 #+ =====================================================================================================================
 
-{ assert } = require "chai"
+{ assert } = require "vitest"
 { encode } = require "./errorCorrectionNumber1HammingCode"
 
 describe "Test encode function", ->

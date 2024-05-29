@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { duplicateCount } = require("./countingDuplicates")
 
 it("Example tests", function () {

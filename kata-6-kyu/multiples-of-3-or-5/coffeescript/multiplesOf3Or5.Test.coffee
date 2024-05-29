@@ -6,7 +6,7 @@
 #+
 #+ =====================================================================================================================
 
-{ assert } = require "chai"
+{ assert } = require "vitest"
 { solution } = require "./multiplesOf3Or5"
 
 describe "Basic Tests", ->

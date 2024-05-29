@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-import { assert } from "chai"
+import { assert } from "vitest"
 import { duplicateEncode } from "./duplicateEncoder"
 
 // TODO Add your tests here

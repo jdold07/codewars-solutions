@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { twoSum } = require("./twoSum")
 
 describe("Fixed Tests", function () {

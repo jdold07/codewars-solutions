@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { to_nato } = require("./ifYouCanReadThisDotDotDot")
 
 function randTests(num) {

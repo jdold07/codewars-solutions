@@ -6,16 +6,19 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { deleteNth } = require("./deleteOccurrencesOfAnElementIfItOccursMoreThanNTimes")
 
 describe("Basic tests", function () {
+  it("Should work with basic tests", function () {
   assert.deepEqual(deleteNth([20, 37, 20, 21], 1), [20, 37, 21], "x = 1")
   assert.deepEqual(deleteNth([1, 1, 3, 3, 7, 2, 2, 2, 2], 3), [1, 1, 3, 3, 7, 2, 2, 2], "x =3")
   assert.deepEqual(deleteNth([1, 2, 3, 1, 1, 2, 1, 2, 3, 3, 2, 4, 5, 3, 1], 3), [1, 2, 3, 1, 1, 2, 2, 3, 3, 4, 5], "x = 3")
   assert.deepEqual(deleteNth([1, 1, 1, 1, 1], 5), [1, 1, 1, 1, 1], "x = 5")
   assert.deepEqual(deleteNth([], 5), [], "may_e = 5")
 })
+})
+
 
 describe("Random tests", function () {
   function randint(a, b) {

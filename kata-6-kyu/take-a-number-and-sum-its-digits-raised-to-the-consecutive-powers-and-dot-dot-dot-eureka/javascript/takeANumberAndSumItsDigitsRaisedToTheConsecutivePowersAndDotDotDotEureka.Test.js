@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { sumDigPow } = require("./takeANumberAndSumItsDigitsRaisedToTheConsecutivePowersAndDotDotDotEureka")
 
 function dotest(a, b, expected) {

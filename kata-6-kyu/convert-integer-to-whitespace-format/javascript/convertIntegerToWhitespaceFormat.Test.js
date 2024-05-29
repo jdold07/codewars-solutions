@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { whitespaceNumber } = require("./convertIntegerToWhitespaceFormat")
 
 let unbleach = (ws) => ws.replace(/ /g, "[space]").replace(/\t/g, "[tab]").replace(/\n/g, "[LF]")

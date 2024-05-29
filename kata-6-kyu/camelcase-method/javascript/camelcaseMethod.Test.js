@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 require("./camelcaseMethod")
 
 it("Basic tests", () => {

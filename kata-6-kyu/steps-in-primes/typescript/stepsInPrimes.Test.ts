@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-import { assert } from "chai"
+import { assert } from "vitest"
 import { step } from "./stepsInPrimes"
 
 function testing(actual: number[] | null, expected: number[] | null) {

@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { joust } = require("./kingdomsEp1Jousting")
 
 function doTest(field, vKnightLeft, vKnightRight, expected) {

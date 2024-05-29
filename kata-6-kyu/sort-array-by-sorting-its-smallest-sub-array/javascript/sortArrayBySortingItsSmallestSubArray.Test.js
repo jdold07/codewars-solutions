@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { findIndexOfSubArray } = require("./sortArrayBySortingItsSmallestSubArray")
 
 describe("findIndexOfSubArray([1, 1, 1])", function () {

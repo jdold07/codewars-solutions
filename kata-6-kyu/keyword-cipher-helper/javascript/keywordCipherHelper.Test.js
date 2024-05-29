@@ -7,7 +7,7 @@
 //+ ====================================================================================================================
 
 const { randomToken, randomize } = require("../../../utils/cwUtils")
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { KeywordCipher } = require("./keywordCipherHelper")
 
 it("Group test so they actually run", () => {

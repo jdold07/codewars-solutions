@@ -6,8 +6,8 @@
 //+
 //+ ====================================================================================================================
 
-import { assert } from "chai"
-import { encode, decode } from "./errorCorrectionNumber1HammingCode"
+import { assert } from "vitest"
+import { decode, encode } from "./errorCorrectionNumber1HammingCode"
 
 describe("Test encode function", function () {
   it("Should work with short word", function () {

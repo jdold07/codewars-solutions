@@ -7,7 +7,7 @@
 //+ ====================================================================================================================
 
 const { randomToken, randomize } = require("../../../utils/cwUtils")
-const { assert, expect } = require("chai")
+import { assert, expect } from "vitest"
 const { KamaSutraCipher } = require("./kamaSutraCipherHelper")
 
 let c

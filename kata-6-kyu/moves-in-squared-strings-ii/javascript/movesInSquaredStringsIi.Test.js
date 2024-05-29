@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { oper, rot, selfieAndRot } = require("./movesInSquaredStringsIi")
 
 function testing(actual, expected) {

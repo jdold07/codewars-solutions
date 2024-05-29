@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { validBraces } = require("./validBraces")
 
 function doTest(braces, expected) {

@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { decode } = require("./reversingAProcess")
 
 describe("decode", function () {

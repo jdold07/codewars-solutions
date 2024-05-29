@@ -7,7 +7,7 @@
 //+ ====================================================================================================================
 
 const { inspect } = require("../../../utils/cwUtils")
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { deepCount } = require("./arrayDeepCount")
 
 describe("Basic tests", () => {

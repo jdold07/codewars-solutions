@@ -7,7 +7,7 @@
 //+
 //+ ====================================================================================================================
 
-import { assert } from "chai"
+import { assert } from "vitest"
 import { likes } from "./whoLikesIt"
 
 describe("static tests", function () {

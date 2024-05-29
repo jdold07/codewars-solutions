@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { arrayDiff } = require("./arrayDotDiff")
 
 describe("Basic tests", () => {

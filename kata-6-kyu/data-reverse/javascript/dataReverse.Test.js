@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { dataReverse } = require("./dataReverse")
 
 describe("Data Reverse", function () {

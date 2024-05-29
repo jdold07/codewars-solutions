@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { encryption } = require("./encryptionAndDecryptionMatrixPair")
 
 function an(key, str) {

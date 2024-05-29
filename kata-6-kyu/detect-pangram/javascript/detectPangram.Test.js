@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { isPangram } = require("./detectPangram")
 
 let pangram = "The quick brown fox jumps over the lazy dog."

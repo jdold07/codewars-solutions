@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { FileNameExtractor } = require("./extractFileName")
 
 it("basic tests", function () {

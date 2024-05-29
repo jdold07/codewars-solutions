@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { uniqueInOrder } = require("./uniqueInOrder")
 
 describe("lets test it", function () {

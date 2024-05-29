@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-import { assert } from "chai"
+import { assert } from "vitest"
 import { stat } from "./statisticsForAnAthleticAssociation"
 
 function doTest(strg: string, expected: string) {

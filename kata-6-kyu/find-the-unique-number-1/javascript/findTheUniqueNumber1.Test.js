@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { findUniq } = require("./findTheUniqueNumber1")
 
 describe("Fixed Tests", () => {

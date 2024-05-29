@@ -6,10 +6,12 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { stat } = require("./statisticsForAnAthleticAssociation")
 
 describe("Basic tests", function () {
+  it("Should work with basic tests", function () {
+
   assert.strictEqual(
     stat("01|15|59, 1|47|16, 01|17|20, 1|32|34, 2|17|17"),
     "Range: 01|01|18 Average: 01|38|05 Median: 01|32|34"
@@ -38,6 +40,7 @@ describe("Basic tests", function () {
     ),
     "Range: 00|11|20 Average: 01|19|36 Median: 01|18|41"
   )
+})
 })
 
 describe("Random tests", function () {

@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { abbreviate } = require("./wordA10nAbbreviation")
 
 describe("Tests", () => {

@@ -6,14 +6,10 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
 const { OnceNamedOne } = require("./thisIsAnOtherSolution")
 
 describe("Testing...", function () {
-  let n
-  beforeEach(function () {
-    n = new OnceNamedOne("John", "Doe")
-  })
+  let n = new OnceNamedOne("John", "Doe")
 
   it("1. create a NamedOne", function () {
     assert.strictEqual(n.firstName, "John", "Wrong first name")
@@ -21,17 +17,29 @@ describe("Testing...", function () {
     assert.strictEqual(n["fullName"], "John Doe", "Wrong full name")
   })
   it("2. try to change firstName", function () {
-    n.firstName = "Jane"
+    try {
+      n.firstName = "Jane"
+    } catch (error) {
+      // expected - do nothing.
+    }
     assert.strictEqual(n.firstName, "John", "Wrong first name")
     assert.strictEqual(n.fullName, "John Doe", "Wrong full name")
   })
   it("3. try to change lastName", function () {
-    n["lastName"] = "Smith" // -> n.name = "Jane Smith"
+    try {
+      n["lastName"] = "Smith" // -> n.name = "Jane Smith"
+    } catch (error) {
+      // expected - do nothing.
+    }
     assert.strictEqual(n["lastName"], "Doe", "Wrong last name")
     assert.strictEqual(n.fullName, "John Doe", "Wrong full name")
   })
   it("4. try to change fullName", function () {
-    n.fullName = "Juan Herrero"
+    try {
+      n.fullName = "Juan Herrero"
+    } catch (error) {
+      // expected - do nothing.
+    }
     assert.strictEqual(n.firstName, "John", "Wrong first name")
     assert.strictEqual(n.lastName, "Doe", "Wrong last name")
     assert.strictEqual(n.fullName, "John Doe", "Wrong full name")
@@ -46,15 +54,27 @@ describe("Testing...", function () {
       let nono = new OnceNamedOne(first$, last$)
       switch (~~(Math.random() * 3)) {
         case 0:
+          try {
           nono.firstName = "John"
+          }catch (error){
+            // expected - do nothing.
+          }
           assert.strictEqual(nono.firstName, first$)
           break
         case 1:
-          nono.lastName = "Doe"
+          try {
+            nono.lastName = "Doe"
+            }catch (error){
+              // expected - do nothing.
+            }
           assert.strictEqual(nono.lastName, last$)
           break
         case 2:
-          nono.fullName = "John Doe"
+          try {
+            nono.fullName = "John Doe"
+            }catch (error){
+              // expected - do nothing.
+            }
           assert.strictEqual(nono.fullName, first$ + " " + last$)
           break
       }

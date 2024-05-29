@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { encrypt, decrypt } = require("./simpleEncryptionNumber1AlternatingSplit")
 
 describe("Solution", function () {

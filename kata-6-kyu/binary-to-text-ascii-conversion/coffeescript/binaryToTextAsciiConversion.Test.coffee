@@ -6,9 +6,10 @@
 #+
 #+ =====================================================================================================================
 
-{ assert } = require "chai"
+{ assert } = require "vitest"
 { binaryToString } = require "./binaryToTextAsciiConversion"
 
+it "Should work on basic tests." -> {
 assert.strictEqual binaryToString(""), "", "Must handle empty string"
 assert.strictEqual binaryToString("0100100001100101011011000110110001101111"), "Hello", "Must handle basic works"
 assert.strictEqual binaryToString("00110001001100000011000100110001"), "1011", "Must handle numeric characters"
@@ -26,6 +27,7 @@ assert.strictEqual(
   "!@#$%^&*()QWErtyUIOLdfgbbhnmIKBJKHIUO(?>?<~~~~~)(*&%^98713/-/*-*/"
   "Must handle special charaters"
 )
+}
 
 randomString = Math.random().toString 36
 randomStringBinary = ""
@@ -35,4 +37,5 @@ while i < randomString.length
   randomStringBinary += "00000000".slice(bin.length) + bin
   i++
 
-assert.strictEqual binaryToString(randomStringBinary), randomString, "Must handle random string"
+it "Should work on random tests." ->
+  assert.strictEqual binaryToString(randomStringBinary), randomString, "Must handle random string"

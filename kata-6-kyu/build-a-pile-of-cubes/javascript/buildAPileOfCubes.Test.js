@@ -6,10 +6,11 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { findNb } = require("./buildAPileOfCubes")
 
 describe("Basic tests", function () {
+  it("Should work with basic tests", function () {
   assert.strictEqual(findNb(4183059834009), 2022)
   assert.strictEqual(findNb(24723578342962), -1)
   assert.strictEqual(findNb(135440716410000), 4824)
@@ -27,6 +28,7 @@ describe("Basic tests", function () {
 
   assert.strictEqual(findNb(16), -1)
   assert.strictEqual(findNb(4), -1)
+})
 })
 
 describe("Random tests", function () {

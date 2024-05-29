@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { encode, decode } = require("./errorCorrectionNumber1HammingCode")
 
 describe("Test encode function", function () {
