@@ -7,7 +7,7 @@
 //+ ====================================================================================================================
 
 const { randomToken } = require("../../../utils/cwUtils")
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { VigenèreCipher } = require("./vigenereCipherHelper")
 
 let desc = "Testing with lowercase latin alphabet"

@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { multiply } = require("./multiplyingNumbersAsStrings")
 
 describe("Some simple multiplications", function () {

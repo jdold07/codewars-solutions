@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { formatDuration } = require("./humanReadableDurationFormat")
 
 it("basic tests", () => {

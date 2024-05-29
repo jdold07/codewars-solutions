@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { expect } = require("chai")
+import { expect } from "vitest"
 const { solution } = require("./stripComments")
 
 describe("Tests", () => {
