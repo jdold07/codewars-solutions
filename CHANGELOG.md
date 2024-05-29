@@ -2,6 +2,32 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/tsdevau/codewars-kata-solutions/compare/codewars-kata-solutions-v1.2.0...codewars-kata-solutions-v1.3.0) (2024-05-29)
+
+
+### Features & Performance Improvements
+
+* **csharp:** add C# solution and tests for enumerable-magic-number-20-cascading-subsets kata ([fbd04f5](https://github.com/tsdevau/codewars-kata-solutions/commit/fbd04f5ff56a584c1dd093cf32a761d5bdf17c4a))
+* **katas:** add TypeScript solutions and tests for various katas ([cc680ed](https://github.com/tsdevau/codewars-kata-solutions/commit/cc680edbb34cf0262080b13fe99cf3cbee43054c))
+
+
+### DX Improvements
+
+* **test:** migrate test assertions from chai to vitest ([d80e949](https://github.com/tsdevau/codewars-kata-solutions/commit/d80e949252ac027eeb4e56687c455aa271b0b7ac))
+* **test:** migrate test assertions from chai to vitest ([6a6f7b1](https://github.com/tsdevau/codewars-kata-solutions/commit/6a6f7b11fef9a3f9a4aa9e86f838a7417c462f5e))
+* **test:** migrate test assertions from chai to vitest ([5203faa](https://github.com/tsdevau/codewars-kata-solutions/commit/5203faa0d1b2afa8dd565abb0599bcd9eb4869fc))
+* **test:** migrate test assertions from chai to vitest ([2f5b73d](https://github.com/tsdevau/codewars-kata-solutions/commit/2f5b73dab4441d846a3aaf80c4f2a950b6a66765))
+* **tests:** replace Chai with Vitest assertions in 5-kyu kata test files ([4c730d5](https://github.com/tsdevau/codewars-kata-solutions/commit/4c730d518d635f795d67c927b1f18a0f8a611cfb))
+* **tests:** replace Chai with Vitest assertions in test files ([4b61937](https://github.com/tsdevau/codewars-kata-solutions/commit/4b619378f68d12ede5d7e095cda5cad525a29a9a))
+
+
+### DX Maintenance & Configuration
+
+* **config:** add Vitest configuration file ([2fd2e94](https://github.com/tsdevau/codewars-kata-solutions/commit/2fd2e9432133436d1edacc00b9c356811cd44b04))
+* **config:** update Prettier and TypeScript configurations ([1cede58](https://github.com/tsdevau/codewars-kata-solutions/commit/1cede58590108ef2cd164eecb6e6fd032fe73395))
+* **config:** update Prettier, TypeScript, and package configurations ([a4f1bf6](https://github.com/tsdevau/codewars-kata-solutions/commit/a4f1bf687501e19112b5a02e63efd0c0a148d4d6))
+* **deps:** update dependencies ([790daac](https://github.com/tsdevau/codewars-kata-solutions/commit/790daacb851669bc3aec177d075d5c00ecc82c9f))
+
 ## [1.2.0](https://github.com/tsdevau/codewars-kata-solutions/compare/codewars-kata-solutions-v1.1.6...codewars-kata-solutions-v1.2.0) (2024-02-19)
 
 
