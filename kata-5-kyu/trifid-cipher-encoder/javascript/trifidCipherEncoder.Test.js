@@ -7,7 +7,7 @@
 //+ ====================================================================================================================
 
 const { randomize } = require("../../../utils/cwUtils")
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { trifidEncode, trifidDecode } = require("./trifidCipherEncoder")
 
 describe("Encoder Static Tests", function () {

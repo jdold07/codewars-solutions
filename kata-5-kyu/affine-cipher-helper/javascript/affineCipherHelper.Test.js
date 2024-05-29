@@ -7,7 +7,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { AffineCipher } = require("./affineCipherHelper")
 
 let desc = "Testing with lowercase Latin alphabet"

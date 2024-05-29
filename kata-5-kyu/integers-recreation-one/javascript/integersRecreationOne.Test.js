@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { listSquared } = require("./integersRecreationOne")
 
 // config.truncateThreshold = 0

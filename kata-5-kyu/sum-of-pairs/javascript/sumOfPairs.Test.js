@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const solution = require("./sumOfPairs").sumPairs
 
 describe("Sum of Pairs", function () {

@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { REGEXP } = require("./regexPasswordValidation")
 
 function doTest(string, expected) {

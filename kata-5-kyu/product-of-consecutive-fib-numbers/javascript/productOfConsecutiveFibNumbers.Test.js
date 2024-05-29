@@ -7,7 +7,7 @@
 //+ ====================================================================================================================
 
 const { randomize } = require("../../../utils/cwUtils")
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { productFib } = require("./productOfConsecutiveFibNumbers")
 
 it("Basic tests (user examples)", function () {

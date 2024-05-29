@@ -7,7 +7,7 @@
 //+ ====================================================================================================================
 
 const { randomize } = require("../../../utils/cwUtils")
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { caesarSort } = require("./caesarCipherSorting")
 
 describe("Caesar Cipher Sorting", () => {

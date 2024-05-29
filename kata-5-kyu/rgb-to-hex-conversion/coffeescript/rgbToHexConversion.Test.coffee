@@ -6,8 +6,8 @@
 #+
 #+ =====================================================================================================================
 
-{ assert } = require "chai"
-{ UNKNOWN } = require "./rgbToHexConversion"
+{ assert } = require "vitest"
+{ rgb } = require "./rgbToHexConversion"
 
 check = (values, expected) ->
   actual = rgb.apply null, values

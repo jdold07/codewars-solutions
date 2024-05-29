@@ -7,8 +7,7 @@
 //+
 //+ ====================================================================================================================
 
-const { sample } = require("../../../utils/cwUtils")
-const { assert } = require("chai")
+import { assert } from "vitest"
 const {
   zero,
   one,
@@ -25,12 +24,15 @@ const {
   times,
   dividedBy
 } = require("./calculatingWithFunctions")
+const { sample } = require("../../../utils/cwUtils")
 
 describe("static example calculations", function () {
+  it("should return the correct value", function () {
   assert.strictEqual(seven(times(five())), 35)
   assert.strictEqual(four(plus(nine())), 13)
   assert.strictEqual(eight(minus(three())), 5)
   assert.strictEqual(six(dividedBy(two())), 3)
+})
 })
 
 describe("random calculations", function () {

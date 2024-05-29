@@ -6,7 +6,7 @@
 #+
 #+ =====================================================================================================================
 
-{ assert } = require "chai"
+{ assert } = require "vitest"
 { hexStringToRGB } = require "./convertAHexStringToRgb"
 
 describe "Fixed Tests", ->

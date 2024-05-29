@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-import { assert } from "chai"
+import { assert } from "vitest"
 import { rgb } from "./rgbToHexConversion"
 
 describe("Example Tests", function (): void {

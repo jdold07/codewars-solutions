@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { expect } = require("chai")
+import { expect } from "vitest"
 const { anagrams } = require("./whereMyAnagramsAt")
 
 describe("Tests", () => {

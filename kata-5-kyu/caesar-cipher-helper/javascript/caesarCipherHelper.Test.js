@@ -7,7 +7,7 @@
 //+ ====================================================================================================================
 
 const { randomToken } = require("../../../utils/cwUtils")
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { CaesarCipher } = require("./caesarCipherHelper")
 
 describe("Testing the CaesarCipher class", function () {

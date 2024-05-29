@@ -7,7 +7,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { gap } = require("./gapInPrimes")
 
 describe("Gap", function () {

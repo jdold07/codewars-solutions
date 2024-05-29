@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { humanReadable } = require("./humanReadableTime")
 
 describe("tests", function () {

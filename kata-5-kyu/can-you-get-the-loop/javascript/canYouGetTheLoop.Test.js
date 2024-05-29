@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { expect } = require("chai")
+import { expect } from "vitest"
 const { loop_size } = require("./canYouGetTheLoop")
 
 describe("Tests", () => {

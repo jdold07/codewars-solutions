@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert, expect } = require("chai")
+import { assert, expect } from "vitest"
 const { Vector } = require("./vectorClass")
 
 let a = new Vector([1, 2, 3])

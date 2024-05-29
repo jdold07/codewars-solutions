@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { dirReduc } = require("./directionsReduction")
 
 const shuffle = require("lodash").shuffle

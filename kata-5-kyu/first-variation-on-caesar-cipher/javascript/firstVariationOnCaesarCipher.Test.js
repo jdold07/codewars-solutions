@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { movingShift, demovingShift } = require("./firstVariationOnCaesarCipher")
 
 describe("Tests", () => {

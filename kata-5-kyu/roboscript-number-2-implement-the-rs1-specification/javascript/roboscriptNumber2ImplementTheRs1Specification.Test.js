@@ -6,7 +6,7 @@
 //+
 //+ ====================================================================================================================
 
-const { assert } = require("chai")
+import { assert } from "vitest"
 const { execute } = require("./roboscriptNumber2ImplementTheRs1Specification")
 
 describe("Your RS1 Interpreter", function () {

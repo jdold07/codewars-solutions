@@ -7,7 +7,7 @@
 //+ ====================================================================================================================
 
 
-import { assert } from "chai"
+import { assert } from "vitest"
 import { hexStringToRGB } from "./convertAHexStringToRgb"
 
 
