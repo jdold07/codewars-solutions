@@ -12,33 +12,35 @@
     "Swift"
   ],
   "license": "MIT",
-  "author": "tsdevau",
+  "author": {
+    "name": "tsdevau",
+    "email": "tim@tsdev.au",
+    "url": "https://tsdev.au/codewars-solutions",
+    "github": "https://github.com/tsdevau",
+    "linkedin": "https://www.linkedin.com/in/tsdevau",
+    "twitter": "https://twitter.com/tsdev_au"
+  },
   "scripts": {
-    "release": "standard-version",
-    "test": "jest --colors ",
-    "test:mocha": "mocha -v --ui bdd --timeout 12000 --colors --require ts-node/register --require tsconfig-paths/register "
+    "test": "pnpm vitest "
   },
   "dependencies": {
     "bignumber.js": "^9.1.2",
-    "chai": "^5.1.1",
-    "jest": "^29.7.0",
     "lodash": "^4.17.21",
     "nyc": "^15.1.0",
     "ramda": "^0.30.0",
-    "ts-jest": "^29.1.4",
     "tsconfig-paths": "^4.2.0",
-    "underscore": "^1.13.6"
+    "underscore": "^1.13.6",
+    "vitest": "^1.6.0"
   },
   "devDependencies": {
-    "@types/chai": "^4.3.16",
-    "@types/jest": "^29.5.12",
     "@types/lodash": "^4.17.4",
     "@types/node": "^20.12.12",
     "@typescript-eslint/eslint-plugin": "^7.11.0",
     "@typescript-eslint/parser": "^7.11.0",
+    "@vitest/coverage-v8": "^1.6.0",
+    "@vitest/ui": "^1.6.0",
     "eslint": "^9.3.0",
     "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-jest": "^28.5.0",
     "prettier": "^3.2.5",
     "prettier-plugin-packagejson": "^2.5.0"
   }
